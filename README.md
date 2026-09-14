@@ -5,6 +5,16 @@ project-produced evidence and runtime sources, not an independent-team replicati
 
 ## Frozen evidence and manuscript versions
 
+NPC V6 adds a [follow-up evidence package](./readseal_npc_followup_v6_evidence.zip)
+and [reproduction guide](./NPC_V6_FOLLOWUP.md), frozen at `npc-followup-v6`.
+It re-audits Grouped's own 96-run request traces and adds twelve **CPU-only**
+public ResNet-18/ResNet-50 substitution tests. No new GPU performance result or
+memory-budget deployment claim is made. A NumPy-only reconstruction passes
+279 checks; [the result](./NPC_V6_REPRODUCTION.json) records its exact scope.
+
+Follow-up ZIP SHA-256:
+`f29ab536298b1ea9a980582964e59bc2180a933163a17c0b2540985a915a4835`
+
 NPC manuscript V4 uses the same experiments as V3. Both resolve to
 [`npc-evidence-v3`](https://github.com/assasin831/readseal-artifact/tree/npc-evidence-v3),
 commit `ddbb51613909857a3a6442f2202033ba5109de30`. The V3 archive below is unchanged.

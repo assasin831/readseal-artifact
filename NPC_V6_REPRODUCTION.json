@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "checks": 279,
+  "runs": 96,
+  "requests": 96764,
+  "cpu_model_outputs": 12,
+  "inference_executed": false,
+  "cuda_used": false,
+  "bootstrap_replicates": 20000,
+  "scope": "raw-request analysis and saved-output reconstruction, not re-execution of models"
+}
