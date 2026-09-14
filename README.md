@@ -3,6 +3,15 @@
 Review artifact accompanying the NPC manuscript. This repository contains
 project-produced evidence and runtime sources, not an independent-team replication.
 
+## Frozen evidence and manuscript versions
+
+NPC manuscript V4 uses the same experiments as V3. Both resolve to
+[`npc-evidence-v3`](https://github.com/assasin831/readseal-artifact/tree/npc-evidence-v3),
+commit `ddbb51613909857a3a6442f2202033ba5109de30`. The V3 archive below is unchanged.
+V4 clarifies the case/tensor counts, repairs Fig. 1's publication-arrow target,
+and updates scholarly references and presentation; it adds no new GPU experiment.
+See [MANUSCRIPT_VERSIONS.md](./MANUSCRIPT_VERSIONS.md) for exact delivery hashes.
+
 ## Download NPC V3
 
 - [Reviewer artifact ZIP](./readseal_npc_2026_reviewer_artifact_v3.zip) (10.7 MB).
