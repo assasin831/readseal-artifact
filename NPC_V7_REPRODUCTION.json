@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE",
+  "checks": 2230,
+  "inference_executed": false,
+  "cuda_used": false,
+  "raw_deadline_archive_reconstructed": true,
+  "pdf_sha256": null,
+  "manuscript_checked": false,
+  "validator_sha256": "7dc4038985adccb6ed0662804042df9f0f27aca6f4670a4b5cbf47313b464e10",
+  "source_hashes": {},
+  "load_runs": 72,
+  "cutoff_runs": 96,
+  "deadlines_ms": [
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    150,
+    200
+  ],
+  "scope": "Frozen aggregate/lineage/statistical reconstruction and manuscript checks; not an independent team replication or a new GPU execution."
+}

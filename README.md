@@ -5,6 +5,19 @@ project-produced evidence and runtime sources, not an independent-team replicati
 
 ## Frozen evidence and manuscript versions
 
+NPC V7 adds the [sensitivity evidence package](./readseal_npc_v7_sensitivity_evidence.zip)
+and [guide](./NPC_V7_SENSITIVITY.md), frozen at `npc-sensitivity-v7`.
+It keeps the completed 72-run GPU load scan separate from earlier windows and
+adds CPU-only eight-cutoff sensitivity on all 96 original runs. A clean-extraction
+reconstruction passed 2,230 checks, including all 192 original report/sink files
+obtained from V6; [the result](./NPC_V7_REPRODUCTION.json) records the scope.
+The compact load package contains frozen per-run aggregates and the raw inventory,
+not all remote load-window raw records. No jitter, deployment-budget constraint,
+or native C++ speedup is claimed.
+
+V7 ZIP SHA-256: `931f3fd8958ef68d606ee68d5ab826ae9eba3042bc02083ca00f928622fb3e0d`.
+Prior archives and tags remain unchanged.
+
 NPC V6 adds a [follow-up evidence package](./readseal_npc_followup_v6_evidence.zip)
 and [reproduction guide](./NPC_V6_FOLLOWUP.md), frozen at `npc-followup-v6`.
 It re-audits Grouped's own 96-run request traces and adds twelve **CPU-only**
