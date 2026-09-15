@@ -1,0 +1,204 @@
+graph():
+    %arg0_1 : [num_users=1] = placeholder[target=arg0_1]
+    %arg1_1 : [num_users=1] = placeholder[target=arg1_1]
+    %arg2_1 : [num_users=1] = placeholder[target=arg2_1]
+    %arg3_1 : [num_users=1] = placeholder[target=arg3_1]
+    %arg4_1 : [num_users=1] = placeholder[target=arg4_1]
+    %arg5_1 : [num_users=1] = placeholder[target=arg5_1]
+    %arg6_1 : [num_users=1] = placeholder[target=arg6_1]
+    %arg7_1 : [num_users=1] = placeholder[target=arg7_1]
+    %arg8_1 : [num_users=1] = placeholder[target=arg8_1]
+    %arg9_1 : [num_users=1] = placeholder[target=arg9_1]
+    %arg10_1 : [num_users=1] = placeholder[target=arg10_1]
+    %arg11_1 : [num_users=1] = placeholder[target=arg11_1]
+    %arg12_1 : [num_users=1] = placeholder[target=arg12_1]
+    %arg13_1 : [num_users=1] = placeholder[target=arg13_1]
+    %arg14_1 : [num_users=1] = placeholder[target=arg14_1]
+    %arg15_1 : [num_users=1] = placeholder[target=arg15_1]
+    %arg16_1 : [num_users=1] = placeholder[target=arg16_1]
+    %arg17_1 : [num_users=1] = placeholder[target=arg17_1]
+    %arg18_1 : [num_users=1] = placeholder[target=arg18_1]
+    %arg19_1 : [num_users=1] = placeholder[target=arg19_1]
+    %arg20_1 : [num_users=1] = placeholder[target=arg20_1]
+    %arg21_1 : [num_users=1] = placeholder[target=arg21_1]
+    %arg22_1 : [num_users=1] = placeholder[target=arg22_1]
+    %arg23_1 : [num_users=1] = placeholder[target=arg23_1]
+    %arg24_1 : [num_users=1] = placeholder[target=arg24_1]
+    %arg25_1 : [num_users=1] = placeholder[target=arg25_1]
+    %arg26_1 : [num_users=1] = placeholder[target=arg26_1]
+    %arg27_1 : [num_users=1] = placeholder[target=arg27_1]
+    %arg28_1 : [num_users=1] = placeholder[target=arg28_1]
+    %arg29_1 : [num_users=1] = placeholder[target=arg29_1]
+    %arg30_1 : [num_users=1] = placeholder[target=arg30_1]
+    %arg31_1 : [num_users=1] = placeholder[target=arg31_1]
+    %arg32_1 : [num_users=1] = placeholder[target=arg32_1]
+    %arg33_1 : [num_users=1] = placeholder[target=arg33_1]
+    %arg34_1 : [num_users=1] = placeholder[target=arg34_1]
+    %arg35_1 : [num_users=1] = placeholder[target=arg35_1]
+    %arg36_1 : [num_users=1] = placeholder[target=arg36_1]
+    %arg37_1 : [num_users=1] = placeholder[target=arg37_1]
+    %arg38_1 : [num_users=1] = placeholder[target=arg38_1]
+    %arg39_1 : [num_users=1] = placeholder[target=arg39_1]
+    %arg40_1 : [num_users=1] = placeholder[target=arg40_1]
+    %arg41_1 : [num_users=1] = placeholder[target=arg41_1]
+    %arg42_1 : [num_users=1] = placeholder[target=arg42_1]
+    %arg43_1 : [num_users=1] = placeholder[target=arg43_1]
+    %arg44_1 : [num_users=1] = placeholder[target=arg44_1]
+    %arg45_1 : [num_users=1] = placeholder[target=arg45_1]
+    %arg46_1 : [num_users=1] = placeholder[target=arg46_1]
+    %arg47_1 : [num_users=1] = placeholder[target=arg47_1]
+    %arg48_1 : [num_users=1] = placeholder[target=arg48_1]
+    %arg49_1 : [num_users=1] = placeholder[target=arg49_1]
+    %arg50_1 : [num_users=1] = placeholder[target=arg50_1]
+    %arg51_1 : [num_users=1] = placeholder[target=arg51_1]
+    %arg52_1 : [num_users=1] = placeholder[target=arg52_1]
+    %arg53_1 : [num_users=1] = placeholder[target=arg53_1]
+    %arg54_1 : [num_users=1] = placeholder[target=arg54_1]
+    %arg55_1 : [num_users=1] = placeholder[target=arg55_1]
+    %arg56_1 : [num_users=1] = placeholder[target=arg56_1]
+    %arg57_1 : [num_users=1] = placeholder[target=arg57_1]
+    %arg58_1 : [num_users=1] = placeholder[target=arg58_1]
+    %arg59_1 : [num_users=1] = placeholder[target=arg59_1]
+    %arg60_1 : [num_users=1] = placeholder[target=arg60_1]
+    %arg61_1 : [num_users=0] = placeholder[target=arg61_1]
+    %arg62_1 : [num_users=1] = placeholder[target=arg62_1]
+    %arg63_1 : [num_users=1] = placeholder[target=arg63_1]
+    %arg64_1 : [num_users=0] = placeholder[target=arg64_1]
+    %arg65_1 : [num_users=1] = placeholder[target=arg65_1]
+    %arg66_1 : [num_users=1] = placeholder[target=arg66_1]
+    %arg67_1 : [num_users=0] = placeholder[target=arg67_1]
+    %arg68_1 : [num_users=1] = placeholder[target=arg68_1]
+    %arg69_1 : [num_users=1] = placeholder[target=arg69_1]
+    %arg70_1 : [num_users=0] = placeholder[target=arg70_1]
+    %arg71_1 : [num_users=1] = placeholder[target=arg71_1]
+    %arg72_1 : [num_users=1] = placeholder[target=arg72_1]
+    %arg73_1 : [num_users=0] = placeholder[target=arg73_1]
+    %arg74_1 : [num_users=1] = placeholder[target=arg74_1]
+    %arg75_1 : [num_users=1] = placeholder[target=arg75_1]
+    %arg76_1 : [num_users=0] = placeholder[target=arg76_1]
+    %arg77_1 : [num_users=1] = placeholder[target=arg77_1]
+    %arg78_1 : [num_users=1] = placeholder[target=arg78_1]
+    %arg79_1 : [num_users=0] = placeholder[target=arg79_1]
+    %arg80_1 : [num_users=1] = placeholder[target=arg80_1]
+    %arg81_1 : [num_users=1] = placeholder[target=arg81_1]
+    %arg82_1 : [num_users=0] = placeholder[target=arg82_1]
+    %arg83_1 : [num_users=1] = placeholder[target=arg83_1]
+    %arg84_1 : [num_users=1] = placeholder[target=arg84_1]
+    %arg85_1 : [num_users=0] = placeholder[target=arg85_1]
+    %arg86_1 : [num_users=1] = placeholder[target=arg86_1]
+    %arg87_1 : [num_users=1] = placeholder[target=arg87_1]
+    %arg88_1 : [num_users=0] = placeholder[target=arg88_1]
+    %arg89_1 : [num_users=1] = placeholder[target=arg89_1]
+    %arg90_1 : [num_users=1] = placeholder[target=arg90_1]
+    %arg91_1 : [num_users=0] = placeholder[target=arg91_1]
+    %arg92_1 : [num_users=1] = placeholder[target=arg92_1]
+    %arg93_1 : [num_users=1] = placeholder[target=arg93_1]
+    %arg94_1 : [num_users=0] = placeholder[target=arg94_1]
+    %arg95_1 : [num_users=1] = placeholder[target=arg95_1]
+    %arg96_1 : [num_users=1] = placeholder[target=arg96_1]
+    %arg97_1 : [num_users=0] = placeholder[target=arg97_1]
+    %arg98_1 : [num_users=1] = placeholder[target=arg98_1]
+    %arg99_1 : [num_users=1] = placeholder[target=arg99_1]
+    %arg100_1 : [num_users=0] = placeholder[target=arg100_1]
+    %arg101_1 : [num_users=1] = placeholder[target=arg101_1]
+    %arg102_1 : [num_users=1] = placeholder[target=arg102_1]
+    %arg103_1 : [num_users=0] = placeholder[target=arg103_1]
+    %arg104_1 : [num_users=1] = placeholder[target=arg104_1]
+    %arg105_1 : [num_users=1] = placeholder[target=arg105_1]
+    %arg106_1 : [num_users=0] = placeholder[target=arg106_1]
+    %arg107_1 : [num_users=1] = placeholder[target=arg107_1]
+    %arg108_1 : [num_users=1] = placeholder[target=arg108_1]
+    %arg109_1 : [num_users=0] = placeholder[target=arg109_1]
+    %arg110_1 : [num_users=1] = placeholder[target=arg110_1]
+    %arg111_1 : [num_users=1] = placeholder[target=arg111_1]
+    %arg112_1 : [num_users=0] = placeholder[target=arg112_1]
+    %arg113_1 : [num_users=1] = placeholder[target=arg113_1]
+    %arg114_1 : [num_users=1] = placeholder[target=arg114_1]
+    %arg115_1 : [num_users=0] = placeholder[target=arg115_1]
+    %arg116_1 : [num_users=2] = placeholder[target=arg116_1]
+    %convolution : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%arg116_1, %arg0_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution, %arg1_1, %arg2_1, %arg59_1, %arg60_1, 0.1, 1e-05), kwargs = {})
+    %getitem : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training, 0), kwargs = {})
+    %relu : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem,), kwargs = {})
+    %convolution_1 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu, %arg3_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_1 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_1, %arg4_1, %arg5_1, %arg62_1, %arg63_1, 0.1, 1e-05), kwargs = {})
+    %getitem_1 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_1, 0), kwargs = {})
+    %add : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_1, %arg116_1), kwargs = {})
+    %relu_1 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add,), kwargs = {})
+    %convolution_2 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_1, %arg6_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_2 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_2, %arg7_1, %arg8_1, %arg65_1, %arg66_1, 0.1, 1e-05), kwargs = {})
+    %getitem_2 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_2, 0), kwargs = {})
+    %relu_2 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_2,), kwargs = {})
+    %convolution_3 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_2, %arg9_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_3 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_3, %arg10_1, %arg11_1, %arg68_1, %arg69_1, 0.1, 1e-05), kwargs = {})
+    %getitem_3 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_3, 0), kwargs = {})
+    %add_1 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_3, %relu_1), kwargs = {})
+    %relu_3 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add_1,), kwargs = {})
+    %convolution_4 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_3, %arg12_1, None, [2, 2], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_4 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_4, %arg13_1, %arg14_1, %arg71_1, %arg72_1, 0.1, 1e-05), kwargs = {})
+    %getitem_4 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_4, 0), kwargs = {})
+    %relu_4 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_4,), kwargs = {})
+    %convolution_5 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_4, %arg15_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_5 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_5, %arg16_1, %arg17_1, %arg74_1, %arg75_1, 0.1, 1e-05), kwargs = {})
+    %getitem_5 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_5, 0), kwargs = {})
+    %convolution_6 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_3, %arg18_1, None, [2, 2], [0, 0], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_6 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_6, %arg19_1, %arg20_1, %arg77_1, %arg78_1, 0.1, 1e-05), kwargs = {})
+    %getitem_6 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_6, 0), kwargs = {})
+    %add_2 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_5, %getitem_6), kwargs = {})
+    %relu_5 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add_2,), kwargs = {})
+    %convolution_7 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_5, %arg21_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_7 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_7, %arg22_1, %arg23_1, %arg80_1, %arg81_1, 0.1, 1e-05), kwargs = {})
+    %getitem_7 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_7, 0), kwargs = {})
+    %relu_6 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_7,), kwargs = {})
+    %convolution_8 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_6, %arg24_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_8 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_8, %arg25_1, %arg26_1, %arg83_1, %arg84_1, 0.1, 1e-05), kwargs = {})
+    %getitem_8 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_8, 0), kwargs = {})
+    %add_3 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_8, %relu_5), kwargs = {})
+    %relu_7 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add_3,), kwargs = {})
+    %convolution_9 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_7, %arg27_1, None, [2, 2], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_9 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_9, %arg28_1, %arg29_1, %arg86_1, %arg87_1, 0.1, 1e-05), kwargs = {})
+    %getitem_9 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_9, 0), kwargs = {})
+    %relu_8 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_9,), kwargs = {})
+    %convolution_10 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_8, %arg30_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_10 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_10, %arg31_1, %arg32_1, %arg89_1, %arg90_1, 0.1, 1e-05), kwargs = {})
+    %getitem_10 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_10, 0), kwargs = {})
+    %convolution_11 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_7, %arg33_1, None, [2, 2], [0, 0], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_11 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_11, %arg34_1, %arg35_1, %arg92_1, %arg93_1, 0.1, 1e-05), kwargs = {})
+    %getitem_11 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_11, 0), kwargs = {})
+    %add_4 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_10, %getitem_11), kwargs = {})
+    %relu_9 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add_4,), kwargs = {})
+    %convolution_12 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_9, %arg36_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_12 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_12, %arg37_1, %arg38_1, %arg95_1, %arg96_1, 0.1, 1e-05), kwargs = {})
+    %getitem_12 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_12, 0), kwargs = {})
+    %relu_10 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_12,), kwargs = {})
+    %convolution_13 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_10, %arg39_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_13 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_13, %arg40_1, %arg41_1, %arg98_1, %arg99_1, 0.1, 1e-05), kwargs = {})
+    %getitem_13 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_13, 0), kwargs = {})
+    %add_5 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_13, %relu_9), kwargs = {})
+    %relu_11 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add_5,), kwargs = {})
+    %convolution_14 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_11, %arg42_1, None, [2, 2], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_14 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_14, %arg43_1, %arg44_1, %arg101_1, %arg102_1, 0.1, 1e-05), kwargs = {})
+    %getitem_14 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_14, 0), kwargs = {})
+    %relu_12 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_14,), kwargs = {})
+    %convolution_15 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_12, %arg45_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_15 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_15, %arg46_1, %arg47_1, %arg104_1, %arg105_1, 0.1, 1e-05), kwargs = {})
+    %getitem_15 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_15, 0), kwargs = {})
+    %convolution_16 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_11, %arg48_1, None, [2, 2], [0, 0], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_16 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_16, %arg49_1, %arg50_1, %arg107_1, %arg108_1, 0.1, 1e-05), kwargs = {})
+    %getitem_16 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_16, 0), kwargs = {})
+    %add_6 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_15, %getitem_16), kwargs = {})
+    %relu_13 : [num_users=2] = call_function[target=torch.ops.aten.relu.default](args = (%add_6,), kwargs = {})
+    %convolution_17 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_13, %arg51_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_17 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_17, %arg52_1, %arg53_1, %arg110_1, %arg111_1, 0.1, 1e-05), kwargs = {})
+    %getitem_17 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_17, 0), kwargs = {})
+    %relu_14 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%getitem_17,), kwargs = {})
+    %convolution_18 : [num_users=1] = call_function[target=torch.ops.aten.convolution.default](args = (%relu_14, %arg54_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1), kwargs = {})
+    %_native_batch_norm_legit_no_training_18 : [num_users=1] = call_function[target=torch.ops.aten._native_batch_norm_legit_no_training.default](args = (%convolution_18, %arg55_1, %arg56_1, %arg113_1, %arg114_1, 0.1, 1e-05), kwargs = {})
+    %getitem_18 : [num_users=1] = call_function[target=operator.getitem](args = (%_native_batch_norm_legit_no_training_18, 0), kwargs = {})
+    %add_7 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%getitem_18, %relu_13), kwargs = {})
+    %relu_15 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%add_7,), kwargs = {})
+    %mean : [num_users=1] = call_function[target=torch.ops.aten.mean.dim](args = (%relu_15, [-1, -2], True), kwargs = {})
+    %view : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%mean, [1, 512]), kwargs = {})
+    %permute : [num_users=1] = call_function[target=torch.ops.aten.permute.default](args = (%arg57_1, [1, 0]), kwargs = {})
+    %addmm : [num_users=1] = call_function[target=torch.ops.aten.addmm.default](args = (%arg58_1, %view, %permute), kwargs = {})
+    return (addmm,)

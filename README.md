@@ -1,16 +1,17 @@
-# ReadSeal: Checked Borrowing Plans for Asynchronous Shared-Tensor Pipelines
+# ReadSeal: Checked Borrowing Plans for Asynchronous GPU Tensor Sharing
 
 Review artifact accompanying the NPC manuscript. This repository contains
 project-produced evidence and runtime sources, not an independent-team replication.
 
 ## Frozen evidence and manuscript versions
 
-**Current submission: NPC V9**, frozen at `npc-submission-v9`.
-Start with the [current manuscript/evidence guide](./NPC_V9_GUIDE.md) and
-[updated table/figure map](./ARTIFACT.md). V9 adds a CPU-only reconciliation of
-the recorded ResNet operation counts, improved vector figures, and precise
-timing/environment documentation. It preserves every earlier experiment archive
-and does not run new inference. Manuscript and source hashes are recorded in
+**Current submission: NPC V10**, frozen at `npc-submission-v10`.
+Start with the [current manuscript/evidence guide](./NPC_V10_GUIDE.md) and
+[updated table/figure map](./ARTIFACT.md). V10 revises the GPU problem statement,
+Related Work placement, component explanations and conclusion. It updates
+author information and scholarly references, but changes no experimental data.
+V9's graph-count reconciliation and all earlier archives remain available.
+Manuscript and source hashes are recorded in
 [MANUSCRIPT_VERSIONS.md](./MANUSCRIPT_VERSIONS.md).
 
 NPC V7 adds the [sensitivity evidence package](./readseal_npc_v7_sensitivity_evidence.zip)

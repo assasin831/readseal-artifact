@@ -1,5 +1,33 @@
 # Manuscript-to-evidence mapping
 
+## NPC V10, 15 September 2026
+
+Evidence tag: `npc-submission-v10`. Start with [NPC_V10_GUIDE.md](./NPC_V10_GUIDE.md).
+The manuscript is now titled ReadSeal: Checked Borrowing Plans for Asynchronous
+GPU Tensor Sharing. This revision reorganizes the narrative and references,
+defines the diagram's component roles and expands the conclusion. It adds
+Sicheng Wu before Rui Zhou, identifies Rui Zhou and Qingguo Zhou as
+co-corresponding authors, and uses the confirmed school affiliation.
+All experiment files are unchanged from V9.
+
+| Delivered file | SHA-256 |
+| --- | --- |
+| `readseal_npc_2026_v10.pdf` | `9cf0ed71f72db44af989e58f10c2e59aedd127f0b5f7e9363916bfb659226a5b` |
+| `readseal_npc_2026_latex_v10.zip` | `c80f39b48b5ba0c528898d118b044bfd6c108f0a3334fc3191a90114bb230aa5` |
+
+These files are delivered separately, not hosted here in full. The PDF remains
+12 pages with unmodified official LNCS typography: 12 TeX point body baseline,
+21 embedded font entries and no Type 3 fonts. It cites 18 academic papers and
+five exact interface sources; seven papers are from 2023-2025. The abstract has
+168 whitespace-delimited tokens and the two-paragraph conclusion 159.
+
+V10 passes 124 source/PDF checks and the unchanged 2,230-check saved-evidence
+reconstruction. All 12 pages were visually inspected. Clean extraction verifies
+68 source inputs and recompiles to identical extracted text and page pixels at
+a 1,300-pixel long edge. [NPC_V10_REPRODUCTION.json](./NPC_V10_REPRODUCTION.json)
+records the result. The current diagrams, inputs and checks are inventoried in
+[submission-v10/manifest.json](./submission-v10/manifest.json).
+
 ## NPC V9, 15 September 2026
 
 Submission evidence tag: `npc-submission-v9`.

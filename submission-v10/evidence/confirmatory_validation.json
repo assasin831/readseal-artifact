@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "analysis_sha256": "0e27ab345df5a62973c88af6617c66e68f97296c06bb084350a8638e80dda56a",
+  "script_sha256": "77a896abde2ed126cec59953c2c03bcd1fd3dcbbf8a042a554a8c38104d64129",
+  "checks": 432,
+  "runs": 54,
+  "bootstrap_replicates": 20000,
+  "total_arrivals": 77760,
+  "total_publications": 48348,
+  "total_timely": 48154,
+  "extra_slot_contrast": {
+    "label": "Grouped R1 K8 minus Full R2 K8; different source capacity",
+    "mean": 0.27777777777777857,
+    "interval": [
+      0.0416666666666643,
+      0.5000000000000048
+    ]
+  },
+  "scope": "Independent schedule, loss accounting, means and paired intervals from all compact run records; remote audit checked the raw tensors and ledgers."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "checks": 124,
+  "pdf_sha256": "9cf0ed71f72db44af989e58f10c2e59aedd127f0b5f7e9363916bfb659226a5b",
+  "pages": 12,
+  "abstract_whitespace_tokens": 168,
+  "body_baseline_pdf_points": 11.955,
+  "modal_baseline_samples": 179,
+  "minimum_fig1_font_pdf_points": 7.02034900000001,
+  "cited_references": 23,
+  "academic_references": 18,
+  "interface_sources": 5,
+  "academic_references_2023_2025": 7,
+  "conclusion_words": 159,
+  "embedded_fonts": 21,
+  "inference_executed": false,
+  "source_hashes": {
+    "main.tex": "ef4f8ea58f2c74e0db9be58cee177193c8c1624ec2843566a10b549655b8603c",
+    "sections\\design.tex": "94c4ea58548cca4f50d9ed501b6cf94cb7417899bdf1d323c5f9ce5c7611595d",
+    "sections\\evaluation.tex": "860a4f6b2f48a8f2207cd5eedb7f05d720f11e1b5800cad5b4367596a44e8346",
+    "sections\\introduction.tex": "730754df3a27b7571974cf33e22de285b5b2c57cf966fad6d3da5abac74ce3d4",
+    "sections\\related.tex": "8d004c6deecb138a5022b6fbe515db5797a0fa4b6049f4cb3a2a74ebfc5ba2cf",
+    "sections\\safety.tex": "dc39b5568ebd298091a7614832b188670b9951f73e3000139f24aeb14e769831"
+  },
+  "scope": "Mechanical PDF/source checks; separate visual review is required."
+}

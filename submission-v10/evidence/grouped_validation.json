@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "analysis_sha256": "8abb23d796a4176e6c850e8994ea429d9d0eff14757e28ea9cd49f8778e7120a",
+  "validator_sha256": "055acaefcc2ce2186fb2d00c7b3755fb660aa62ba7c8b35f5fea1ee5f026f7c6",
+  "inference_executed": false,
+  "raw_reaudit_performed_here": false,
+  "scope": "CPU statistical reconstruction from the separately re-audited 96-run analysis",
+  "checks": 984
+}

@@ -1,0 +1,989 @@
+[
+  {
+    "kind": "box",
+    "id": "panel-a",
+    "x": 0,
+    "y": 0,
+    "w": 1000,
+    "h": 30,
+    "label": "(a) Derive the read boundary; bind the complete invocation",
+    "fill": "none",
+    "stroke": "none",
+    "size": 23,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "whole-graph",
+    "x": 0,
+    "y": 50,
+    "w": 377,
+    "h": 113,
+    "label": "",
+    "fill": "none",
+    "stroke": "#909A9F",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "graph-title",
+    "x": 12,
+    "y": 52,
+    "w": 340,
+    "h": 28,
+    "label": "Supported child graph",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "input",
+    "x": 14,
+    "y": 92,
+    "w": 40,
+    "h": 35,
+    "label": "x",
+    "fill": "#EDF5F5",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "view",
+    "x": 82,
+    "y": 92,
+    "w": 65,
+    "h": 35,
+    "label": "view",
+    "fill": "#EDF5F5",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "conv",
+    "x": 176,
+    "y": 92,
+    "w": 69,
+    "h": 35,
+    "label": "conv",
+    "fill": "#EDF5F5",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "tail",
+    "x": 284,
+    "y": 92,
+    "w": 78,
+    "h": 35,
+    "label": "tail",
+    "fill": "#E7E9EB",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "line",
+    "id": "graph-data1",
+    "points": [
+      [
+        54,
+        109
+      ],
+      [
+        82,
+        109
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "graph-data2",
+    "points": [
+      [
+        147,
+        109
+      ],
+      [
+        176,
+        109
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "graph-data3",
+    "points": [
+      [
+        245,
+        109
+      ],
+      [
+        284,
+        109
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "generated-cut",
+    "points": [
+      [
+        264,
+        87
+      ],
+      [
+        264,
+        133
+      ]
+    ],
+    "color": "#267B83",
+    "dash": true,
+    "arrow": false,
+    "width": 2
+  },
+  {
+    "kind": "box",
+    "id": "cut-label",
+    "x": 111,
+    "y": 134,
+    "w": 258,
+    "h": 25,
+    "label": "cut after last read",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "right",
+    "color": "#267B83"
+  },
+  {
+    "kind": "line",
+    "id": "entire-graph-to-analysis",
+    "points": [
+      [
+        377,
+        110
+      ],
+      [
+        421,
+        110
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "box",
+    "id": "schemas",
+    "x": 402,
+    "y": 44,
+    "w": 264,
+    "h": 29,
+    "label": "Pinned operator contracts",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "line",
+    "id": "schema-input",
+    "points": [
+      [
+        534,
+        73
+      ],
+      [
+        534,
+        87
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "box",
+    "id": "analysis",
+    "x": 421,
+    "y": 87,
+    "w": 226,
+    "h": 50,
+    "label": "Read-set analysis",
+    "fill": "#FFFFFF",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "line",
+    "id": "analysis-to-bind",
+    "points": [
+      [
+        647,
+        112
+      ],
+      [
+        704,
+        112
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "declarations-to-bind",
+    "points": [
+      [
+        629,
+        174
+      ],
+      [
+        680,
+        174
+      ],
+      [
+        680,
+        142
+      ],
+      [
+        704,
+        142
+      ]
+    ],
+    "color": "#555F65",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "box",
+    "id": "declarations",
+    "x": 388,
+    "y": 147,
+    "w": 255,
+    "h": 49,
+    "label": "Declared native contracts\nand topology",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#555F65"
+  },
+  {
+    "kind": "box",
+    "id": "binding",
+    "x": 704,
+    "y": 47,
+    "w": 296,
+    "h": 146,
+    "label": "",
+    "fill": "none",
+    "stroke": "#909A9F",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "binding-title",
+    "x": 720,
+    "y": 54,
+    "w": 266,
+    "h": 28,
+    "label": "Checked plan",
+    "fill": "none",
+    "stroke": "none",
+    "size": 22,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "binding-lines",
+    "x": 720,
+    "y": 85,
+    "w": 266,
+    "h": 97,
+    "label": "Code + model state\nComplete reader set\nInput publication k",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "line",
+    "id": "divider",
+    "points": [
+      [
+        0,
+        213
+      ],
+      [
+        1000,
+        213
+      ]
+    ],
+    "color": "#C2C9CC",
+    "dash": false,
+    "arrow": false,
+    "width": 0.8
+  },
+  {
+    "kind": "box",
+    "id": "panel-b",
+    "x": 0,
+    "y": 224,
+    "w": 1000,
+    "h": 32,
+    "label": "(b) Return source storage before private results complete",
+    "fill": "none",
+    "stroke": "none",
+    "size": 23,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "native-label",
+    "x": 0,
+    "y": 284,
+    "w": 160,
+    "h": 38,
+    "label": "Native engine A",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "child-label",
+    "x": 0,
+    "y": 374,
+    "w": 165,
+    "h": 27,
+    "label": "Graph child C",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "child-via",
+    "x": 0,
+    "y": 400,
+    "w": 170,
+    "h": 24,
+    "label": "via view adapter B",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#555F65"
+  },
+  {
+    "kind": "box",
+    "id": "a-read",
+    "x": 177,
+    "y": 309,
+    "w": 138,
+    "h": 17,
+    "label": "",
+    "fill": "#267B83",
+    "stroke": "#267B83",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "a-private",
+    "x": 315,
+    "y": 309,
+    "w": 506,
+    "h": 17,
+    "label": "",
+    "fill": "#E7E9EB",
+    "stroke": "#8D969B",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "a-read-label",
+    "x": 177,
+    "y": 279,
+    "w": 138,
+    "h": 26,
+    "label": "Shared read",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "a-private-label",
+    "x": 380,
+    "y": 279,
+    "w": 380,
+    "h": 26,
+    "label": "Private work",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "a-read-event",
+    "x": 308,
+    "y": 310,
+    "w": 14,
+    "h": 14,
+    "label": "",
+    "fill": "#267B83",
+    "stroke": "#267B83",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "ellipse",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "a-output-event",
+    "x": 813,
+    "y": 309,
+    "w": 17,
+    "h": 17,
+    "label": "",
+    "fill": "#FFFFFF",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "ellipse",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "c-pending",
+    "x": 177,
+    "y": 397,
+    "w": 188,
+    "h": 17,
+    "label": "",
+    "fill": "none",
+    "stroke": "#555F65",
+    "size": 21,
+    "bold": false,
+    "dash": true,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "c-read",
+    "x": 365,
+    "y": 397,
+    "w": 235,
+    "h": 17,
+    "label": "",
+    "fill": "#267B83",
+    "stroke": "#267B83",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "c-private",
+    "x": 600,
+    "y": 397,
+    "w": 205,
+    "h": 17,
+    "label": "",
+    "fill": "#E7E9EB",
+    "stroke": "#8D969B",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "pending-label",
+    "x": 177,
+    "y": 350,
+    "w": 185,
+    "h": 43,
+    "label": "Enrolled;\nnot submitted",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#555F65"
+  },
+  {
+    "kind": "box",
+    "id": "prefix-label",
+    "x": 365,
+    "y": 367,
+    "w": 235,
+    "h": 26,
+    "label": "Read prefix",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "suffix-label",
+    "x": 600,
+    "y": 367,
+    "w": 205,
+    "h": 26,
+    "label": "Private suffix",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "c-read-event",
+    "x": 593,
+    "y": 398,
+    "w": 14,
+    "h": 14,
+    "label": "",
+    "fill": "#267B83",
+    "stroke": "#267B83",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "ellipse",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "c-output-event",
+    "x": 797,
+    "y": 397,
+    "w": 17,
+    "h": 17,
+    "label": "",
+    "fill": "#FFFFFF",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "ellipse",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "line",
+    "id": "a-read-to-join",
+    "points": [
+      [
+        315,
+        328
+      ],
+      [
+        315,
+        347
+      ],
+      [
+        600,
+        347
+      ],
+      [
+        600,
+        447
+      ]
+    ],
+    "color": "#267B83",
+    "dash": true,
+    "arrow": false,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "c-read-to-join",
+    "points": [
+      [
+        600,
+        414
+      ],
+      [
+        600,
+        447
+      ]
+    ],
+    "color": "#267B83",
+    "dash": true,
+    "arrow": false,
+    "width": 1.6
+  },
+  {
+    "kind": "box",
+    "id": "read-join",
+    "x": 594,
+    "y": 447,
+    "w": 12,
+    "h": 12,
+    "label": "",
+    "fill": "#267B83",
+    "stroke": "#267B83",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rhombus",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "read-join-label",
+    "x": 422,
+    "y": 439,
+    "w": 161,
+    "h": 30,
+    "label": "Read join",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "right",
+    "color": "#267B83"
+  },
+  {
+    "kind": "line",
+    "id": "reuse-boundary",
+    "points": [
+      [
+        600,
+        459
+      ],
+      [
+        600,
+        495
+      ]
+    ],
+    "color": "#267B83",
+    "dash": true,
+    "arrow": false,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "a-output-to-join",
+    "points": [
+      [
+        830,
+        317.5
+      ],
+      [
+        908,
+        317.5
+      ],
+      [
+        908,
+        447
+      ]
+    ],
+    "color": "#262B30",
+    "dash": true,
+    "arrow": false,
+    "width": 1.6
+  },
+  {
+    "kind": "line",
+    "id": "c-output-to-join",
+    "points": [
+      [
+        814,
+        405.5
+      ],
+      [
+        908,
+        405.5
+      ]
+    ],
+    "color": "#262B30",
+    "dash": true,
+    "arrow": false,
+    "width": 1.6
+  },
+  {
+    "kind": "box",
+    "id": "output-join",
+    "x": 902,
+    "y": 447,
+    "w": 12,
+    "h": 12,
+    "label": "",
+    "fill": "#FFFFFF",
+    "stroke": "#262B30",
+    "size": 21,
+    "bold": false,
+    "dash": false,
+    "shape": "rhombus",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "output-join-label",
+    "x": 826,
+    "y": 271,
+    "w": 169,
+    "h": 30,
+    "label": "Output join",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "line",
+    "id": "output-to-publication",
+    "points": [
+      [
+        908,
+        459
+      ],
+      [
+        908,
+        472
+      ]
+    ],
+    "color": "#262B30",
+    "dash": false,
+    "arrow": true,
+    "width": 1.6
+  },
+  {
+    "kind": "box",
+    "id": "publication",
+    "x": 823,
+    "y": 472,
+    "w": 170,
+    "h": 54,
+    "label": "Publish result\nof k",
+    "fill": "#FFFFFF",
+    "stroke": "#262B30",
+    "size": 20.3,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "source-label",
+    "x": 0,
+    "y": 465,
+    "w": 165,
+    "h": 34,
+    "label": "Source slot",
+    "fill": "none",
+    "stroke": "none",
+    "size": 21,
+    "bold": true,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "left",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "protected",
+    "x": 177,
+    "y": 468,
+    "w": 423,
+    "h": 30,
+    "label": "Publication k protected",
+    "fill": "#EDF5F5",
+    "stroke": "#267B83",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#262B30"
+  },
+  {
+    "kind": "box",
+    "id": "reused",
+    "x": 600,
+    "y": 468,
+    "w": 205,
+    "h": 30,
+    "label": "May hold k+1",
+    "fill": "none",
+    "stroke": "#267B83",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#267B83"
+  },
+  {
+    "kind": "box",
+    "id": "provenance-note",
+    "x": 177,
+    "y": 504,
+    "w": 628,
+    "h": 28,
+    "label": "Storage may change; result provenance remains k.",
+    "fill": "none",
+    "stroke": "none",
+    "size": 20.3,
+    "bold": false,
+    "dash": false,
+    "shape": "rectangle",
+    "align": "center",
+    "color": "#555F65"
+  }
+]

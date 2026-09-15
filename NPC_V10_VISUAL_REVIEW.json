@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "pdf_sha256": "9cf0ed71f72db44af989e58f10c2e59aedd127f0b5f7e9363916bfb659226a5b",
+  "render_long_edge_pixels": 1300,
+  "pages_visually_inspected": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "author_order_and_school_visible": true,
+  "two_co_corresponding_author_notes_visible": true,
+  "related_work_immediately_after_introduction": true,
+  "fig1_component_labels_and_arrow_targets_clear": true,
+  "figures_and_tables_unclipped": true,
+  "conclusion_two_complete_paragraphs": true,
+  "references_legible": true,
+  "overlap_or_missing_glyph_observed": false,
+  "scope": "Visual layout review, not an independent scientific review."
+}

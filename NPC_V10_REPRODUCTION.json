@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "inventory_files": 68,
+  "zip_sha256": "c80f39b48b5ba0c528898d118b044bfd6c108f0a3334fc3191a90114bb230aa5",
+  "delivered_pdf_sha256": "9cf0ed71f72db44af989e58f10c2e59aedd127f0b5f7e9363916bfb659226a5b",
+  "clean_rebuilt_pdf_sha256": "6be505daa109e92a2be2a6b63f5750316870cc292af6d63e99ad80ba4c3e50ac",
+  "pages": 12,
+  "extracted_text_identical": true,
+  "rendered_pages_pixel_identical": 12,
+  "render_long_edge_pixels": 1300,
+  "inference_executed": false
+}

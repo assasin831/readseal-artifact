@@ -2,10 +2,12 @@
 
 Public entry: https://github.com/assasin831/readseal-artifact
 
-Current manuscript map: **NPC V9, 15 September 2026**, frozen at
-`npc-submission-v9`. [NPC_V9_GUIDE.md](./NPC_V9_GUIDE.md) links the three unchanged
-experiment archives, the new CPU graph-count audit, and the final figure sources.
-The older archives retain their historical table numbers; this page maps V9.
+Current manuscript map: **NPC V10, 15 September 2026**, frozen at
+`npc-submission-v10`. [NPC_V10_GUIDE.md](./NPC_V10_GUIDE.md) links the unchanged
+experiment archives, V9's graph-count audit, and the current vector figures.
+Older archives retain their historical numbers; this page maps V10. Related Work
+is now Section 2, design Section 3, safety Section 4 and evaluation Section 5.
+The former trust table is prose in Section 3.3; the remaining tables are 1-3.
 
 This is a project-produced review artifact, not an independently authored
 replication or proof of arbitrary CUDA operators. Download the versioned reviewer
@@ -42,14 +44,14 @@ original absolute paths. It does not regenerate the GPU observations.
 
 | Paper claim | Source and test | Evidence and scope |
 | --- | --- | --- |
-| Table 1: trust boundary | `evidence/operator_contract.json`, actual runtime sources and Sect. 3 premises | Separates derived and checked facts from operator, topology and deployment assumptions; not a proof of arbitrary kernels |
-| Table 2: enrollment and submit | `runtime/` contains unchanged `core.py`, `prepared_lease.py`, `batch_lease.py`; host test enumerates its checks | `evidence/transition_validation.json`, 15 named checks; all future readers begin pending, duplicate/unknown starts reject |
-| Table 2: return, abort, publish | Same test and actual lease methods | Pending readers prevent reuse; abort cancels only pending nodes; unknown started completion retains ownership; publication preserves identity |
-| Sect. 4.2 Binding: direct executable binding | `tools/check_binding_cuda.py` invokes the unchanged Grouped `BatchProgram` | `evidence/binding.json`: 26 cases across two models, 4 accepts and 22 rejections, not the manual constructor's 14 old hash rejections |
+| Sect. 3.3: trust boundary | `evidence/operator_contract.json`, actual runtime sources and Sect. 4 premises | Separates derived and checked facts from operator, topology and deployment assumptions; not a proof of arbitrary kernels |
+| Table 1: enrollment and submit | `runtime/` contains unchanged `core.py`, `prepared_lease.py`, `batch_lease.py`; host test enumerates its checks | `evidence/transition_validation.json`, 15 named checks; all future readers begin pending, duplicate/unknown starts reject |
+| Table 1: return, abort, publish | Same test and actual lease methods | Pending readers prevent reuse; abort cancels only pending nodes; unknown started completion retains ownership; publication preserves identity |
+| Sect. 5.2 Binding: direct executable binding | `tools/check_binding_cuda.py` invokes the unchanged Grouped `BatchProgram` | `evidence/binding.json`: 26 cases across two models, 4 accepts and 22 rejections, not the manual constructor's 14 old hash rejections |
 | Direct output and rejection validation | `tools/audit_binding_result_fix1.py`, GPU-free validator | `evidence/binding_validation.json`: 164 checks, 22 saved tensors also match frozen unsplit references; `binding_raw/` has all four positive outputs |
-| Table 3: graph maintenance | `evidence/maintenance_validation.json`; `runtime/` contains `variants.py`, `evolved_manual.py` | 96 ordered-overwrite cases, 540 tensors; 14 unique graphs. Original manual hash rejections remain explicitly labeled manual |
-| Sect. 4.2 public convolution/normalization folding | `evidence/folding_validation.json`, `runtime/public_deployment_transform.py` | All 240 tensors from 48 protected cases exactly match their respective unsplit references. Folded versus original references use rtol=1e-3, atol=1e-4, integer exactness |
-| Sect. 4.2 architecture substitution | V6 `public_model_outputs.zip` and `code/reproduce_followup.py` | Twelve saved CPU cases, ResNet-18/50 prefixes 8/85 and 12/224; see V9 graph-count audit for Table 3's 12/123 |
+| Table 2: graph maintenance | `evidence/maintenance_validation.json`; `runtime/` contains `variants.py`, `evolved_manual.py` | 96 ordered-overwrite cases, 540 tensors; 14 unique graphs. Original manual hash rejections remain explicitly labeled manual |
+| Sect. 5.2 public convolution/normalization folding | `evidence/folding_validation.json`, `runtime/public_deployment_transform.py` | All 240 tensors from 48 protected cases exactly match their respective unsplit references. Folded versus original references use rtol=1e-3, atol=1e-4, integer exactness |
+| Sect. 5.2 architecture substitution | V6 `public_model_outputs.zip` and `code/reproduce_followup.py` | Twelve saved CPU cases, ResNet-18/50 prefixes 8/85 and 12/224; see V9 graph-count audit for Table 2's 12/123 |
 
 The direct CUDA check uses the real Grouped guard at admission and both stage
 entries. Inputs with wrong shape/stride or odd generation reject at admission;
@@ -74,7 +76,7 @@ recorded graph by `call_function`, retains all other assertions, and additionall
 checks the already frozen unsplit numerical references. No GPU inference was
 retried. The raw report's `prefix_operations` and `total_operations` fields are
 historical group-entry counts; use its `artifact.graph` and `artifact.groups` to
-recover the operation counts printed in Table 3.
+recover the operation counts printed in Table 2.
 
 ## What changes when the graph changes?
 
@@ -117,7 +119,7 @@ Full-retention result is specific to the periodic 30-Hz offered trajectory.
 Arrival jitter was not measured. A second source slot is feasible (63.3 MiB);
 these data do not demonstrate a field-imposed pool bound or memory exhaustion.
 
-## Table 4 versus profiling
+## Table 3 versus profiling
 
 `evidence/executor_cost.json`: 19,200 invocations; process/block bootstrap;
 presynchronized end-to-end executor scope excludes construction and output IPC.
@@ -144,9 +146,9 @@ Fig. 2 window.
 
 For Fig. 3, use the V7 sensitivity archive for the 72-run load comparison and all
 eight fixed-trace cutoffs, with V6's original request files for full cutoff replay.
-V9 panel (b) plots the complete 80--200 ms range. The V9 rendering scripts read
+Panel (b) plots the complete 80--200 ms range. The V10 rendering scripts read
 frozen aggregates only; they do not rerun inference or revise estimates.
-See [NPC_V9_GUIDE.md](./NPC_V9_GUIDE.md) for exact inputs, commands and scope.
+See [NPC_V10_GUIDE.md](./NPC_V10_GUIDE.md) for exact inputs, commands and scope.
 
 `runtime/` is a byte-identical selection of the experimental project sources,
 with SHA-256 hashes and original directory mapping. Paths in deployment scripts
