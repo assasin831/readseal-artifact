@@ -1,5 +1,9 @@
 # V7 Evidence Guide
 
+Historical V7 description. The immutable V7 archive is unchanged. For the current
+V9 manuscript map and the updated Figure 3 showing all eight cutoffs through
+200 ms, use [NPC_V9_GUIDE.md](./NPC_V9_GUIDE.md).
+
 Repository: https://github.com/assasin831/readseal-artifact
 
 ## Frozen Layers

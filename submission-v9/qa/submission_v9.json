@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "checks": 83,
+  "pdf_sha256": "44702447e8f00d98279b5eea40755f8b6af91173d87129dabf7b36113fc3aa4e",
+  "pages": 12,
+  "abstract_whitespace_tokens": 186,
+  "body_baseline_pdf_points": 11.955,
+  "modal_baseline_samples": 176,
+  "minimum_fig1_font_pdf_points": 7.02034900000001,
+  "cited_references": 22,
+  "embedded_fonts": 21,
+  "inference_executed": false,
+  "source_hashes": {
+    "main.tex": "58ed1b24b3e6c11cba798dc76a9dc7e06c46aa8e42b3f4fd577a11ce6a382389",
+    "sections\\design.tex": "39ba33c43879f65b14a61161f596df176a8779ec1f04b46c259caadea07cb0b3",
+    "sections\\evaluation.tex": "c2c9a8ba29bd31ed5ccb48d30c5f8e53a241ea39d520069381e641a9ebe6a9e2",
+    "sections\\introduction.tex": "6da221955952a74cf37e2aed0d77276a5f73035067548146f4eea776796742de",
+    "sections\\related.tex": "80e927e2780ed165252ceaaca59b0c9e35de716a39cea68ed74f8b459941f804",
+    "sections\\safety.tex": "dc39b5568ebd298091a7614832b188670b9951f73e3000139f24aeb14e769831"
+  },
+  "scope": "Mechanical PDF/source checks; separate visual review is required."
+}

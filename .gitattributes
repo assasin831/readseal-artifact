@@ -1,0 +1,2 @@
+# Preserve exact bytes for the hash-inventoried evidence layer on every platform.
+submission-v9/** -text

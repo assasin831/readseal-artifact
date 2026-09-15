@@ -5,6 +5,14 @@ project-produced evidence and runtime sources, not an independent-team replicati
 
 ## Frozen evidence and manuscript versions
 
+**Current submission: NPC V9**, frozen at `npc-submission-v9`.
+Start with the [current manuscript/evidence guide](./NPC_V9_GUIDE.md) and
+[updated table/figure map](./ARTIFACT.md). V9 adds a CPU-only reconciliation of
+the recorded ResNet operation counts, improved vector figures, and precise
+timing/environment documentation. It preserves every earlier experiment archive
+and does not run new inference. Manuscript and source hashes are recorded in
+[MANUSCRIPT_VERSIONS.md](./MANUSCRIPT_VERSIONS.md).
+
 NPC V7 adds the [sensitivity evidence package](./readseal_npc_v7_sensitivity_evidence.zip)
 and [guide](./NPC_V7_SENSITIVITY.md), frozen at `npc-sensitivity-v7`.
 It keeps the completed 72-run GPU load scan separate from earlier windows and

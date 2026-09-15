@@ -1,5 +1,41 @@
 # Manuscript-to-evidence mapping
 
+## NPC V9, 15 September 2026
+
+Submission evidence tag: `npc-submission-v9`.
+Start with [NPC_V9_GUIDE.md](./NPC_V9_GUIDE.md) and the updated
+[claim-to-evidence map](./ARTIFACT.md). Existing experiment archives and tags are
+unchanged. The paper links to this tag, not to a moving default branch.
+
+| Delivered file | SHA-256 |
+| --- | --- |
+| `readseal_npc_2026_v9.pdf` | `44702447e8f00d98279b5eea40755f8b6af91173d87129dabf7b36113fc3aa4e` |
+| `readseal_npc_2026_latex_v9.zip` | `dcff4b614ce3a0b8250a75bd921d25919612445e7f684db2cfd5db9e8fbdfadf` |
+
+These files were delivered separately; this table is an identity record, not a
+claim that the full manuscript or source ZIP is hosted in this repository.
+
+The PDF has 12 pages including references. It uses the unmodified official
+September 2026 LNCS class and the sample's Times font configuration; no compressed
+line spacing remains. Measured body baseline is 11.955 PDF points (12 TeX points),
+with 21 embedded font entries, no Type 3 fonts, 22 resolved/cited references and
+minimum diagram text approximately 7.02 PDF points. The abstract contains 186
+whitespace-delimited tokens. The confirmed no-competing-interests declaration and
+factual AI-assistance disclosure are present.
+
+The local saved-evidence reconstruction passes 2,230 checks, including all 192
+original report/sink files. The graph-count audit reconciles the 8/85 and 12/123
+ResNet records without executing a model. Source/PDF QA passes 83 mechanical
+checks; every page was visually inspected. Clean extraction verifies all 66
+inventoried source inputs and recompiles with pdfLaTeX/BibTeX. All 12 pages have
+identical extracted text and pixels at a 1,300-pixel long edge; the rebuilt PDF
+has a different byte hash. See
+[NPC_V9_REPRODUCTION.json](./NPC_V9_REPRODUCTION.json).
+
+This is neither a new GPU experiment nor an independent-team replication. Missing
+historical CPU/OS/Python-patch/driver provenance is explicitly documented in the
+guide rather than filled with current-machine information.
+
 ## NPC V4, 14 September 2026
 
 Evidence tag: [`npc-evidence-v3`](https://github.com/assasin831/readseal-artifact/tree/npc-evidence-v3)

@@ -1,5 +1,9 @@
 # NPC V6 follow-up evidence
 
+Historical V6 status. The subsequent 72-run load scan is complete in V7; see
+[NPC_V9_GUIDE.md](./NPC_V9_GUIDE.md) for the current map. The original V6 archive
+and its failed/successful attempts remain unchanged.
+
 Core GPU experiments/runtime remain unchanged at `npc-evidence-v3` in
 https://github.com/assasin831/readseal-artifact . This follow-up adds two evidence
 items, neither of which is a new GPU performance trial.

@@ -1,0 +1,6997 @@
+{
+  "schema": "reviewed-evolved-manual-v10",
+  "model": "resnet",
+  "edit": "base",
+  "full": false,
+  "review": {
+    "model": "resnet",
+    "edit": "base",
+    "export_sha256": "8c633d290c2cd33c52f80b45ff1c01db962771db5faec53ab5417522f2222bff",
+    "graph_sha256": "3762ef5f990a8e67765ceeee253d9c3aa088461004185b83493ed8a662112a0f",
+    "boundary": "add",
+    "readers": [
+      "add",
+      "convolution"
+    ],
+    "review_kind": "explicit frozen schema/name review"
+  },
+  "boundary": "add",
+  "carry": [
+    "arg6_1",
+    "arg7_1",
+    "arg8_1",
+    "arg9_1",
+    "arg10_1",
+    "arg11_1",
+    "arg12_1",
+    "arg13_1",
+    "arg14_1",
+    "arg15_1",
+    "arg16_1",
+    "arg17_1",
+    "arg18_1",
+    "arg19_1",
+    "arg20_1",
+    "arg21_1",
+    "arg22_1",
+    "arg23_1",
+    "arg24_1",
+    "arg25_1",
+    "arg26_1",
+    "arg27_1",
+    "arg28_1",
+    "arg29_1",
+    "arg30_1",
+    "arg31_1",
+    "arg32_1",
+    "arg33_1",
+    "arg34_1",
+    "arg35_1",
+    "arg36_1",
+    "arg37_1",
+    "arg38_1",
+    "arg39_1",
+    "arg40_1",
+    "arg41_1",
+    "arg42_1",
+    "arg43_1",
+    "arg44_1",
+    "arg45_1",
+    "arg46_1",
+    "arg47_1",
+    "arg48_1",
+    "arg49_1",
+    "arg50_1",
+    "arg51_1",
+    "arg52_1",
+    "arg53_1",
+    "arg54_1",
+    "arg55_1",
+    "arg56_1",
+    "arg57_1",
+    "arg58_1",
+    "arg65_1",
+    "arg66_1",
+    "arg68_1",
+    "arg69_1",
+    "arg71_1",
+    "arg72_1",
+    "arg74_1",
+    "arg75_1",
+    "arg77_1",
+    "arg78_1",
+    "arg80_1",
+    "arg81_1",
+    "arg83_1",
+    "arg84_1",
+    "arg86_1",
+    "arg87_1",
+    "arg89_1",
+    "arg90_1",
+    "arg92_1",
+    "arg93_1",
+    "arg95_1",
+    "arg96_1",
+    "arg98_1",
+    "arg99_1",
+    "arg101_1",
+    "arg102_1",
+    "arg104_1",
+    "arg105_1",
+    "arg107_1",
+    "arg108_1",
+    "arg110_1",
+    "arg111_1",
+    "arg113_1",
+    "arg114_1",
+    "add"
+  ],
+  "graph": [
+    [
+      "placeholder",
+      "arg0_1",
+      "arg0_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg1_1",
+      "arg1_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg2_1",
+      "arg2_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg3_1",
+      "arg3_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg4_1",
+      "arg4_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg5_1",
+      "arg5_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg6_1",
+      "arg6_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg7_1",
+      "arg7_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg8_1",
+      "arg8_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg9_1",
+      "arg9_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg10_1",
+      "arg10_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg11_1",
+      "arg11_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg12_1",
+      "arg12_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg13_1",
+      "arg13_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg14_1",
+      "arg14_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg15_1",
+      "arg15_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg16_1",
+      "arg16_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg17_1",
+      "arg17_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg18_1",
+      "arg18_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg19_1",
+      "arg19_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg20_1",
+      "arg20_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg21_1",
+      "arg21_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg22_1",
+      "arg22_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg23_1",
+      "arg23_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg24_1",
+      "arg24_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg25_1",
+      "arg25_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg26_1",
+      "arg26_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg27_1",
+      "arg27_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg28_1",
+      "arg28_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg29_1",
+      "arg29_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg30_1",
+      "arg30_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg31_1",
+      "arg31_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg32_1",
+      "arg32_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg33_1",
+      "arg33_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg34_1",
+      "arg34_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg35_1",
+      "arg35_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg36_1",
+      "arg36_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg37_1",
+      "arg37_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg38_1",
+      "arg38_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg39_1",
+      "arg39_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg40_1",
+      "arg40_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg41_1",
+      "arg41_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg42_1",
+      "arg42_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg43_1",
+      "arg43_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg44_1",
+      "arg44_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg45_1",
+      "arg45_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg46_1",
+      "arg46_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg47_1",
+      "arg47_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg48_1",
+      "arg48_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg49_1",
+      "arg49_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg50_1",
+      "arg50_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg51_1",
+      "arg51_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg52_1",
+      "arg52_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg53_1",
+      "arg53_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg54_1",
+      "arg54_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg55_1",
+      "arg55_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg56_1",
+      "arg56_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg57_1",
+      "arg57_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg58_1",
+      "arg58_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg59_1",
+      "arg59_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg60_1",
+      "arg60_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg61_1",
+      "arg61_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg62_1",
+      "arg62_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg63_1",
+      "arg63_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg64_1",
+      "arg64_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg65_1",
+      "arg65_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg66_1",
+      "arg66_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg67_1",
+      "arg67_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg68_1",
+      "arg68_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg69_1",
+      "arg69_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg70_1",
+      "arg70_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg71_1",
+      "arg71_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg72_1",
+      "arg72_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg73_1",
+      "arg73_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg74_1",
+      "arg74_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg75_1",
+      "arg75_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg76_1",
+      "arg76_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg77_1",
+      "arg77_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg78_1",
+      "arg78_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg79_1",
+      "arg79_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg80_1",
+      "arg80_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg81_1",
+      "arg81_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg82_1",
+      "arg82_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg83_1",
+      "arg83_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg84_1",
+      "arg84_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg85_1",
+      "arg85_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg86_1",
+      "arg86_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg87_1",
+      "arg87_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg88_1",
+      "arg88_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg89_1",
+      "arg89_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg90_1",
+      "arg90_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg91_1",
+      "arg91_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg92_1",
+      "arg92_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg93_1",
+      "arg93_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg94_1",
+      "arg94_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg95_1",
+      "arg95_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg96_1",
+      "arg96_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg97_1",
+      "arg97_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg98_1",
+      "arg98_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg99_1",
+      "arg99_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg100_1",
+      "arg100_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg101_1",
+      "arg101_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg102_1",
+      "arg102_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg103_1",
+      "arg103_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg104_1",
+      "arg104_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg105_1",
+      "arg105_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg106_1",
+      "arg106_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg107_1",
+      "arg107_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg108_1",
+      "arg108_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg109_1",
+      "arg109_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg110_1",
+      "arg110_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg111_1",
+      "arg111_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg112_1",
+      "arg112_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg113_1",
+      "arg113_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg114_1",
+      "arg114_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg115_1",
+      "arg115_1",
+      [],
+      {}
+    ],
+    [
+      "placeholder",
+      "arg116_1",
+      "arg116_1",
+      [],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution",
+      "aten.convolution.default",
+      [
+        {
+          "node": "arg116_1"
+        },
+        {
+          "node": "arg0_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution"
+        },
+        {
+          "node": "arg1_1"
+        },
+        {
+          "node": "arg2_1"
+        },
+        {
+          "node": "arg59_1"
+        },
+        {
+          "node": "arg60_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_1",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu"
+        },
+        {
+          "node": "arg3_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_1",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_1"
+        },
+        {
+          "node": "arg4_1"
+        },
+        {
+          "node": "arg5_1"
+        },
+        {
+          "node": "arg62_1"
+        },
+        {
+          "node": "arg63_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_1"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_1_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_1"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_1_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_1"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_1"
+        },
+        {
+          "node": "arg116_1"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_1",
+      "aten.relu.default",
+      [
+        {
+          "node": "add"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_2",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_1"
+        },
+        {
+          "node": "arg6_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_2",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_2"
+        },
+        {
+          "node": "arg7_1"
+        },
+        {
+          "node": "arg8_1"
+        },
+        {
+          "node": "arg65_1"
+        },
+        {
+          "node": "arg66_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_2"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_2_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_2"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_2_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_2"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_2",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_2"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_3",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_2"
+        },
+        {
+          "node": "arg9_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_3",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_3"
+        },
+        {
+          "node": "arg10_1"
+        },
+        {
+          "node": "arg11_1"
+        },
+        {
+          "node": "arg68_1"
+        },
+        {
+          "node": "arg69_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_3",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_3"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_3_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_3"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_3_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_3"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_1",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_3"
+        },
+        {
+          "node": "relu_1"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_3",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_1"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_4",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_3"
+        },
+        {
+          "node": "arg12_1"
+        },
+        null,
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_4",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_4"
+        },
+        {
+          "node": "arg13_1"
+        },
+        {
+          "node": "arg14_1"
+        },
+        {
+          "node": "arg71_1"
+        },
+        {
+          "node": "arg72_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_4",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_4"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_4_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_4"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_4_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_4"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_4",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_4"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_5",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_4"
+        },
+        {
+          "node": "arg15_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_5",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_5"
+        },
+        {
+          "node": "arg16_1"
+        },
+        {
+          "node": "arg17_1"
+        },
+        {
+          "node": "arg74_1"
+        },
+        {
+          "node": "arg75_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_5",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_5"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_5_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_5"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_5_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_5"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_6",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_3"
+        },
+        {
+          "node": "arg18_1"
+        },
+        null,
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_6",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_6"
+        },
+        {
+          "node": "arg19_1"
+        },
+        {
+          "node": "arg20_1"
+        },
+        {
+          "node": "arg77_1"
+        },
+        {
+          "node": "arg78_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_6",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_6"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_6_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_6"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_6_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_6"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_2",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_5"
+        },
+        {
+          "node": "getitem_6"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_5",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_2"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_7",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_5"
+        },
+        {
+          "node": "arg21_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_7",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_7"
+        },
+        {
+          "node": "arg22_1"
+        },
+        {
+          "node": "arg23_1"
+        },
+        {
+          "node": "arg80_1"
+        },
+        {
+          "node": "arg81_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_7",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_7"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_7_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_7"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_7_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_7"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_6",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_7"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_8",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_6"
+        },
+        {
+          "node": "arg24_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_8",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_8"
+        },
+        {
+          "node": "arg25_1"
+        },
+        {
+          "node": "arg26_1"
+        },
+        {
+          "node": "arg83_1"
+        },
+        {
+          "node": "arg84_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_8",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_8"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_8_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_8"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_8_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_8"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_3",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_8"
+        },
+        {
+          "node": "relu_5"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_7",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_3"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_9",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_7"
+        },
+        {
+          "node": "arg27_1"
+        },
+        null,
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_9",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_9"
+        },
+        {
+          "node": "arg28_1"
+        },
+        {
+          "node": "arg29_1"
+        },
+        {
+          "node": "arg86_1"
+        },
+        {
+          "node": "arg87_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_9",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_9"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_9_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_9"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_9_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_9"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_8",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_9"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_10",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_8"
+        },
+        {
+          "node": "arg30_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_10",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_10"
+        },
+        {
+          "node": "arg31_1"
+        },
+        {
+          "node": "arg32_1"
+        },
+        {
+          "node": "arg89_1"
+        },
+        {
+          "node": "arg90_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_10",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_10"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_10_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_10"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_10_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_10"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_11",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_7"
+        },
+        {
+          "node": "arg33_1"
+        },
+        null,
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_11",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_11"
+        },
+        {
+          "node": "arg34_1"
+        },
+        {
+          "node": "arg35_1"
+        },
+        {
+          "node": "arg92_1"
+        },
+        {
+          "node": "arg93_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_11",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_11"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_11_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_11"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_11_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_11"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_4",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_10"
+        },
+        {
+          "node": "getitem_11"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_9",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_4"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_12",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_9"
+        },
+        {
+          "node": "arg36_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_12",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_12"
+        },
+        {
+          "node": "arg37_1"
+        },
+        {
+          "node": "arg38_1"
+        },
+        {
+          "node": "arg95_1"
+        },
+        {
+          "node": "arg96_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_12",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_12"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_12_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_12"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_12_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_12"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_10",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_12"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_13",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_10"
+        },
+        {
+          "node": "arg39_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_13",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_13"
+        },
+        {
+          "node": "arg40_1"
+        },
+        {
+          "node": "arg41_1"
+        },
+        {
+          "node": "arg98_1"
+        },
+        {
+          "node": "arg99_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_13",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_13"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_13_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_13"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_13_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_13"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_5",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_13"
+        },
+        {
+          "node": "relu_9"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_11",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_5"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_14",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_11"
+        },
+        {
+          "node": "arg42_1"
+        },
+        null,
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_14",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_14"
+        },
+        {
+          "node": "arg43_1"
+        },
+        {
+          "node": "arg44_1"
+        },
+        {
+          "node": "arg101_1"
+        },
+        {
+          "node": "arg102_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_14",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_14"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_14_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_14"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_14_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_14"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_12",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_14"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_15",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_12"
+        },
+        {
+          "node": "arg45_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_15",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_15"
+        },
+        {
+          "node": "arg46_1"
+        },
+        {
+          "node": "arg47_1"
+        },
+        {
+          "node": "arg104_1"
+        },
+        {
+          "node": "arg105_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_15",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_15"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_15_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_15"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_15_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_15"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_16",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_11"
+        },
+        {
+          "node": "arg48_1"
+        },
+        null,
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_16",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_16"
+        },
+        {
+          "node": "arg49_1"
+        },
+        {
+          "node": "arg50_1"
+        },
+        {
+          "node": "arg107_1"
+        },
+        {
+          "node": "arg108_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_16",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_16"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_16_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_16"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_16_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_16"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_6",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_15"
+        },
+        {
+          "node": "getitem_16"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_13",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_6"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_17",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_13"
+        },
+        {
+          "node": "arg51_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_17",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_17"
+        },
+        {
+          "node": "arg52_1"
+        },
+        {
+          "node": "arg53_1"
+        },
+        {
+          "node": "arg110_1"
+        },
+        {
+          "node": "arg111_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_17",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_17"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_17_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_17"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_17_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_17"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "relu_14",
+      "aten.relu.default",
+      [
+        {
+          "node": "getitem_17"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "convolution_18",
+      "aten.convolution.default",
+      [
+        {
+          "node": "relu_14"
+        },
+        {
+          "node": "arg54_1"
+        },
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        false,
+        [
+          0,
+          0
+        ],
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_default_18",
+      "aten._native_batch_norm_legit_no_training.default",
+      [
+        {
+          "node": "convolution_18"
+        },
+        {
+          "node": "arg55_1"
+        },
+        {
+          "node": "arg56_1"
+        },
+        {
+          "node": "arg113_1"
+        },
+        {
+          "node": "arg114_1"
+        },
+        0.1,
+        1e-05
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "getitem_18",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_18"
+        },
+        0
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_18_unused_1",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_18"
+        },
+        1
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "_native_batch_norm_legit_no_training_18_unused_2",
+      "<built-in function getitem>",
+      [
+        {
+          "node": "_native_batch_norm_legit_no_training_default_18"
+        },
+        2
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "add_7",
+      "aten.add.Tensor",
+      [
+        {
+          "node": "getitem_18"
+        },
+        {
+          "node": "relu_13"
+        }
+      ],
+      {
+        "alpha": 1
+      }
+    ],
+    [
+      "call_function",
+      "relu_15",
+      "aten.relu.default",
+      [
+        {
+          "node": "add_7"
+        }
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "mean",
+      "aten.mean.dim",
+      [
+        {
+          "node": "relu_15"
+        },
+        [
+          -1,
+          -2
+        ]
+      ],
+      {
+        "keepdim": true,
+        "dtype": null
+      }
+    ],
+    [
+      "call_function",
+      "view",
+      "aten.view.default",
+      [
+        {
+          "node": "mean"
+        },
+        [
+          1,
+          512
+        ]
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "permute",
+      "aten.permute.default",
+      [
+        {
+          "node": "arg57_1"
+        },
+        [
+          1,
+          0
+        ]
+      ],
+      {}
+    ],
+    [
+      "call_function",
+      "addmm",
+      "aten.addmm.default",
+      [
+        {
+          "node": "arg58_1"
+        },
+        {
+          "node": "view"
+        },
+        {
+          "node": "permute"
+        }
+      ],
+      {
+        "beta": 1,
+        "alpha": 1
+      }
+    ],
+    [
+      "output",
+      "output",
+      "output",
+      [
+        [
+          {
+            "node": "addmm"
+          }
+        ]
+      ],
+      {}
+    ]
+  ],
+  "stages": [
+    [
+      [
+        "placeholder",
+        "arg0_1",
+        "arg0_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg1_1",
+        "arg1_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg2_1",
+        "arg2_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg3_1",
+        "arg3_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg4_1",
+        "arg4_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg5_1",
+        "arg5_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg6_1",
+        "arg6_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg7_1",
+        "arg7_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg8_1",
+        "arg8_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg9_1",
+        "arg9_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg10_1",
+        "arg10_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg11_1",
+        "arg11_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg12_1",
+        "arg12_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg13_1",
+        "arg13_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg14_1",
+        "arg14_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg15_1",
+        "arg15_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg16_1",
+        "arg16_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg17_1",
+        "arg17_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg18_1",
+        "arg18_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg19_1",
+        "arg19_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg20_1",
+        "arg20_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg21_1",
+        "arg21_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg22_1",
+        "arg22_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg23_1",
+        "arg23_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg24_1",
+        "arg24_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg25_1",
+        "arg25_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg26_1",
+        "arg26_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg27_1",
+        "arg27_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg28_1",
+        "arg28_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg29_1",
+        "arg29_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg30_1",
+        "arg30_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg31_1",
+        "arg31_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg32_1",
+        "arg32_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg33_1",
+        "arg33_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg34_1",
+        "arg34_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg35_1",
+        "arg35_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg36_1",
+        "arg36_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg37_1",
+        "arg37_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg38_1",
+        "arg38_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg39_1",
+        "arg39_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg40_1",
+        "arg40_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg41_1",
+        "arg41_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg42_1",
+        "arg42_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg43_1",
+        "arg43_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg44_1",
+        "arg44_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg45_1",
+        "arg45_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg46_1",
+        "arg46_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg47_1",
+        "arg47_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg48_1",
+        "arg48_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg49_1",
+        "arg49_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg50_1",
+        "arg50_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg51_1",
+        "arg51_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg52_1",
+        "arg52_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg53_1",
+        "arg53_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg54_1",
+        "arg54_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg55_1",
+        "arg55_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg56_1",
+        "arg56_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg57_1",
+        "arg57_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg58_1",
+        "arg58_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg59_1",
+        "arg59_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg60_1",
+        "arg60_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg61_1",
+        "arg61_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg62_1",
+        "arg62_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg63_1",
+        "arg63_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg64_1",
+        "arg64_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg65_1",
+        "arg65_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg66_1",
+        "arg66_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg67_1",
+        "arg67_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg68_1",
+        "arg68_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg69_1",
+        "arg69_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg70_1",
+        "arg70_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg71_1",
+        "arg71_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg72_1",
+        "arg72_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg73_1",
+        "arg73_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg74_1",
+        "arg74_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg75_1",
+        "arg75_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg76_1",
+        "arg76_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg77_1",
+        "arg77_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg78_1",
+        "arg78_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg79_1",
+        "arg79_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg80_1",
+        "arg80_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg81_1",
+        "arg81_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg82_1",
+        "arg82_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg83_1",
+        "arg83_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg84_1",
+        "arg84_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg85_1",
+        "arg85_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg86_1",
+        "arg86_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg87_1",
+        "arg87_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg88_1",
+        "arg88_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg89_1",
+        "arg89_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg90_1",
+        "arg90_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg91_1",
+        "arg91_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg92_1",
+        "arg92_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg93_1",
+        "arg93_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg94_1",
+        "arg94_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg95_1",
+        "arg95_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg96_1",
+        "arg96_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg97_1",
+        "arg97_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg98_1",
+        "arg98_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg99_1",
+        "arg99_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg100_1",
+        "arg100_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg101_1",
+        "arg101_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg102_1",
+        "arg102_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg103_1",
+        "arg103_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg104_1",
+        "arg104_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg105_1",
+        "arg105_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg106_1",
+        "arg106_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg107_1",
+        "arg107_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg108_1",
+        "arg108_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg109_1",
+        "arg109_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg110_1",
+        "arg110_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg111_1",
+        "arg111_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg112_1",
+        "arg112_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg113_1",
+        "arg113_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg114_1",
+        "arg114_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg115_1",
+        "arg115_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg116_1",
+        "arg116_1",
+        [],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution",
+        "aten.convolution.default",
+        [
+          {
+            "node": "arg116_1"
+          },
+          {
+            "node": "arg0_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution"
+          },
+          {
+            "node": "arg1_1"
+          },
+          {
+            "node": "arg2_1"
+          },
+          {
+            "node": "arg59_1"
+          },
+          {
+            "node": "arg60_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_1",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu"
+          },
+          {
+            "node": "arg3_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_1",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_1"
+          },
+          {
+            "node": "arg4_1"
+          },
+          {
+            "node": "arg5_1"
+          },
+          {
+            "node": "arg62_1"
+          },
+          {
+            "node": "arg63_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_1"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_1_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_1"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_1_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_1"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_1"
+          },
+          {
+            "node": "arg116_1"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "output",
+        "output",
+        "output",
+        [
+          [
+            {
+              "node": "arg6_1"
+            },
+            {
+              "node": "arg7_1"
+            },
+            {
+              "node": "arg8_1"
+            },
+            {
+              "node": "arg9_1"
+            },
+            {
+              "node": "arg10_1"
+            },
+            {
+              "node": "arg11_1"
+            },
+            {
+              "node": "arg12_1"
+            },
+            {
+              "node": "arg13_1"
+            },
+            {
+              "node": "arg14_1"
+            },
+            {
+              "node": "arg15_1"
+            },
+            {
+              "node": "arg16_1"
+            },
+            {
+              "node": "arg17_1"
+            },
+            {
+              "node": "arg18_1"
+            },
+            {
+              "node": "arg19_1"
+            },
+            {
+              "node": "arg20_1"
+            },
+            {
+              "node": "arg21_1"
+            },
+            {
+              "node": "arg22_1"
+            },
+            {
+              "node": "arg23_1"
+            },
+            {
+              "node": "arg24_1"
+            },
+            {
+              "node": "arg25_1"
+            },
+            {
+              "node": "arg26_1"
+            },
+            {
+              "node": "arg27_1"
+            },
+            {
+              "node": "arg28_1"
+            },
+            {
+              "node": "arg29_1"
+            },
+            {
+              "node": "arg30_1"
+            },
+            {
+              "node": "arg31_1"
+            },
+            {
+              "node": "arg32_1"
+            },
+            {
+              "node": "arg33_1"
+            },
+            {
+              "node": "arg34_1"
+            },
+            {
+              "node": "arg35_1"
+            },
+            {
+              "node": "arg36_1"
+            },
+            {
+              "node": "arg37_1"
+            },
+            {
+              "node": "arg38_1"
+            },
+            {
+              "node": "arg39_1"
+            },
+            {
+              "node": "arg40_1"
+            },
+            {
+              "node": "arg41_1"
+            },
+            {
+              "node": "arg42_1"
+            },
+            {
+              "node": "arg43_1"
+            },
+            {
+              "node": "arg44_1"
+            },
+            {
+              "node": "arg45_1"
+            },
+            {
+              "node": "arg46_1"
+            },
+            {
+              "node": "arg47_1"
+            },
+            {
+              "node": "arg48_1"
+            },
+            {
+              "node": "arg49_1"
+            },
+            {
+              "node": "arg50_1"
+            },
+            {
+              "node": "arg51_1"
+            },
+            {
+              "node": "arg52_1"
+            },
+            {
+              "node": "arg53_1"
+            },
+            {
+              "node": "arg54_1"
+            },
+            {
+              "node": "arg55_1"
+            },
+            {
+              "node": "arg56_1"
+            },
+            {
+              "node": "arg57_1"
+            },
+            {
+              "node": "arg58_1"
+            },
+            {
+              "node": "arg65_1"
+            },
+            {
+              "node": "arg66_1"
+            },
+            {
+              "node": "arg68_1"
+            },
+            {
+              "node": "arg69_1"
+            },
+            {
+              "node": "arg71_1"
+            },
+            {
+              "node": "arg72_1"
+            },
+            {
+              "node": "arg74_1"
+            },
+            {
+              "node": "arg75_1"
+            },
+            {
+              "node": "arg77_1"
+            },
+            {
+              "node": "arg78_1"
+            },
+            {
+              "node": "arg80_1"
+            },
+            {
+              "node": "arg81_1"
+            },
+            {
+              "node": "arg83_1"
+            },
+            {
+              "node": "arg84_1"
+            },
+            {
+              "node": "arg86_1"
+            },
+            {
+              "node": "arg87_1"
+            },
+            {
+              "node": "arg89_1"
+            },
+            {
+              "node": "arg90_1"
+            },
+            {
+              "node": "arg92_1"
+            },
+            {
+              "node": "arg93_1"
+            },
+            {
+              "node": "arg95_1"
+            },
+            {
+              "node": "arg96_1"
+            },
+            {
+              "node": "arg98_1"
+            },
+            {
+              "node": "arg99_1"
+            },
+            {
+              "node": "arg101_1"
+            },
+            {
+              "node": "arg102_1"
+            },
+            {
+              "node": "arg104_1"
+            },
+            {
+              "node": "arg105_1"
+            },
+            {
+              "node": "arg107_1"
+            },
+            {
+              "node": "arg108_1"
+            },
+            {
+              "node": "arg110_1"
+            },
+            {
+              "node": "arg111_1"
+            },
+            {
+              "node": "arg113_1"
+            },
+            {
+              "node": "arg114_1"
+            },
+            {
+              "node": "add"
+            }
+          ]
+        ],
+        {}
+      ]
+    ],
+    [
+      [
+        "placeholder",
+        "arg6_1",
+        "arg6_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg7_1",
+        "arg7_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg8_1",
+        "arg8_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg9_1",
+        "arg9_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg10_1",
+        "arg10_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg11_1",
+        "arg11_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg12_1",
+        "arg12_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg13_1",
+        "arg13_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg14_1",
+        "arg14_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg15_1",
+        "arg15_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg16_1",
+        "arg16_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg17_1",
+        "arg17_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg18_1",
+        "arg18_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg19_1",
+        "arg19_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg20_1",
+        "arg20_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg21_1",
+        "arg21_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg22_1",
+        "arg22_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg23_1",
+        "arg23_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg24_1",
+        "arg24_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg25_1",
+        "arg25_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg26_1",
+        "arg26_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg27_1",
+        "arg27_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg28_1",
+        "arg28_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg29_1",
+        "arg29_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg30_1",
+        "arg30_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg31_1",
+        "arg31_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg32_1",
+        "arg32_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg33_1",
+        "arg33_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg34_1",
+        "arg34_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg35_1",
+        "arg35_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg36_1",
+        "arg36_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg37_1",
+        "arg37_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg38_1",
+        "arg38_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg39_1",
+        "arg39_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg40_1",
+        "arg40_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg41_1",
+        "arg41_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg42_1",
+        "arg42_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg43_1",
+        "arg43_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg44_1",
+        "arg44_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg45_1",
+        "arg45_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg46_1",
+        "arg46_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg47_1",
+        "arg47_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg48_1",
+        "arg48_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg49_1",
+        "arg49_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg50_1",
+        "arg50_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg51_1",
+        "arg51_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg52_1",
+        "arg52_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg53_1",
+        "arg53_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg54_1",
+        "arg54_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg55_1",
+        "arg55_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg56_1",
+        "arg56_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg57_1",
+        "arg57_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg58_1",
+        "arg58_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg65_1",
+        "arg65_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg66_1",
+        "arg66_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg68_1",
+        "arg68_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg69_1",
+        "arg69_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg71_1",
+        "arg71_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg72_1",
+        "arg72_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg74_1",
+        "arg74_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg75_1",
+        "arg75_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg77_1",
+        "arg77_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg78_1",
+        "arg78_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg80_1",
+        "arg80_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg81_1",
+        "arg81_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg83_1",
+        "arg83_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg84_1",
+        "arg84_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg86_1",
+        "arg86_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg87_1",
+        "arg87_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg89_1",
+        "arg89_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg90_1",
+        "arg90_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg92_1",
+        "arg92_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg93_1",
+        "arg93_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg95_1",
+        "arg95_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg96_1",
+        "arg96_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg98_1",
+        "arg98_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg99_1",
+        "arg99_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg101_1",
+        "arg101_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg102_1",
+        "arg102_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg104_1",
+        "arg104_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg105_1",
+        "arg105_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg107_1",
+        "arg107_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg108_1",
+        "arg108_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg110_1",
+        "arg110_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg111_1",
+        "arg111_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg113_1",
+        "arg113_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "arg114_1",
+        "arg114_1",
+        [],
+        {}
+      ],
+      [
+        "placeholder",
+        "add",
+        "add",
+        [],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_1",
+        "aten.relu.default",
+        [
+          {
+            "node": "add"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_2",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_1"
+          },
+          {
+            "node": "arg6_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_2",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_2"
+          },
+          {
+            "node": "arg7_1"
+          },
+          {
+            "node": "arg8_1"
+          },
+          {
+            "node": "arg65_1"
+          },
+          {
+            "node": "arg66_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_2"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_2_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_2"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_2_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_2"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_2",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_2"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_3",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_2"
+          },
+          {
+            "node": "arg9_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_3",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_3"
+          },
+          {
+            "node": "arg10_1"
+          },
+          {
+            "node": "arg11_1"
+          },
+          {
+            "node": "arg68_1"
+          },
+          {
+            "node": "arg69_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_3",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_3"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_3_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_3"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_3_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_3"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_1",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_3"
+          },
+          {
+            "node": "relu_1"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_3",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_1"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_4",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_3"
+          },
+          {
+            "node": "arg12_1"
+          },
+          null,
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_4",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_4"
+          },
+          {
+            "node": "arg13_1"
+          },
+          {
+            "node": "arg14_1"
+          },
+          {
+            "node": "arg71_1"
+          },
+          {
+            "node": "arg72_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_4",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_4"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_4_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_4"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_4_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_4"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_4",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_4"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_5",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_4"
+          },
+          {
+            "node": "arg15_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_5",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_5"
+          },
+          {
+            "node": "arg16_1"
+          },
+          {
+            "node": "arg17_1"
+          },
+          {
+            "node": "arg74_1"
+          },
+          {
+            "node": "arg75_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_5",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_5"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_5_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_5"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_5_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_5"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_6",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_3"
+          },
+          {
+            "node": "arg18_1"
+          },
+          null,
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_6",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_6"
+          },
+          {
+            "node": "arg19_1"
+          },
+          {
+            "node": "arg20_1"
+          },
+          {
+            "node": "arg77_1"
+          },
+          {
+            "node": "arg78_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_6",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_6"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_6_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_6"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_6_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_6"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_2",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_5"
+          },
+          {
+            "node": "getitem_6"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_5",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_2"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_7",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_5"
+          },
+          {
+            "node": "arg21_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_7",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_7"
+          },
+          {
+            "node": "arg22_1"
+          },
+          {
+            "node": "arg23_1"
+          },
+          {
+            "node": "arg80_1"
+          },
+          {
+            "node": "arg81_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_7",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_7"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_7_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_7"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_7_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_7"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_6",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_7"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_8",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_6"
+          },
+          {
+            "node": "arg24_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_8",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_8"
+          },
+          {
+            "node": "arg25_1"
+          },
+          {
+            "node": "arg26_1"
+          },
+          {
+            "node": "arg83_1"
+          },
+          {
+            "node": "arg84_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_8",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_8"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_8_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_8"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_8_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_8"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_3",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_8"
+          },
+          {
+            "node": "relu_5"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_7",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_3"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_9",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_7"
+          },
+          {
+            "node": "arg27_1"
+          },
+          null,
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_9",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_9"
+          },
+          {
+            "node": "arg28_1"
+          },
+          {
+            "node": "arg29_1"
+          },
+          {
+            "node": "arg86_1"
+          },
+          {
+            "node": "arg87_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_9",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_9"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_9_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_9"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_9_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_9"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_8",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_9"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_10",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_8"
+          },
+          {
+            "node": "arg30_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_10",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_10"
+          },
+          {
+            "node": "arg31_1"
+          },
+          {
+            "node": "arg32_1"
+          },
+          {
+            "node": "arg89_1"
+          },
+          {
+            "node": "arg90_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_10",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_10"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_10_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_10"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_10_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_10"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_11",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_7"
+          },
+          {
+            "node": "arg33_1"
+          },
+          null,
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_11",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_11"
+          },
+          {
+            "node": "arg34_1"
+          },
+          {
+            "node": "arg35_1"
+          },
+          {
+            "node": "arg92_1"
+          },
+          {
+            "node": "arg93_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_11",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_11"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_11_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_11"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_11_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_11"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_4",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_10"
+          },
+          {
+            "node": "getitem_11"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_9",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_4"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_12",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_9"
+          },
+          {
+            "node": "arg36_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_12",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_12"
+          },
+          {
+            "node": "arg37_1"
+          },
+          {
+            "node": "arg38_1"
+          },
+          {
+            "node": "arg95_1"
+          },
+          {
+            "node": "arg96_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_12",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_12"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_12_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_12"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_12_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_12"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_10",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_12"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_13",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_10"
+          },
+          {
+            "node": "arg39_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_13",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_13"
+          },
+          {
+            "node": "arg40_1"
+          },
+          {
+            "node": "arg41_1"
+          },
+          {
+            "node": "arg98_1"
+          },
+          {
+            "node": "arg99_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_13",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_13"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_13_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_13"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_13_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_13"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_5",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_13"
+          },
+          {
+            "node": "relu_9"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_11",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_5"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_14",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_11"
+          },
+          {
+            "node": "arg42_1"
+          },
+          null,
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_14",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_14"
+          },
+          {
+            "node": "arg43_1"
+          },
+          {
+            "node": "arg44_1"
+          },
+          {
+            "node": "arg101_1"
+          },
+          {
+            "node": "arg102_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_14",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_14"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_14_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_14"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_14_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_14"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_12",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_14"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_15",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_12"
+          },
+          {
+            "node": "arg45_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_15",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_15"
+          },
+          {
+            "node": "arg46_1"
+          },
+          {
+            "node": "arg47_1"
+          },
+          {
+            "node": "arg104_1"
+          },
+          {
+            "node": "arg105_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_15",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_15"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_15_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_15"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_15_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_15"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_16",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_11"
+          },
+          {
+            "node": "arg48_1"
+          },
+          null,
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_16",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_16"
+          },
+          {
+            "node": "arg49_1"
+          },
+          {
+            "node": "arg50_1"
+          },
+          {
+            "node": "arg107_1"
+          },
+          {
+            "node": "arg108_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_16",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_16"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_16_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_16"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_16_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_16"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_6",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_15"
+          },
+          {
+            "node": "getitem_16"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_13",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_6"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_17",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_13"
+          },
+          {
+            "node": "arg51_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_17",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_17"
+          },
+          {
+            "node": "arg52_1"
+          },
+          {
+            "node": "arg53_1"
+          },
+          {
+            "node": "arg110_1"
+          },
+          {
+            "node": "arg111_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_17",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_17"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_17_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_17"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_17_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_17"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "relu_14",
+        "aten.relu.default",
+        [
+          {
+            "node": "getitem_17"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "convolution_18",
+        "aten.convolution.default",
+        [
+          {
+            "node": "relu_14"
+          },
+          {
+            "node": "arg54_1"
+          },
+          null,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          false,
+          [
+            0,
+            0
+          ],
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_default_18",
+        "aten._native_batch_norm_legit_no_training.default",
+        [
+          {
+            "node": "convolution_18"
+          },
+          {
+            "node": "arg55_1"
+          },
+          {
+            "node": "arg56_1"
+          },
+          {
+            "node": "arg113_1"
+          },
+          {
+            "node": "arg114_1"
+          },
+          0.1,
+          1e-05
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "getitem_18",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_18"
+          },
+          0
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_18_unused_1",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_18"
+          },
+          1
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "_native_batch_norm_legit_no_training_18_unused_2",
+        "<built-in function getitem>",
+        [
+          {
+            "node": "_native_batch_norm_legit_no_training_default_18"
+          },
+          2
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "add_7",
+        "aten.add.Tensor",
+        [
+          {
+            "node": "getitem_18"
+          },
+          {
+            "node": "relu_13"
+          }
+        ],
+        {
+          "alpha": 1
+        }
+      ],
+      [
+        "call_function",
+        "relu_15",
+        "aten.relu.default",
+        [
+          {
+            "node": "add_7"
+          }
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "mean",
+        "aten.mean.dim",
+        [
+          {
+            "node": "relu_15"
+          },
+          [
+            -1,
+            -2
+          ]
+        ],
+        {
+          "keepdim": true,
+          "dtype": null
+        }
+      ],
+      [
+        "call_function",
+        "view",
+        "aten.view.default",
+        [
+          {
+            "node": "mean"
+          },
+          [
+            1,
+            512
+          ]
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "permute",
+        "aten.permute.default",
+        [
+          {
+            "node": "arg57_1"
+          },
+          [
+            1,
+            0
+          ]
+        ],
+        {}
+      ],
+      [
+        "call_function",
+        "addmm",
+        "aten.addmm.default",
+        [
+          {
+            "node": "arg58_1"
+          },
+          {
+            "node": "view"
+          },
+          {
+            "node": "permute"
+          }
+        ],
+        {
+          "beta": 1,
+          "alpha": 1
+        }
+      ],
+      [
+        "output",
+        "output",
+        "output",
+        [
+          [
+            {
+              "node": "addmm"
+            }
+          ]
+        ],
+        {}
+      ]
+    ]
+  ],
+  "code": [
+    "\n\n\ndef forward(self, arg0_1, arg1_1, arg2_1, arg3_1, arg4_1, arg5_1, arg6_1, arg7_1, arg8_1, arg9_1, arg10_1, arg11_1, arg12_1, arg13_1, arg14_1, arg15_1, arg16_1, arg17_1, arg18_1, arg19_1, arg20_1, arg21_1, arg22_1, arg23_1, arg24_1, arg25_1, arg26_1, arg27_1, arg28_1, arg29_1, arg30_1, arg31_1, arg32_1, arg33_1, arg34_1, arg35_1, arg36_1, arg37_1, arg38_1, arg39_1, arg40_1, arg41_1, arg42_1, arg43_1, arg44_1, arg45_1, arg46_1, arg47_1, arg48_1, arg49_1, arg50_1, arg51_1, arg52_1, arg53_1, arg54_1, arg55_1, arg56_1, arg57_1, arg58_1, arg59_1, arg60_1, arg61_1, arg62_1, arg63_1, arg64_1, arg65_1, arg66_1, arg67_1, arg68_1, arg69_1, arg70_1, arg71_1, arg72_1, arg73_1, arg74_1, arg75_1, arg76_1, arg77_1, arg78_1, arg79_1, arg80_1, arg81_1, arg82_1, arg83_1, arg84_1, arg85_1, arg86_1, arg87_1, arg88_1, arg89_1, arg90_1, arg91_1, arg92_1, arg93_1, arg94_1, arg95_1, arg96_1, arg97_1, arg98_1, arg99_1, arg100_1, arg101_1, arg102_1, arg103_1, arg104_1, arg105_1, arg106_1, arg107_1, arg108_1, arg109_1, arg110_1, arg111_1, arg112_1, arg113_1, arg114_1, arg115_1, arg116_1):\n    convolution = torch.ops.aten.convolution.default(arg116_1, arg0_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  arg0_1 = None\n    _native_batch_norm_legit_no_training_default = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution, arg1_1, arg2_1, arg59_1, arg60_1, 0.1, 1e-05);  convolution = arg1_1 = arg2_1 = arg59_1 = arg60_1 = None\n    getitem = _native_batch_norm_legit_no_training_default[0]\n    _native_batch_norm_legit_no_training_unused_1 = _native_batch_norm_legit_no_training_default[1]\n    _native_batch_norm_legit_no_training_unused_2 = _native_batch_norm_legit_no_training_default[2];  _native_batch_norm_legit_no_training_default = None\n    relu = torch.ops.aten.relu.default(getitem);  getitem = None\n    convolution_1 = torch.ops.aten.convolution.default(relu, arg3_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu = arg3_1 = None\n    _native_batch_norm_legit_no_training_default_1 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_1, arg4_1, arg5_1, arg62_1, arg63_1, 0.1, 1e-05);  convolution_1 = arg4_1 = arg5_1 = arg62_1 = arg63_1 = None\n    getitem_1 = _native_batch_norm_legit_no_training_default_1[0]\n    _native_batch_norm_legit_no_training_1_unused_1 = _native_batch_norm_legit_no_training_default_1[1]\n    _native_batch_norm_legit_no_training_1_unused_2 = _native_batch_norm_legit_no_training_default_1[2];  _native_batch_norm_legit_no_training_default_1 = None\n    add = torch.ops.aten.add.Tensor(getitem_1, arg116_1, alpha = 1);  getitem_1 = arg116_1 = None\n    return (arg6_1, arg7_1, arg8_1, arg9_1, arg10_1, arg11_1, arg12_1, arg13_1, arg14_1, arg15_1, arg16_1, arg17_1, arg18_1, arg19_1, arg20_1, arg21_1, arg22_1, arg23_1, arg24_1, arg25_1, arg26_1, arg27_1, arg28_1, arg29_1, arg30_1, arg31_1, arg32_1, arg33_1, arg34_1, arg35_1, arg36_1, arg37_1, arg38_1, arg39_1, arg40_1, arg41_1, arg42_1, arg43_1, arg44_1, arg45_1, arg46_1, arg47_1, arg48_1, arg49_1, arg50_1, arg51_1, arg52_1, arg53_1, arg54_1, arg55_1, arg56_1, arg57_1, arg58_1, arg65_1, arg66_1, arg68_1, arg69_1, arg71_1, arg72_1, arg74_1, arg75_1, arg77_1, arg78_1, arg80_1, arg81_1, arg83_1, arg84_1, arg86_1, arg87_1, arg89_1, arg90_1, arg92_1, arg93_1, arg95_1, arg96_1, arg98_1, arg99_1, arg101_1, arg102_1, arg104_1, arg105_1, arg107_1, arg108_1, arg110_1, arg111_1, arg113_1, arg114_1, add)\n    ",
+    "\n\n\ndef forward(self, arg6_1, arg7_1, arg8_1, arg9_1, arg10_1, arg11_1, arg12_1, arg13_1, arg14_1, arg15_1, arg16_1, arg17_1, arg18_1, arg19_1, arg20_1, arg21_1, arg22_1, arg23_1, arg24_1, arg25_1, arg26_1, arg27_1, arg28_1, arg29_1, arg30_1, arg31_1, arg32_1, arg33_1, arg34_1, arg35_1, arg36_1, arg37_1, arg38_1, arg39_1, arg40_1, arg41_1, arg42_1, arg43_1, arg44_1, arg45_1, arg46_1, arg47_1, arg48_1, arg49_1, arg50_1, arg51_1, arg52_1, arg53_1, arg54_1, arg55_1, arg56_1, arg57_1, arg58_1, arg65_1, arg66_1, arg68_1, arg69_1, arg71_1, arg72_1, arg74_1, arg75_1, arg77_1, arg78_1, arg80_1, arg81_1, arg83_1, arg84_1, arg86_1, arg87_1, arg89_1, arg90_1, arg92_1, arg93_1, arg95_1, arg96_1, arg98_1, arg99_1, arg101_1, arg102_1, arg104_1, arg105_1, arg107_1, arg108_1, arg110_1, arg111_1, arg113_1, arg114_1, add):\n    relu_1 = torch.ops.aten.relu.default(add);  add = None\n    convolution_2 = torch.ops.aten.convolution.default(relu_1, arg6_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  arg6_1 = None\n    _native_batch_norm_legit_no_training_default_2 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_2, arg7_1, arg8_1, arg65_1, arg66_1, 0.1, 1e-05);  convolution_2 = arg7_1 = arg8_1 = arg65_1 = arg66_1 = None\n    getitem_2 = _native_batch_norm_legit_no_training_default_2[0]\n    _native_batch_norm_legit_no_training_2_unused_1 = _native_batch_norm_legit_no_training_default_2[1]\n    _native_batch_norm_legit_no_training_2_unused_2 = _native_batch_norm_legit_no_training_default_2[2];  _native_batch_norm_legit_no_training_default_2 = None\n    relu_2 = torch.ops.aten.relu.default(getitem_2);  getitem_2 = None\n    convolution_3 = torch.ops.aten.convolution.default(relu_2, arg9_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_2 = arg9_1 = None\n    _native_batch_norm_legit_no_training_default_3 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_3, arg10_1, arg11_1, arg68_1, arg69_1, 0.1, 1e-05);  convolution_3 = arg10_1 = arg11_1 = arg68_1 = arg69_1 = None\n    getitem_3 = _native_batch_norm_legit_no_training_default_3[0]\n    _native_batch_norm_legit_no_training_3_unused_1 = _native_batch_norm_legit_no_training_default_3[1]\n    _native_batch_norm_legit_no_training_3_unused_2 = _native_batch_norm_legit_no_training_default_3[2];  _native_batch_norm_legit_no_training_default_3 = None\n    add_1 = torch.ops.aten.add.Tensor(getitem_3, relu_1, alpha = 1);  getitem_3 = relu_1 = None\n    relu_3 = torch.ops.aten.relu.default(add_1);  add_1 = None\n    convolution_4 = torch.ops.aten.convolution.default(relu_3, arg12_1, None, [2, 2], [1, 1], [1, 1], False, [0, 0], 1);  arg12_1 = None\n    _native_batch_norm_legit_no_training_default_4 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_4, arg13_1, arg14_1, arg71_1, arg72_1, 0.1, 1e-05);  convolution_4 = arg13_1 = arg14_1 = arg71_1 = arg72_1 = None\n    getitem_4 = _native_batch_norm_legit_no_training_default_4[0]\n    _native_batch_norm_legit_no_training_4_unused_1 = _native_batch_norm_legit_no_training_default_4[1]\n    _native_batch_norm_legit_no_training_4_unused_2 = _native_batch_norm_legit_no_training_default_4[2];  _native_batch_norm_legit_no_training_default_4 = None\n    relu_4 = torch.ops.aten.relu.default(getitem_4);  getitem_4 = None\n    convolution_5 = torch.ops.aten.convolution.default(relu_4, arg15_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_4 = arg15_1 = None\n    _native_batch_norm_legit_no_training_default_5 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_5, arg16_1, arg17_1, arg74_1, arg75_1, 0.1, 1e-05);  convolution_5 = arg16_1 = arg17_1 = arg74_1 = arg75_1 = None\n    getitem_5 = _native_batch_norm_legit_no_training_default_5[0]\n    _native_batch_norm_legit_no_training_5_unused_1 = _native_batch_norm_legit_no_training_default_5[1]\n    _native_batch_norm_legit_no_training_5_unused_2 = _native_batch_norm_legit_no_training_default_5[2];  _native_batch_norm_legit_no_training_default_5 = None\n    convolution_6 = torch.ops.aten.convolution.default(relu_3, arg18_1, None, [2, 2], [0, 0], [1, 1], False, [0, 0], 1);  relu_3 = arg18_1 = None\n    _native_batch_norm_legit_no_training_default_6 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_6, arg19_1, arg20_1, arg77_1, arg78_1, 0.1, 1e-05);  convolution_6 = arg19_1 = arg20_1 = arg77_1 = arg78_1 = None\n    getitem_6 = _native_batch_norm_legit_no_training_default_6[0]\n    _native_batch_norm_legit_no_training_6_unused_1 = _native_batch_norm_legit_no_training_default_6[1]\n    _native_batch_norm_legit_no_training_6_unused_2 = _native_batch_norm_legit_no_training_default_6[2];  _native_batch_norm_legit_no_training_default_6 = None\n    add_2 = torch.ops.aten.add.Tensor(getitem_5, getitem_6, alpha = 1);  getitem_5 = getitem_6 = None\n    relu_5 = torch.ops.aten.relu.default(add_2);  add_2 = None\n    convolution_7 = torch.ops.aten.convolution.default(relu_5, arg21_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  arg21_1 = None\n    _native_batch_norm_legit_no_training_default_7 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_7, arg22_1, arg23_1, arg80_1, arg81_1, 0.1, 1e-05);  convolution_7 = arg22_1 = arg23_1 = arg80_1 = arg81_1 = None\n    getitem_7 = _native_batch_norm_legit_no_training_default_7[0]\n    _native_batch_norm_legit_no_training_7_unused_1 = _native_batch_norm_legit_no_training_default_7[1]\n    _native_batch_norm_legit_no_training_7_unused_2 = _native_batch_norm_legit_no_training_default_7[2];  _native_batch_norm_legit_no_training_default_7 = None\n    relu_6 = torch.ops.aten.relu.default(getitem_7);  getitem_7 = None\n    convolution_8 = torch.ops.aten.convolution.default(relu_6, arg24_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_6 = arg24_1 = None\n    _native_batch_norm_legit_no_training_default_8 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_8, arg25_1, arg26_1, arg83_1, arg84_1, 0.1, 1e-05);  convolution_8 = arg25_1 = arg26_1 = arg83_1 = arg84_1 = None\n    getitem_8 = _native_batch_norm_legit_no_training_default_8[0]\n    _native_batch_norm_legit_no_training_8_unused_1 = _native_batch_norm_legit_no_training_default_8[1]\n    _native_batch_norm_legit_no_training_8_unused_2 = _native_batch_norm_legit_no_training_default_8[2];  _native_batch_norm_legit_no_training_default_8 = None\n    add_3 = torch.ops.aten.add.Tensor(getitem_8, relu_5, alpha = 1);  getitem_8 = relu_5 = None\n    relu_7 = torch.ops.aten.relu.default(add_3);  add_3 = None\n    convolution_9 = torch.ops.aten.convolution.default(relu_7, arg27_1, None, [2, 2], [1, 1], [1, 1], False, [0, 0], 1);  arg27_1 = None\n    _native_batch_norm_legit_no_training_default_9 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_9, arg28_1, arg29_1, arg86_1, arg87_1, 0.1, 1e-05);  convolution_9 = arg28_1 = arg29_1 = arg86_1 = arg87_1 = None\n    getitem_9 = _native_batch_norm_legit_no_training_default_9[0]\n    _native_batch_norm_legit_no_training_9_unused_1 = _native_batch_norm_legit_no_training_default_9[1]\n    _native_batch_norm_legit_no_training_9_unused_2 = _native_batch_norm_legit_no_training_default_9[2];  _native_batch_norm_legit_no_training_default_9 = None\n    relu_8 = torch.ops.aten.relu.default(getitem_9);  getitem_9 = None\n    convolution_10 = torch.ops.aten.convolution.default(relu_8, arg30_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_8 = arg30_1 = None\n    _native_batch_norm_legit_no_training_default_10 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_10, arg31_1, arg32_1, arg89_1, arg90_1, 0.1, 1e-05);  convolution_10 = arg31_1 = arg32_1 = arg89_1 = arg90_1 = None\n    getitem_10 = _native_batch_norm_legit_no_training_default_10[0]\n    _native_batch_norm_legit_no_training_10_unused_1 = _native_batch_norm_legit_no_training_default_10[1]\n    _native_batch_norm_legit_no_training_10_unused_2 = _native_batch_norm_legit_no_training_default_10[2];  _native_batch_norm_legit_no_training_default_10 = None\n    convolution_11 = torch.ops.aten.convolution.default(relu_7, arg33_1, None, [2, 2], [0, 0], [1, 1], False, [0, 0], 1);  relu_7 = arg33_1 = None\n    _native_batch_norm_legit_no_training_default_11 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_11, arg34_1, arg35_1, arg92_1, arg93_1, 0.1, 1e-05);  convolution_11 = arg34_1 = arg35_1 = arg92_1 = arg93_1 = None\n    getitem_11 = _native_batch_norm_legit_no_training_default_11[0]\n    _native_batch_norm_legit_no_training_11_unused_1 = _native_batch_norm_legit_no_training_default_11[1]\n    _native_batch_norm_legit_no_training_11_unused_2 = _native_batch_norm_legit_no_training_default_11[2];  _native_batch_norm_legit_no_training_default_11 = None\n    add_4 = torch.ops.aten.add.Tensor(getitem_10, getitem_11, alpha = 1);  getitem_10 = getitem_11 = None\n    relu_9 = torch.ops.aten.relu.default(add_4);  add_4 = None\n    convolution_12 = torch.ops.aten.convolution.default(relu_9, arg36_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  arg36_1 = None\n    _native_batch_norm_legit_no_training_default_12 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_12, arg37_1, arg38_1, arg95_1, arg96_1, 0.1, 1e-05);  convolution_12 = arg37_1 = arg38_1 = arg95_1 = arg96_1 = None\n    getitem_12 = _native_batch_norm_legit_no_training_default_12[0]\n    _native_batch_norm_legit_no_training_12_unused_1 = _native_batch_norm_legit_no_training_default_12[1]\n    _native_batch_norm_legit_no_training_12_unused_2 = _native_batch_norm_legit_no_training_default_12[2];  _native_batch_norm_legit_no_training_default_12 = None\n    relu_10 = torch.ops.aten.relu.default(getitem_12);  getitem_12 = None\n    convolution_13 = torch.ops.aten.convolution.default(relu_10, arg39_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_10 = arg39_1 = None\n    _native_batch_norm_legit_no_training_default_13 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_13, arg40_1, arg41_1, arg98_1, arg99_1, 0.1, 1e-05);  convolution_13 = arg40_1 = arg41_1 = arg98_1 = arg99_1 = None\n    getitem_13 = _native_batch_norm_legit_no_training_default_13[0]\n    _native_batch_norm_legit_no_training_13_unused_1 = _native_batch_norm_legit_no_training_default_13[1]\n    _native_batch_norm_legit_no_training_13_unused_2 = _native_batch_norm_legit_no_training_default_13[2];  _native_batch_norm_legit_no_training_default_13 = None\n    add_5 = torch.ops.aten.add.Tensor(getitem_13, relu_9, alpha = 1);  getitem_13 = relu_9 = None\n    relu_11 = torch.ops.aten.relu.default(add_5);  add_5 = None\n    convolution_14 = torch.ops.aten.convolution.default(relu_11, arg42_1, None, [2, 2], [1, 1], [1, 1], False, [0, 0], 1);  arg42_1 = None\n    _native_batch_norm_legit_no_training_default_14 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_14, arg43_1, arg44_1, arg101_1, arg102_1, 0.1, 1e-05);  convolution_14 = arg43_1 = arg44_1 = arg101_1 = arg102_1 = None\n    getitem_14 = _native_batch_norm_legit_no_training_default_14[0]\n    _native_batch_norm_legit_no_training_14_unused_1 = _native_batch_norm_legit_no_training_default_14[1]\n    _native_batch_norm_legit_no_training_14_unused_2 = _native_batch_norm_legit_no_training_default_14[2];  _native_batch_norm_legit_no_training_default_14 = None\n    relu_12 = torch.ops.aten.relu.default(getitem_14);  getitem_14 = None\n    convolution_15 = torch.ops.aten.convolution.default(relu_12, arg45_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_12 = arg45_1 = None\n    _native_batch_norm_legit_no_training_default_15 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_15, arg46_1, arg47_1, arg104_1, arg105_1, 0.1, 1e-05);  convolution_15 = arg46_1 = arg47_1 = arg104_1 = arg105_1 = None\n    getitem_15 = _native_batch_norm_legit_no_training_default_15[0]\n    _native_batch_norm_legit_no_training_15_unused_1 = _native_batch_norm_legit_no_training_default_15[1]\n    _native_batch_norm_legit_no_training_15_unused_2 = _native_batch_norm_legit_no_training_default_15[2];  _native_batch_norm_legit_no_training_default_15 = None\n    convolution_16 = torch.ops.aten.convolution.default(relu_11, arg48_1, None, [2, 2], [0, 0], [1, 1], False, [0, 0], 1);  relu_11 = arg48_1 = None\n    _native_batch_norm_legit_no_training_default_16 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_16, arg49_1, arg50_1, arg107_1, arg108_1, 0.1, 1e-05);  convolution_16 = arg49_1 = arg50_1 = arg107_1 = arg108_1 = None\n    getitem_16 = _native_batch_norm_legit_no_training_default_16[0]\n    _native_batch_norm_legit_no_training_16_unused_1 = _native_batch_norm_legit_no_training_default_16[1]\n    _native_batch_norm_legit_no_training_16_unused_2 = _native_batch_norm_legit_no_training_default_16[2];  _native_batch_norm_legit_no_training_default_16 = None\n    add_6 = torch.ops.aten.add.Tensor(getitem_15, getitem_16, alpha = 1);  getitem_15 = getitem_16 = None\n    relu_13 = torch.ops.aten.relu.default(add_6);  add_6 = None\n    convolution_17 = torch.ops.aten.convolution.default(relu_13, arg51_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  arg51_1 = None\n    _native_batch_norm_legit_no_training_default_17 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_17, arg52_1, arg53_1, arg110_1, arg111_1, 0.1, 1e-05);  convolution_17 = arg52_1 = arg53_1 = arg110_1 = arg111_1 = None\n    getitem_17 = _native_batch_norm_legit_no_training_default_17[0]\n    _native_batch_norm_legit_no_training_17_unused_1 = _native_batch_norm_legit_no_training_default_17[1]\n    _native_batch_norm_legit_no_training_17_unused_2 = _native_batch_norm_legit_no_training_default_17[2];  _native_batch_norm_legit_no_training_default_17 = None\n    relu_14 = torch.ops.aten.relu.default(getitem_17);  getitem_17 = None\n    convolution_18 = torch.ops.aten.convolution.default(relu_14, arg54_1, None, [1, 1], [1, 1], [1, 1], False, [0, 0], 1);  relu_14 = arg54_1 = None\n    _native_batch_norm_legit_no_training_default_18 = torch.ops.aten._native_batch_norm_legit_no_training.default(convolution_18, arg55_1, arg56_1, arg113_1, arg114_1, 0.1, 1e-05);  convolution_18 = arg55_1 = arg56_1 = arg113_1 = arg114_1 = None\n    getitem_18 = _native_batch_norm_legit_no_training_default_18[0]\n    _native_batch_norm_legit_no_training_18_unused_1 = _native_batch_norm_legit_no_training_default_18[1]\n    _native_batch_norm_legit_no_training_18_unused_2 = _native_batch_norm_legit_no_training_default_18[2];  _native_batch_norm_legit_no_training_default_18 = None\n    add_7 = torch.ops.aten.add.Tensor(getitem_18, relu_13, alpha = 1);  getitem_18 = relu_13 = None\n    relu_15 = torch.ops.aten.relu.default(add_7);  add_7 = None\n    mean = torch.ops.aten.mean.dim(relu_15, [-1, -2], keepdim = True, dtype = None);  relu_15 = None\n    view = torch.ops.aten.view.default(mean, [1, 512]);  mean = None\n    permute = torch.ops.aten.permute.default(arg57_1, [1, 0]);  arg57_1 = None\n    addmm = torch.ops.aten.addmm.default(arg58_1, view, permute, beta = 1, alpha = 1);  arg58_1 = view = permute = None\n    return (addmm,)\n    "
+  ],
+  "code_sha256": [
+    "8a57a3cf9728f4dfe6a7d5a002b69e97449d243b5dc40e20a990d14817a4ef60",
+    "0129e5d9d069a0f9e7fcfea203d6212d96e1e3d1b871cd81ef58c494f47eaf76"
+  ],
+  "no_readseal_analysis_or_executor": true,
+  "original_manual_guards_preserved": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE",
+  "source_archive": "readseal_borrowplan_v10_evidence.zip",
+  "source_member": "results/borrowplan_v10_batch_remaining_attempt1/gate/resnet-base-s0-manual-early/artifact.json",
+  "sha256": "72f4d22f2a24153942fbba8092b9d7c6d302deb4d477fe919d17135851c32b4c",
+  "model_execution": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "model_execution": false,
+  "gpu_used": false,
+  "inputs": {
+    "earlier_graph_code.py": "0b79f0d150affbc2e23672d08cf6152b7794d91074b7f6373ff389383293a133",
+    "substitution_graph_code.py": "0b79f0d150affbc2e23672d08cf6152b7794d91074b7f6373ff389383293a133",
+    "earlier_report.json": "a4af507ca02cb59845d2c80d2ba85223f5aa149590a871d1422de282c15120ea",
+    "reloaded_manual_artifact.json": "72f4d22f2a24153942fbba8092b9d7c6d302deb4d477fe919d17135851c32b4c"
+  },
+  "validator_sha256": "c81216fe2f689ff33e20b0babf349ee8ff39b2a80dbcf82f062d3b2ae4fc54d4",
+  "same_in_memory_graph_text": true,
+  "same_export_hash_in_original_report_and_reloaded_review": true,
+  "in_memory": {
+    "prefix": 8,
+    "total": 85,
+    "boundary": "add"
+  },
+  "reloaded": {
+    "prefix": 12,
+    "total": 123,
+    "boundary": "add"
+  },
+  "additional_unused_tuple_indices": 38,
+  "batchnorm_sites": 19,
+  "remaining_operator_order_matches": true,
+  "scope": "Recorded graph structure and provenance only; not a new numerical or CUDA test."
+}
