@@ -1,3 +1,5 @@
 # Preserve exact bytes for the hash-inventoried evidence layer on every platform.
 submission-v9/** -text
 submission-v10/** -text
+results-v12/** -text
+readseal_npc_v12_results_20260915.zip -text

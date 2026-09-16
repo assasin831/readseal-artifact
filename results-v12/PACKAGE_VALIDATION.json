@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETE",
+  "experiments": {
+    "e1": 108,
+    "e2": 36,
+    "smoke": 6,
+    "e3_transitions": 16,
+    "e3_timed_snapshots": 20,
+    "e4_profile_processes": 4,
+    "e5": "NOT_RUN_FACTORY_UNSUPPORTED",
+    "e6": "STATIC_SURVEY",
+    "e7": "DATED_HOST_RECORD"
+  },
+  "formal_counts": {
+    "arrivals": 172800,
+    "publications": 109592,
+    "timely": 109569,
+    "correct_late": 23,
+    "producer_late": 0,
+    "pool_exhausted": 63208,
+    "credit_exhausted": 0,
+    "queue_loss": 0
+  },
+  "gpu_local_validation_sha256": "2d99e854db51eb6ccb724ef76052ef0959379535dc41ddb55f6acd95e21da923",
+  "stage_validation_sha256": {
+    "e3": "1140c5e22d4fa15bab13f42a892fb2904e17ff4916643f0a5d973190ede0399b",
+    "e4": "8fe8a493800b8de290e64ccf604a9e37996566bfb26db9c0953b9590fbf59856",
+    "e7": "8b13304eb44470b9e49274a9f319d532115e2d0aefb7f3e6ff6e328499b9a2b7",
+    "e6": "69072327cacb2f23f1d8b43f1bb97ca0d5f95114a216c775d7305957c89bfd52"
+  },
+  "raw_archive_sha256": "a46de86fcd61c6195dfcf364778d8bcc4c2309b06ffd903ff07739f920e2d622",
+  "source_sha256": "c528982cdb0a75091de3c98c5d61be75446c72d4dbf1028041d7d1e002e28b2a",
+  "paper_modified": false,
+  "inference_retried": false
+}

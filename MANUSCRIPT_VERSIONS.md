@@ -1,5 +1,25 @@
 # Manuscript-to-evidence mapping
 
+## NPC V12 experimental results, 15 September 2026
+
+Evidence tag: `npc-results-v12`. Start with [NPC_V12_RESULTS.md](./NPC_V12_RESULTS.md).
+This is the author-designated latest results package. It does not include a new
+manuscript PDF or LaTeX source archive, and does not replace the older evidence.
+
+| Delivered file | SHA-256 |
+| --- | --- |
+| `readseal_npc_v12_results_20260915.zip` | `d775f1b5be0eace0b4a338dd3b5c4fa116085f22fefacd600b31fccd39f8d47c` |
+
+The byte-identical upload is 13,722,193 bytes and contains 104 files, including
+the 103-entry internal checksum inventory. Its E1/E2 windows contain 108 and
+36 formal runs respectively, plus six separate smoke runs. E3/E4/E6/E7 provide
+bounded analyses and records; E5 is explicitly not run. Full raw blobs and
+external model/runtime dependencies are not included in this compact package.
+Archive verification before publication checked CRCs and all internal hashes,
+not a new experimental replication. Scope and accounting are documented in
+the [writing results](./results-v12/RESULTS_FOR_WRITING.md) and
+[data dictionary](./results-v12/DATA_DICTIONARY.md).
+
 ## NPC V10, 15 September 2026
 
 Evidence tag: `npc-submission-v10`. Start with [NPC_V10_GUIDE.md](./NPC_V10_GUIDE.md).

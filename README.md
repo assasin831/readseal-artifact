@@ -5,7 +5,21 @@ project-produced evidence and runtime sources, not an independent-team replicati
 
 ## Frozen evidence and manuscript versions
 
-**Current submission: NPC V10**, frozen at `npc-submission-v10`.
+**Latest experimental results: NPC V12**, frozen at `npc-results-v12`.
+Download the [V12 results ZIP](./readseal_npc_v12_results_20260915.zip)
+(13,722,193 bytes), or start with the [V12 evidence guide](./NPC_V12_RESULTS.md).
+The package adds 108 E1 formal runs, 36 separate E2 formal runs, and the
+documented CPU analyses. Six smoke runs remain separate. All prior measurement
+windows and failed attempts remain identifiable; E5 was not run and E6 is a
+static survey. This upload contains experimental results and analysis sources,
+not the latest manuscript PDF, LaTeX package, or subsequent figure previews.
+
+V12 ZIP SHA-256:
+`d775f1b5be0eace0b4a338dd3b5c4fa116085f22fefacd600b31fccd39f8d47c`.
+The archive CRC and all 103 internal hash entries were rechecked before upload;
+this publication check did not repeat inference or experiments.
+
+**Latest hosted manuscript record: NPC V10**, frozen at `npc-submission-v10`.
 Start with the [current manuscript/evidence guide](./NPC_V10_GUIDE.md) and
 [updated table/figure map](./ARTIFACT.md). V10 revises the GPU problem statement,
 Related Work placement, component explanations and conclusion. It updates
