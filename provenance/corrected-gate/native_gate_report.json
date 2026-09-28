@@ -1,0 +1,2380 @@
+{
+  "status": "COMPLETE",
+  "cases": [
+    {
+      "key": "native-auto-batched-s0",
+      "profile": "native",
+      "method": "auto-batched",
+      "source": 0,
+      "exact_tensors": 1,
+      "outputs": "native-auto-batched-s0.pt",
+      "outputs_sha256": "bf93ee96f27f8aaac025ab4fdf9a9afe68b25b882bbdade7919eb43e49f8e291",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302676728055247,
+      "overwrite_complete_ns": 5302676976431017,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-auto-batched-s1",
+      "profile": "native",
+      "method": "auto-batched",
+      "source": 1,
+      "exact_tensors": 1,
+      "outputs": "native-auto-batched-s1.pt",
+      "outputs_sha256": "de9e3c4c884ee0953f7eae0a361bfaeb7af823e1a48588bc0d8fe49061e97ce0",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302677356668410,
+      "overwrite_complete_ns": 5302677605249247,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-auto-batched-s2",
+      "profile": "native",
+      "method": "auto-batched",
+      "source": 2,
+      "exact_tensors": 1,
+      "outputs": "native-auto-batched-s2.pt",
+      "outputs_sha256": "176a45caace1b202b9f8788a8f913733103594bd6469d2445b8e23f1c5103de5",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302677985445133,
+      "overwrite_complete_ns": 5302678233484830,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-manual-checked-s0",
+      "profile": "native",
+      "method": "manual-checked",
+      "source": 0,
+      "exact_tensors": 1,
+      "outputs": "native-manual-checked-s0.pt",
+      "outputs_sha256": "18b32642151081a326389d9afec40d74962f6d5adb7cd2bbd798380d59c815e1",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302678679729895,
+      "overwrite_complete_ns": 5302678946366873,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-manual-checked-s1",
+      "profile": "native",
+      "method": "manual-checked",
+      "source": 1,
+      "exact_tensors": 1,
+      "outputs": "native-manual-checked-s1.pt",
+      "outputs_sha256": "fbc75e6f9746babb1699497968e7e4b2fcfd69e3eeae77b11ef024bd95ceea70",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302679326102267,
+      "overwrite_complete_ns": 5302679593075070,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-manual-checked-s2",
+      "profile": "native",
+      "method": "manual-checked",
+      "source": 2,
+      "exact_tensors": 1,
+      "outputs": "native-manual-checked-s2.pt",
+      "outputs_sha256": "799b3f09ee1860e808f59b8d4ba29ef3784610abab024dc5a855d9cc1b79e41e",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302679973140589,
+      "overwrite_complete_ns": 5302680239612971,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-manual-full-s0",
+      "profile": "native",
+      "method": "manual-full",
+      "source": 0,
+      "exact_tensors": 1,
+      "outputs": "native-manual-full-s0.pt",
+      "outputs_sha256": "3fa924b94f5e087b23c12ebfbb22fb0829629ea84ea6fed9cec65a2d4858f761",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302680677025257,
+      "overwrite_complete_ns": 5302680925100376,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-manual-full-s1",
+      "profile": "native",
+      "method": "manual-full",
+      "source": 1,
+      "exact_tensors": 1,
+      "outputs": "native-manual-full-s1.pt",
+      "outputs_sha256": "77a0dcd94ced642a69749b4620fb866962fd28afc1200937c8f6a4148215f2f0",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302681304464485,
+      "overwrite_complete_ns": 5302681553073549,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-manual-full-s2",
+      "profile": "native",
+      "method": "manual-full",
+      "source": 2,
+      "exact_tensors": 1,
+      "outputs": "native-manual-full-s2.pt",
+      "outputs_sha256": "27af879d44136671bb88177fb0b721f2c314b51022ddb87f209b57136e4b3a88",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302681932377319,
+      "overwrite_complete_ns": 5302682180187149,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-copy-in-s0",
+      "profile": "native",
+      "method": "copy-in",
+      "source": 0,
+      "exact_tensors": 1,
+      "outputs": "native-copy-in-s0.pt",
+      "outputs_sha256": "a15b46e566943b26c3f9e04d14c9862c1719b055fe66d7fd5f70ae1576427fab",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302682628270149,
+      "overwrite_complete_ns": 5302682876152620,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-copy-in-s1",
+      "profile": "native",
+      "method": "copy-in",
+      "source": 1,
+      "exact_tensors": 1,
+      "outputs": "native-copy-in-s1.pt",
+      "outputs_sha256": "ee9d712114bcc9552854a0893b41001211dfa72bbdb996bd2dce1f4cd5cee7aa",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302683256034613,
+      "overwrite_complete_ns": 5302683503789646,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "native-copy-in-s2",
+      "profile": "native",
+      "method": "copy-in",
+      "source": 2,
+      "exact_tensors": 1,
+      "outputs": "native-copy-in-s2.pt",
+      "outputs_sha256": "c24c17fe02076f60ab079bf7e398351b214b449278a103d15caf7cf6d8fe8701",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302683882475257,
+      "overwrite_complete_ns": 5302684130830998,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-auto-batched-s0",
+      "profile": "head",
+      "method": "auto-batched",
+      "source": 0,
+      "exact_tensors": 9,
+      "outputs": "head-auto-batched-s0.pt",
+      "outputs_sha256": "27b7d4b987e43c1b9a73a0e3022af9f52f50858683b0b215286241f04e5a7702",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302686118480674,
+      "overwrite_complete_ns": 5302686387084294,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-auto-batched-s1",
+      "profile": "head",
+      "method": "auto-batched",
+      "source": 1,
+      "exact_tensors": 9,
+      "outputs": "head-auto-batched-s1.pt",
+      "outputs_sha256": "e0cb7ddd3ca49b0dacf495cfdf37ecdae59cbf92d616bfc353535ce195d9531e",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302686790918802,
+      "overwrite_complete_ns": 5302687057201498,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-auto-batched-s2",
+      "profile": "head",
+      "method": "auto-batched",
+      "source": 2,
+      "exact_tensors": 9,
+      "outputs": "head-auto-batched-s2.pt",
+      "outputs_sha256": "b8a987929e3755a3dfeab3336f57db2012a4fd249f476d4700233c3f26d22d19",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302687459617389,
+      "overwrite_complete_ns": 5302687729555266,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-manual-checked-s0",
+      "profile": "head",
+      "method": "manual-checked",
+      "source": 0,
+      "exact_tensors": 9,
+      "outputs": "head-manual-checked-s0.pt",
+      "outputs_sha256": "6eef421f8b131cf3b3d0964d32088c6d4048d51bbdbdc8166fe3e47c9a6629e1",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302688557541081,
+      "overwrite_complete_ns": 5302688805370503,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-manual-checked-s1",
+      "profile": "head",
+      "method": "manual-checked",
+      "source": 1,
+      "exact_tensors": 9,
+      "outputs": "head-manual-checked-s1.pt",
+      "outputs_sha256": "51a0191a3e041bcdb7471df9583460035805e66fe376f8169ee43bcd4c9a5f8a",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302689210392074,
+      "overwrite_complete_ns": 5302689458274999,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-manual-checked-s2",
+      "profile": "head",
+      "method": "manual-checked",
+      "source": 2,
+      "exact_tensors": 9,
+      "outputs": "head-manual-checked-s2.pt",
+      "outputs_sha256": "f7888d12be2835b2ed4574f9b4c546d47e6f57c4ec7384e671f88c18840ab2bd",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302689859962119,
+      "overwrite_complete_ns": 5302690107458521,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-manual-full-s0",
+      "profile": "head",
+      "method": "manual-full",
+      "source": 0,
+      "exact_tensors": 9,
+      "outputs": "head-manual-full-s0.pt",
+      "outputs_sha256": "8c69e322769cba26e19854b413ed813407e258e81a77cb3c17c0bf83e7464d3b",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302690923820739,
+      "overwrite_complete_ns": 5302691172214884,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-manual-full-s1",
+      "profile": "head",
+      "method": "manual-full",
+      "source": 1,
+      "exact_tensors": 9,
+      "outputs": "head-manual-full-s1.pt",
+      "outputs_sha256": "7c595466150b9f87eed74108f96e49c40e79e53fddbef180417260ed6556eac9",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302691572408574,
+      "overwrite_complete_ns": 5302691820334915,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-manual-full-s2",
+      "profile": "head",
+      "method": "manual-full",
+      "source": 2,
+      "exact_tensors": 9,
+      "outputs": "head-manual-full-s2.pt",
+      "outputs_sha256": "7a7b720b4cf59fc5aa7d740ab4421394dd35afff20cc272d8dc3a8d056acf01b",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302692220454484,
+      "overwrite_complete_ns": 5302692468498540,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-copy-in-s0",
+      "profile": "head",
+      "method": "copy-in",
+      "source": 0,
+      "exact_tensors": 9,
+      "outputs": "head-copy-in-s0.pt",
+      "outputs_sha256": "9d58e77abf01d0df27571a7772f86a2f4cf2708ff31d36d340459a4d52a37c57",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302693252294890,
+      "overwrite_complete_ns": 5302693500380449,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-copy-in-s1",
+      "profile": "head",
+      "method": "copy-in",
+      "source": 1,
+      "exact_tensors": 9,
+      "outputs": "head-copy-in-s1.pt",
+      "outputs_sha256": "4aebfbf230cf39bbbe3212f74de810a9558498287270d5a17b926355f6835d42",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302693905323879,
+      "overwrite_complete_ns": 5302694153277065,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "head-copy-in-s2",
+      "profile": "head",
+      "method": "copy-in",
+      "source": 2,
+      "exact_tensors": 9,
+      "outputs": "head-copy-in-s2.pt",
+      "outputs_sha256": "5b4f29f8d006741ebadb05eb06fc65a09ac9cb5cd88cb1d4c76a46670331f4e8",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302694543801603,
+      "overwrite_complete_ns": 5302694791970033,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-auto-batched-s0",
+      "profile": "composed",
+      "method": "auto-batched",
+      "source": 0,
+      "exact_tensors": 10,
+      "outputs": "composed-auto-batched-s0.pt",
+      "outputs_sha256": "08d908f2aae723841ea029638484a7c5221e2fc3762aa83d861033e6060a86d0",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302696169986881,
+      "overwrite_complete_ns": 5302696418260082,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-auto-batched-s1",
+      "profile": "composed",
+      "method": "auto-batched",
+      "source": 1,
+      "exact_tensors": 10,
+      "outputs": "composed-auto-batched-s1.pt",
+      "outputs_sha256": "e4c403d16c5c7f4ca44a0bc05e70ba1f7b8921a7c31c1e28a907aef8cc04ca79",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302696825017588,
+      "overwrite_complete_ns": 5302697073237772,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-auto-batched-s2",
+      "profile": "composed",
+      "method": "auto-batched",
+      "source": 2,
+      "exact_tensors": 10,
+      "outputs": "composed-auto-batched-s2.pt",
+      "outputs_sha256": "772500b2804d5a91f7335357f82e93868ec60a00afb3e5b934354cd8db119091",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302697477291676,
+      "overwrite_complete_ns": 5302697743796566,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-manual-checked-s0",
+      "profile": "composed",
+      "method": "manual-checked",
+      "source": 0,
+      "exact_tensors": 10,
+      "outputs": "composed-manual-checked-s0.pt",
+      "outputs_sha256": "6532cda7776ed82958fa1edc269f7a2c528e031eb8cedb5fa208ea7d6f8d126b",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302698583295900,
+      "overwrite_complete_ns": 5302698837319041,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-manual-checked-s1",
+      "profile": "composed",
+      "method": "manual-checked",
+      "source": 1,
+      "exact_tensors": 10,
+      "outputs": "composed-manual-checked-s1.pt",
+      "outputs_sha256": "c3b95e4a11f9c77f37cbe8641ef48f3653f54e26e97329035b99545b098a3416",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302699243072746,
+      "overwrite_complete_ns": 5302699491136288,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-manual-checked-s2",
+      "profile": "composed",
+      "method": "manual-checked",
+      "source": 2,
+      "exact_tensors": 10,
+      "outputs": "composed-manual-checked-s2.pt",
+      "outputs_sha256": "725d12252f75112821567a0a6337fd3c68d9583a1150687dc59eb76b425eefdc",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302699895028408,
+      "overwrite_complete_ns": 5302700143143124,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-manual-full-s0",
+      "profile": "composed",
+      "method": "manual-full",
+      "source": 0,
+      "exact_tensors": 10,
+      "outputs": "composed-manual-full-s0.pt",
+      "outputs_sha256": "37cb41f0ffc865a24b26b5edfc0f4e2eed963000b2c8ffdc5756f8849ad74e5c",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302700983679779,
+      "overwrite_complete_ns": 5302701231403698,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-manual-full-s1",
+      "profile": "composed",
+      "method": "manual-full",
+      "source": 1,
+      "exact_tensors": 10,
+      "outputs": "composed-manual-full-s1.pt",
+      "outputs_sha256": "0a57ab6b1e1ff49dd14905a61962c6e2b1e171fd8f82541e9d8e9a4fdfd8744a",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302701632693303,
+      "overwrite_complete_ns": 5302701880631831,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-manual-full-s2",
+      "profile": "composed",
+      "method": "manual-full",
+      "source": 2,
+      "exact_tensors": 10,
+      "outputs": "composed-manual-full-s2.pt",
+      "outputs_sha256": "65721a23181f9d4772d68dff3844c75fd1811699278dcf740d04b4cae4515388",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302702281739049,
+      "overwrite_complete_ns": 5302702530093204,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-copy-in-s0",
+      "profile": "composed",
+      "method": "copy-in",
+      "source": 0,
+      "exact_tensors": 10,
+      "outputs": "composed-copy-in-s0.pt",
+      "outputs_sha256": "90af4d366d010b8b37a4445811a43f568838dac0a1d7787cc8f6af5f85ebf6b9",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302703328126515,
+      "overwrite_complete_ns": 5302703576480548,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-copy-in-s1",
+      "profile": "composed",
+      "method": "copy-in",
+      "source": 1,
+      "exact_tensors": 10,
+      "outputs": "composed-copy-in-s1.pt",
+      "outputs_sha256": "6ab68b71c0d6bed64c0e8b5f78af3e097fe3a462044e135bcf313a948ee478d8",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302703967422046,
+      "overwrite_complete_ns": 5302704215768319,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-copy-in-s2",
+      "profile": "composed",
+      "method": "copy-in",
+      "source": 2,
+      "exact_tensors": 10,
+      "outputs": "composed-copy-in-s2.pt",
+      "outputs_sha256": "e1ff89c2492d5cc68b743d7da1bd848e5312690e9d3863d560079f45b32a50a6",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302704609064377,
+      "overwrite_complete_ns": 5302704857206975,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-auto-batched-s0",
+      "profile": "composed-late",
+      "method": "auto-batched",
+      "source": 0,
+      "exact_tensors": 11,
+      "outputs": "composed-late-auto-batched-s0.pt",
+      "outputs_sha256": "659e54921e2e4e91c97fd692cc267f5dfd90738f28e5be146ac8dcedbeede55b",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302706252914188,
+      "overwrite_complete_ns": 5302706508246690,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-auto-batched-s1",
+      "profile": "composed-late",
+      "method": "auto-batched",
+      "source": 1,
+      "exact_tensors": 11,
+      "outputs": "composed-late-auto-batched-s1.pt",
+      "outputs_sha256": "0f57b0eef45f0785e7ac37f3b0667d53ee52ea1cf3e2d2d97e41336ed10fd126",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302706911167085,
+      "overwrite_complete_ns": 5302707159420514,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-auto-batched-s2",
+      "profile": "composed-late",
+      "method": "auto-batched",
+      "source": 2,
+      "exact_tensors": 11,
+      "outputs": "composed-late-auto-batched-s2.pt",
+      "outputs_sha256": "0d21bd3d5f4edc9b0d34c632b644c59070cdcd1a4e61fd678ba484b4c2341d47",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302707562425998,
+      "overwrite_complete_ns": 5302707829282277,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-manual-checked-s0",
+      "profile": "composed-late",
+      "method": "manual-checked",
+      "source": 0,
+      "exact_tensors": 11,
+      "outputs": "composed-late-manual-checked-s0.pt",
+      "outputs_sha256": "54d7b21c997d129318869588f7db9ffed5bfec27bbe4c02d9e27a6a1353dc0d9",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302708670784291,
+      "overwrite_complete_ns": 5302708922455323,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-manual-checked-s1",
+      "profile": "composed-late",
+      "method": "manual-checked",
+      "source": 1,
+      "exact_tensors": 11,
+      "outputs": "composed-late-manual-checked-s1.pt",
+      "outputs_sha256": "55cb6b004f31fe85b8b01940039dc04c4d1623901c10c84aaef3559172cf72a4",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302709326337038,
+      "overwrite_complete_ns": 5302709575070558,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-manual-checked-s2",
+      "profile": "composed-late",
+      "method": "manual-checked",
+      "source": 2,
+      "exact_tensors": 11,
+      "outputs": "composed-late-manual-checked-s2.pt",
+      "outputs_sha256": "72960189b7a15a41b28d4a8299ff538ab8f6a608a8046f2711b1bb38c30095b1",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302709979989994,
+      "overwrite_complete_ns": 5302710228373292,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-manual-full-s0",
+      "profile": "composed-late",
+      "method": "manual-full",
+      "source": 0,
+      "exact_tensors": 11,
+      "outputs": "composed-late-manual-full-s0.pt",
+      "outputs_sha256": "dbf3f32849cf00c11f88efd01a6bae39e454449d79b386329299aa27cd7429ed",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302711063596482,
+      "overwrite_complete_ns": 5302711313224503,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-manual-full-s1",
+      "profile": "composed-late",
+      "method": "manual-full",
+      "source": 1,
+      "exact_tensors": 11,
+      "outputs": "composed-late-manual-full-s1.pt",
+      "outputs_sha256": "8138f7a13294bdc4db0cde52dd92ecb0c339584242b4d2036ecb5c0e2b0be904",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302711717175047,
+      "overwrite_complete_ns": 5302711965737829,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-manual-full-s2",
+      "profile": "composed-late",
+      "method": "manual-full",
+      "source": 2,
+      "exact_tensors": 11,
+      "outputs": "composed-late-manual-full-s2.pt",
+      "outputs_sha256": "b6f143e394b3e7df7077e647750337c46c0baf77969758751509ff3da32f55d6",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302712368632757,
+      "overwrite_complete_ns": 5302712618061372,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-copy-in-s0",
+      "profile": "composed-late",
+      "method": "copy-in",
+      "source": 0,
+      "exact_tensors": 11,
+      "outputs": "composed-late-copy-in-s0.pt",
+      "outputs_sha256": "7c84ce551738d5205daf027c2800f876f979c7bc7927815c5b17f6b7dc7a3562",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302713435322252,
+      "overwrite_complete_ns": 5302713684097856,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-copy-in-s1",
+      "profile": "composed-late",
+      "method": "copy-in",
+      "source": 1,
+      "exact_tensors": 11,
+      "outputs": "composed-late-copy-in-s1.pt",
+      "outputs_sha256": "17e0d77d2589621e101bbccab8b0c3fcc5756f77b33ecaf9d6b612778cf8aea3",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302714075810516,
+      "overwrite_complete_ns": 5302714324175570,
+      "source_changed": true,
+      "same_allocation": true
+    },
+    {
+      "key": "composed-late-copy-in-s2",
+      "profile": "composed-late",
+      "method": "copy-in",
+      "source": 2,
+      "exact_tensors": 11,
+      "outputs": "composed-late-copy-in-s2.pt",
+      "outputs_sha256": "5e9c6d168ba271912920e53dd3841d11287e84d233617b96f12363f89abd6659",
+      "producer_ready_pending": true,
+      "read_complete_ns": 5302714715823780,
+      "overwrite_complete_ns": 5302714965116454,
+      "source_changed": true,
+      "same_allocation": true
+    }
+  ],
+  "mutations": [
+    {
+      "key": "base-auto-batched-s0",
+      "edit": "base",
+      "method": "auto-batched",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "base",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-base-auto-batched-s0.pt",
+      "outputs_sha256": "4a03192e97b5483d7d5b623c9b522e07ec854d508ceb75437d540b614ba56916",
+      "reuse_after_read": true
+    },
+    {
+      "key": "base-auto-batched-s1",
+      "edit": "base",
+      "method": "auto-batched",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "base",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-base-auto-batched-s1.pt",
+      "outputs_sha256": "06ed24dbe304ba6a473b82c4646521516b496f89b5e45bba2511a4e82ca9c5b9",
+      "reuse_after_read": true
+    },
+    {
+      "key": "base-auto-batched-s2",
+      "edit": "base",
+      "method": "auto-batched",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "base",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-base-auto-batched-s2.pt",
+      "outputs_sha256": "9d99127a78c2daa41d3ae5e17f64f0f8cc85c9f99d980648c3d664cb079934df",
+      "reuse_after_read": true
+    },
+    {
+      "key": "base-manual-checked-s0",
+      "edit": "base",
+      "method": "manual-checked",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "base",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-base-manual-checked-s0.pt",
+      "outputs_sha256": "9bffe8a384312e6a3552181b81aad2643c2527f34025254efd51a857947620d6",
+      "reuse_after_read": true
+    },
+    {
+      "key": "base-manual-checked-s1",
+      "edit": "base",
+      "method": "manual-checked",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "base",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-base-manual-checked-s1.pt",
+      "outputs_sha256": "455c483c55f499d18d89340d52c20693ed42a9fe487158609d9930b4343e2bce",
+      "reuse_after_read": true
+    },
+    {
+      "key": "base-manual-checked-s2",
+      "edit": "base",
+      "method": "manual-checked",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "base",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-base-manual-checked-s2.pt",
+      "outputs_sha256": "81e10fdaddcd92d676473212b15dd7dc6238d58e42ea749779b325b050ce3594",
+      "reuse_after_read": true
+    },
+    {
+      "key": "late_read-auto-batched-s0",
+      "edit": "late_read",
+      "method": "auto-batched",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "9fee40c713dd8dd2a0dc582353a3782bafa3965671351cadf1a1e8a283e537ea",
+        "boundary": "evo_read",
+        "readers": [
+          "convolution",
+          "evo_read"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-late_read-auto-batched-s0.pt",
+      "outputs_sha256": "5b2799ebe6db8d8800a4c1a437bf152ad2ba5eecd327240cfc90a8f09dc8b177",
+      "reuse_after_read": true
+    },
+    {
+      "key": "late_read-auto-batched-s1",
+      "edit": "late_read",
+      "method": "auto-batched",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "9fee40c713dd8dd2a0dc582353a3782bafa3965671351cadf1a1e8a283e537ea",
+        "boundary": "evo_read",
+        "readers": [
+          "convolution",
+          "evo_read"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-late_read-auto-batched-s1.pt",
+      "outputs_sha256": "50cb4cf5f6d68b564a8fb3249f33def103ad9be947bbeaf076d6eb34238852f8",
+      "reuse_after_read": true
+    },
+    {
+      "key": "late_read-auto-batched-s2",
+      "edit": "late_read",
+      "method": "auto-batched",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "9fee40c713dd8dd2a0dc582353a3782bafa3965671351cadf1a1e8a283e537ea",
+        "boundary": "evo_read",
+        "readers": [
+          "convolution",
+          "evo_read"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-late_read-auto-batched-s2.pt",
+      "outputs_sha256": "909c3bbd002c5eaf23a6d9e667d6ad6d68b15b01dcdfb15242b41159c5593304",
+      "reuse_after_read": true
+    },
+    {
+      "key": "late_read-manual-checked-s0",
+      "edit": "late_read",
+      "method": "manual-checked",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "9fee40c713dd8dd2a0dc582353a3782bafa3965671351cadf1a1e8a283e537ea",
+        "boundary": "evo_read",
+        "readers": [
+          "convolution",
+          "evo_read"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-late_read-manual-checked-s0.pt",
+      "outputs_sha256": "31a8e9d2bb1205822b79b28096a5614d1be6ba42eae54a8d862f9991d4c734d2",
+      "reuse_after_read": true
+    },
+    {
+      "key": "late_read-manual-checked-s1",
+      "edit": "late_read",
+      "method": "manual-checked",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "9fee40c713dd8dd2a0dc582353a3782bafa3965671351cadf1a1e8a283e537ea",
+        "boundary": "evo_read",
+        "readers": [
+          "convolution",
+          "evo_read"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-late_read-manual-checked-s1.pt",
+      "outputs_sha256": "4a6f9089e9ea2c39b5da200c1a5d9b506df4592019ec30c474f5139d050ea1d0",
+      "reuse_after_read": true
+    },
+    {
+      "key": "late_read-manual-checked-s2",
+      "edit": "late_read",
+      "method": "manual-checked",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "9fee40c713dd8dd2a0dc582353a3782bafa3965671351cadf1a1e8a283e537ea",
+        "boundary": "evo_read",
+        "readers": [
+          "convolution",
+          "evo_read"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-late_read-manual-checked-s2.pt",
+      "outputs_sha256": "7717c4e664726bf6b8961a480814c67a92029c2eabf5ebe8eaa361d828ddc01c",
+      "reuse_after_read": true
+    },
+    {
+      "key": "private_probe-auto-batched-s0",
+      "edit": "private_probe",
+      "method": "auto-batched",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "private_probe",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "6a3e9bfce92a1661ecf21ff2ff83713b8925f38ff94d786ababb2d96cb8d3e70",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-private_probe-auto-batched-s0.pt",
+      "outputs_sha256": "2794a810b0daa223c9b4a1890865255d63d992843a6d6c29197a177cf8894d53",
+      "reuse_after_read": true
+    },
+    {
+      "key": "private_probe-auto-batched-s1",
+      "edit": "private_probe",
+      "method": "auto-batched",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "private_probe",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "6a3e9bfce92a1661ecf21ff2ff83713b8925f38ff94d786ababb2d96cb8d3e70",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-private_probe-auto-batched-s1.pt",
+      "outputs_sha256": "1dbe23e5c4274a3c16da7e1f750993fa53ee6bbd6c7e844e645b23ac27433788",
+      "reuse_after_read": true
+    },
+    {
+      "key": "private_probe-auto-batched-s2",
+      "edit": "private_probe",
+      "method": "auto-batched",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "private_probe",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "6a3e9bfce92a1661ecf21ff2ff83713b8925f38ff94d786ababb2d96cb8d3e70",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-private_probe-auto-batched-s2.pt",
+      "outputs_sha256": "22985220e128533b385dfd63b2a8ac0ff659159486264697cb61fd1c31893cf6",
+      "reuse_after_read": true
+    },
+    {
+      "key": "private_probe-manual-checked-s0",
+      "edit": "private_probe",
+      "method": "manual-checked",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "private_probe",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "6a3e9bfce92a1661ecf21ff2ff83713b8925f38ff94d786ababb2d96cb8d3e70",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-private_probe-manual-checked-s0.pt",
+      "outputs_sha256": "ddf86dfd1eeabf00dd722a36a915eaf4a44aa11105358def07b09ff0f4d42e60",
+      "reuse_after_read": true
+    },
+    {
+      "key": "private_probe-manual-checked-s1",
+      "edit": "private_probe",
+      "method": "manual-checked",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "private_probe",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "6a3e9bfce92a1661ecf21ff2ff83713b8925f38ff94d786ababb2d96cb8d3e70",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-private_probe-manual-checked-s1.pt",
+      "outputs_sha256": "fe937f38bbeee2cf40c444d8a64162452e24aaaf0352087786f00e8bbd4e9bab",
+      "reuse_after_read": true
+    },
+    {
+      "key": "private_probe-manual-checked-s2",
+      "edit": "private_probe",
+      "method": "manual-checked",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "private_probe",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "6a3e9bfce92a1661ecf21ff2ff83713b8925f38ff94d786ababb2d96cb8d3e70",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 10,
+      "outputs": "mutation-private_probe-manual-checked-s2.pt",
+      "outputs_sha256": "2f3b73428c792af9883198b2b45c3ec1d58468c0b20b0e963df3435e3ef241cb",
+      "reuse_after_read": true
+    },
+    {
+      "key": "remove_late_read-auto-batched-s0",
+      "edit": "remove_late_read",
+      "method": "auto-batched",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "remove_late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-remove_late_read-auto-batched-s0.pt",
+      "outputs_sha256": "d0ea49420bcfa8eea3a88fb611a15e78bfa60c4ece7ee6c6007662d6a57f7825",
+      "reuse_after_read": true
+    },
+    {
+      "key": "remove_late_read-auto-batched-s1",
+      "edit": "remove_late_read",
+      "method": "auto-batched",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "remove_late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-remove_late_read-auto-batched-s1.pt",
+      "outputs_sha256": "b40642240a019bb483ae28389158f39e873859dd7c9451b6995f39b6632c3314",
+      "reuse_after_read": true
+    },
+    {
+      "key": "remove_late_read-auto-batched-s2",
+      "edit": "remove_late_read",
+      "method": "auto-batched",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "remove_late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-remove_late_read-auto-batched-s2.pt",
+      "outputs_sha256": "d9504f9bd88913f95fd69084ba47d0f0e93a9c1e49b54f9c3f7008b342cb1f59",
+      "reuse_after_read": true
+    },
+    {
+      "key": "remove_late_read-manual-checked-s0",
+      "edit": "remove_late_read",
+      "method": "manual-checked",
+      "source": 0,
+      "review": {
+        "model": "transfusion",
+        "edit": "remove_late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-remove_late_read-manual-checked-s0.pt",
+      "outputs_sha256": "be66277aeedba5be3ea4c8d8c33c92249056d1aa13a6abf083114883fd346d5b",
+      "reuse_after_read": true
+    },
+    {
+      "key": "remove_late_read-manual-checked-s1",
+      "edit": "remove_late_read",
+      "method": "manual-checked",
+      "source": 1,
+      "review": {
+        "model": "transfusion",
+        "edit": "remove_late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-remove_late_read-manual-checked-s1.pt",
+      "outputs_sha256": "b7337eba126787af7654374eaaa69d2ceb80e1fec0e248a7af1e57753170bf67",
+      "reuse_after_read": true
+    },
+    {
+      "key": "remove_late_read-manual-checked-s2",
+      "edit": "remove_late_read",
+      "method": "manual-checked",
+      "source": 2,
+      "review": {
+        "model": "transfusion",
+        "edit": "remove_late_read",
+        "export_sha256": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+        "graph_sha256": "c392feb903dd82815db228e718722c5fdd9547e78078b4ac2d4192cb700e6751",
+        "boundary": "convolution",
+        "readers": [
+          "convolution"
+        ],
+        "review_kind": "explicit frozen schema/name review"
+      },
+      "exact_tensors": 9,
+      "outputs": "mutation-remove_late_read-manual-checked-s2.pt",
+      "outputs_sha256": "21d8e651a179d00b6b57abac72b0f465772c6b66d141e66e87758636a8f637ed",
+      "reuse_after_read": true
+    }
+  ],
+  "cancellation": [
+    {
+      "method": "auto-batched",
+      "stage": "pending",
+      "held_until_event": false,
+      "released_after_drain": true,
+      "publish_rejected": true
+    },
+    {
+      "method": "auto-batched",
+      "stage": "submitted",
+      "held_until_event": true,
+      "released_after_drain": true,
+      "publish_rejected": true
+    },
+    {
+      "method": "auto-batched",
+      "stage": "all-submitted",
+      "held_until_event": true,
+      "released_after_drain": true,
+      "publish_rejected": true
+    },
+    {
+      "method": "manual-checked",
+      "stage": "pending",
+      "held_until_event": false,
+      "released_after_drain": true,
+      "publish_rejected": true
+    },
+    {
+      "method": "manual-checked",
+      "stage": "submitted",
+      "held_until_event": true,
+      "released_after_drain": true,
+      "publish_rejected": true
+    },
+    {
+      "method": "manual-checked",
+      "stage": "all-submitted",
+      "held_until_event": true,
+      "released_after_drain": true,
+      "publish_rejected": true
+    }
+  ],
+  "rejections": [
+    {
+      "label": "base-auto-batched-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "base-auto-batched-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "base-auto-batched-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "base-auto-batched-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-auto-batched-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "base-auto-batched-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-auto-batched-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "base-auto-batched-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "base-auto-batched-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "base-auto-batched-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-auto-batched-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "base-auto-batched-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-auto-batched-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "base-auto-batched-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "base-auto-batched-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "base-auto-batched-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-auto-batched-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "base-auto-batched-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-manual-checked-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "base-manual-checked-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "base-manual-checked-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "base-manual-checked-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-manual-checked-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "base-manual-checked-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-manual-checked-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "base-manual-checked-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "base-manual-checked-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "base-manual-checked-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-manual-checked-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "base-manual-checked-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-manual-checked-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "base-manual-checked-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "base-manual-checked-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "base-manual-checked-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "base-manual-checked-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "base-manual-checked-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late-read-needs-safety-boundary-update",
+      "reason": "manual boundary carries source; a new safety review is required"
+    },
+    {
+      "label": "late_read-auto-batched-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "late_read-auto-batched-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "late_read-auto-batched-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "late_read-auto-batched-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-auto-batched-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "late_read-auto-batched-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-auto-batched-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "late_read-auto-batched-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "late_read-auto-batched-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "late_read-auto-batched-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-auto-batched-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "late_read-auto-batched-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-auto-batched-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "late_read-auto-batched-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "late_read-auto-batched-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "late_read-auto-batched-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-auto-batched-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "late_read-auto-batched-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-manual-checked-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "late_read-manual-checked-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "late_read-manual-checked-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "late_read-manual-checked-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-manual-checked-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "late_read-manual-checked-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-manual-checked-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "late_read-manual-checked-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "late_read-manual-checked-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "late_read-manual-checked-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-manual-checked-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "late_read-manual-checked-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-manual-checked-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "late_read-manual-checked-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "late_read-manual-checked-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "late_read-manual-checked-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "late_read-manual-checked-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "late_read-manual-checked-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-auto-batched-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "private_probe-auto-batched-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "private_probe-auto-batched-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "private_probe-auto-batched-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-auto-batched-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "private_probe-auto-batched-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-auto-batched-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "private_probe-auto-batched-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "private_probe-auto-batched-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "private_probe-auto-batched-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-auto-batched-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "private_probe-auto-batched-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-auto-batched-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "private_probe-auto-batched-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "private_probe-auto-batched-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "private_probe-auto-batched-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-auto-batched-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "private_probe-auto-batched-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-manual-checked-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "private_probe-manual-checked-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "private_probe-manual-checked-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "private_probe-manual-checked-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-manual-checked-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "private_probe-manual-checked-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-manual-checked-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "private_probe-manual-checked-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "private_probe-manual-checked-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "private_probe-manual-checked-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-manual-checked-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "private_probe-manual-checked-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-manual-checked-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "private_probe-manual-checked-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "private_probe-manual-checked-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "private_probe-manual-checked-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "private_probe-manual-checked-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "private_probe-manual-checked-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "remove_late_read-auto-batched-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s0-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s0-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s0-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s0-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s0-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s0-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s1-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s1-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s1-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s1-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s1-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s1-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s2-odd-generation",
+      "reason": "invalid publication or writer-active generation"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s2-wrong-ready",
+      "reason": "the adapter requires a trusted CUDA ready event"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s2-suffix-first",
+      "reason": "out-of-order or repeated stage"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s2-early-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s2-stream-substitution",
+      "reason": "only one CUDA stream is supported"
+    },
+    {
+      "label": "remove_late_read-manual-checked-s2-duplicate-publication",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "auto-batched-pending-cancelled-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "auto-batched-submitted-cancelled-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "auto-batched-all-submitted-cancelled-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "auto-batched-changed-function",
+      "reason": "owned generated function changed"
+    },
+    {
+      "label": "auto-batched-changed-owned-state",
+      "reason": "owned state changed"
+    },
+    {
+      "label": "manual-checked-pending-cancelled-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "manual-checked-submitted-cancelled-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "manual-checked-all-submitted-cancelled-publish",
+      "reason": "output before checked completion"
+    },
+    {
+      "label": "manual-checked-changed-function",
+      "reason": "owned generated function changed"
+    },
+    {
+      "label": "manual-checked-changed-owned-state",
+      "reason": "owned state changed"
+    }
+  ],
+  "stream_substitution_witnesses": [
+    {
+      "key": "base-auto-batched-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "base-auto-batched-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "base-auto-batched-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "base-manual-checked-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "base-manual-checked-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "base-manual-checked-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "late_read-auto-batched-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "late_read-auto-batched-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "late_read-auto-batched-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "late_read-manual-checked-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "late_read-manual-checked-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "late_read-manual-checked-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "private_probe-auto-batched-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "private_probe-auto-batched-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "private_probe-auto-batched-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "private_probe-manual-checked-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "private_probe-manual-checked-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "private_probe-manual-checked-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "remove_late_read-auto-batched-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "remove_late_read-auto-batched-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "remove_late_read-auto-batched-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "remove_late_read-manual-checked-s0",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "remove_late_read-manual-checked-s1",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    },
+    {
+      "key": "remove_late_read-manual-checked-s2",
+      "admitted_handle": 94489556580640,
+      "candidate_handle": 0,
+      "admitted_device": "cuda:0",
+      "candidate_device": "cuda:0",
+      "reason": "only one CUDA stream is supported",
+      "before": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "after": [
+        1,
+        1,
+        false,
+        false
+      ],
+      "rejected": true
+    }
+  ],
+  "active": null,
+  "expected_cases": 48,
+  "expected_mutations": 24,
+  "expected_cancellation": 6,
+  "inference_executed": true,
+  "performance_claim": false,
+  "gpu_uuid": "GPU-f3b314a8-3058-e0be-694c-76f4227afb7d",
+  "input_hashes": {
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2_oracle/case_0.pt": "223f008bdc340507d6d8349eb19dfac9cb3f9e0c065ed809d19e00e3b029d48e",
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2_oracle/case_1.pt": "fa0156156bb3dca0b53775da65adc218866d628bc694e10d2409d59809352041",
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2_oracle/case_2.pt": "b52848aceb47e8b1dc2ad039160e18d3624c0341fd922937754926119d58b037"
+  },
+  "active_stream_witness": {
+    "key": "remove_late_read-manual-checked-s2",
+    "admitted_handle": 94489556580640,
+    "candidate_handle": 0,
+    "admitted_device": "cuda:0",
+    "candidate_device": "cuda:0"
+  }
+}

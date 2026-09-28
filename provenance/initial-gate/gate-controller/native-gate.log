@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt2/native_gate.py", line 157, in run
+    reject(report, key+'-stream-substitution', lambda: ex.submit(1, torch.cuda.Stream()))
+  File "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt2/native_gate.py", line 38, in reject
+    raise AssertionError('Invalid action accepted: ' + label)
+AssertionError: Invalid action accepted: private_probe-manual-checked-s2-stream-substitution

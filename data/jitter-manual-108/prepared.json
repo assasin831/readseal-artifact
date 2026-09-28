@@ -1,0 +1,3573 @@
+{
+  "status": "PREPARED",
+  "created_utc": "2026-09-27T15:16:11.440936+00:00",
+  "bindings": {
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/admission_streaming.py": "0279300343151c879efdef683accc8868a273bb68d1ccf22786a9d7fc5249249",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/batch_backend.py": "b4cfcdf6fd88327fe2a3ac00fcc11759b739d06f3c9b71a9143dbc2992685a12",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/batch_lease.py": "ecd57f97a798b89117ccdf1c3c40998a25c12caca3dae4e0b2f11c8d47910bfa",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/grouped_composition.py": "d724038bcadaeab10cf3c397cc91a8f977505f8671c5ac555f726791ffe26bf3",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/run_grouped_admission.py": "7d85e47df2f379b9c95ebcbded7445471f0ab4ad828d8187fb95ba4ea4de5a5d",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/run_grouped_gate.py": "3559fcc3433b967cdb1df7cc8903ec0061acf6e014dbebe318d6d78a8124e5f6",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v1_attempt2/core.py": "69c1d23fefa0f275433a8f747adda35e6e1b8335fc88e9902e163913873d5078",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v1_attempt2/torch_backend.py": "9aed225894583785df661635e734afba779491fe8e9597432999ac744926a534",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v2_composition_attempt2/native_composition.py": "481a315e216bbde921ac892bd609a965b542d70a2a6904a41691f5b97aefab4a",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v3_attempt1/native_loader.py": "eaf76410e6db2cdf473d5fbdc79c3a3e2bd4ef57e0f39c6db5eda023481635e4",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v4_segmented_attempt1/segmented_backend.py": "0b0af5d51c37abbe75ab555b015301af8e7af0dd83072ee3208bb3d7fabc2c9e",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_owned_attempt2/owned_backend.py": "b7e24d95133daca38d7588ac1267fa959301dee0f30c9a019d83e869fefe6215",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/owned_prepared.py": "95ddd38986885a7438fd69aaab772c0771fd3bd0f58f846ec4b557ba5eff22ae",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/prepared_lease.py": "2acf7076c53a18195b5b89595763efdec65661f7ee61a3036c59378e73eaa2ff",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_resnet_scope_attempt1/export_backend.py": "cde20e499d15095abad19e045d50769e8a6aa45d3b72e7d056f420ce8eda00ac",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/owned_witness.py": "7e69713302ec8943893365534a65f0f9727304427211f95b677dc47c92b95f52",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/witness_lease.py": "f02077725b777887c8f3f233135e47fcaf786912b19f3f8abfd9aba0dcd2c14d",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/manual_static.py": "4db35ea2922567ed3af522bbd7e0945e718fb8c2dc4f6fe8ee52f68436b3bfb8",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/study_common.py": "6054b5a29d678912ede6fe5c7a3f9b932657d1927854f9872a7f67338cda6232",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/metrics.py": "0b7e909c6e742e1ac7b2a7e4c520f91ec3b03ddcdccca9368ce17e59742514d0",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/run_streaming.py": "302bd2332d343a528ece104b7edbb70d158d7fef12b7e57f0c686821d9cbd99a",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/auto_composition.py": "b056492255e5197a96a06cde9785511eaf85dd5e9143afa713f3950d021de377",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/common.py": "e05d89e17b17fe2f856d425254dc64f56b66d1c437f88a06dd8fdb1aba430a58",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/launch_abc.py": "b16834c6185ab09dbeb30ebf1fd461e903f497c2dbaa26fa06e09e00c331f67f",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/manual_composition.py": "14f9bfc8a45a65c166ded7f5190f62cb987725a6f3e80cd30c29a3a3ead6fccf",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/run_abc.py": "ae6507be3fc498d8ad18de18fbd9f2d12bd132452fbb604b392c70ae29fda30c",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/run_gate.py": "3629012458f455e39050de5158f08d56024db97d62d980edb0bd5dd94cc55f64",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v8_abc_attempt1/validate_abc.py": "b0475178e1558d5bfc8ca7d152cf13e65cceca731ba150303eeedb12889f336c",
+    "/www/readseal_ipdps_revision_v6/results/borrowplan_v2_native_composition_attempt1/native.engine": "e16e10603b9a5508995331576c2f8863ecbfb380041742eb400024789d5fbc97",
+    "/www/readseal_ipdps_revision_v6/results/borrowplan_v2_native_composition_attempt1/report.json": "3dee35fc00a238d313c4af9b55f43772f361751225f0ed5a310a94ab29ef5d9d",
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2_oracle/case_0.pt": "223f008bdc340507d6d8349eb19dfac9cb3f9e0c065ed809d19e00e3b029d48e",
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2_oracle/case_1.pt": "fa0156156bb3dca0b53775da65adc218866d628bc694e10d2409d59809352041",
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2_oracle/case_2.pt": "b52848aceb47e8b1dc2ad039160e18d3624c0341fd922937754926119d58b037",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/test_grouped_campaign.py": "7795f900cd0800eba27af1caa8d2c65befce0ce4bcfbeb944d310ee8aafd8a70",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/launch_grouped_formal.py": "3b14dc9e50ded4517acd3331a417f09bf38b4fb70873dfaf29d65c7647a0e2ee",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/validate_grouped_pipeline.py": "64d32e95367568862dc7ff0e3511d50451cd89dde802364c94d0e74ccd962169",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/validate_admission.py": "40c9457bde6604ce237b97aa7084b7a1ddfc759493b7101e944e1e0e61eebdb4",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/validate_admission_base.py": "647e92c282271b28670b4e56227b8d6e9aa9b7d81848376e392041120e86c0ee",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/launch_admission.py": "b9aa9b840f019a9ec4794cb9c7b91eba382d0ff9d963c80f6c5c8e9c75e9acd0",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/validate_maintenance.py": "107c6adfe7a6440049338af8785b114bd83885dcf018631fe4dea954af354457",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/variants.py": "48134532b14108f3c28293c739fb31b119ac196fe102e2be05cb0730d8da5442",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/run_admission.py": "066be569ef1b063c0c90005b2144f135074cb8233cc1d302b9912e378f1d0d63",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/run_maintenance.py": "a9a095a7399aa22bf5604d747f6497530dfbf864913dbed2088025b29ebc3da1",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/evolved_manual.py": "de0c31f0d9d2d02c381e2daff8da697f6ccb76b68c0f9a96690c8f9490591066",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_admission_attempt1/prepare_reviews.py": "0dbe0d382e837490757d6ebc8490507088b087e5692a8cb9b9ca5e15951a82ee",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/validate_admission.py": "40c9457bde6604ce237b97aa7084b7a1ddfc759493b7101e944e1e0e61eebdb4",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/validate_cpu_batch.py": "a2857d8282ab433979f83a0c8e2ff8d73c303a7a9e3ec46d5657ec3a3eaf3f31",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/admission_streaming.py": "0279300343151c879efdef683accc8868a273bb68d1ccf22786a9d7fc5249249",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/validate_batch_cost.py": "5eb21200439a6fa77acc6ec91987a516f826e00f572279716b0045caf0f28a64",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/validate_admission_base.py": "647e92c282271b28670b4e56227b8d6e9aa9b7d81848376e392041120e86c0ee",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/launch_admission.py": "b9aa9b840f019a9ec4794cb9c7b91eba382d0ff9d963c80f6c5c8e9c75e9acd0",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/validate_maintenance.py": "107c6adfe7a6440049338af8785b114bd83885dcf018631fe4dea954af354457",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/variants.py": "48134532b14108f3c28293c739fb31b119ac196fe102e2be05cb0730d8da5442",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/run_admission.py": "066be569ef1b063c0c90005b2144f135074cb8233cc1d302b9912e378f1d0d63",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/launch_batch.py": "07f2230f0f5fb1dbf1c74f5017092b1b9de0f3b1ad7d4edab2d8467e1ecf2f93",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/run_maintenance.py": "a9a095a7399aa22bf5604d747f6497530dfbf864913dbed2088025b29ebc3da1",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/evolved_manual.py": "de0c31f0d9d2d02c381e2daff8da697f6ccb76b68c0f9a96690c8f9490591066",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/prepare_reviews.py": "0dbe0d382e837490757d6ebc8490507088b087e5692a8cb9b9ca5e15951a82ee",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/test_batch_lease.py": "5cac539b0ffe6e35e3d5db38641a11ce5982d4c4ff573ecc412e4acee8793bca",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/run_batch_gate.py": "f0efead27a690a21e5d86e14b36b1193f115373ebbc28471370ac0ca92fbb57e",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/run_batch_cost.py": "c41ea04bb742ac4b48db0677dc039464dc0c9df6cca4a51bc946687805ef200a",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_batch_attempt1/prepare_batch_reviews.py": "2825bf09e24859a529372036ad7a2b66c9a25c5db7fb78e8f3ddbf4b432af594",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/validate_followup.py": "8809a428f02323fbfca560eae04cbf0ed2178aa02fdeb7f4424beb30d0ce71d0",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/analyze_cost.py": "02382bbf4f72d7c7d07722217a1ca1c62d0aada0e50d4b06edc070e31838ef5b",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/launch_followups.py": "95a42e5ed0af9974c87a010cc7cbe6016ba21b590b400c398d5181bd05616c93",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/run_manual_cost.py": "355bb76f42d954e4ffd82e86fe8760501e2521ed7a10d2766d97d17686839daf",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_followups_attempt1/run_local_event_control.py": "6e020ed69fe96d89f8ebf619823d54e4d321d3104b7c77bcaaf85f87e2594f22",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/launch_formal.py": "59ac52996d71ce81f11650078ee85ec7aae6a3065118a69f57d78ec3e50aff8a",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/study_common.py": "6054b5a29d678912ede6fe5c7a3f9b932657d1927854f9872a7f67338cda6232",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/validate_streaming.py": "10e9f6a9e88b690eb5bda9602b3fcffa03f88d1c10cea6d1622b34dc039d543f",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/run_cell.py": "575f41705085b4e63fd700576c8f22ad4d9346de7afd1f8eca15d21157591c57",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v7_formal_attempt1/manual_static.py": "4db35ea2922567ed3af522bbd7e0945e718fb8c2dc4f6fe8ee52f68436b3bfb8",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_resnet_scope_attempt1/run_resnet_witness.py": "b602708186d8fe73ebbbebcd20900ffd511f5483d044d81e61ca9c170e0cb409",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_resnet_scope_attempt1/launch_resnet.py": "dbdbbe4b56d0342b52e6a55adaa9d7641aa09090a87152342f303297e315785e",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_resnet_scope_attempt1/test_scope.py": "0ddcb2551a76811a5c59f2926dffd161463d8d413705ff54e2cd5ba1ea6e37c6",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_resnet_scope_attempt1/validate_resnet_witness.py": "c8fa85f769977ab0064bc36f159859f65f9382616b6868559724edacc11be520",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/launch_witness.py": "f30f2b243b708978a497e610174c7e8d5657cb3f6e4622e146bb6d1f35b042c6",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/run_witness.py": "42f7b7d194d7a127fd6a6388f02cb39a9fd8ab546fe36d3f42b4d9b139342373",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/test_witness_cpu.py": "9353a53dec11ff726f8f7fe79d80b7ae43db58b3f10208f352c139d07519e7d4",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/validate_witness.py": "aa17c25a74074a89dd8a905c73384cbbbaa2ee26c4fc3caa9084cd1d80fc0d15",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v6_witness_attempt1/test_witness_lease.py": "c4d0c1adc60ba90d3ca5e622f5250894e0d47edc03b66f767e895f4479b92dd8",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/test_prepared_cpu.py": "12ae5af0175accc327c0ee66cd110ed84dcc28b8fb537a0c9be8034177e5b5e7",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/run_prepared.py": "f919230178b7b570b2fac9a406646ddb2450a468d5dd93e25668a0406f299cfa",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/launch_prepared.py": "0cf99e89e0f2831eb0cf873f8707e957635b954c59ec06fa98345b8b15160559",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/validate_prepared.py": "df2e41fd4cf6cfb0282b896d1c46048c4d52954534e2446cbb0612f77bdd22e3",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_prepared_attempt1/test_prepared_lease.py": "4b4249012c4b10af586219027275d5738ad9b47b853bcbbb0a32608ded1547ec",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_owned_attempt2/run_owned.py": "311542096ab0bc0eff38564f352a208322ec02a406dfb1196edb71e44fea07ee",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_owned_attempt2/test_owned_cpu.py": "1e166430ed5e8c60f9487ba7e89a1898d4bf448cbf158f5c78f78c891fd1697a",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_owned_attempt2/launch_owned.py": "ae309c4730b8abc56926d735890ee29c5f67f0975a45ffe023e882e9345cbed8",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v5_owned_attempt2/validate_owned.py": "63fe99ed0733418c08f06050a76e2414c8c3191a723615084fa464b4e374d5da",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v4_segmented_attempt1/check_segmented.py": "2a88dd8e9136514153067759895925348c74d5743887b03cc76a0d3e71916d90",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v4_segmented_attempt1/validate_segmented.py": "9dcb078339d30117ff913af5df8ddad2e6268978a5665f7739ffc77994957e04",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v4_segmented_attempt1/test_lowering.py": "bc9bd603d84c0cb405f1bc5f2fbabcc436dfaca3584a49648e9e6ef217152bbd",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v4_segmented_attempt1/launch_gate.py": "44d5cd31de119f73514f32da4002f53bfcf3b63ba98eec905d1cc85f8e1cbfef",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v1_attempt2/validate_smoke.py": "3845a81a12e27d903943752fef0551e599f7b2b90936f380e63feec7ebaecd4b",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v1_attempt2/test_core.py": "4acfd17af85154774a08806a21df9e415da36a81b19b347e19899f5fe6cc942e",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v1_attempt2/run_smoke.py": "4574f315ba0f3d786fa38dfb4cdf97f47e9cf36b94dd8ba4f4b49658a5654be1",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v2_composition_attempt2/test_native_manager.py": "5339c721c0836d82b0559b008952828e9ef04030b4b5976aa624a60a2733e2ce",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v2_composition_attempt2/validate_native_composition.py": "673ec4d77de561a017470142f952b900b28a582612eb103088dde704c9a9fb4b",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v2_composition_attempt2/run_native_composition.py": "5524df5fc675511f2f95f2f8380bb0b61977b4e534da11f78a866700c2359c6b",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v3_attempt1/coordination.py": "0d316cfdbb906f7021ad5af682723b9fb5ba2d895a42141af52faf318e005bb6",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v3_attempt1/launch.py": "6cd4e64a202728525dee6e908300c53556700b4aa1a75981e25a39f7cda9dab1",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v3_attempt1/test_coordination.py": "2290d489d9c64501fd5f20d46580acc465a36a63203073d0e04930522a17cd57",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v3_attempt1/run_multiprocess.py": "7ddb8f0a90fe5d79e7cf04721d7a9a22449abee2a2e9612acd09e2b1ef818dbe",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/grouped_formal_plan.json": "888b311f076868c0f36a6488e81906ff8ec760f5ddc29eb072b1a15a6e51d1c9",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v11_grouped_attempt1/GROUPED_PIPELINE_PLAN.md": "9ab6f4f6d1091f16e34536d8df66321446a1f728b944a10e5fc379f1ca4d73ff",
+    "/www/readseal_ipdps_revision_v6/results/borrowplan_v11_grouped_gate_validation_attempt1/validation.json": "20ed1a1ab3f28c70b3f6ca59de9bb69bf169afa40f65bf3376c47928ca3a71e5",
+    "/www/readseal_ipdps_revision_v6/results/borrowplan_v11_grouped_gate_attempt1/report.json": "1860715e5eca8e4e8ba04e2c29a1152dd7656adce1723e06d17baa7094cdd911",
+    "/www/readseal_ipdps_revision_v6/inputs/transfusion_borrowplan_v2/head_export.pt2": "8efaa67aa6884d0c9aec6fff442e9a50b683a290d856abef390db1f034ccabbd",
+    "/www/readseal_ipdps_revision_v6/results/borrowplan_v11_grouped_formal_attempt1/report.json": "9cb022aff0d3ab9c9d75ee0e0e1d5d4b3d8bde87ebbde514c2930a89dcc0c946",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/audit.py": "87ad0abbcfb837a4833da6d6a45c5d329a60fe479d7179b2691c58abde9190de",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/campaign.py": "3bfd92ad7def6596eadd2303bb4da8013793b9a661437ccc8d35b8f9a06f62fc",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/check_saved_cpu.py": "b7fe2684c3b3cef53175a30a4502cc0f8055a04e8f04ec5d8a7d7dba5a9c2381",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/host_inventory.py": "45e5ec9169e4a15bb6e02fa8ebbe086f3d2bfd5e1e529e7075daaa42990b4f71",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/protocol.py": "c5348502d50f41daf9be72b7270c7271662c804e7ae4f5330ca46994336179fd",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/test_protocol.py": "ebdd915f04c8793afda53f6a3a13a40c9500c96c231ad8567cd283ec44f637b4",
+    "/www/readseal_ipdps_revision_v6/prototype_npc_v12_short_20260915_attempt1/PROTOCOL.md": "49542a2d0b49adebba32552db1a633823f32e04ec999747047202c634b6f5f69",
+    "/www/readseal_ipdps_revision_v6/results/npc_loadscan_v7_continue_20260915/formal/audit/analysis.json": "d319ba93775b32a1711836843130bc9e1cf0c251d826bae6fac8978b807174ae",
+    "/www/readseal_ipdps_revision_v6/results/npc_v12_short_20260915_attempt1/host_environment.json": "5d5e5986954666fee0957bafca721cd26de1954aef650b3c7f76c6f2a4fd1b96",
+    "/www/readseal_ipdps_revision_v6/results/npc_v12_short_20260915_attempt1/prepared.json": "b4b2830cde4ab8966df39a943fdc6133b7060c101bff1c73b488b25a8fc135a4",
+    "/www/readseal_ipdps_revision_v6/results/npc_v12_short_20260915_attempt1/controller/status.json": "f9f355ff7c911aa6cba8b6976428c458b394c7b50cdd3affe283e0fbde7f4fb0",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/analysis_metrics.py": "8a86b9a43f3df3387170f2afeee1e4068fcfff764f2c0027dafa9d4ea21d5823",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/analyze_capacity.py": "5d80bfff69e3b190ebb4b3bcec570b53b58393a22caa901649edd837b1160017",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/capacity_campaign.py": "f519b9d41d2966b61ca4a57decdefe44c4d1140862dab94e3007c48793a781b0",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/protocol.py": "3f75db11c169cadd105fac148042aac9582e6a955d90147ce33a36025a1f97b8",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/reanalyze_v12.py": "6850a82a1cc35da68cc85bfb2948593562e73a440b1cb212f3225b5be6fd95d2",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/test_metrics.py": "9df9679ce66ac5641b839bbfc1813943a22f51c13ff2ac8fe2b3c03a0cef6c0f",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_followup_20260923_attempt1/PROTOCOL.md": "b6dbcf63dc1ec3007441d33acb47ef0a98640e44233c5ea2f39f68f8f25b119b",
+    "/www/readseal_ipdps_revision_v6/results/ispa_capacity_20260923_attempt1/prepared.json": "0758c8cb333a856303c34cf231ca3a45429caac9f7d4fbfcbc0f2924b666f59a",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/copyin_composition.py": "e9e36eefae81ae3e16a1391d5a4c5cb6e9200d63187b2024d0b640f59d96c942",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/gate_campaign.py": "84f826d162f7fbd9ba99b72eaed2e4abdf0523161962df62d85bf9593fd9d512",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/run_copyin_gate.py": "f034954b39b2c263777f7c378d5a2ca73d7480ce3e77cff23b60e1e4c81b0076",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/test_state_machine.py": "64b611b52f078374963460d314cf28861407070758b85d0a0a5ffd314df57189",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/validate_copyin_gate.py": "cc64e132b95102fda6bad96427df8406b4f2be94dc7799e30c6fbfff4bcd8711",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/CONTRACT.md": "9de5538819a4bb39809e01979a98f06e7de009d80fff03e3e154da04e787e25f",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_20260923_attempt2/PREFLIGHT_HISTORY.md": "9928696d518abbb0b65a49deae18ffb2911016bbfd3068feb1e5ec23b425ec5b",
+    "/www/readseal_ipdps_revision_v6/results/ispa_capacity_20260923_attempt1/formal/analysis/validation.json": "ff7aa86db81f7586f4d558668e6d96b033477ff747ec66d8843eb2d7858f70a0",
+    "/www/readseal_ipdps_revision_v6/results/ispa_copyin_gate_20260923_attempt1/validation/validation.json": "6caed7063f065f366b9138d8d980711f8b63af09b10f92bace5b444bd188728e",
+    "/www/readseal_ipdps_revision_v6/results/ispa_capacity_copyin_completion_audit_20260923_fix1/validation.json": "403c105c2aee05723561f52fc56aae883bca1ea2fc213a76d1ff7269156d96d0",
+    "/www/readseal_ipdps_revision_v6/results/ispa_copyin_gate_20260923_attempt1/prepared.json": "c6935e83637c8a636a8d10a30e48590ec10103de85051ae395087f3b5deb8364",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/analyze.py": "1e83f5b31053220283a5325a070d2608d9a158d659dc0f233bcabc1fac667e08",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/campaign.py": "27b1652f0e50f599fd29213c582518c4f288f0bf248e3f4226a95d19ca79ec7e",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/performance_metrics.py": "e5cc203d92a42c792562fbca4f1408c09a7dc75e3ade97fd885e6b9d0ae2bdbd",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/plan.py": "d777b75a331c942a07f15ca4d00c2cbb972c6dadbfefad91a54a18842e3efe80",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/run_pipeline.py": "1c1d758e75f992bfabbb1b49daf34360f9c4b501a42d20aea2d3548b5a0e9db4",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/test_cpu.py": "b83b6438f03bc12d7920430e30ff3c5aee81989079c1243094d97ff79ca3d39b",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/validate_pipeline.py": "1d563224b73b599904b92ffe7cc7268b8f91b75dd14d2d3ed458415ba67cbc84",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_copyin_perf_20260923_attempt1/PROTOCOL.md": "07556aff07c5b20a9c940990a8558aaca7c6e11be829c59f77ba750a909a00b0",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/manual_checked.py": "cfd73c67473710b4ebd7b3e20ab72b9cb2b5dd59cab04588c8c264349f9ff2cb",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/test_controller.py": "7c672d6abe4764bdbcdc11b83dcc4a6ea04509f61fa9c86863ea65eedee603b8",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/publication_metrics.py": "60ece19cb2e5e9bebc014ac8bf2efeeeab5db8cf1ff45c296554791592b9f5ed",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/components.py": "4e4a3fc96d6d057cfcc45a16cdcaa18ecb1416d4c4dc9e0188a84da481ace4e3",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/controller.py": "fbbfa5336754c8a133acbb46557a72986244667cab7a513cc08a3b6c9584f2c9",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/run_pipeline.py": "3c9eb97ee7c701bc114e9d0e1c8c20ce82a8ba0eb0e115d478bec3d004c24d4d",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/test_cpu.py": "8dc0f8c29231515fe3bbf0e577575d52548bda443b628a24414e58592f07d71d",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/stream_witness.py": "15bdc0a7b63ae42432b906d2bf83ca10afdcb397ed0ae28852899c25984c101c",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/cpu_preflight.py": "7cdd3b936310394f96f5d7abddc0c3256bf10a5fd2f5c22b7fb29fc8f3ac31f2",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/design.py": "3192e01296a9971e6b3fc289b1f5e6c6ea9f2ea6580eff45342104b67e8722dc",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/remote_cpu_check.py": "8103bfd9f2c8f7d4431fc45372fee2164da1c9011a3503814638367923f544c2",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/native_gate.py": "9b1234ee049a3060fc0a28731f3528eb759304883c13c5808276946d9414197f",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/runtime.py": "172d2c1b0a4acbff9a9a6d2f3f7d737ecc50f4ad11806c87e87da1dcee6fb0a6",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/audit.py": "e3d710d7bd486fe8fa0daf27fa252210c2559f01b84755e3d7360290694b7d15",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/test_stream_witness.py": "146958c58144d60335d4dc866b95819eb4f6f195ad2047cb25f046cce75802ec",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_maintenance_attempt1/variants.py": "48134532b14108f3c28293c739fb31b119ac196fe102e2be05cb0730d8da5442",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_maintenance_attempt1/run_maintenance.py": "a9a095a7399aa22bf5604d747f6497530dfbf864913dbed2088025b29ebc3da1",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_maintenance_attempt1/evolved_manual.py": "de0c31f0d9d2d02c381e2daff8da697f6ccb76b68c0f9a96690c8f9490591066",
+    "/www/readseal_ipdps_revision_v6/prototype_borrowplan_v10_maintenance_attempt1/prepare_reviews.py": "0dbe0d382e837490757d6ebc8490507088b087e5692a8cb9b9ca5e15951a82ee",
+    "/www/readseal_ipdps_revision_v6/results/ispa_reviewer_remote_cpu_20260927_attempt4/report.json": "629a65047f6314ab31840cfd4df4f635a2bdf7ca36d8d073cf1d0549f2eb4ab1",
+    "/www/readseal_ipdps_revision_v6/results/ispa_reviewer_controller_cpu_20260927_attempt2/result.json": "ada5d0fc16287ca5a00e0709ac3be149890028bd65dce53ff605b17d24c7175e",
+    "/www/readseal_ipdps_revision_v6/results/ispa_reviewer_stream_witness_cpu_20260927_attempt1/validation.json": "f8db3a33cc32ff7a661c56d1cd4a3bc84bf2f08702a575094edf3d81ce99a332",
+    "/www/readseal_ipdps_revision_v6/results/ispa_copyin_performance_20260923_attempt1/prepared.json": "8715d718cf48bb9aff440805f3c3d985fdcafde4c99aadac2d1461b8bb838905",
+    "/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt3/local_files.json": "f5322b9298f9fb7b434889c27f31c64205e4cbc82e64ae6ae80c7ea17dcd416a"
+  },
+  "plan": {
+    "schema": "readseal-reviewer-followup-v1",
+    "repetitions": 6,
+    "methods": [
+      "auto-batched",
+      "manual-checked",
+      "manual-full",
+      "copy-in"
+    ],
+    "conditions": [
+      {
+        "id": "homogeneous-periodic-hz30",
+        "mix": "homogeneous",
+        "arrival": "periodic",
+        "rate_hz": 30
+      },
+      {
+        "id": "homogeneous-jitter-hz30",
+        "mix": "homogeneous",
+        "arrival": "jitter",
+        "rate_hz": 30
+      },
+      {
+        "id": "heterogeneous-periodic-hz30",
+        "mix": "heterogeneous",
+        "arrival": "periodic",
+        "rate_hz": 30
+      },
+      {
+        "id": "heterogeneous-jitter-hz30",
+        "mix": "heterogeneous",
+        "arrival": "jitter",
+        "rate_hz": 30
+      },
+      {
+        "id": "late-periodic-hz30",
+        "mix": "late",
+        "arrival": "periodic",
+        "rate_hz": 30
+      }
+    ],
+    "profiles": {
+      "homogeneous": [
+        "composed",
+        "composed",
+        "composed",
+        "composed"
+      ],
+      "heterogeneous": [
+        "native",
+        "head",
+        "composed",
+        "composed-late"
+      ],
+      "late": [
+        "composed-late",
+        "composed-late",
+        "composed-late",
+        "composed-late"
+      ]
+    },
+    "common": {
+      "consumers": 4,
+      "ring": 1,
+      "queue": 8,
+      "outstanding_cap": 0,
+      "deadline_ms": 100,
+      "warmup_seconds": 10,
+      "measure_seconds": 30
+    },
+    "expected_runs": {
+      "smoke": 18,
+      "formal": 108
+    },
+    "jitter": "independent nonnegative U[0,0.8*period] arrival displacement; no sorting or clipping",
+    "seeds": {
+      "order": 26092701,
+      "arrivals": 26092702
+    },
+    "initial_free_gib_floor": 40,
+    "between_run_free_gib": 20,
+    "disk_rule": "initial max(40 GiB, 20 GiB + 2*estimated whole-campaign raw bytes)",
+    "gpu_uuid": "GPU-f3b314a8-3058-e0be-694c-76f4227afb7d",
+    "primary": "all four intended recipients exact and received within 100ms / all scheduled publications",
+    "secondary": [
+      "complete-publication timely goodput/s",
+      "recipient timely bundles/s",
+      "complete-publication scheduled-to-last-receipt P50/P99",
+      "all-correct complete count",
+      "partial count",
+      "producer and queue drops",
+      "per-recipient latency and timely fractions",
+      "sampled device and allocator peaks"
+    ],
+    "confidence": "n=6 whole-run paired, pointwise t95 df=5; no equivalence or multiplicity guarantee",
+    "scope": "native A100 component heterogeneity, not heterogeneous AV nodes or embedded execution",
+    "no_retry": true,
+    "no_condition_selection": true
+  },
+  "schedules": {
+    "smoke": [
+      {
+        "name": "smoke-r00-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-jitter-hz30-copy-in",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-jitter-hz30-manual-full",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-late-periodic-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-late-periodic-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-periodic-hz30-copy-in",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-periodic-hz30-manual-full",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "smoke-r00-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 1,
+          "measure_seconds": 3,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      }
+    ],
+    "formal": [
+      {
+        "name": "formal-r00-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-periodic-hz30-copy-in",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-periodic-hz30-manual-full",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 0,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-jitter-hz30-manual-full",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-jitter-hz30-copy-in",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-late-periodic-hz30-manual-checked",
+        "repeat": 0,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r00-late-periodic-hz30-auto-batched",
+        "repeat": 0,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092702,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 1,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-periodic-hz30-manual-full",
+        "repeat": 1,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 1,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-periodic-hz30-copy-in",
+        "repeat": 1,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 1,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 1,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 1,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 1,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-late-periodic-hz30-manual-checked",
+        "repeat": 1,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-late-periodic-hz30-auto-batched",
+        "repeat": 1,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 1,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 1,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-jitter-hz30-copy-in",
+        "repeat": 1,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-homogeneous-jitter-hz30-manual-full",
+        "repeat": 1,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 1,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 1,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 1,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r01-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 1,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092703,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 2,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 2,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 2,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 2,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-late-periodic-hz30-auto-batched",
+        "repeat": 2,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-late-periodic-hz30-manual-checked",
+        "repeat": 2,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 2,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 2,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 2,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 2,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 2,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-jitter-hz30-manual-full",
+        "repeat": 2,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-jitter-hz30-copy-in",
+        "repeat": 2,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 2,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-periodic-hz30-manual-full",
+        "repeat": 2,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 2,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 2,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r02-homogeneous-periodic-hz30-copy-in",
+        "repeat": 2,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092704,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-late-periodic-hz30-manual-checked",
+        "repeat": 3,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-late-periodic-hz30-auto-batched",
+        "repeat": 3,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 3,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-periodic-hz30-copy-in",
+        "repeat": 3,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 3,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-periodic-hz30-manual-full",
+        "repeat": 3,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 3,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 3,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 3,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 3,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 3,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-jitter-hz30-manual-full",
+        "repeat": 3,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 3,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-homogeneous-jitter-hz30-copy-in",
+        "repeat": 3,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 3,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 3,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 3,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r03-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 3,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092705,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-periodic-hz30-manual-full",
+        "repeat": 4,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 4,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-periodic-hz30-copy-in",
+        "repeat": 4,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 4,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 4,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 4,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 4,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 4,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 4,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 4,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 4,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 4,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-jitter-hz30-manual-full",
+        "repeat": 4,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-jitter-hz30-copy-in",
+        "repeat": 4,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 4,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 4,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-late-periodic-hz30-manual-checked",
+        "repeat": 4,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r04-late-periodic-hz30-auto-batched",
+        "repeat": 4,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092706,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-jitter-hz30-auto-batched",
+        "repeat": 5,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-jitter-hz30-manual-checked",
+        "repeat": 5,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-jitter-hz30-copy-in",
+        "repeat": 5,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-jitter-hz30-manual-full",
+        "repeat": 5,
+        "condition": "heterogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-jitter-hz30",
+          "mix": "heterogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-periodic-hz30-manual-full",
+        "repeat": 5,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-periodic-hz30-copy-in",
+        "repeat": 5,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-periodic-hz30-manual-checked",
+        "repeat": 5,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-periodic-hz30-auto-batched",
+        "repeat": 5,
+        "condition": "homogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-periodic-hz30",
+          "mix": "homogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-late-periodic-hz30-auto-batched",
+        "repeat": 5,
+        "condition": "late-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-late-periodic-hz30-manual-checked",
+        "repeat": 5,
+        "condition": "late-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "late-periodic-hz30",
+          "mix": "late",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed-late",
+            "composed-late",
+            "composed-late",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-periodic-hz30-manual-full",
+        "repeat": 5,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-periodic-hz30-manual-checked",
+        "repeat": 5,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-periodic-hz30-auto-batched",
+        "repeat": 5,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-heterogeneous-periodic-hz30-copy-in",
+        "repeat": 5,
+        "condition": "heterogeneous-periodic-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "heterogeneous-periodic-hz30",
+          "mix": "heterogeneous",
+          "arrival": "periodic",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "native",
+            "head",
+            "composed",
+            "composed-late"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-jitter-hz30-auto-batched",
+        "repeat": 5,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "auto-batched",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-jitter-hz30-copy-in",
+        "repeat": 5,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "copy-in",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-jitter-hz30-manual-checked",
+        "repeat": 5,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-checked",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      },
+      {
+        "name": "formal-r05-homogeneous-jitter-hz30-manual-full",
+        "repeat": 5,
+        "condition": "homogeneous-jitter-hz30",
+        "method": "manual-full",
+        "cell": {
+          "consumers": 4,
+          "ring": 1,
+          "queue": 8,
+          "outstanding_cap": 0,
+          "deadline_ms": 100,
+          "warmup_seconds": 10,
+          "measure_seconds": 30,
+          "id": "homogeneous-jitter-hz30",
+          "mix": "homogeneous",
+          "arrival": "jitter",
+          "rate_hz": 30,
+          "arrival_seed": 26092707,
+          "profiles": [
+            "composed",
+            "composed",
+            "composed",
+            "composed"
+          ]
+        }
+      }
+    ]
+  },
+  "sizing": {
+    "estimated_raw_bytes": 5250048994,
+    "factor": 2,
+    "gate_allowance_bytes": 1073741824,
+    "initial_bytes": 42949672960,
+    "between_bytes": 21474836480,
+    "scope": "historical max whole-run size for all 126 new runs plus 1GiB gates; planning only"
+  },
+  "hardware": [
+    "GPU-27a30ceb-15be-fd33-fd5f-12c95db8523c, NVIDIA A100-PCIE-40GB, Enabled",
+    "GPU-f3b314a8-3058-e0be-694c-76f4227afb7d, NVIDIA A100-PCIE-40GB, Disabled"
+  ],
+  "gpu_uuid": "GPU-f3b314a8-3058-e0be-694c-76f4227afb7d",
+  "inference_executed": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE",
+  "stage": "gate",
+  "started_utc": "2026-09-27T15:16:24.281598+00:00",
+  "active": null,
+  "started": [
+    "native-gate"
+  ],
+  "completed": [
+    {
+      "name": "native-gate",
+      "validation_sha256": "bbd9ecf746ff544562b3d62076656e7348c7fb64fde95bf7af7135a3fb020143"
+    }
+  ],
+  "expected": 1,
+  "inference_executed": true,
+  "checked_utc": "2026-09-27T15:16:24.833479+00:00",
+  "compute": [],
+  "free_bytes": 54482604032,
+  "ended_utc": "2026-09-27T15:17:24.925638+00:00",
+  "completed_count": 1,
+  "started_count": 1,
+  "unstarted_count": 0
+}

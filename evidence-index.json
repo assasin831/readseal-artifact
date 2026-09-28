@@ -1,0 +1,252 @@
+{
+  "format": "ReadSeal ISPA 2026 evidence index v1",
+  "archives": [
+    {
+      "path": "archives/ispa2026-jitter-manual-108.zip",
+      "scope": "Jitter, component heterogeneity and checked manual boundaries; 108 formal, 18 smoke runs",
+      "bytes": 1218728,
+      "sha256": "dbd10557648361efd53b1616765c6c179f8787523a5fcffd823a800ced6a6ad8"
+    },
+    {
+      "path": "archives/ispa2026-clone-168.zip",
+      "scope": "Matched clone-on-accept rate sweep; 168 formal, 8 smoke runs",
+      "bytes": 695561,
+      "sha256": "9f07b1c1cb85ca2b003387eb9e469225e7805ff6fa730ce27d60d2edc45cf9d1"
+    },
+    {
+      "path": "archives/ispa2026-rate-slots-evidence.zip",
+      "scope": "Earlier 108-run rate sweep, 36-run late-read campaign, slot and deadline results",
+      "bytes": 13722193,
+      "sha256": "d775f1b5be0eace0b4a338dd3b5c4fa116085f22fefacd600b31fccd39f8d47c"
+    },
+    {
+      "path": "archives/ispa2026-core-evidence.zip",
+      "scope": "Mechanism, correctness, execution cost, 96-run slots and 54-run confirmation",
+      "bytes": 10675190,
+      "sha256": "6deb8c63f74563b9a42280695cc8f5dbc88070e9b2be0bdc1eb36014ea2ceeb0"
+    },
+    {
+      "path": "archives/ispa2026-model-view-evidence.zip",
+      "scope": "Model outputs, grouped requests and follow-up evidence",
+      "bytes": 14127445,
+      "sha256": "f29ab536298b1ea9a980582964e59bc2180a933163a17c0b2540985a915a4835"
+    },
+    {
+      "path": "archives/ispa2026-load-sensitivity-evidence.zip",
+      "scope": "72-run load sensitivity and deadline re-scoring",
+      "bytes": 2178081,
+      "sha256": "931f3fd8958ef68d606ee68d5ab826ae9eba3042bc02083ca00f928622fb3e0d"
+    }
+  ],
+  "files": {
+    "archives/ispa2026-jitter-manual-108.zip": {
+      "bytes": 1218728,
+      "sha256": "dbd10557648361efd53b1616765c6c179f8787523a5fcffd823a800ced6a6ad8"
+    },
+    "archives/ispa2026-clone-168.zip": {
+      "bytes": 695561,
+      "sha256": "9f07b1c1cb85ca2b003387eb9e469225e7805ff6fa730ce27d60d2edc45cf9d1"
+    },
+    "archives/ispa2026-rate-slots-evidence.zip": {
+      "bytes": 13722193,
+      "sha256": "d775f1b5be0eace0b4a338dd3b5c4fa116085f22fefacd600b31fccd39f8d47c"
+    },
+    "archives/ispa2026-core-evidence.zip": {
+      "bytes": 10675190,
+      "sha256": "6deb8c63f74563b9a42280695cc8f5dbc88070e9b2be0bdc1eb36014ea2ceeb0"
+    },
+    "archives/ispa2026-model-view-evidence.zip": {
+      "bytes": 14127445,
+      "sha256": "f29ab536298b1ea9a980582964e59bc2180a933163a17c0b2540985a915a4835"
+    },
+    "archives/ispa2026-load-sensitivity-evidence.zip": {
+      "bytes": 2178081,
+      "sha256": "931f3fd8958ef68d606ee68d5ab826ae9eba3042bc02083ca00f928622fb3e0d"
+    },
+    "data/jitter-manual-108/analysis_sources.json": {
+      "bytes": 272,
+      "sha256": "c8438cac1ed04d340f76ec569d658f4b0c0d86aa4bfd0d91fac922660c5210e0"
+    },
+    "data/jitter-manual-108/files.json": {
+      "bytes": 1158,
+      "sha256": "afa3b3231d9a9b5bd201c4c3612f03e7c6df7031455df053803687e823a28870"
+    },
+    "data/jitter-manual-108/input_evidence.json": {
+      "bytes": 112558,
+      "sha256": "e7328deb43a27d9123f6d84f1365fe24ae2967541910df22fb72bd8a63b1f8c0"
+    },
+    "data/jitter-manual-108/native_gate.json": {
+      "bytes": 79827,
+      "sha256": "18a7f8f0ad6f656636fc1fb7f51674d1aa4d00820104b0c61d8c6efc5342a74b"
+    },
+    "data/jitter-manual-108/paired_t95.csv": {
+      "bytes": 25417,
+      "sha256": "9a75a644f478338231c5c18339deed27a419aaa45cf6f35cf0be30829667d7aa"
+    },
+    "data/jitter-manual-108/per_run.csv": {
+      "bytes": 31613,
+      "sha256": "62c23e7c27abaea709a29c1a380f1a4ed1b8671b99a482fa1d7320e935470fbc"
+    },
+    "data/jitter-manual-108/prepared.json": {
+      "bytes": 122120,
+      "sha256": "150aefb6d42834e434d7935c8c2c2aa8bf3d15fa189ffb366260da2915574ab9"
+    },
+    "data/jitter-manual-108/publications.csv": {
+      "bytes": 13984402,
+      "sha256": "ba7fbcc1fad26a7ecdda396062c072822e05e1d2eef6dfeae361c903acf74117"
+    },
+    "data/jitter-manual-108/recipients.csv": {
+      "bytes": 72572,
+      "sha256": "7c283d0c49f0ded0bcabeb8db8889f7346db9dad1f8197f987e24e5316de6b49"
+    },
+    "data/jitter-manual-108/run_data.json": {
+      "bytes": 134219,
+      "sha256": "2b66cb246931bda4fa975b71c8ec572b6009c448be9ea94f8b0cd976ab20a220"
+    },
+    "data/jitter-manual-108/smoke_per_run.csv": {
+      "bytes": 5446,
+      "sha256": "08753f8e972b34d32310c06bcf9136ae1db36f5ccc46b8de897b8b05aa84a614"
+    },
+    "data/jitter-manual-108/summary_t95.csv": {
+      "bytes": 29259,
+      "sha256": "b2cb33e6c5a57edef97fbff5242b3fbbab3da7b8d75cbdfdbdf453d53ce83730"
+    },
+    "data/jitter-manual-108/validation.json": {
+      "bytes": 1398,
+      "sha256": "b630abf4e1c5e99a2b9082a795f7a606b8fcc8e26e516d499fab79dc4a465bb9"
+    },
+    "data/clone-168/paired_t95.csv": {
+      "bytes": 74469,
+      "sha256": "37157aea9c5df5a52f8e6caec4ec38b9d22a55009fe2f37da6c690ef24d00b40"
+    },
+    "data/clone-168/per_run.csv": {
+      "bytes": 46362,
+      "sha256": "3d7769cb2f060ee988144aa31134b034dc2926c0a86eb493338acc30ea004e31"
+    },
+    "data/clone-168/summary_t95.csv": {
+      "bytes": 62906,
+      "sha256": "4a03752d9ed0ddb8b2cfd0a5ee1ada7e2b22cbcbaefe49dfc04c70c94b16ab4f"
+    },
+    "data/clone-168/validation.json": {
+      "bytes": 797,
+      "sha256": "cfe81be9d51936eeab5c2e556946a5778929c38c19498bb1f59b365bc8f56303"
+    },
+    "provenance/corrected-gate/native_gate_report.json": {
+      "bytes": 74766,
+      "sha256": "227e87b160668f808dd2fbfa5354ef3a3c64fd2f1be5e1a14cf0ec20d0e49ea2"
+    },
+    "provenance/corrected-gate/native_gate_audit.json": {
+      "bytes": 245,
+      "sha256": "bbd9ecf746ff544562b3d62076656e7348c7fb64fde95bf7af7135a3fb020143"
+    },
+    "provenance/corrected-gate/gate_status.json": {
+      "bytes": 579,
+      "sha256": "16a97c67f2bded328a1b064131f8572f004aa4460b6bf2f6bef2150f8c3a67cd"
+    },
+    "provenance/corrected-gate/gate_exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "provenance/corrected-gate/completed_audit_binding_check.json": {
+      "bytes": 361,
+      "sha256": "81066d5089f730fd249bbb18d4ad02d4ea6c3f9a738172510da2d6a4c81de7ed"
+    },
+    "provenance/corrected-gate/execution_steps.json": {
+      "bytes": 44486,
+      "sha256": "62d9e3d7c53643026160707f51132371d8cd5c606234eedfbec4e768abaabbc5"
+    },
+    "provenance/initial-gate/native-gate/report.json": {
+      "bytes": 51810,
+      "sha256": "cf2321945d5c69aa21f215bba4dab69ae0873b30ff666815f41a86e466335d24"
+    },
+    "provenance/initial-gate/native-gate/FAILED": {
+      "bytes": 7,
+      "sha256": "03cbb6c52e522ce55e217e3f9d66dbd66d21ef6bf85024016a3b7f3080c7944f"
+    },
+    "provenance/initial-gate/gate-controller/status.json": {
+      "bytes": 1089,
+      "sha256": "d3a2b870836e1e4bf16537d1b325d911259fdf61e72310e708ed6a8b5c300450"
+    },
+    "provenance/initial-gate/gate-controller/exit_code": {
+      "bytes": 2,
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    "provenance/initial-gate/gate-controller/native-gate.log": {
+      "bytes": 532,
+      "sha256": "4260b6769c2b8b126361d944b3a97b74157b39ccffbaf3bfc2f908d958a40208"
+    },
+    "code/executor/audit.py": {
+      "bytes": 10519,
+      "sha256": "e3d710d7bd486fe8fa0daf27fa252210c2559f01b84755e3d7360290694b7d15"
+    },
+    "code/executor/components.py": {
+      "bytes": 5676,
+      "sha256": "4e4a3fc96d6d057cfcc45a16cdcaa18ecb1416d4c4dc9e0188a84da481ace4e3"
+    },
+    "code/executor/controller.py": {
+      "bytes": 11859,
+      "sha256": "fbbfa5336754c8a133acbb46557a72986244667cab7a513cc08a3b6c9584f2c9"
+    },
+    "code/executor/cpu_preflight.py": {
+      "bytes": 2524,
+      "sha256": "7cdd3b936310394f96f5d7abddc0c3256bf10a5fd2f5c22b7fb29fc8f3ac31f2"
+    },
+    "code/executor/design.py": {
+      "bytes": 4056,
+      "sha256": "3192e01296a9971e6b3fc289b1f5e6c6ea9f2ea6580eff45342104b67e8722dc"
+    },
+    "code/executor/manual_checked.py": {
+      "bytes": 4216,
+      "sha256": "cfd73c67473710b4ebd7b3e20ab72b9cb2b5dd59cab04588c8c264349f9ff2cb"
+    },
+    "code/executor/native_gate.py": {
+      "bytes": 11570,
+      "sha256": "9b1234ee049a3060fc0a28731f3528eb759304883c13c5808276946d9414197f"
+    },
+    "code/executor/publication_metrics.py": {
+      "bytes": 5427,
+      "sha256": "60ece19cb2e5e9bebc014ac8bf2efeeeab5db8cf1ff45c296554791592b9f5ed"
+    },
+    "code/executor/remote_cpu_check.py": {
+      "bytes": 2996,
+      "sha256": "8103bfd9f2c8f7d4431fc45372fee2164da1c9011a3503814638367923f544c2"
+    },
+    "code/executor/run_pipeline.py": {
+      "bytes": 16930,
+      "sha256": "3c9eb97ee7c701bc114e9d0e1c8c20ce82a8ba0eb0e115d478bec3d004c24d4d"
+    },
+    "code/executor/runtime.py": {
+      "bytes": 1752,
+      "sha256": "172d2c1b0a4acbff9a9a6d2f3f7d737ecc50f4ad11806c87e87da1dcee6fb0a6"
+    },
+    "code/executor/stream_witness.py": {
+      "bytes": 1708,
+      "sha256": "15bdc0a7b63ae42432b906d2bf83ca10afdcb397ed0ae28852899c25984c101c"
+    },
+    "code/executor/test_controller.py": {
+      "bytes": 4546,
+      "sha256": "7c672d6abe4764bdbcdc11b83dcc4a6ea04509f61fa9c86863ea65eedee603b8"
+    },
+    "code/executor/test_cpu.py": {
+      "bytes": 9388,
+      "sha256": "8dc0f8c29231515fe3bbf0e577575d52548bda443b628a24414e58592f07d71d"
+    },
+    "code/executor/test_stream_witness.py": {
+      "bytes": 6320,
+      "sha256": "146958c58144d60335d4dc866b95819eb4f6f195ad2047cb25f046cce75802ec"
+    },
+    "code/analysis/cpu_preflight.py": {
+      "bytes": 1326,
+      "sha256": "92ccd528b8e6967569ee93478140774b11bfeaeb89ff69ec7670ce7c3d759ba8"
+    },
+    "code/analysis/export_results.py": {
+      "bytes": 13704,
+      "sha256": "1af35d3f4f7ec154ca3ac62d34e333c0a02cc1cbe582ce2cc71aa8c6ffd4a9e8"
+    },
+    "code/analysis/test_export.py": {
+      "bytes": 6452,
+      "sha256": "1d7b3358a72496f822c048a9df2a713bd8eb29a7d14b1c3f066c8d3f7f0bfd31"
+    }
+  },
+  "preservation": "Archives and evidence copies are byte-identical to the original saved records. Historical internal names and paths are retained for hash verification."
+}

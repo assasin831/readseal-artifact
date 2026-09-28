@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "cuda_used": false,
+  "inference_executed": false,
+  "runs": 168,
+  "phase": "formal",
+  "campaign_sha256": "72a2913789e25ba420211eefc467fe4267d12364f43bd2727c063bef446cbed2",
+  "csv_sha256": {
+    "per_run.csv": "3d7769cb2f060ee988144aa31134b034dc2926c0a86eb493338acc30ea004e31",
+    "summary_t95.csv": "4a03752d9ed0ddb8b2cfd0a5ee1ada7e2b22cbcbaefe49dfc04c70c94b16ab4f",
+    "paired_t95.csv": "37157aea9c5df5a52f8e6caec4ec38b9d22a55009fe2f37da6c690ef24d00b40"
+  },
+  "analysis_sha256": "1e83f5b31053220283a5325a070d2608d9a158d659dc0f233bcabc1fac667e08",
+  "metrics_sha256": "e5cc203d92a42c792562fbca4f1408c09a7dc75e3ade97fd885e6b9d0ae2bdbd",
+  "uncertainty": "pointwise t95 df5; paired by whole-run repetition; no multiplicity correction",
+  "edge_emulation": false
+}

@@ -1,0 +1,15 @@
+{
+  "ended": true,
+  "messages": [
+    {
+      "status": "connected",
+      "target": "outer replication host"
+    },
+    {
+      "exit": 0,
+      "stdout": "{\"utc\": \"2026-09-27T15:24:45.494423+00:00\", \"completed\": 18, \"smoke\": 18, \"formal\": 0, \"audit_hashes_and_report_bindings_verified\": true}\r\n",
+      "stderr": ""
+    }
+  ],
+  "stderr": ""
+}

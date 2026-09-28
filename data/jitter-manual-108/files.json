@@ -1,0 +1,15 @@
+{
+  "README.md": "3fdb6543790ee931d6ee39d672571e7597649f9f1e5ca2e3bd875f2d3c63a2fa",
+  "analysis_sources.json": "c8438cac1ed04d340f76ec569d658f4b0c0d86aa4bfd0d91fac922660c5210e0",
+  "input_evidence.json": "e7328deb43a27d9123f6d84f1365fe24ae2967541910df22fb72bd8a63b1f8c0",
+  "native_gate.json": "18a7f8f0ad6f656636fc1fb7f51674d1aa4d00820104b0c61d8c6efc5342a74b",
+  "paired_t95.csv": "9a75a644f478338231c5c18339deed27a419aaa45cf6f35cf0be30829667d7aa",
+  "per_run.csv": "62c23e7c27abaea709a29c1a380f1a4ed1b8671b99a482fa1d7320e935470fbc",
+  "prepared.json": "150aefb6d42834e434d7935c8c2c2aa8bf3d15fa189ffb366260da2915574ab9",
+  "publications.csv": "ba7fbcc1fad26a7ecdda396062c072822e05e1d2eef6dfeae361c903acf74117",
+  "recipients.csv": "7c283d0c49f0ded0bcabeb8db8889f7346db9dad1f8197f987e24e5316de6b49",
+  "run_data.json": "2b66cb246931bda4fa975b71c8ec572b6009c448be9ea94f8b0cd976ab20a220",
+  "smoke_per_run.csv": "08753f8e972b34d32310c06bcf9136ae1db36f5ccc46b8de897b8b05aa84a614",
+  "summary_t95.csv": "b2cb33e6c5a57edef97fbff5242b3fbbab3da7b8d75cbdfdbdf453d53ce83730",
+  "validation.json": "b630abf4e1c5e99a2b9082a795f7a606b8fcc8e26e516d499fab79dc4a465bb9"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "inference_executed": false,
+  "formal_runs": 108,
+  "smoke_runs": 18,
+  "publications": 97200,
+  "recipient_run_rows": 432,
+  "summary_rows": 234,
+  "paired_rows": 169,
+  "prepared_sha256": "150aefb6d42834e434d7935c8c2c2aa8bf3d15fa189ffb366260da2915574ab9",
+  "scope": "Native A100 component heterogeneity, not four independently trained AV nodes or embedded execution. All intended recipients and all scheduled publications define the primary denominator. Complete-publication latency is conditional on all-correct complete outputs; incomplete counts remain visible. Pointwise t95 df5 uses six whole runs or six paired differences, not frames as replicates. No equivalence, simultaneous coverage, outlier removal or winner-based condition selection. Memory is the observed device peak from roughly 0.5-second sampling during the worker-ready-to-drain window; it excludes earlier model/reference setup and can miss transients. Per-worker allocator peaks are separate and are not summed into a simultaneous device peak. Original raw traces and saved tensors remain at the recorded remote paths. Online exact hashes cover receipts; saved first samples have independent tensor checks. Historical Clone-on-admit wave1 is separate and is not paired across waves.",
+  "raw_evidence_root": "/www/readseal_ipdps_revision_v6/results/ispa_reviewer_execution_20260927_attempt2"
+}

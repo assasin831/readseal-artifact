@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "inference_executed": false,
+  "cases": 48,
+  "mutations": 24,
+  "cancellation": 6,
+  "rejections": 155,
+  "exact_tensors": 600,
+  "report_sha256": "227e87b160668f808dd2fbfa5354ef3a3c64fd2f1be5e1a14cf0ec20d0e49ea2"
+}

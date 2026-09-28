@@ -1,0 +1,20 @@
+{
+  "status": "FAILED",
+  "stage": "gate",
+  "started_utc": "2026-09-27T08:57:59.275516+00:00",
+  "active": "native-gate",
+  "started": [
+    "native-gate"
+  ],
+  "completed": [],
+  "expected": 1,
+  "inference_executed": true,
+  "checked_utc": "2026-09-27T13:52:05.509782+00:00",
+  "compute": [],
+  "free_bytes": 54702489600,
+  "failure": "Traceback (most recent call last):\n  File \"/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt2/controller.py\", line 212, in run\n    invoke(task['command'],runtime.environment(True),control/(task['name']+'.log'),\n  File \"/www/readseal_ipdps_revision_v6/prototype_ispa_reviewer_executor_20260927_attempt2/controller.py\", line 133, in invoke\n    raise RuntimeError(f'Owned task exit {child.returncode}; log={log}; no retry')\nRuntimeError: Owned task exit 1; log=/www/readseal_ipdps_revision_v6/results/ispa_reviewer_execution_20260927_attempt1/gate-controller/native-gate.log; no retry\n",
+  "ended_utc": "2026-09-27T13:52:59.894444+00:00",
+  "completed_count": 0,
+  "started_count": 1,
+  "unstarted_count": 0
+}
