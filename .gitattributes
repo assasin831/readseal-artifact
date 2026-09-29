@@ -7,3 +7,6 @@ evidence-index.json -text
 *.md text eol=lf
 tools/*.py text eol=lf
 .gitattributes text eol=lf
+# Match the source ZIP and its per-file manifest exactly, including line endings.
+manuscript/** -text -whitespace
+manuscript/**/*.pdf -diff

@@ -5,7 +5,7 @@
 | Saved label | Paper label | Meaning |
 |---|---|---|
 | `auto-batched` | BIM / ReadSeal | Automatically derived read boundaries |
-| `manual-checked` | Manual, new campaign | Explicit boundaries with identical binding and stage checks |
+| `manual-checked` | Manual-checked, new campaign | Explicit boundaries with identical binding and stage checks |
 | `manual-early` | Manual, earlier campaigns | Earlier manually maintained release implementation |
 | `manual-full` | Full retention | Retain source through output completion |
 | `copy-in` | Clone-on-accept | Copy the source into recipient-owned storage at acceptance |
@@ -42,11 +42,13 @@ All files below are in [data/jitter-manual-108](data/jitter-manual-108).
 |---|---|
 | Fig. 2, one-slot trace at 20 Hz | Rate/slots archive, E1 repetition 0 timelines |
 | Fig. 3 and model boundary/update tests | Core and rate/slots archives; new matched update cases in corrected native gate |
-| Fig. 5, original rate and late-read campaigns | Rate/slots archive, E1 (108 runs) and E2 (36 runs) |
-| Fig. 6, slots and deadline re-scoring | Rate/slots archive `prior_v11/evidence`; 96-run window, distinct 54-run confirmation in core evidence |
-| Fig. 7 and Section V-C, jitter and mixed recipients | New 108-run campaign; figure covers 96 runs, text also reports the 12 all-late control runs |
-| Section V-C, clone rate comparison | Separate 168-run campaign |
+| Fig. 4, original rate and late-read campaigns | Rate/slots archive, E1 (108 runs) and E2 (36 runs) |
+| Fig. 5, slots and deadline re-scoring | Rate/slots archive `prior_v11/evidence`; 96-run window, distinct 54-run confirmation in core evidence |
+| Fig. 6 and Section V-D, jitter and mixed recipients | New 108-run campaign; figure covers 96 runs, text also reports the 12 all-late control runs |
+| Section V-D, clone rate comparison | Separate 168-run campaign |
 | Section V-E, checked manual update cases | Corrected gate report and saved-only audit |
 | Section V-F, isolated cost and model/view coverage | Core and model/view archives |
+
+Figure numbers above refer to [paper revision 15](manuscript/r15/BIM_ReadSeal_ISPA2026_r15.pdf). The source preserves older file stems: fig5_delivery is paper Fig. 4, fig6_slots is Fig. 5, and fig7_mixed is Fig. 6. See the [campaign inventory](manuscript/r15/source/CAMPAIGNS.md) for study counts and units.
 
 Historical archive member names are provenance identifiers, not current venue branding. Use the ISPA download index rather than editing those members.

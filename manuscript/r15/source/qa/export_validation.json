@@ -1,0 +1,159 @@
+{
+  "paper": "BIM_ReadSeal_ISPA2026_r15.pdf",
+  "bytes": 3360178,
+  "sha256": "160f5706bd54963ff93bb89ea108d678bbf515e8bdcd03b3332d2ed74d8b3a9e",
+  "pages": [
+    {
+      "page": 1,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 2,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 3,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 4,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 5,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 6,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 7,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    },
+    {
+      "page": 8,
+      "text_identical": true,
+      "pixels_identical_144dpi": true
+    }
+  ],
+  "figures": [
+    {
+      "paper_figure": 1,
+      "stem": "fig1_overview",
+      "pdf_sha256": "de6a4669f3fd8985d28524f4e38300fea8e7641b1f189a347fd75b50c80179bc",
+      "page_points": [
+        0.0,
+        0.0,
+        512.6456909179688,
+        156.95433044433594
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        4273,
+        1308
+      ],
+      "embedded_fonts": 5,
+      "minimum_text_pt": 5.499000072479248
+    },
+    {
+      "paper_figure": 2,
+      "stem": "fig2_trace",
+      "pdf_sha256": "fe10349b3498927e4cffb5547998b288ce9077dff95aeb995702097197279b8e",
+      "page_points": [
+        0.0,
+        0.0,
+        248.39999389648438,
+        115.90866088867188
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        2070,
+        966
+      ],
+      "embedded_fonts": 3,
+      "minimum_text_pt": 6.008999824523926
+    },
+    {
+      "paper_figure": 3,
+      "stem": "fig3_boundaries",
+      "pdf_sha256": "107ba824426b02f5dc4b88876fdee6573644119f895d6a092d047ac5876c61bd",
+      "page_points": [
+        0.0,
+        0.0,
+        248.39999389648438,
+        97.90866088867188
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        2070,
+        816
+      ],
+      "embedded_fonts": 1,
+      "minimum_text_pt": 6.008999824523926
+    },
+    {
+      "paper_figure": 4,
+      "stem": "fig5_delivery",
+      "pdf_sha256": "d63290d0efca750bec71e76df4a99b2d5647d6f9d086fb148a432d7f51fe0828",
+      "page_points": [
+        0.0,
+        0.0,
+        511.20001220703125,
+        105.84567260742188
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        4260,
+        883
+      ],
+      "embedded_fonts": 2,
+      "minimum_text_pt": 6.093999862670898
+    },
+    {
+      "paper_figure": 5,
+      "stem": "fig6_slots",
+      "pdf_sha256": "0c06ec5508bea6d7a54a89e986146d56ab95b5606bef1d6382444e194106b8ad",
+      "page_points": [
+        0.0,
+        0.0,
+        511.20001220703125,
+        105.84567260742188
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        4260,
+        883
+      ],
+      "embedded_fonts": 2,
+      "minimum_text_pt": 6.008999824523926
+    },
+    {
+      "paper_figure": 6,
+      "stem": "fig7_mixed",
+      "pdf_sha256": "6d0f39fdcc86ba01177b923dd2999a7b4fc16bbd2fd208992095ec74e906c3ee",
+      "page_points": [
+        0.0,
+        0.0,
+        248.39999389648438,
+        104.4000015258789
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        2070,
+        870
+      ],
+      "embedded_fonts": 2,
+      "minimum_text_pt": 5.810999870300293
+    }
+  ],
+  "export": "Lossless stream expansion; vector graphics and searchable text retained.",
+  "size_note": "Larger file size is an export setting, not evidence of higher visual quality."
+}

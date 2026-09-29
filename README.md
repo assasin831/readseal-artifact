@@ -2,7 +2,16 @@
 
 Evidence for *BIM and ReadSeal: Safe Early Reuse of Shared GPU Tensors in Autonomous-Driving Middleware*.
 
-The paper's evidence entry is the fixed [ISPA 2026 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1). This release includes both additional performance campaigns, their saved correctness records, and the earlier experiments used in the paper. It is an artifact for submission, not a claim of acceptance.
+The current paper and evidence entry is the fixed [ISPA r15 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15). It includes the revised manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The original [ISPA r1 evidence release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) remains unchanged.
+
+## Current Paper
+
+- [Revision 15 PDF](manuscript/r15/BIM_ReadSeal_ISPA2026_r15.pdf): eight pages, vector figures, embedded fonts.
+- [Complete source ZIP](manuscript/r15/BIM_ReadSeal_ISPA2026_r15_source.zip): LaTeX, six editable PPTX figures, vector PDFs, 600 dpi PNGs, CSVs, and verification records.
+- [Browse source and build instructions](manuscript/r15/source/README.md).
+- [Revision notes](manuscript/r15/source/CHANGES.md), [campaign/terminology guide](manuscript/r15/source/CAMPAIGNS.md), [file hashes](manuscript/r15/release.json).
+
+This update improves readability and regenerates figures from the author's supplied r14 source. All nine figure-data CSVs and all six native slide drawing trees are unchanged. Experimental archives and proof records below are byte-preserved.
 
 ## Start Here
 
