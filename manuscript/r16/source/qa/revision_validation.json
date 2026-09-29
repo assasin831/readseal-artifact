@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "revision": "r16",
+  "paper_sha256": "cba9d840ce2dbc92c75338521c3399bdaf0bc5c139253bb221318042b7371637",
+  "preserved_files": [
+    {
+      "path": "data/boundaries.csv",
+      "sha256": "489ab2b3211bbe6e6fb1cc54a438a84715dfea0287bb353e4f2fdc54db52b28d"
+    },
+    {
+      "path": "data/clone_rates.csv",
+      "sha256": "ff7074a82bc10c664d73cd5fda33d60a0d866973cefec6ec7b630007f46ece03"
+    },
+    {
+      "path": "data/deadlines_30hz.csv",
+      "sha256": "f006721842baeab0db0aa3eafba093fe918255ca50da9fe1e3ee32fd0c12e377"
+    },
+    {
+      "path": "data/late_read.csv",
+      "sha256": "df4e1b0f293fcb69c60012565a51228a9a4d2ab41472e592531f828d651c7231"
+    },
+    {
+      "path": "data/mixed_30hz.csv",
+      "sha256": "8f28a750fdcf66cad929293d24b888445e8cf79c9fe7ca3e52667615c69da6a0"
+    },
+    {
+      "path": "data/mixed_30hz_paired.csv",
+      "sha256": "a883574a4f9674379205f33a43cd0311bf0761890cc13b00c64951955a4da2d0"
+    },
+    {
+      "path": "data/rate_sweep.csv",
+      "sha256": "01a55c7e05a75b8d839746e1ebeea8cb38151371cf257afd7f0ed972a2fbe19a"
+    },
+    {
+      "path": "data/slots_30hz.csv",
+      "sha256": "63dfc9a74d9013f6b14626a004f2daf676e7f1361b41474b46a86db134b3469d"
+    },
+    {
+      "path": "data/trace_20hz.csv",
+      "sha256": "d48ce0d0bf98ea804604665f17e49ca4d928ddd38fa54978361117ed0d47c3c7"
+    },
+    {
+      "path": "figures/fig1_overview.pdf",
+      "sha256": "de6a4669f3fd8985d28524f4e38300fea8e7641b1f189a347fd75b50c80179bc"
+    },
+    {
+      "path": "figures/fig1_overview.png",
+      "sha256": "97abf9ca9304b58a3be4c02bcbb50e2782b990bb81e53662e3b444fa17f6f295"
+    },
+    {
+      "path": "figures/fig1_overview.pptx",
+      "sha256": "ee7a4a365bf3851cf5b160d6da6148a00f8f140577476541d6c990f8dfd48783"
+    },
+    {
+      "path": "figures/fig2_trace.pdf",
+      "sha256": "fe10349b3498927e4cffb5547998b288ce9077dff95aeb995702097197279b8e"
+    },
+    {
+      "path": "figures/fig2_trace.png",
+      "sha256": "8560a7744bbb1362dcb8e798c35ad6599420da99d0d75aa45d01ad8c47c266a5"
+    },
+    {
+      "path": "figures/fig2_trace.pptx",
+      "sha256": "0c9ce43ca9b04236032e5a742d49e5982bfd5430ad7588275f55b60183facb02"
+    },
+    {
+      "path": "figures/fig3_boundaries.pdf",
+      "sha256": "107ba824426b02f5dc4b88876fdee6573644119f895d6a092d047ac5876c61bd"
+    },
+    {
+      "path": "figures/fig3_boundaries.png",
+      "sha256": "c4e06865478b3b81de754b03024486ab152eb799eb949f39abf5618103eb9350"
+    },
+    {
+      "path": "figures/fig3_boundaries.pptx",
+      "sha256": "f89201dc2602b31d51df4df9d854661ca027e26dee036f32dcd5493ecfe119b3"
+    },
+    {
+      "path": "figures/fig5_delivery.pdf",
+      "sha256": "d63290d0efca750bec71e76df4a99b2d5647d6f9d086fb148a432d7f51fe0828"
+    },
+    {
+      "path": "figures/fig5_delivery.png",
+      "sha256": "06d12bc52141709f52038013de5f89fde1f3fb5991f142c48f03d0e98f4a6eb6"
+    },
+    {
+      "path": "figures/fig5_delivery.pptx",
+      "sha256": "18c77d6c63e93380f2faca16397035ea37944f185199b973a73d5fe6061d790d"
+    },
+    {
+      "path": "figures/fig6_slots.pdf",
+      "sha256": "0c06ec5508bea6d7a54a89e986146d56ab95b5606bef1d6382444e194106b8ad"
+    },
+    {
+      "path": "figures/fig6_slots.png",
+      "sha256": "765a2e5bb540f58b1c5e8879f9c62e150de57701a7c2fac5f82a981a976a4d78"
+    },
+    {
+      "path": "figures/fig6_slots.pptx",
+      "sha256": "31d296e31323439c7af44cf44db006b2d99f5861d3bfc26ba0aca6758038699a"
+    },
+    {
+      "path": "figures/fig7_mixed.pdf",
+      "sha256": "6d0f39fdcc86ba01177b923dd2999a7b4fc16bbd2fd208992095ec74e906c3ee"
+    },
+    {
+      "path": "figures/fig7_mixed.png",
+      "sha256": "b82ff528acb779a3def611a5957d6ff990b6a3b5ae89365117a10f9e79c0e919"
+    },
+    {
+      "path": "figures/fig7_mixed.pptx",
+      "sha256": "f68c89f73389b56b0e48d6da2e027c963c2d8f53ca3a814c71b6b468c7bb5aba"
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "c4abee4dc4a44ad98da431eed4a142332bf4f054cde72ee28eadf5e698bae891"
+    }
+  ],
+  "equations_unchanged": 4,
+  "algorithm_changes": "frame terminology and grammatical clarification only",
+  "maintenance": {
+    "archive_sha256": "d775f1b5be0eace0b4a338dd3b5c4fa116085f22fefacd600b31fccd39f8d47c",
+    "member": "readseal_npc_v12_results_20260915/E3/E3_maintenance_16_transitions.csv",
+    "member_sha256": "1073fae14959d653c5f296f4c1e451888fe08c3c99118b83470d9d4757e9bd85",
+    "transitions": 16,
+    "runtime_boundary_changes": 13,
+    "stale_hash_rejections": 16,
+    "outcome_scope": [
+      {
+        "case": "transfusion:base->BN-folded",
+        "outcome": "MEASURED: stale deployment graph-hash rejection; corrected independent validation preserves failed campaign ending"
+      },
+      {
+        "case": "public:ResNet18->ResNet50",
+        "outcome": "MEASURED CPU: old review rejected by graph hash"
+      }
+    ],
+    "no_runtime_boundary_change": [
+      {
+        "case": "transfusion:base->alias_chain",
+        "prefix_total_before": "1/287",
+        "prefix_total_after": "3/289",
+        "manual_runtime_fields_changed": "graph_sha256"
+      },
+      {
+        "case": "resnet:base->alias_chain",
+        "prefix_total_before": "12/123",
+        "prefix_total_after": "14/125",
+        "manual_runtime_fields_changed": "graph_sha256"
+      },
+      {
+        "case": "transfusion:base->BN-folded",
+        "prefix_total_before": "1/287",
+        "prefix_total_after": "1/241",
+        "manual_runtime_fields_changed": "graph_sha256"
+      }
+    ],
+    "timing_seconds_range": [
+      0.077091776,
+      0.2072277515
+    ]
+  },
+  "pages": 8,
+  "page_bounds": "PASS",
+  "artifact_link": "https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16",
+  "unresolved_references": false,
+  "overfull_boxes": false,
+  "inference_executed": false,
+  "scope": "Saved evidence and manuscript checks, not a new experiment or reference audit."
+}

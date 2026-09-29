@@ -2,10 +2,10 @@
 
 ## Verify the Saved Evidence
 
-Download this repository at tag `ispa2026-r15`, or clone it:
+Download this repository at tag `ispa2026-r16`, or clone it:
 
 ```sh
-git clone --branch ispa2026-r15 https://github.com/assasin831/readseal-artifact.git
+git clone --branch ispa2026-r16 https://github.com/assasin831/readseal-artifact.git
 cd readseal-artifact
 python tools/verify_results.py
 python tools/verify_manuscript.py
@@ -14,13 +14,13 @@ python -m unittest discover -s tools -p "test_*.py"
 
 Python 3.10 or later is sufficient; the verifier uses only the standard library. It is read-only, does not import the execution code, and starts no GPU jobs. It verifies archive and copied-file hashes, embedded manifests where supplied, both formal CSV row counts, the new campaign's publication denominator and recipient coverage, and all 403 summary/paired intervals in that campaign. It prints a JSON result and returns a nonzero exit code on failure.
 
-The separate manuscript verifier checks the r15 PDF and ZIP hashes, ZIP CRCs, and every source-manifest entry against both the browsable source tree and the ZIP. It checks packaging integrity, not experimental validity or visual quality.
+The separate manuscript verifier checks the r16 PDF and ZIP hashes, ZIP CRCs, and every source-manifest entry against both the browsable source tree and the ZIP. Use --revision r15 to verify the preserved preceding package. It checks packaging integrity, not experimental validity or visual quality.
 
 `evidence-index.json` records the SHA-256 and length of each byte-preserved evidence file. It covers data and execution-source snapshots, not newly written explanatory Markdown or the portable verifier itself. The Git tag fixes the whole repository tree.
 
 ## Recompute Paper Tables
 
-The [r15 source](manuscript/r15/source/README.md) includes exact CSV inputs, native PowerPoint generators, vector figures, build scripts, and reconstruction checks. [release.json](manuscript/r15/release.json) records paper and ZIP hashes; the source package's MANIFEST.json covers every included file.
+The [r16 source](manuscript/r16/source/README.md) includes exact CSV inputs, native PowerPoint generators, vector figures, build scripts, and reconstruction checks. [release.json](manuscript/r16/release.json) records paper and ZIP hashes; the source package's MANIFEST.json covers every included file.
 
 The manuscript source package includes `scripts/extract_artifact.py` and `scripts/extract_followup.py`. The former reads `archives/ispa2026-rate-slots-evidence.zip`; the latter reads the 108-run and 168-run archives. These scripts derive plotting tables from saved records. They do not rerun inference.
 

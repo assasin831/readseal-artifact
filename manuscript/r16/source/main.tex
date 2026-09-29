@@ -1,0 +1,373 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\pdfminorversion=7
+\pdfcompresslevel=0
+\pdfobjcompresslevel=0
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\let\proof\relax
+\let\endproof\relax
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{pifont}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{bimrow}{HTML}{EAF2FC}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{url}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% Artifact link, set in one place: the ISPA 2026 tag of the artifact repository.
+\newcommand{\artifacturl}{https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16}
+
+\newcommand{\circled}[1]{\ding{\numexpr201+#1\relax}}   % black circled digits used in Fig. 1
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\hd}[1]{\textbf{\begin{tabular}[b]{@{}l@{}}#1\end{tabular}}}   % two-line table headers
+\newcommand{\op}[1]{\textsc{#1}}                          % protocol transitions (Accept, Submit, ...)
+\newcommand{\MiB}{\,MiB}
+\newcommand{\ms}{\,ms}
+\newcommand{\Hz}{\,Hz}
+\newtheorem{proposition}{Proposition}
+
+% Optional acknowledgment of the assistance used for this revision.
+% Authors should review the acknowledgment against the submission requirements.
+\newif\ifaidisclosure
+\aidisclosurefalse
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+
+% Typographic conventions: italics mark a term at its definition (and math); bold run-in heads structure
+% paragraphs; small caps name protocol transitions. Rates of the source are in Hz; goodput is in results/s,
+% where a result is one recipient's result bundle for one publication.
+
+\begin{document}
+
+\title{BIM and ReadSeal: Safe Early Reuse of\\ Shared GPU Buffers Across Processes}
+
+\author{\IEEEauthorblockN{Xingbo Hui, Xuetao Jiang, Guodong Ye, Ruochen Shao, Tianyi Wang, Sicheng Wu, Rui Zhou\textsuperscript{*}, Qingguo Zhou\textsuperscript{*}}
+\IEEEauthorblockA{School of Information Science and Engineering, Lanzhou University, Lanzhou, China\\
+\textsuperscript{*}Co-corresponding authors: zr@lzu.edu.cn, zhouqg@lzu.edu.cn}}
+
+\maketitle
+
+\begin{abstract}
+Processes in perception pipelines share large GPU tensors to avoid per-recipient copies. When may the producer overwrite a shared buffer with the next frame? CUDA stream-only release waits for submitted GPU work and can miss a reader that has not started. Full retention waits for every result and can leave the GPU idle while new frames are refused. Our key insight separates two lifetimes: results retain a frame's identity until delivery, but its storage is needed only until the last read completes. BEV-in-Memory (BIM) protects pending readers through per-recipient borrows. ReadSeal analyzes storage sharing within each model to find the last-read boundary and checks that the resulting plan matches execution. Computation on private intermediate results can then overlap reuse of the shared buffer. In an A100 pipeline with four recipients and early source reads, one BIM slot delivers 1.31--1.50$\times$ the correct, timely results of one-slot full retention at 25--40\Hz, with 8--11\ms{} more mean latency and 15--19\ms{} more per-run 95th-percentile latency. ReadSeal preserves the delivery benefit of hand-placed boundaries while re-deriving them after model changes without manual boundary annotations. Ordered tests verify protection of pending readers, and update tests check regenerated boundaries and rejection of stale plans.
+\end{abstract}
+
+\begin{IEEEkeywords}
+GPU buffer reuse, zero-copy IPC, buffer lifetime, alias analysis, autonomous driving.
+\end{IEEEkeywords}
+
+% =====================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Consider a driving stack built on Autoware or another framework based on ROS~2, the Robot Operating System~\cite{autoware,ros2}. A camera--LiDAR fusion node publishes a bird's-eye-view (BEV) feature map, a top-down grid of features around the vehicle. Separate processes for 3D detection, tracking, motion planning, and data recording read it on their own schedules (Fig.~\ref{fig:overview}a). We call these processes \emph{recipients}. Several components within one recipient may also share the map: BEVFusion feeds one BEV map to both a detection and a map-segmentation head~\cite{bevfusion}. Our evaluated map is a $1{\times}512{\times}180{\times}180$ fp32 tensor of 63.3\MiB~\cite{bevfusion}. Private copies for four recipients add 256\MiB{} of device memory (64\MiB{} each after allocator rounding), a cost that grows with the number of recipients and resident frames. This motivates sharing on automotive systems-on-chip whose GPU shares DRAM with the rest of the stack~\cite{cudategra}. Zero-copy middleware lets recipients map the sender's buffer~\cite{iceoryx,agnocast}, and recent ROS~2 facilities extend this to GPU memory~\cite{nitros,rosidlbuffer}. The producer must then decide when it may overwrite that buffer, which we call a \emph{slot}, with the next frame.
+
+% ---------------------------------------------------------------------
+\begin{figure*}[t]
+\centering
+\includegraphics{figures/fig1_overview.pdf}
+\caption{\textbf{BIM at a glance.} (a)~Offline, ReadSeal analyzes each exported model graph into a plan. Online, the producer writes frame~$k$ into a slot and commits it (\circled{1}, \circled{2}); each recipient enrolls its readers before they submit GPU work (\circled{3}) and returns its borrow once their source reads complete (\circled{4}); the producer may overwrite the slot after every borrow is returned (\circled{5}), while results still carry identity~$k$ (\circled{6}). (b)~Time runs left to right; TensorRT engine~A and exported graph~C are the readers of the last recipient holding a borrow. Stream-only release lets $k{+}1$ overwrite the slot before the graph reads it; full retention holds the slot until the outputs complete; BIM frees it at the last source read.}
+\label{fig:overview}
+\end{figure*}
+
+Two common release rules leave a gap (Section~\ref{sec:motivation}). \emph{CUDA stream-only release}, shortened to stream-only in the figures, reuses the slot once all GPU work submitted so far has finished. A queued recipient that has not submitted its reads can then silently compute on the next frame: a detector reports objects seen in frame $k{+}1$ under the timestamp of frame $k$. At 20\Hz, a vehicle driving at 20\,m/s moves a full meter between the two. \emph{Full retention} holds the slot until every result is ready, as reference-counted zero-copy transports do when recipients keep their references until done~\cite{iceoryx,agnocast}. With a one-slot pool, a new frame is dropped while that slot is held. In our 20\Hz{} trace, the hold barely exceeds the frame period, so full retention drops every other frame and leaves the GPU idle between accepted frames (Fig.~\ref{fig:trace}).
+
+\textbf{Key insight.} A shared tensor, the \emph{source}, has two lifetimes (Fig.~\ref{fig:overview}b). Its \emph{storage lifetime} ends when the last operation that reads it completes. Its \emph{provenance lifetime} lasts until every result is delivered, because those results still identify the frame they came from. The two can differ widely: in the TransFusion detection head that reads our BEV map, only the first of 287 operations reads it. Later operations use intermediate results in private storage, so they can continue after the shared input is overwritten. As with a returned library book still cited in an essay, the identity outlives the need to hold the original. Each recipient therefore holds a \emph{borrow}, permission to read the slot, only until its last source read completes.
+
+A second slot can also absorb new frames while an earlier one finishes. At 30\Hz, full retention with two slots and a suitable request cap reaches nearly the same timely delivery as one-slot early reuse (Section~\ref{sec:eval-slots}). The difference is how the pipeline gets there: one-slot early reuse needs one fewer 64\MiB{} buffer and paces admission through that slot, whereas the larger pool needs a cap to control queueing. We study both choices rather than assuming that a single buffer is the only deployment option.
+
+Ending the borrow at the last read is safe only if three questions have answers. (1)~Which operation reads last? \emph{Views}, tensors that share the input's storage, extend its reads, and one model edit can move this \emph{read boundary} from the first operation to the second-to-last (Fig.~\ref{fig:boundaries}). (2)~Who may still read? A reader that has not yet submitted GPU work leaves nothing to wait on. (3)~Is the analyzed program the one that runs? A boundary derived for one model version can be wrong for the next.
+
+We present BEV-in-Memory (BIM), a cross-process borrowing contract motivated by BEV sharing, and ReadSeal, its mechanism for answering these questions. BIM registers every recipient's borrow when a frame is published, before any recipient starts (Section~\ref{sec:bim}). ReadSeal derives each read boundary by alias analysis of the model graph, registers the components that may read it, and binds the plan to the code, model state, and input layout that execute (Section~\ref{sec:readseal}). Unlike last-use analysis within one program, this contract also covers a process that has yet to submit any GPU work. Existing release-fence interfaces leave the placement of that fence to the application~\cite{bufferqueue,nvscistream}; ReadSeal derives and validates it for each supported graph.
+
+Automating the boundary matters because the point an engineer would place by hand must remain correct after model changes. A new late read can move it from the first operation to the second-to-last. ReadSeal recomputes that point from each model version and rejects a plan that no longer matches execution. We evaluate delivery under load and boundary maintenance separately, using hand-placed boundaries to isolate the benefit of early reuse from its automation. Our contributions are:
+\begin{itemize}
+\item \textbf{The two-lifetime view of a shared GPU tensor} (Section~\ref{sec:motivation}). It explains how to reuse storage while retaining the frame identity of results, including when recipients have not yet submitted their reads.
+\item \textbf{BIM and ReadSeal} (Sections~\ref{sec:bim}--\ref{sec:readseal}), a cross-process borrowing protocol and graph analysis that derive each last-read boundary, register pending readers, and check that the analyzed program matches execution.
+\item \textbf{An evaluation of the reuse choices} (Section~\ref{sec:eval}), comparing early reuse, full retention, extra slots, and copying under load, with model-update tests of automatically maintained boundaries.
+\end{itemize}
+
+% =====================================================================
+\section{Background and Motivation}
+\label{sec:motivation}
+
+\begin{figure}[t]
+\centering
+\includegraphics{figures/fig2_trace.pdf}
+\caption{\textbf{Full retention refuses frames while the GPU idles.} Measured one-slot trace at 20\Hz{} (repetition~0); R1--R4 are the recipients, and labels give slot hold times in ms. Full's 51\ms{} hold just exceeds the 50\ms{} frame period, so every other frame is refused although the recipients sit idle: full retention is not work-conserving. Under BIM, each recipient's work after its borrow return overlaps the next frame.}
+\label{fig:trace}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics{figures/fig3_boundaries.pdf}
+\caption{\textbf{Model edits move the last source read.} Each bar is a graph snapshot; green marks the operations up to and including the last one that may read the shared source, over which the recipient holds its borrow. Each snapshot applies one edit to the base graph (Remove late read undoes Clone source late); labels give the last source-reading operation\,/\,total operations.}
+\label{fig:boundaries}
+\end{figure}
+
+\textbf{GPU background.} GPU work is asynchronous: a process enqueues \emph{kernels}, the functions the GPU runs, on a \emph{stream}, a queue the GPU executes in order, and moves on. A read is thus over only when its kernel has completed. An \emph{event} is a marker in a stream that completes once the work enqueued before it has finished. PyTorch's \code{record\_stream} lets the caching allocator reuse a buffer only after the work already enqueued on the recorded streams has completed~\cite{recordstream}. CUDA inter-process communication (IPC) lets another process map the same device buffer and wait on shared events. But an event can mark only work already enqueued: no process can wait on reads that another has not yet submitted.
+
+\textbf{Releasing too early fails silently.} The simplest case is a recipient still waiting in its queue. It has enqueued no GPU work, so a rule that waits only for submitted work, such as \code{record\_stream} or a read event, returns the slot once the other recipients' reads complete. The producer writes $k{+}1$, and the waiting recipient later computes a numerically valid result on it while its request still names $k$. No crash or error signals the failure, so a downstream planner has no reason to distrust the result. The same gap can open inside a recipient that combines a TensorRT engine with a framework graph. In our running example (Fig.~\ref{fig:overview}b), the two \emph{readers} are TensorRT engine~A, which signals an input-consumed event after reading its input~\cite{tensorrt}, and exported graph~C. An adapter forwards a view to the graph without reading the source itself. Once the engine's event completes, stream-only release returns the slot although the graph has not submitted its reads. Section~\ref{sec:eval-safety} tests this ordering. ROS~2's CUDA buffer backend exposes the same choice: a subscriber's read handle records a read event when destroyed, and the block is recycled once every handle is released~\cite{cudabackend}; destroying the handle after the engine's read is stream-only release, and holding it until the outputs complete is full retention.
+
+\textbf{Holding the source through computation.} With one slot, full retention's 51\ms{} hold exceeds the 50\ms{} period at 20\Hz, so every other frame is refused while the GPU idles (Fig.~\ref{fig:trace}). Adding a slot absorbs some of those arrivals, but can also admit more work than the GPU finishes before the deadline. Section~\ref{sec:eval-slots} measures this interaction with the request cap.
+
+\textbf{Copying the source.} A private copy lets a recipient compute after the shared slot is reused. The copy itself reads the source, however, so the slot must remain protected while a recipient is queued and until its copy completes. Our clone-on-accept policy uses the same recipient registration as BIM and ends each borrow at copy completion. This makes copying another choice of release boundary, with extra storage for the copies. Other implementations can provide the same protection through equivalent coordination.
+
+\textbf{Maintaining a read boundary.} A view can carry a source read into later operations (Fig.~\ref{fig:boundaries}), so a hand-placed boundary must be reviewed after model changes. A stale boundary can release too early unless execution is guarded against that change. Section~\ref{sec:eval-safety} distinguishes changes to the actual runtime boundary from shifts in operation numbering. Table~\ref{tab:options} summarizes the release choices.
+
+\begin{table}[t]
+\caption{Release options for four recipients of one BEV source ($K$: cap on outstanding recipient requests). Extra memory counts source slots and input copies. $^\dagger$A stale unguarded boundary can fail; checked Manual rejects a changed program until its plan is refreshed. $^\ddagger$Misses readers that have not yet submitted work.}
+\label{tab:options}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{1.8pt}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\hd{Policy} & \hd{Extra\\memory} & \hd{Slot reusable\\after} & \hd{Read\\boundary} & \hd{Wrong\\frame?} \\
+\midrule
+Stream-only            & ---      & submitted reads & stream idle & possible$^\ddagger$ \\
+Full retention         & ---      & all outputs     & ---         & no      \\
+Full, 2 slots, $K{=}8$ & one slot & all outputs     & ---         & no      \\
+Clone-on-accept        & 256\,MiB & all copies      & fixed       & no      \\
+Manual                 & ---      & all last reads  & by hand     & no$^\dagger$ \\
+\rowcolor{bimrow}
+BIM + ReadSeal         & ---      & all last reads  & derived     & no \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{BIM: Frame Identity and Buffer Reuse}
+\label{sec:bim}
+
+BIM separates memory, frame identity, and permission to read. The producer has a pool of $N$ reusable GPU slots on one machine. It writes frame~$k$ into a slot and attaches an identity that every result from that frame carries. The same slot can later hold frame~$k{+}1$. The artifact calls each scheduled frame a \emph{publication}; we use frame in the text.
+
+There are two levels of consumers. A \emph{recipient} is a process, whereas a \emph{reader} is a component within it that accesses the shared tensor, such as engine~A or graph~C. A recipient holds one borrow until all its readers have finished accessing the source, including those still waiting to submit work. Borrows decide when memory is reused; identities decide how results are labeled.
+
+\textbf{Descriptors and views.} Recipients receive small descriptors over a control plane such as ROS~2 and map the resident tensor, here through PyTorch's CUDA IPC tensor-sharing support~\cite{torchmp}. A descriptor carries a frame identity (producer instance and sequence number), a storage locator, and an interpretation: element type, shape, strides, and a checked view range. The \emph{view} specifies which bytes a recipient may address and how to interpret them. BIM rejects stale identities and incompatible interpretations.
+
+\textbf{Borrow bits and admission.} A process-shared lock protects slot reservation, the frame sequence, and one borrow bit per recipient, set while that recipient may still read the slot. An arriving frame takes a slot whose bits are all clear. If none is free, the frame is dropped so the source can keep its fixed arrival schedule; blocking would change the offered workload through backpressure. Once the frame is written, the producer \emph{commits} it by setting every recipient's bit before sending any descriptor. This protects even a recipient waiting in its queue. Each recipient clears its bit when it returns its borrow, and clearing the last bit makes the slot reusable without freeing or unmapping it. If frame~$k$ is committed at time~$c_k$ and recipient~$j$ returns its borrow at time~$t_{j,k}$, the slot is held for $H_k$. With one slot, a frame arriving at time~$a$ is admitted only if
+\begin{equation}
+a\;\ge\; c_k+H_k, \qquad H_k=\max_j t_{j,k}-c_k. \label{eq:hold}
+\end{equation}
+Full retention sets $t_{j,k}$ to the time $j$'s outputs complete, and ReadSeal to the time $j$'s last source read completes (Section~\ref{sec:enroll}). This difference in hold time also changes which new frames can enter. An optional cap~$K$ bounds outstanding recipient requests, counted from admission to receipt at the output sink. A frame must pass both admission gates: a free slot and room under the cap.
+
+% =====================================================================
+\section{ReadSeal: Checked Borrowing}
+\label{sec:readseal}
+
+ReadSeal prepares a \emph{plan} once per model version, then checks it each time a recipient processes a frame (Algorithm~\ref{alg:readseal}). The plan records where the graph stops reading shared storage, which components may read it, and which program version was analyzed. Sections~\ref{sec:derive}--\ref{sec:bind} describe these parts in order. One execution of the plan is an \emph{invocation}. Its recipient returns the borrow when every planned source read has finished or was cancelled before starting.
+
+\subsection{Deriving the Read Boundary}
+\label{sec:derive}
+
+\begin{algorithm}[t]
+\caption{BIM's commit and ReadSeal's plan and invocation}
+\label{alg:readseal}
+\footnotesize
+\begin{algorithmic}[1]
+\Procedure{Publish}{frame $k$}\Comment{producer (BIM)}
+\State \textbf{if} no slot is free or $K$ requests are outstanding, \textbf{drop} $k$
+\State write $k$ into a free slot $s$; \emph{commit}: set $b_{s,j}$ for all $j$
+\State send each recipient a descriptor of $(k,s)$
+\EndProcedure
+\Procedure{BuildPlan}{graph $G$}\Comment{offline, per model version}
+\State compute $Q_r$ by \eqref{eq:reads} and $\beta$ by \eqref{eq:boundary}
+\State split $G$ at $\beta$; record readers $U$ and tokens $T$
+\EndProcedure
+\Procedure{Invoke}{plan, frame $k$}\Comment{recipient $j$}
+\State check $T$; keep identity $k$ for every output
+\State enroll every reader in $U$ before any of them submits GPU work
+\State submit the stages in declared order, checking $T$ at each entry
+\State \textbf{on} failed check: cancel unsubmitted reads, drain, publish nothing
+\State \textbf{on} each completed or cancelled read: \textbf{if} \eqref{eq:return} holds, clear $b_{s,j}$
+\State \textbf{on} completed outputs: publish them with identity $k$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+The analysis runs on each graph, a fixed-shape, functional directed acyclic graph (DAG) of operations. Of the two lifetimes, only storage needs analysis. Every result carries the frame identity attached at acceptance. Storage sharing propagates through views: a slice of the source is a view, so an operation on the slice still reads the source, whereas a convolution reads the source but writes fresh storage, so operations on its output do not. In our running example, the adapter only forwards a view; the graph receiving that view reads the source.
+
+Formally, let $S(v)$ be the set of shared roots whose storage a value~$v$ may alias, with $S(r)=\{r\}$ for the source~$r$. For an operation~$o$ with inputs $v_i$ and output $v_o$, let $\mathcal{A}_o$ index the inputs the output may alias and $\mathcal{R}_o$ the inputs $o$ reads. Then
+\begin{equation}
+\begin{aligned}
+S(v_o)&=\textstyle\bigcup_{i\in \mathcal{A}_o} S(v_i),\\
+Q_r&=\{\, o : \exists\, i\in \mathcal{R}_o,\; r\in S(v_i) \,\},
+\end{aligned}\label{eq:reads}
+\end{equation}
+where $Q_r$ is the set of operations that may read the source. With the operations numbered $o_1,\dots,o_n$ in execution order, the read boundary is the position of the last one in $Q_r$,
+\begin{equation}
+\beta=\max\{\, i : o_i\in Q_r \,\}, \label{eq:boundary}
+\end{equation}
+so the \emph{source-reading prefix}, $o_1,\dots,o_\beta$, includes all source reads. The \emph{private suffix}, $o_{\beta+1},\dots,o_n$, computes the remaining results using private intermediate storage. Fig.~\ref{fig:boundaries} labels each graph snapshot with $\beta/n$; the base head has $\beta=1$ and $n=287$.
+
+Operator summaries cover 42 reviewed operator variants in ATen, PyTorch's operator library, plus selection of a tuple element at a fixed index. Each summary counts every operand as read and treats an output as sharing storage whenever the operator's declared signature permits aliasing with an input. Plan construction rejects unsupported mutation, opaque callbacks, and source views that escape the graph. The implementation compiles the prefix and suffix into separate executable stages. A CUDA event after the prefix then marks completion of all its source reads.
+
+\subsection{Enrolling Readers Before Submission}
+\label{sec:enroll}
+
+Registration follows the two consumer levels in Section~\ref{sec:bim}. BIM protects each recipient process by setting its borrow bit at commit. When that process accepts a frame, ReadSeal registers, or \emph{enrolls}, all its reader components before any of them submits GPU work. Each reader~$u$ marks its last source read with a completion event: A's input-consumed event or the event after C's prefix. Let $U_j$ be the readers of recipient~$j$. Then $j$ returns its borrow for frame~$k$ at the first moment when
+\begin{equation}
+\forall u\in U_j:\quad \mathit{done}_u \lor \mathit{cancelled}_u, \label{eq:return}
+\end{equation}
+where $\mathit{done}_u$ holds once $u$'s completion event has completed and $\mathit{cancelled}_u$ once $u$ has been cancelled before submission. Every enrolled reader participates in this condition. When A's event completes, C's read is still pending, so the bit stays set even though C has enqueued no GPU work. Returning the borrow clears $j$'s bit. Once all recipients have returned their borrows, the producer can write the next frame while $j$'s private suffix continues computing results labeled~$k$.
+
+% Fig. 5 is defined here, inside Section IV (page 4), so that it floats to the top of the page where Section V starts.
+% ---------------------------------------------------------------------
+\begin{figure*}[t]
+\centering
+\includegraphics{figures/fig5_delivery.pdf}
+\caption{\textbf{Early reuse raises one-slot delivery under load, with a latency cost.} One slot, no pipeline-wide cap~$K$; six runs per condition and policy. Each input frame offers four recipient results; results/s counts individual results. (a)~Labels give BIM/Full ratios. (b)~Mean receipt latency; BIM's 95th percentile is computed per run and averaged. (c)~Mean hold and BIM's 5th--95th percentile; shading marks where Full's hold exceeds the frame period. (d)~Moving the last read to the graph's end removes the gain.}
+\label{fig:delivery}
+\end{figure*}
+
+\subsection{Binding Plans to Execution}
+\label{sec:bind}
+
+At construction, ReadSeal captures the functions to run and clones model tensors into plan-owned storage. This prevents later edits to the caller's weight tensors from silently changing the executable. The copies are made once per plan, rather than per frame, and require storage for the cloned parameters and buffers; retaining the caller's copies keeps both resident. The manual implementation also clones its model state. These model-state allocations are distinct from the per-frame input copies in Table~\ref{tab:options}.
+
+ReadSeal records \emph{binding tokens}~$T$, identifiers and metadata for code and globals, model storage and version, input layout, and compiled stages. At acceptance and each stage entry it compares them with the values for the execution about to run, $\hat T$, and proceeds only if $\hat T=T$ (Algorithm~\ref{alg:readseal}). A failed check cancels unsubmitted reads, drains started work, and publishes nothing. The application supplies the exported graph, each native engine's last-input-read event, and the component and output dependencies. New operators require reviewed summaries.
+
+\subsection{Correctness Conditions}
+\label{sec:correctness}
+
+The analysis must include every operation that can read the source. It assumes that operator summaries conservatively describe reads and storage sharing, kernels obey those summaries, and the graph executes in the analyzed order.
+
+\begin{proposition}
+Under these assumptions, $Q_r$ in Eq.~\eqref{eq:reads} contains every operation that can read the shared source. No operation after the derived boundary $\beta$ reads that source.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+Initially $S(r)=\{r\}$. At each operation, the union in Eq.~\eqref{eq:reads} preserves the shared roots of every input that its output may alias. Induction over graph order therefore includes every source alias in the corresponding $S(v)$. The read rule places every operation consuming such storage in $Q_r$; by Eq.~\eqref{eq:boundary}, none follows $o_\beta$.
+\end{proof}
+
+For the runtime, each reader's completion event must occur after its source reads, mappings must remain valid, and identities must remain unique while referenced. Algorithm~\ref{alg:readseal} registers every reader before submission, checks the plan at execution, and returns a borrow only when Eq.~\eqref{eq:return} holds. BIM permits overwrite after all recipient bits clear. Together, these steps preserve the source until every reader finishes, while results keep the identity captured at acceptance.
+
+% =====================================================================
+\section{Evaluation}
+\label{sec:eval}
+
+% The slots figure is defined at the start of Section V so that it floats to the page after the delivery figure.
+\begin{figure*}[t]
+\centering
+\includegraphics{figures/fig6_slots.pdf}
+\caption{\textbf{One BIM slot matches full retention with two slots and a request cap} (30\Hz; six runs per condition and policy). $K$ counts outstanding recipient requests; eight requests are two full groups of four. (a)~Solid: timely results; dashed: correct but late; whiskers: 95\% intervals. (b)~Time-averaged source storage held by unreturned borrows, not allocated memory. Device peaks are 5,078\MiB{} with one slot and 5,142\MiB{} with two for every policy. (c)~BIM and Full re-scored at different deadlines using the same runs.}
+\label{fig:slots}
+\end{figure*}
+
+
+
+The evaluation answers five questions in turn: when early reuse pays and what it costs in latency (Section~\ref{sec:eval-delivery}, Fig.~\ref{fig:delivery}); whether a second slot could do the same (Section~\ref{sec:eval-slots}, Fig.~\ref{fig:slots}); how jitter, mixed recipients, and copying change the picture (Section~\ref{sec:eval-mixed}, Fig.~\ref{fig:mixed}); whether BIM stays safe under reordering and model change (Section~\ref{sec:eval-safety}); and what ReadSeal's checks cost (Section~\ref{sec:eval-cost}).
+
+\subsection{Setup}
+\label{sec:eval-setup}
+
+\textbf{Scope and platform.} We evaluate cross-process reuse of saved BEV features on one NVIDIA A100 PCIe 40\,GB GPU. The producer, four recipients, and output sink communicate through multiprocessing queues and share storage and events through CUDA IPC. This setup measures reuse and admission independently of feature extraction; it does not run ROS~2, the BEV front end, or an embedded driving stack. The runtime uses PyTorch 2.1.2, CUDA 12.1, and TensorRT 10.3. Without NVIDIA's Multi-Process Service (MPS), recipient kernels take turns on the GPU. Records, validators, campaign details, and analysis scripts are public.\footnote{\url{\artifacturl}.}
+
+\textbf{Workload.} The exported graph (C) is BEVFusion's functional TransFusion head~\cite{bevfusion,transfusion}, with 287 operations. The producer publishes precomputed 63.3\MiB{} feature maps from three fixed nuScenes-mini frames~\cite{nuscenes}. The native engine (A) runs the head's shared convolution, ReLU, and global average pooling in TensorRT; an adapter forwards a view to the graph. This controlled composition gives each recipient two readers of the same source, each with its own completion event. Four recipients run identical compositions in the rate and slot sweeps; Section~\ref{sec:eval-mixed} varies their components. A pretrained ResNet-18 tail, comprising residual stages and classifier with saved stem activations as the shared source, serves in the correctness, model-change, and cost tests.
+
+\textbf{Policies.} All policies share the pool, workloads, queues, and admission settings. BIM uses ReadSeal, and \emph{Full} retains the source until its outputs complete. Two hand-placed baselines isolate different costs. \emph{Manual}, used in the rate and slot sweeps, independently registers both readers and checks code and model digests. It tests early reuse with a separately implemented runtime. \emph{Manual-checked}, used in the jitter and mixed-recipient tests, shares BIM's runtime and binding checks, changing only the placement of the boundary. It isolates automatic placement from execution checks. \emph{Clone-on-accept} gives each recipient a private input copy when it accepts a request.
+
+\textbf{Metrics.} The source schedules frames at rate~$\lambda$, in Hz. Each frame offers one \emph{result}, the output bundle delivered by one recipient, to each of four recipients, giving an offered load of $4\lambda$ results/s. A result is \emph{timely} if it reaches the sink after device-to-host transfer and IPC, passes source-identity and reference-output checks, and arrives within 100\ms{} of the frame's planned arrival. We use 100\ms{} as a fixed benchmark threshold to compare delivery at a common latency budget, and re-score the slot runs at 80--200\ms{} to show deadline sensitivity. It is not a vehicle-level safety deadline. \emph{Receipt latency} runs from planned arrival to sink receipt; \emph{slot hold time} runs from commit to the last borrow return. Complete-frame timely fraction (Section~\ref{sec:eval-mixed}) requires all four intended results to be correct and timely. Its denominator includes every scheduled frame, including refused frames and partial admissions.
+
+\textbf{Queue settings.} The rate and slot sweeps permit at most two pending requests and four in flight per recipient. Optional cap~$K$ limits outstanding recipient requests across the pipeline; $K{=}8$ accommodates two full groups of four requests. \emph{No pipeline-wide cap} leaves the per-recipient queue limits in place.
+
+\textbf{Statistics.} Rate and slot runs have 2\,s of warm-up, 12\,s of measured arrivals, and a complete drain. Condition and method order are randomized, with six paired repetitions per condition; brackets give pointwise 95\% intervals from 20,000 paired whole-run bootstrap draws. The two campaigns in Section~\ref{sec:eval-mixed} use queues of eight, 10\,s of warm-up, and 30\,s of measurement, with six paired runs and pointwise 95\% $t$ intervals. Campaigns are analyzed separately. Latency summaries describe individual recipient results in the rate sweep (mean and per-run 95th percentile) and complete correct frames in the mixed-recipient study (per-run 99th percentile).
+
+\subsection{Early Reuse Raises Delivery Under Load}
+\label{sec:eval-delivery}
+
+Early reuse raises timely delivery once the frame period falls below full retention's hold time (Fig.~\ref{fig:delivery}a). At 25--40\Hz, BIM delivers 1.31--1.50$\times$ as many timely results as Full. At lower rates both keep up, until the 20\Hz{} transition where Full's hold just exceeds one frame period and the ratio peaks at 1.95$\times$. BIM stays within 0.2 results/s of Manual at every rate.
+
+\textbf{Slot hold time.} Full holds the slot for about 51\ms, spanning nearly the entire computation of the four recipients. BIM returns it after their source reads, reducing the hold to 30--34\ms{} (Fig.~\ref{fig:delivery}c). Even though each base head reads the source only in its first operation, the last recipient must wait its turn on the shared GPU before that read runs. The shorter hold lets the next frame arrive while private computation continues, filling the idle gaps in Fig.~\ref{fig:trace}. Periodic admission still produces the dip at 25\Hz: after a refused frame, the source waits until its next scheduled arrival.
+
+\textbf{Receipt latency.} The additional admitted work queues behind other recipients on the GPU. At 20--40\Hz, BIM's mean latency rises by 8--11\ms{} and its per-run 95th percentile by 15--19\ms{} relative to Full (Fig.~\ref{fig:delivery}b). The delivery lead at 30\Hz{} remains stable across 100--200\ms{} deadlines, but narrows at 80\ms{} because more of this queued work arrives late (Fig.~\ref{fig:slots}c).
+
+\textbf{Late source reads.}\label{sec:eval-late} Moving the last source read to operation 288 of 289 leaves almost no private computation to overlap (Fig.~\ref{fig:boundaries}'s late clone). BIM's hold then reaches Full's, and all three policies deliver 60.0 results/s at 30\Hz{} (Fig.~\ref{fig:delivery}d).
+
+\subsection{One Slot Matches Two, and Two Need a Cap}
+\label{sec:eval-slots}
+
+Double buffering can recover the delivery lost to full retention (Fig.~\ref{fig:slots}a). At 30\Hz, two-slot Full with $K{=}8$ delivers 78.1 results/s, close to one-slot BIM's 78.5. One-slot BIM therefore reaches the same measured capacity with one fewer source buffer. The device-peak difference is 64\MiB{} out of roughly 5\,GiB in this pipeline (Fig.~\ref{fig:slots} caption). The larger pool also makes the request cap important: too small a cap limits delivery, whereas no cap allows more work to miss the deadline.
+
+\textbf{Queueing with two slots.} One slot paces BIM's arrivals through the hold time in Eq.~\eqref{eq:hold}. A second slot weakens that pacing, allowing requests to queue before the GPU can start them. Without a pipeline-wide cap, two-slot BIM delivers only 24.9 timely results/s against Full's 72.3, although its completed results remain correct. Full's longer hold throttles arrivals, while BIM's earlier reuse adds queueing delay at an already busy GPU. Manual shows the same drop, and a looser deadline recovers the delayed delivery (Fig.~\ref{fig:slots}c).
+
+\textbf{Request cap.} At $K{=}8$, all three policies reach similar delivery across the two-slot rate sweep. BIM still returns borrows earlier: time-averaged source storage held by outstanding borrows falls from 86.4\MiB{} under Full to 52.3\MiB{} under BIM (Fig.~\ref{fig:slots}b). The allocated pool and device peak stay unchanged because returning a borrow makes a slot reusable without deallocating it. A cap can therefore control queueing while ReadSeal determines when reuse is safe.
+
+\subsection{Jitter, Mixed Recipients, and Copying}
+\label{sec:eval-mixed}
+
+\begin{figure}[t]
+\centering
+\includegraphics{figures/fig7_mixed.pdf}
+\caption{\textbf{Complete-frame delivery and tail latency with jitter and mixed recipients} (30\Hz, one slot, no pipeline-wide cap; 6 runs per bar; whiskers: 95\% $t$ intervals). (a)~Share of the 900 scheduled frames per run whose four results are all correct and timely; (b)~per-run 99th-percentile latency of frames whose four results are all correct. \emph{Identical}: four copies of the composition; \emph{mixed}: four component profiles, one reading late. The figure's publication is one scheduled frame.}
+\label{fig:mixed}
+\end{figure}
+
+The next study tests whether every intended recipient completes on time, using the complete-frame metric in Fig.~\ref{fig:mixed}. At 30\Hz{} with one slot and no pipeline-wide cap, arrivals are periodic or displaced by up to 0.8 of a period (\emph{jitter}). Recipients are either \emph{identical} copies of the composition or \emph{mixed}: the native engine alone, the exported head alone, their composition, and a composition that reads the source late. Manual-checked supplies the hand-placed comparison in this study.
+
+\textbf{Arrival pattern and recipient mix.} With identical recipients, BIM completes 65.5\% of frames on time under periodic arrivals and 63.5\% with jitter, about 15.5 percentage points above Full in both cases. With mixed recipients, the late reader holds the slot longer and BIM stays less than one point above Full (Fig.~\ref{fig:mixed}a).
+
+\textbf{Input copying.} Clone-on-accept releases the shared input after copying, even when computation will read the private copy much later. With mixed recipients it completes 22--32 percentage points more frames on time than BIM, at a 256\MiB{} higher sampled device peak and 20--25\ms{} more 99th-percentile latency. With identical early-reading recipients it completes about two points fewer. A separate 168-run study measures individual recipient results: cloning stays within 3 results/s of BIM in its base rate sweep and leads by 16.4 results/s when every recipient reads late. That study also records cloning's advantage at base 25\Hz{} and its worse late-case latency and freshness. Its recipient-result metric is distinct from complete-frame delivery.
+
+\textbf{Hand-placed comparison.} Across this study, including its 12 all-late runs, Manual-checked stays within 0.13 percentage points of BIM. With the execution checks held fixed, automatic boundary derivation preserves the delivery of the hand-placed version.
+
+\subsection{Safety Across Reordering and Model Changes}
+\label{sec:eval-safety}
+
+\textbf{Future readers.} In six controlled ordered tests, the exported graph's outputs under stream-only release matched the replacement frame; BIM's and Manual's matched the admitted frame. The graph had not yet submitted its reads when the engine completed, so recording stream use did not cover those later reads~\cite{recordstream}. Separately, in the 144 rate and late-read runs, all 109,592 results delivered by BIM, Manual, and Full carried their admitted identity and matched reference outputs.
+
+\textbf{Boundaries under model change.} Fig.~\ref{fig:boundaries} shows derived boundaries for sample snapshots; ResNet's residual connection already needs a later boundary than the head's. Across eight snapshots per model, three inputs, and two methods, all 96 ordered-overwrite cases (540 output tensors) matched unsplit references after the regenerated boundary, and binding validation rejected all 22 attempted substitutions of plan, code, globals, model state, or input before the affected stage.
+
+\textbf{Boundary maintenance.} We replay 16 controlled transitions: 14 graph edits, one batch-normalization folding, and a public ResNet-18 to ResNet-50 substitution. The recorded runtime boundary changes in 13 transitions. Folding leaves the head's first source read in place while changing the graph binding; the model substitution changes both. Two alias-chain edits shift operation indices without changing the runtime boundary. Thus an index shift alone does not imply a new semantic release point.
+
+All 16 stale manual reviews fail the saved graph-binding checks, including the CPU check of the public-model substitution. The review records identify fields to refresh, rather than measured developer edits or error rates. ReadSeal constructs the updated plans in 0.08--0.21\,s on the CPU without supplied source-reader or boundary annotations. Export, component topology, and native-engine contracts remain application inputs. In the separate mixed-recipient gate, a Manual-checked boundary made stale by an added late read was rejected until moved, and all 24 update cases gave exact outputs.
+
+\subsection{Execution Cost and Coverage}
+\label{sec:eval-cost}
+
+An isolated-process test times recipient acceptance to output publication (8 process repetitions of 50 randomized invocations per method; three inputs; base and late variants of both models). ReadSeal's checks add 0.8--0.9\ms{} per invocation, mostly at acceptance and stage submission: 8\% over Manual for the base head (11.8\ms{} against 10.9\ms) and 22--23\% for the lighter ResNet tail. In the pipelines above, this cost overlaps shared GPU work; even at 10 and 15\Hz, BIM's mean receipt latency is within 0.4\ms{} of Manual's. A static survey of 14 torchvision tails with untrained weights accepts nine, with boundaries in their first 1--12 operations, and rejects five for unsupported operators.
+
+% =====================================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\textbf{Choosing a release policy.} Early reuse is useful when substantial private computation follows the last source read. A single BIM slot can then admit the next frame while the previous computation continues, with ReadSeal maintaining that boundary across supported model updates. Full retention with extra slots is a simpler alternative when the extra storage and request-cap tuning are acceptable. When recipients read late, copying can release the shared slot earlier at the cost of private storage and higher tail latency. These choices use the same requirement to protect readers that have not started.
+
+\textbf{Portability.} BIM requires cross-process storage mapping and completion events that cover each reader's source access. ROS~2's CUDA buffer read handles~\cite{cudabackend} and NvSciStream's per-consumer packet release~\cite{nvscistream} provide candidate integration points. A port must implement the storage and event adapter and validate its ordering guarantees. Custom operators require reviewed read and alias summaries; native engines supply an event marking their last input read.
+
+\textbf{Deployment.} The prototype runs declared topologies with single-stream stages; a topology change requires a new plan. A crashed recipient leaves its borrow outstanding and prevents slot reuse. Recovery requires confirmation that the recipient's GPU work has stopped before its borrow can be removed.
+
+% =====================================================================
+\section{Related Work}
+\label{sec:related}
+
+\textbf{Zero-copy robotics middleware.} iceoryx and Agnocast give ROS~2 subscribers direct access to publisher-owned shared memory~\cite{iceoryx,agnocast}. For GPU data, NITROS keeps its zero-copy path within one process~\cite{nitros}, and ROS~2's \code{rosidl::Buffer} moves tensor bytes between processes through CUDA IPC~\cite{rosidlbuffer}. Readers that have not yet submitted, and where to release, are left to the application.
+
+\textbf{Release fences.} Android's BufferQueue lets a consumer release a pooled buffer with a fence while still reading it~\cite{bufferqueue}, and NvSciStream returns a multicast packet to its pool once every consumer has released it~\cite{nvscistream}. BIM's borrow bits implement this protocol; ReadSeal derives where the release fence goes, which these interfaces leave to the application.
+
+\textbf{Last use and safe reclamation.} Compilers and runtimes reuse a buffer after its last use, as in TVM's static memory planning~\cite{tvm}, and Rust's non-lexical lifetimes end a borrow there~\cite{nll}; all see every use in one program, in program order. Safe memory reclamation, such as read-copy-update (RCU) grace periods~\cite{rcu}, reuses memory once no reader can hold it, but protects only readers that have announced themselves. In RCU terms, BIM's commit opens every recipient's read-side section on its behalf, and ReadSeal closes it at the derived last read. ReadSeal's bindings, like PyTorch~2's guards~\cite{pytorch2}, reject execution whose assumptions changed.
+
+% =====================================================================
+\section{Conclusion}
+
+BIM lets shared GPU storage serve the next frame while results from the previous frame retain their identity. ReadSeal makes this possible across processes whose readers start at different times, using model analysis to maintain the release boundary. On the evaluated workloads, early source reads leave enough private computation to improve timely delivery with one slot. Extra slots and copying offer other tradeoffs when memory, queueing, or late readers dominate. Future work will integrate BIM with ROS~2 and automotive sharing backends, measure the checks on embedded cores, and support concurrent recipient execution and selective copying for late readers.
+
+\ifaidisclosure
+\section*{Acknowledgment}
+OpenAI Codex assisted with language editing, readability revisions, evidence cross-checking, and build verification for this revision. Figures retain the source-based reconstruction from r15. Experimental data and figure values are unchanged.
+\fi
+
+\bibliographystyle{IEEEtran}
+\IEEEtriggeratref{3}
+\bibliography{refs}
+
+\end{document}

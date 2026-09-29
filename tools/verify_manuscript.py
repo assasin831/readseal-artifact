@@ -1,5 +1,6 @@
-"""Read-only checksum verification of the r15 manuscript delivery."""
+"""Read-only checksum verification of a preserved manuscript delivery."""
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -22,7 +23,7 @@ def verify(root):
     source = root / "source"
     manifest_path = source / "MANIFEST.json"
     rows = json.loads(manifest_path.read_text(encoding="utf-8"))["files"]
-    prefix = "BIM_ReadSeal_ISPA2026_r15_source/"
+    prefix = f"BIM_ReadSeal_ISPA2026_{release['revision']}_source/"
     with ZipFile(root / release["source"]["file"]) as archive:
         if archive.testzip() is not None:
             raise ValueError("ZIP CRC error")
@@ -48,4 +49,7 @@ def verify(root):
 
 
 if __name__ == "__main__":
-    verify(Path(__file__).resolve().parents[1] / "manuscript" / "r15")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--revision", choices=("r15", "r16"), default="r16")
+    args = parser.parse_args()
+    verify(Path(__file__).resolve().parents[1] / "manuscript" / args.revision)
