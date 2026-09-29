@@ -50,6 +50,6 @@ def verify(root):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--revision", choices=("r15", "r16"), default="r16")
+    parser.add_argument("--revision", choices=("r15", "r16", "r17"), default="r17")
     args = parser.parse_args()
     verify(Path(__file__).resolve().parents[1] / "manuscript" / args.revision)

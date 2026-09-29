@@ -1,0 +1,27 @@
+{
+  "revision": "r17",
+  "git_tag": "ispa2026-r17",
+  "paper": {
+    "file": "BIM_ReadSeal_ISPA2026_r17.pdf",
+    "bytes": 4075157,
+    "sha256": "4ddcfab2d854e4c84c99ff631a9d428b285c86c82c9e012cd64ba1230fef8eca"
+  },
+  "source": {
+    "file": "BIM_ReadSeal_ISPA2026_r17_source.zip",
+    "bytes": 2800435,
+    "sha256": "c4610d705483818c36166249e5c5ff4a13a41e475c730448dc2a97a32955edd5",
+    "verified_manifest_files": 64
+  },
+  "unchanged_csv_files": 9,
+  "byte_identical_r16_figures": [
+    3,
+    5
+  ],
+  "label_only_revised_figures": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "figure_artwork_geometry_preserved": true
+}

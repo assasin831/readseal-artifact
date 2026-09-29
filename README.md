@@ -2,16 +2,16 @@
 
 Evidence for *BIM and ReadSeal: Safe Early Reuse of Shared GPU Buffers Across Processes*.
 
-The current paper and evidence entry is the fixed [ISPA r16 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16). It includes the revised manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r15 manuscript release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15) and original [ISPA r1 evidence release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) remain unchanged.
+The current paper and evidence entry is the fixed [ISPA r17 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17). It includes the revised manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and original [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
 
 ## Current Paper
 
-- [Revision 16 PDF](manuscript/r16/BIM_ReadSeal_ISPA2026_r16.pdf): eight pages, vector figures, embedded fonts.
-- [Complete source ZIP](manuscript/r16/BIM_ReadSeal_ISPA2026_r16_source.zip): LaTeX, six editable PPTX figures, vector PDFs, 600 dpi PNGs, CSVs, and verification records.
-- [Browse source and build instructions](manuscript/r16/source/README.md).
-- [Revision notes](manuscript/r16/source/CHANGES.md), [campaign/terminology guide](manuscript/r16/source/CAMPAIGNS.md), [file hashes](manuscript/r16/release.json).
+- [Revision 17 PDF](manuscript/r17/BIM_ReadSeal_ISPA2026_r17.pdf): eight pages, vector figures, embedded fonts.
+- [Complete source ZIP](manuscript/r17/BIM_ReadSeal_ISPA2026_r17_source.zip): LaTeX, six editable PPTX figures, vector PDFs, 600 dpi PNGs, CSVs, and verification records.
+- [Browse source and build instructions](manuscript/r17/source/README.md).
+- [Revision notes](manuscript/r17/source/CHANGES.md), [campaign/terminology guide](manuscript/r17/source/CAMPAIGNS.md), [file hashes](manuscript/r17/release.json).
 
-Revision 16 clarifies the two-lifetime argument, explains double buffering and copying earlier, reduces terminology and numeric repetition, and corrects the interpretation of saved maintenance records. All nine figure-data CSVs and six figure PDF/PPTX/PNG sets are byte-identical to r15. Experimental archives and proof records below are byte-preserved.
+Revision 17 sharpens the contribution beyond existing release protocols, simplifies maintenance reporting, and shows the separate copying campaign's measured comparisons. Figures and prose now use frame and graph B consistently. Nine figure-data CSVs and Figures 3/5 are byte-identical to r16; four figures have label-only changes with preserved artwork geometry. Experimental archives and proof records below are byte-preserved.
 
 ## Start Here
 

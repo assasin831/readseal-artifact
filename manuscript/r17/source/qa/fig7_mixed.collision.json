@@ -1,0 +1,290 @@
+{
+  "pdf": "figures\\fig7_mixed.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 33,
+  "text_trace_count": 39,
+  "stroke_path_count": 305,
+  "filled_region_count": 39,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 11,
+    "warn": 0,
+    "contained_fill_overlays": 4,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "identicalmixedidenticalmixed",
+      "text_bbox": [
+        26.673999786376953,
+        68.26615142822266,
+        117.44062805175781,
+        75.26815032958984
+      ],
+      "other_text": null,
+      "other_bbox": [
+        73.78600311279297,
+        65.51000213623047,
+        73.81400299072266,
+        84.21800231933594
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        154
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "65.5",
+      "text_bbox": [
+        29.2545166015625,
+        28.94577407836914,
+        35.06551742553711,
+        39.176002502441406
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        37.19200134277344,
+        120.58599853515625,
+        37.220001220703125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        25
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "63.3",
+      "text_bbox": [
+        43.65451431274414,
+        29.56877899169922,
+        49.46551513671875,
+        39.799007415771484
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        37.19200134277344,
+        120.58599853515625,
+        37.220001220703125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        25
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "50.3",
+      "text_bbox": [
+        52.668514251708984,
+        34.58677673339844,
+        58.479515075683594,
+        44.8170051574707
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        37.19200134277344,
+        120.58599853515625,
+        37.220001220703125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        25
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "82.6",
+      "text_bbox": [
+        67.06851196289062,
+        22.453781127929688,
+        72.8795166015625,
+        32.683998107910156
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        27.7239990234375,
+        120.58599853515625,
+        27.751998901367188
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        26
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "63.5",
+      "text_bbox": [
+        76.05451202392578,
+        29.653778076171875,
+        81.86550903320312,
+        39.884002685546875
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        37.19200134277344,
+        120.58599853515625,
+        37.220001220703125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        25
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "61.6",
+      "text_bbox": [
+        90.45451354980469,
+        30.079788208007812,
+        96.26551818847656,
+        40.31001281738281
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        37.19200134277344,
+        120.58599853515625,
+        37.220001220703125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        25
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "58.5",
+      "text_bbox": [
+        99.46851348876953,
+        31.411781311035156,
+        105.27951049804688,
+        41.642005920410156
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        37.19200134277344,
+        120.58599853515625,
+        37.220001220703125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        25
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "80.7",
+      "text_bbox": [
+        113.86851501464844,
+        23.049789428710938,
+        119.67951965332031,
+        33.279998779296875
+      ],
+      "other_text": null,
+      "other_bbox": [
+        26.986000061035156,
+        27.7239990234375,
+        120.58599853515625,
+        27.751998901367188
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        26
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "identicalmixedidenticalmixed",
+      "text_bbox": [
+        150.52000427246094,
+        68.26615142822266,
+        241.28660583496094,
+        75.26815032958984
+      ],
+      "other_text": null,
+      "other_bbox": [
+        197.63099670410156,
+        65.51000213623047,
+        197.66000366210938,
+        84.21800231933594
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        324
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 3 stroked path(s)",
+      "text": "deadline",
+      "text_bbox": [
+        151.99400329589844,
+        20.403400421142578,
+        173.85939025878906,
+        26.696399688720703
+      ],
+      "other_text": null,
+      "other_bbox": [
+        167.49899291992188,
+        25.71099853515625,
+        171.92100524902344,
+        65.51000213623047
+      ],
+      "object_count": 3,
+      "object_indexes": [
+        199,
+        200,
+        202
+      ]
+    }
+  ]
+}
