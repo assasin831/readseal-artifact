@@ -1,0 +1,12 @@
+{
+  "name": "readseal-ispa-r15-figures",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Editable figure reconstruction from the r14 source coordinates and CSV data",
+  "scripts": {
+    "figures": "node scripts/make_diagrams_pptx.js && node scripts/make_charts_pptx.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  }
+}

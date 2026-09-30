@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "revision": "r19",
+  "inference_executed": false,
+  "input_zip_sha256": "512abd488238c0a4db20907b51f70491353e09a40a65eb16d967778b0bf4df4d",
+  "rate_evidence_sha256": "d775f1b5be0eace0b4a338dd3b5c4fa116085f22fefacd600b31fccd39f8d47c",
+  "paper_sha256": "bcb4159cb9b4579cdbc3298ad7b4dcce69865b7c702724910480a5528f4c54f0",
+  "paper_bytes": 4087846,
+  "preserved_files": [
+    {
+      "path": "data/boundaries.csv",
+      "bytes": 1036,
+      "sha256": "489ab2b3211bbe6e6fb1cc54a438a84715dfea0287bb353e4f2fdc54db52b28d"
+    },
+    {
+      "path": "data/clone_rates.csv",
+      "bytes": 2783,
+      "sha256": "ff7074a82bc10c664d73cd5fda33d60a0d866973cefec6ec7b630007f46ece03"
+    },
+    {
+      "path": "data/deadlines_30hz.csv",
+      "bytes": 7340,
+      "sha256": "f006721842baeab0db0aa3eafba093fe918255ca50da9fe1e3ee32fd0c12e377"
+    },
+    {
+      "path": "data/late_read.csv",
+      "bytes": 802,
+      "sha256": "df4e1b0f293fcb69c60012565a51228a9a4d2ab41472e592531f828d651c7231"
+    },
+    {
+      "path": "data/mixed_30hz.csv",
+      "bytes": 3782,
+      "sha256": "8f28a750fdcf66cad929293d24b888445e8cf79c9fe7ca3e52667615c69da6a0"
+    },
+    {
+      "path": "data/mixed_30hz_paired.csv",
+      "bytes": 4463,
+      "sha256": "a883574a4f9674379205f33a43cd0311bf0761890cc13b00c64951955a4da2d0"
+    },
+    {
+      "path": "data/rate_sweep.csv",
+      "bytes": 3327,
+      "sha256": "01a55c7e05a75b8d839746e1ebeea8cb38151371cf257afd7f0ed972a2fbe19a"
+    },
+    {
+      "path": "data/slots_30hz.csv",
+      "bytes": 1827,
+      "sha256": "63dfc9a74d9013f6b14626a004f2daf676e7f1361b41474b46a86db134b3469d"
+    },
+    {
+      "path": "data/trace_20hz.csv",
+      "bytes": 2923,
+      "sha256": "d48ce0d0bf98ea804604665f17e49ca4d928ddd38fa54978361117ed0d47c3c7"
+    },
+    {
+      "path": "figures/fig1_overview.pdf",
+      "bytes": 234631,
+      "sha256": "e3a701ab78bba8b423f4283cd99f819a09caa42f29bead0d4395b0e3291c5f1d"
+    },
+    {
+      "path": "figures/fig1_overview.png",
+      "bytes": 401728,
+      "sha256": "1959e82efdd075bce3d74821dfd0b653de7f35f28a2e60d23031b59e5a56f72c"
+    },
+    {
+      "path": "figures/fig1_overview.pptx",
+      "bytes": 192106,
+      "sha256": "77bb175a3f960417958ae1f51e08458aad6ac86bfdabb8c577dfe78487361777"
+    },
+    {
+      "path": "figures/fig2_trace.pdf",
+      "bytes": 149229,
+      "sha256": "6bcfae4fd701dd55ce37618e2f07d44275e655e581f4ba34a1ecd3931d828c62"
+    },
+    {
+      "path": "figures/fig2_trace.png",
+      "bytes": 156522,
+      "sha256": "c9980ae09849ca52f82ca89ed0dc7894a5c951d5355fae120b757e08b36ca621"
+    },
+    {
+      "path": "figures/fig2_trace.pptx",
+      "bytes": 139980,
+      "sha256": "1e35bcf147634b6c367d377ea28f2d5b41115932d245d4829bfd3d6a3176defe"
+    },
+    {
+      "path": "figures/fig3_boundaries.pdf",
+      "bytes": 32178,
+      "sha256": "107ba824426b02f5dc4b88876fdee6573644119f895d6a092d047ac5876c61bd"
+    },
+    {
+      "path": "figures/fig3_boundaries.png",
+      "bytes": 132491,
+      "sha256": "c4e06865478b3b81de754b03024486ab152eb799eb949f39abf5618103eb9350"
+    },
+    {
+      "path": "figures/fig3_boundaries.pptx",
+      "bytes": 99515,
+      "sha256": "f89201dc2602b31d51df4df9d854661ca027e26dee036f32dcd5493ecfe119b3"
+    },
+    {
+      "path": "figures/fig5_delivery.pdf",
+      "bytes": 102350,
+      "sha256": "c1cd9eeb138f5391783a9515a07f7ab19f23072aba8ffd0e90bd2d735ac20b72"
+    },
+    {
+      "path": "figures/fig5_delivery.png",
+      "bytes": 289709,
+      "sha256": "44b5c8946145964c7b1f71cb4b36cc4655afca3239e2574c359f4a15f386f858"
+    },
+    {
+      "path": "figures/fig5_delivery.pptx",
+      "bytes": 239330,
+      "sha256": "e836e1b07259c1e950bf4ef3e36c46f623d8f596fcdffe51620ca8468d167f54"
+    },
+    {
+      "path": "figures/fig6_slots.pdf",
+      "bytes": 51459,
+      "sha256": "0c06ec5508bea6d7a54a89e986146d56ab95b5606bef1d6382444e194106b8ad"
+    },
+    {
+      "path": "figures/fig6_slots.png",
+      "bytes": 258680,
+      "sha256": "765a2e5bb540f58b1c5e8879f9c62e150de57701a7c2fac5f82a981a976a4d78"
+    },
+    {
+      "path": "figures/fig6_slots.pptx",
+      "bytes": 247997,
+      "sha256": "31d296e31323439c7af44cf44db006b2d99f5861d3bfc26ba0aca6758038699a"
+    },
+    {
+      "path": "figures/fig7_mixed.pdf",
+      "bytes": 94300,
+      "sha256": "3517a263ec438d751333a89d87dc2ce8f72a279fbd39364a1aa6e768d2c59b49"
+    },
+    {
+      "path": "figures/fig7_mixed.png",
+      "bytes": 151455,
+      "sha256": "40c8b54ba8d66286621c6412b9a56c3ad60266df4b4313a04a5d32f7abc11346"
+    },
+    {
+      "path": "figures/fig7_mixed.pptx",
+      "bytes": 213546,
+      "sha256": "214b608bd179b9df15570df06876270048285f7a1cf6225c59e357cbd3c80fca"
+    }
+  ],
+  "unchanged_equations": [
+    1,
+    4
+  ],
+  "equation_2_change": "Input index i renamed h only",
+  "equation_3_change": "Empty read-set convention beta=0; not an experimental claim",
+  "original_25hz_runs": [
+    {
+      "run": "e1-r00-r1-cap0-hz25-auto-batched",
+      "repeat": "0",
+      "goodput_hz": "75.0"
+    },
+    {
+      "run": "e1-r01-r1-cap0-hz25-auto-batched",
+      "repeat": "1",
+      "goodput_hz": "75.0"
+    },
+    {
+      "run": "e1-r02-r1-cap0-hz25-auto-batched",
+      "repeat": "2",
+      "goodput_hz": "75.0"
+    },
+    {
+      "run": "e1-r03-r1-cap0-hz25-auto-batched",
+      "repeat": "3",
+      "goodput_hz": "75.0"
+    },
+    {
+      "run": "e1-r04-r1-cap0-hz25-auto-batched",
+      "repeat": "4",
+      "goodput_hz": "75.0"
+    },
+    {
+      "run": "e1-r05-r1-cap0-hz25-auto-batched",
+      "repeat": "5",
+      "goodput_hz": "75.0"
+    }
+  ],
+  "approximate_source_words": {
+    "method": "Alphabetic token count after removing TeX command names and full-line comments; includes captions and markup arguments, not a publication word count",
+    "r18": 6615,
+    "r19": 6433
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 912
+    },
+    {
+      "page": 2,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 749
+    },
+    {
+      "page": 3,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 972
+    },
+    {
+      "page": 4,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 1063
+    },
+    {
+      "page": 5,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 805
+    },
+    {
+      "page": 6,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 833
+    },
+    {
+      "page": 7,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 819
+    },
+    {
+      "page": 8,
+      "all_text_inside_page": true,
+      "all_fonts_embedded": true,
+      "text_spans": 936
+    }
+  ],
+  "references": 27,
+  "web_references_with_access_dates": 14,
+  "artifact_link": "https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19",
+  "overfull_or_unresolved_warnings": [],
+  "underfull_warning_count": 6
+}

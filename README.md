@@ -2,16 +2,16 @@
 
 Evidence for *BIM and ReadSeal: Safe Early Reuse of Shared GPU Buffers Across Processes*.
 
-The current paper and evidence entry is the fixed [ISPA r17 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17). It includes the revised manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and original [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
+The current paper and evidence entry is the fixed [ISPA r19 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19). It includes the revised manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r17](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17), [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and original [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
 
 ## Current Paper
 
-- [Revision 17 PDF](manuscript/r17/BIM_ReadSeal_ISPA2026_r17.pdf): eight pages, vector figures, embedded fonts.
-- [Complete source ZIP](manuscript/r17/BIM_ReadSeal_ISPA2026_r17_source.zip): LaTeX, six editable PPTX figures, vector PDFs, 600 dpi PNGs, CSVs, and verification records.
-- [Browse source and build instructions](manuscript/r17/source/README.md).
-- [Revision notes](manuscript/r17/source/CHANGES.md), [campaign/terminology guide](manuscript/r17/source/CAMPAIGNS.md), [file hashes](manuscript/r17/release.json).
+- [Revision 19 PDF](manuscript/r19/BIM_ReadSeal_ISPA2026_r19.pdf): eight pages, vector figures, embedded fonts.
+- [Complete source ZIP](manuscript/r19/BIM_ReadSeal_ISPA2026_r19_source.zip): LaTeX, six editable PPTX figures, vector PDFs, 600 dpi PNGs, CSVs, and verification records.
+- [Browse source and build instructions](manuscript/r19/source/README.md).
+- [Revision notes](manuscript/r19/source/CHANGES.md), [campaign/terminology guide](manuscript/r19/source/CAMPAIGNS.md), [file hashes](manuscript/r19/release.json).
 
-Revision 17 sharpens the contribution beyond existing release protocols, simplifies maintenance reporting, and shows the separate copying campaign's measured comparisons. Figures and prose now use frame and graph B consistently. Nine figure-data CSVs and Figures 3/5 are byte-identical to r16; four figures have label-only changes with preserved artwork geometry. Experimental archives and proof records below are byte-preserved.
+Revision 19 applies checked reader feedback to the author-supplied r18: recipient processes and reader components are distinguished, the ResNet boundary example and evaluation roadmap are restored, algorithm symbols and the empty read-set convention are defined, and the measured 25 Hz dip is explained. Web references use consistent access dates and repaired documentation links. All nine figure-data CSVs and all eighteen figure files are byte-identical to r18. The clean source-ZIP rebuild matches all eight delivered pages in text and rendered pixels. Experimental archives and proof records below are byte-preserved; no experiments were rerun.
 
 ## Start Here
 

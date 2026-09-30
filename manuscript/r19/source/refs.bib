@@ -1,0 +1,478 @@
+% References for "BIM: Safe Sharing of Large GPU Tensors in Autonomous-Driving Middleware".
+% Entries [1]-[39] are transcribed from the v1 manuscript; dora-rs, Casini et al., and Clockwork are new.
+
+@misc{autoware,
+  author       = {{Autoware Foundation}},
+  title        = {Autoware: Open-source software for autonomous driving},
+  url          = {https://autoware.org/},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2024}
+}
+
+@article{ros2,
+  author  = {S. Macenski and T. Foote and B. Gerkey and C. Lalancette and W. Woodall},
+  title   = {Robot {Operating} {System} 2: Design, architecture, and uses in the wild},
+  journal = {Sci. Robot.},
+  volume  = {7},
+  number  = {66},
+  pages   = {eabm6074},
+  year    = {2022}
+}
+
+@inproceedings{bevfusion,
+  author    = {Z. Liu and others},
+  title     = {{BEVFusion}: Multi-task multi-sensor fusion with unified bird's-eye view representation},
+  booktitle = {Proc. IEEE Int. Conf. Robot. Autom. (ICRA)},
+  year      = {2023},
+  pages     = {2774--2781}
+}
+
+@inproceedings{maruyama2016,
+  author    = {Y. Maruyama and S. Kato and T. Azumi},
+  title     = {Exploring the performance of {ROS2}},
+  booktitle = {Proc. 13th Int. Conf. Embedded Softw. (EMSOFT)},
+  year      = {2016},
+  pages     = {5:1--5:10}
+}
+
+@inproceedings{tzc,
+  author    = {Y.-P. Wang and W. Tan and X.-Q. Hu and D. Manocha and S.-M. Hu},
+  title     = {{TZC}: Efficient inter-process communication for robotics middleware with partial serialization},
+  booktitle = {Proc. IEEE/RSJ Int. Conf. Intell. Robots Syst. (IROS)},
+  year      = {2019},
+  pages     = {7805--7812}
+}
+
+@misc{iceoryx,
+  author       = {{Eclipse Foundation}},
+  title        = {Eclipse iceoryx: True zero-copy inter-process communication},
+  url          = {https://github.com/eclipse-iceoryx/iceoryx},
+  note         = {Accessed: Sep. 29, 2026}
+}
+
+@inproceedings{agnocast,
+  author    = {T. Ishikawa-Aso and S. Kato},
+  title     = {{ROS} 2 {Agnocast}: Supporting unsized message types for true zero-copy publish/subscribe {IPC}},
+  booktitle = {Proc. 28th Int. Symp. Real-Time Distrib. Comput. (ISORC)},
+  year      = {2025},
+  pages     = {1--10}
+}
+
+@misc{nitros,
+  author       = {{NVIDIA}},
+  title        = {Isaac {ROS} {NITROS}: Composable accelerated graphs (release 3.2)},
+  url          = {https://nvidia-isaac-ros.github.io/v/release-3.2/repositories_and_packages/isaac_ros_nitros/isaac_ros_nitros/index.html},
+  note         = {Accessed: Sep. 29, 2026}
+}
+
+@misc{rosidlbuffer,
+  author       = {{Open Robotics}},
+  title        = {About \texttt{rosidl::Buffer} backends ({ROS} 2 {Lyrical} documentation)},
+  url          = {https://docs.ros.org/en/lyrical/ROS-Framework/interfaces/Working-with-interfaces/Buffer-Backends/About-Buffer-Backends.html},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2026}
+}
+
+@misc{recordstream,
+  author       = {{PyTorch Contributors}},
+  title        = {\texttt{torch.Tensor.record\_stream} ({PyTorch} 2.1 documentation)},
+  url          = {https://pytorch.org/docs/2.1/generated/torch.Tensor.record_stream.html},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2023}
+}
+
+@misc{loaned,
+  author       = {{Open Robotics}},
+  title        = {Configure zero copy loaned messages ({ROS} 2 {Lyrical} documentation)},
+  howpublished = {\url{https://docs.ros.org/en/lyrical/How-To-Guides/Configure-ZeroCopy-loaned-messages.html}},
+  year         = {2026}
+}
+
+@inproceedings{ipcsharedptr,
+  author    = {T. Ishikawa-Aso and A. Yano and K. Imai and T. Azumi and S. Kato},
+  title     = {\texttt{ipc\_shared\_ptr}: A publish/subscribe-aware smart pointer for cross-process object lifetime management},
+  booktitle = {Proc. 29th Int. Symp. Real-Time Distrib. Comput. (ISORC)},
+  year      = {2026},
+  note      = {arXiv:2605.04226}
+}
+
+@misc{dlpack,
+  author       = {{DMLC Project}},
+  title        = {{DLPack}: Managed tensor exchange},
+  howpublished = {\url{https://dmlc.github.io/dlpack/latest/c_api.html}}
+}
+
+@inproceedings{legion,
+  author    = {M. Bauer and S. Treichler and E. Slaughter and A. Aiken},
+  title     = {Legion: Expressing locality and independence with logical regions},
+  booktitle = {Proc. Int. Conf. High Perform. Comput., Netw., Storage Anal. (SC)},
+  year      = {2012},
+  pages     = {1--11}
+}
+
+@article{starpu,
+  author  = {C. Augonnet and S. Thibault and R. Namyst and P.-A. Wacrenier},
+  title   = {{StarPU}: A unified platform for task scheduling on heterogeneous multicore architectures},
+  journal = {Concurrency Comput.: Pract. Exper.},
+  volume  = {23},
+  number  = {2},
+  pages   = {187--198},
+  year    = {2011}
+}
+
+@inproceedings{ray,
+  author    = {P. Moritz and R. Nishihara and S. Wang and A. Tumanov and R. Liaw and E. Liang and M. Elibol and Z. Yang and W. Paul and M. I. Jordan and I. Stoica},
+  title     = {Ray: A distributed framework for emerging {AI} applications},
+  booktitle = {Proc. USENIX Symp. Oper. Syst. Des. Implement. (OSDI)},
+  year      = {2018},
+  pages     = {561--577}
+}
+
+@article{hazardptr,
+  author  = {M. M. Michael},
+  title   = {Hazard pointers: Safe memory reclamation for lock-free objects},
+  journal = {IEEE Trans. Parallel Distrib. Syst.},
+  volume  = {15},
+  number  = {6},
+  pages   = {491--504},
+  year    = {2004}
+}
+
+@inproceedings{pytorch,
+  author    = {A. Paszke and S. Gross and F. Massa and others},
+  title     = {{PyTorch}: An imperative style, high-performance deep learning library},
+  booktitle = {Adv. Neural Inf. Process. Syst. 32 (NeurIPS)},
+  year      = {2019},
+  pages     = {8024--8035}
+}
+
+@misc{tensorrt,
+  author       = {{NVIDIA}},
+  title        = {{TensorRT} 10.3: Execution context and input-consumed event contracts},
+  url          = {https://github.com/NVIDIA/TensorRT/blob/release/10.3/include/NvInferRuntime.h},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2024}
+}
+
+@misc{torchmp,
+  author       = {{PyTorch Contributors}},
+  title        = {Multiprocessing package: Sharing {CUDA} tensors ({PyTorch} 2.1 documentation)},
+  url          = {https://pytorch.org/docs/2.1/multiprocessing.html},
+  note         = {Accessed: Sep. 29, 2026}
+}
+
+@misc{bufferqueue,
+  author       = {{Android Open Source Project}},
+  title        = {{BufferQueue} and {Gralloc}},
+  url          = {https://source.android.com/docs/core/graphics/arch-bq-gralloc},
+  note         = {Accessed: Sep. 29, 2026}
+}
+
+@misc{syncfile,
+  author       = {G. Padovan},
+  title        = {Sync file {API} guide ({Linux} kernel documentation)},
+  howpublished = {\url{https://docs.kernel.org/driver-api/sync_file.html}}
+}
+
+@misc{nvscistream,
+  author       = {{NVIDIA}},
+  title        = {{NvSciStream} {APIs} ({NVIDIA} {DRIVE} {OS} 6.0 {Linux} {SDK} {API} reference)},
+  url          = {https://developer.nvidia.com/docs/drive/drive-os/6.0.8/public/drive-os-linux-sdk/api_reference/group__nvsci__stream__apis.html},
+  note         = {Accessed: Sep. 29, 2026}
+}
+
+@inproceedings{steensgaard,
+  author    = {B. Steensgaard},
+  title     = {Points-to analysis in almost linear time},
+  booktitle = {Proc. ACM SIGPLAN-SIGACT Symp. Princ. Program. Lang. (POPL)},
+  year      = {1996},
+  pages     = {32--41}
+}
+
+@inproceedings{mlir,
+  author    = {C. Lattner and M. Amini and U. Bondhugula and A. Cohen and A. Davis and J. Pienaar and R. Riddle and T. Shpeisman and N. Vasilache and O. Zinenko},
+  title     = {{MLIR}: Scaling compiler infrastructure for domain specific computation},
+  booktitle = {Proc. IEEE/ACM Int. Symp. Code Gener. Optim. (CGO)},
+  year      = {2021},
+  pages     = {2--14}
+}
+
+@misc{nll,
+  author       = {N. Matsakis},
+  title        = {{RFC} 2094: Non-lexical lifetimes},
+  url          = {https://github.com/rust-lang/rfcs/blob/master/text/2094-nll.md},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2017}
+}
+
+@inproceedings{pytorch2,
+  author    = {J. Ansel and others},
+  title     = {{PyTorch} 2: Faster machine learning through dynamic {Python} bytecode transformation and graph compilation},
+  booktitle = {Proc. ACM Int. Conf. Archit. Support Program. Lang. Oper. Syst. (ASPLOS)},
+  volume    = {2},
+  year      = {2024},
+  pages     = {929--947}
+}
+
+@inproceedings{capuchin,
+  author    = {X. Peng and X. Shi and H. Dai and H. Jin and W. Ma and Q. Xiong and F. Yang and X. Qian},
+  title     = {Capuchin: Tensor-based {GPU} memory management for deep learning},
+  booktitle = {Proc. 25th Int. Conf. Archit. Support Program. Lang. Oper. Syst. (ASPLOS)},
+  year      = {2020},
+  pages     = {891--905}
+}
+
+@inproceedings{orion,
+  author    = {F. Strati and X. Ma and A. Klimovic},
+  title     = {Orion: Interference-aware, fine-grained {GPU} sharing for {ML} applications},
+  booktitle = {Proc. ACM Eur. Conf. Comput. Syst. (EuroSys)},
+  year      = {2024},
+  pages     = {1075--1092}
+}
+
+@inproceedings{sirius,
+  author    = {J. Wang and Y. Wang and M. Han and R. Chen},
+  title     = {Colocating {ML} inference and training with fast {GPU} memory handover},
+  booktitle = {Proc. USENIX Annu. Tech. Conf. (ATC)},
+  year      = {2025},
+  pages     = {1657--1675}
+}
+
+@inproceedings{gmlake,
+  author    = {C. Guo and R. Zhang and J. Xu and J. Leng and Z. Liu and Z. Huang and M. Guo and H. Wu and S. Zhao and J. Zhao and K. Zhang},
+  title     = {{GMLake}: Efficient and transparent {GPU} memory defragmentation for large-scale {DNN} training with virtual memory stitching},
+  booktitle = {Proc. ACM Int. Conf. Archit. Support Program. Lang. Oper. Syst. (ASPLOS)},
+  volume    = {2},
+  year      = {2024},
+  pages     = {450--466}
+}
+
+@misc{cudaguide,
+  author       = {{NVIDIA}},
+  title        = {{CUDA} {C++} programming guide, version 12.1.1},
+  howpublished = {\url{https://docs.nvidia.com/cuda/archive/12.1.1/cuda-c-programming-guide/index.html}},
+  year         = {2023}
+}
+
+@inproceedings{bevformer,
+  author    = {Z. Li and W. Wang and H. Li and E. Xie and C. Sima and T. Lu and Y. Qiao and J. Dai},
+  title     = {{BEVFormer}: Learning bird's-eye-view representation from multi-camera images via spatiotemporal transformers},
+  booktitle = {Proc. Eur. Conf. Comput. Vis. (ECCV)},
+  year      = {2022}
+}
+
+@inproceedings{transfusion,
+  author    = {X. Bai and others},
+  title     = {{TransFusion}: Robust {LiDAR}-camera fusion for {3D} object detection with transformers},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2022},
+  pages     = {1090--1099}
+}
+
+@inproceedings{nuscenes,
+  author    = {H. Caesar and others},
+  title     = {{nuScenes}: A multimodal dataset for autonomous driving},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2020},
+  pages     = {11\,621--11\,631}
+}
+
+@inproceedings{resnet,
+  author    = {K. He and X. Zhang and S. Ren and J. Sun},
+  title     = {Deep residual learning for image recognition},
+  booktitle = {Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2016},
+  pages     = {770--778}
+}
+
+@inproceedings{autowareonboard,
+  author    = {S. Kato and S. Tokunaga and Y. Maruyama and others},
+  title     = {Autoware on board: Enabling autonomous vehicles with embedded systems},
+  booktitle = {Proc. 9th ACM/IEEE Int. Conf. Cyber-Phys. Syst. (ICCPS)},
+  year      = {2018},
+  pages     = {287--296}
+}
+
+@misc{cudategra,
+  author       = {{NVIDIA}},
+  title        = {{CUDA} for {Tegra} application note ({CUDA} 13.0)},
+  url          = {https://docs.nvidia.com/cuda/archive/13.0.0/cuda-for-tegra-appnote/index.html},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2025}
+}
+
+% ---- New in this revision ----
+
+@misc{dora,
+  author       = {{dora-rs Project}},
+  title        = {dora-rs: Dataflow-oriented robotic architecture},
+  howpublished = {\url{https://github.com/dora-rs/dora}},
+  year         = {2026}
+}
+
+@inproceedings{casini2019,
+  author    = {D. Casini and T. Bla{\ss} and I. L{\"u}tkebohle and B. B. Brandenburg},
+  title     = {Response-time analysis of {ROS} 2 processing chains under reservation-based scheduling},
+  booktitle = {Proc. 31st Euromicro Conf. Real-Time Syst. (ECRTS)},
+  year      = {2019},
+  pages     = {6:1--6:23}
+}
+
+@inproceedings{clockwork,
+  author    = {A. Gujarati and R. Karimi and S. Alzayat and W. Hao and A. Kaufmann and Y. Vigfusson and J. Mace},
+  title     = {Serving {DNNs} like {Clockwork}: Performance predictability from the bottom up},
+  booktitle = {Proc. USENIX Symp. Oper. Syst. Des. Implement. (OSDI)},
+  year      = {2020},
+  pages     = {443--462}
+}
+
+% ---- added in round 4: recent work from top venues and ISPA (each verified from the publisher or author page) ----
+@inproceedings{uniad,
+  author    = {Y. Hu and J. Yang and L. Chen and K. Li and C. Sima and X. Zhu and S. Chai and S. Du and T. Lin and W. Wang and L. Lu and X. Jia and Q. Liu and J. Dai and Y. Qiao and H. Li},
+  title     = {Planning-oriented autonomous driving},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2023},
+  pages     = {17853--17862}
+}
+
+@inproceedings{reef,
+  author    = {M. Han and H. Zhang and R. Chen and H. Chen},
+  title     = {Microsecond-scale preemption for concurrent {GPU}-accelerated {DNN} inferences},
+  booktitle = {Proc. 16th USENIX Symp. Oper. Syst. Des. Implement. (OSDI)},
+  year      = {2022},
+  pages     = {539--558}
+}
+
+@inproceedings{vllm,
+  author    = {W. Kwon and others},
+  title     = {Efficient memory management for large language model serving with {PagedAttention}},
+  booktitle = {Proc. 29th ACM Symp. Oper. Syst. Princ. (SOSP)},
+  year      = {2023},
+  pages     = {611--626}
+}
+
+@inproceedings{cornflakes,
+  author    = {D. Raghavan and others},
+  title     = {Cornflakes: Zero-copy serialization for microsecond-scale networking},
+  booktitle = {Proc. 29th ACM Symp. Oper. Syst. Princ. (SOSP)},
+  year      = {2023},
+  note      = {doi: 10.1145/3600006.3613137}
+}
+
+@article{descend,
+  author  = {B. K{\"o}pcke and S. Gorlatch and M. Steuwer},
+  title   = {Descend: A safe {GPU} systems programming language},
+  journal = {Proc. ACM Program. Lang.},
+  volume  = {8},
+  number  = {PLDI},
+  pages   = {841--864},
+  year    = {2024}
+}
+
+@article{ros2survey,
+  author  = {D. Casini and J.-J. Chen and J. Li and F. Reghenzani and H. Teper},
+  title   = {A survey of real-time support, analysis, and advancements in {ROS} 2},
+  journal = {Leibniz Trans. Embedded Syst.},
+  volume  = {11},
+  number  = {1},
+  pages   = {1:1--1:37},
+  year    = {2026}
+}
+
+@inproceedings{vapor,
+  author    = {X. Zhu and L. Gong and Z. Zhu and X. Zhou},
+  title     = {Vapor: A {GPU} sharing scheduler with communication and computation pipeline for distributed deep learning},
+  booktitle = {Proc. IEEE Int. Conf. Parallel Distrib. Process. Appl. (ISPA)},
+  year      = {2021},
+  pages     = {108--116}
+}
+
+@inproceedings{tvm,
+  author    = {T. Chen and others},
+  title     = {{TVM}: An automated end-to-end optimizing compiler for deep learning},
+  booktitle = {Proc. 13th USENIX Symp. Oper. Syst. Des. Implement. (OSDI)},
+  year      = {2018},
+  pages     = {578--594}
+}
+
+@misc{tflitemem,
+  author       = {Y. Pisarchyk and J. Lee},
+  title        = {Efficient memory management for deep neural net inference},
+  howpublished = {arXiv:2001.03288},
+  year         = {2020}
+}
+
+@inproceedings{rcu,
+  author    = {P. E. McKenney and J. D. Slingwine},
+  title     = {Read-copy update: Using execution history to solve concurrency problems},
+  booktitle = {Proc. Parallel Distrib. Comput. Syst. (PDCS)},
+  month     = oct,
+  year      = {1998},
+  pages     = {509--518}
+}
+
+@article{hart,
+  author  = {T. E. Hart and P. E. McKenney and A. D. Brown and J. Walpole},
+  title   = {Performance of memory reclamation for lockless synchronization},
+  journal = {J. Parallel Distrib. Comput.},
+  volume  = {67},
+  number  = {12},
+  pages   = {1270--1285},
+  year    = {2007}
+}
+
+@techreport{disruptor,
+  author      = {M. Thompson and D. Farley and M. Barker and P. Gee and A. Stewart},
+  title       = {Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads},
+  institution = {LMAX},
+  month       = may,
+  year        = {2011}
+}
+
+@misc{cudabackend,
+  author       = {{Open Robotics}},
+  title        = {\texttt{cuda\_buffer\_backend} ({ROS} 2 \texttt{rosidl\_buffer\_backends})},
+  url          = {https://github.com/ros2/rosidl_buffer_backends},
+  note         = {Accessed: Sep. 29, 2026},
+  year         = {2026}
+}
+@article{simpson,
+  author = {H. R. Simpson},
+  title = {Four-slot fully asynchronous communication mechanism},
+  journal = {IEE Proceedings E (Computers and Digital Techniques)},
+  volume = {137},
+  number = {1},
+  pages = {17--30},
+  year = {1990},
+  doi = {10.1049/ip-e.1990.0002}
+}
+
+@inproceedings{nbw,
+  author = {Hermann Kopetz and Johannes Reisinger},
+  title = {The non-blocking write protocol {NBW}: A solution to a real-time synchronization problem},
+  booktitle = {Proc. IEEE Real-Time Syst. Symp. (RTSS)},
+  pages = {131--137},
+  year = {1993},
+  doi = {10.1109/REAL.1993.393507}
+}
+
+@techreport{rushbyfour,
+  author = {John Rushby},
+  title = {Model Checking {Simpson's} Four-Slot Fully Asynchronous Communication Mechanism},
+  institution = {Computer Science Laboratory, SRI International},
+  month = jul,
+  year = {2002},
+  url = {https://www.csl.sri.com/~rushby/papers/4slot.pdf},
+  note = {Accessed: Sep. 29, 2026}
+}
+
+@article{buttazzocab,
+  author = {Giorgio Buttazzo},
+  title = {Why Real-Time Computing?},
+  journal = {Automazione e Strumentazione},
+  pages = {82--88},
+  month = feb,
+  year = {2007},
+  url = {https://retis.santannapisa.it/~giorgio/paps/2007/automazione07.pdf},
+  note = {Accessed: Sep. 29, 2026}
+}

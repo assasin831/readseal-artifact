@@ -1,0 +1,21 @@
+# Read boundaries for graph snapshots (exact counts; Table II of the v1 manuscript).
+# prefix_ops = operations up to and including the last operation that may read the shared source
+#              (the source-reading prefix); total_ops = operations in the snapshot's exported graph.
+# Counts describe graph structure, not elapsed time.
+snapshot,model,prefix_ops,total_ops,src
+Base,TransFusion head,1,287,text
+Base,ResNet-18,12,123,text
+Alias chain,TransFusion head,3,289,text
+Alias chain,ResNet-18,14,125,text
+Early source clone,TransFusion head,2,289,text
+Early source clone,ResNet-18,13,125,text
+Middle source clone,TransFusion head,144,289,text
+Middle source clone,ResNet-18,62,125,text
+Late source clone,TransFusion head,288,289,text
+Late source clone,ResNet-18,124,125,text
+Late alias read,TransFusion head,290,291,text
+Late alias read,ResNet-18,126,127,text
+Remove late read,TransFusion head,1,287,text
+Remove late read,ResNet-18,12,123,text
+Private-only probe,TransFusion head,1,289,text
+Private-only probe,ResNet-18,12,125,text

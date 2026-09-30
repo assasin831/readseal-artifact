@@ -1,0 +1,136 @@
+[
+  {
+    "key": "autoware",
+    "url": "https://autoware.org/",
+    "checked_utc": "2026-09-30T03:13:59.613767+00:00",
+    "status": 200,
+    "resolved_url": "https://autoware.org/",
+    "bytes": 12047,
+    "sha256": "b3be48ceea7742dd76840e2766a9369842e491e99022b4fbcbd0d10aa68c1770",
+    "title": "One moment, please..."
+  },
+  {
+    "key": "iceoryx",
+    "url": "https://github.com/eclipse-iceoryx/iceoryx",
+    "checked_utc": "2026-09-30T03:14:01.038496+00:00",
+    "status": 200,
+    "resolved_url": "https://github.com/eclipse-iceoryx/iceoryx",
+    "bytes": 398107,
+    "sha256": "d24f3e44c4ec419d5f7b5ea809f01ece7bc4f3e96985282d72412071c772cca3",
+    "title": "GitHub - eclipse-iceoryx/iceoryx: Eclipse iceoryx\u2122 - true zero-copy inter-process-communication \u00b7 GitHub"
+  },
+  {
+    "key": "nitros",
+    "url": "https://nvidia-isaac-ros.github.io/concepts/nitros/index.html",
+    "checked_utc": "2026-09-30T03:14:02.856036+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "rosidlbuffer",
+    "url": "https://docs.ros.org/en/lyrical/Concepts/Intermediate/About-Buffer-Backends.html",
+    "checked_utc": "2026-09-30T03:14:03.552770+00:00",
+    "status": 200,
+    "resolved_url": "https://docs.ros.org/en/lyrical/Concepts/Intermediate/About-Buffer-Backends.html",
+    "bytes": 7432,
+    "sha256": "17f189aa00c4b467615938948922a06002c2028cad23c0ebe2c996c6dbe7d671",
+    "title": "Making sure you&#39;re not a bot!"
+  },
+  {
+    "key": "recordstream",
+    "url": "https://pytorch.org/docs/2.1/generated/torch.Tensor.record_stream.html",
+    "checked_utc": "2026-09-30T03:14:04.373040+00:00",
+    "status": 200,
+    "resolved_url": "https://docs.pytorch.org/docs/2.1/generated/torch.Tensor.record_stream.html",
+    "bytes": 41097,
+    "sha256": "1b0763b9b15348a6242eb78c643ef7d0c18112a01c8d00bf0cb859aff39ca44f",
+    "title": "torch.Tensor.record_stream &mdash; PyTorch 2.1 documentation"
+  },
+  {
+    "key": "tensorrt",
+    "url": "https://github.com/NVIDIA/TensorRT/blob/release/10.3/include/NvInferRuntime.h",
+    "checked_utc": "2026-09-30T03:14:06.656856+00:00",
+    "status": 200,
+    "resolved_url": "https://github.com/NVIDIA/TensorRT/blob/release/10.3/include/NvInferRuntime.h",
+    "bytes": 1104334,
+    "sha256": "4b42bf666ff2f39e7933b8e1b0e49f9d2df4ad4b7a0e2acf8f7f9874151cc4e2",
+    "title": "TensorRT/include/NvInferRuntime.h at release/10.3 \u00b7 NVIDIA/TensorRT \u00b7 GitHub"
+  },
+  {
+    "key": "torchmp",
+    "url": "https://docs.pytorch.org/docs/stable/multiprocessing.html",
+    "checked_utc": "2026-09-30T03:14:09.197579+00:00",
+    "status": 200,
+    "resolved_url": "https://docs.pytorch.org/docs/stable/multiprocessing.html",
+    "bytes": 1691,
+    "sha256": "d6b5a2f76a5dcd1130eeb3b0701f69b29b617716b580c571295f0bc4e540eed6",
+    "title": "Redirecting&hellip;"
+  },
+  {
+    "key": "bufferqueue",
+    "url": "https://source.android.com/docs/core/graphics/arch-bq-gralloc",
+    "checked_utc": "2026-09-30T03:14:10.033649+00:00",
+    "status": 200,
+    "resolved_url": "https://source.android.com/docs/core/graphics/arch-bq-gralloc",
+    "bytes": 350354,
+    "sha256": "0da8941c284538c95b5ff366e84950dfe8bf98c49ee12fcba51093f124688402",
+    "title": "BufferQueue and Gralloc &nbsp;|&nbsp; Android Open Source Project"
+  },
+  {
+    "key": "nvscistream",
+    "url": "https://developer.nvidia.com/docs/drive/drive-os/6.0.8/public/drive-os-linux-sdk/api_reference/group__nvsci__stream__apis.html",
+    "checked_utc": "2026-09-30T03:14:11.726615+00:00",
+    "status": 200,
+    "resolved_url": "https://developer.nvidia.com/docs/drive/drive-os/6.0.8/public/drive-os-linux-sdk/api_reference/group__nvsci__stream__apis.html",
+    "bytes": 395492,
+    "sha256": "c77414c35fb417ad7fe710473c8a3e78df03c01061911d2b283c0287bc217454",
+    "title": "NVIDIA DRIVE OS Linux SDK API Reference: NvSciStream APIs | NVIDIA Docs"
+  },
+  {
+    "key": "nll",
+    "url": "https://github.com/rust-lang/rfcs/blob/master/text/2094-nll.md",
+    "checked_utc": "2026-09-30T03:14:13.586008+00:00",
+    "status": 200,
+    "resolved_url": "https://github.com/rust-lang/rfcs/blob/master/text/2094-nll.md",
+    "bytes": 978715,
+    "sha256": "af0a6a6ca488f734d89a8d518683eb73f63b94ea271e339d3a1c0260d1b2eb74",
+    "title": "rfcs/text/2094-nll.md at master \u00b7 rust-lang/rfcs \u00b7 GitHub"
+  },
+  {
+    "key": "cudategra",
+    "url": "https://docs.nvidia.com/cuda/archive/13.0.0/cuda-for-tegra-appnote/index.html",
+    "checked_utc": "2026-09-30T03:14:16.595838+00:00",
+    "status": 200,
+    "resolved_url": "https://docs.nvidia.com/cuda/archive/13.0.0/cuda-for-tegra-appnote/index.html",
+    "bytes": 263383,
+    "sha256": "8e2ef23a58d41efa7c481809b8d667bb43ce6de58cad6808842fa9e794977762",
+    "title": "1. CUDA for Tegra &mdash; CUDA for Tegra 13.0 documentation"
+  },
+  {
+    "key": "cudabackend",
+    "url": "https://github.com/ros2/rosidl_buffer_backends",
+    "checked_utc": "2026-09-30T03:14:18.179163+00:00",
+    "status": 200,
+    "resolved_url": "https://github.com/ros2/rosidl_buffer_backends",
+    "bytes": 324907,
+    "sha256": "0f189f68f5858507395dccbffd215fecb57e75656c31d2f2dbd2bd80d83b21c2",
+    "title": "GitHub - ros2/rosidl_buffer_backends: Backend implementations for ROSIDL buffer types \u00b7 GitHub"
+  },
+  {
+    "key": "rushbyfour",
+    "url": "https://www.csl.sri.com/~rushby/papers/4slot.pdf",
+    "checked_utc": "2026-09-30T03:14:20.096979+00:00",
+    "status": 200,
+    "resolved_url": "https://www.csl.sri.com/~rushby/papers/4slot.pdf",
+    "bytes": 139498,
+    "sha256": "1453c4e9c75424cc428b138b0ba540ba83ae49fcaff6ba9b1934e8ab80d20c08"
+  },
+  {
+    "key": "buttazzocab",
+    "url": "https://retis.santannapisa.it/~giorgio/paps/2007/automazione07.pdf",
+    "checked_utc": "2026-09-30T03:14:22.182824+00:00",
+    "status": 200,
+    "resolved_url": "https://retis.santannapisa.it/~giorgio/paps/2007/automazione07.pdf",
+    "bytes": 700507,
+    "sha256": "203f3cbacb71607781ea591985c36503f8d200982e7f212caade988a51fea6d1"
+  }
+]

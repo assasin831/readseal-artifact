@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "page": 1,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 2,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 3,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 4,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 5,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 6,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 7,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    },
+    {
+      "page": 8,
+      "text_equal": true,
+      "pixels_equal_144dpi": true
+    }
+  ],
+  "delivered_sha256": "bcb4159cb9b4579cdbc3298ad7b4dcce69865b7c702724910480a5528f4c54f0",
+  "rebuilt_sha256": "463c631f5862b6e2d32bbe6aa5302bd5e5216c0fde9e1ef438c3d91fe1fb493f",
+  "note": "PDF metadata/IDs can vary between builds; text and rendered content are identical."
+}
