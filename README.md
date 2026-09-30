@@ -2,16 +2,16 @@
 
 Evidence for *BIM and ReadSeal: Safe Early Reuse of Shared GPU Buffers Across Processes*.
 
-The current paper and evidence entry is the fixed [ISPA r19 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19). It includes the revised manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r17](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17), [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and original [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
+The current paper and evidence entry is the fixed [ISPA r21 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21). It includes the author-supplied manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r19](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19), [r17](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17), [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and original [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
 
 ## Current Paper
 
-- [Revision 19 PDF](manuscript/r19/BIM_ReadSeal_ISPA2026_r19.pdf): eight pages, vector figures, embedded fonts.
-- [Complete source ZIP](manuscript/r19/BIM_ReadSeal_ISPA2026_r19_source.zip): LaTeX, six editable PPTX figures, vector PDFs, 600 dpi PNGs, CSVs, and verification records.
-- [Browse source and build instructions](manuscript/r19/source/README.md).
-- [Revision notes](manuscript/r19/source/CHANGES.md), [campaign/terminology guide](manuscript/r19/source/CAMPAIGNS.md), [file hashes](manuscript/r19/release.json).
+- [Revision 21 PDF](manuscript/r21/BIM_ReadSeal_ISPA2026_r21.pdf): the separately supplied eight-page paper, preserved byte-for-byte.
+- [Original source ZIP](manuscript/r21/BIM_ReadSeal_ISPA2026_r21_source.zip): LaTeX, six editable PPTX figures, vector PDFs, PNGs, CSVs, and historical verification records, exactly as supplied.
+- [Upload notes and source integrity](manuscript/r21/README.md), [browse source and build instructions](manuscript/r21/source/README.md).
+- [Revision notes](manuscript/r21/source/CHANGES.md), [campaign/terminology guide](manuscript/r21/source/CAMPAIGNS.md), [file hashes](manuscript/r21/release.json).
 
-Revision 19 applies checked reader feedback to the author-supplied r18: recipient processes and reader components are distinguished, the ResNet boundary example and evaluation roadmap are restored, algorithm symbols and the empty read-set convention are defined, and the measured 25 Hz dip is explained. Web references use consistent access dates and repaired documentation links. All nine figure-data CSVs and all eighteen figure files are byte-identical to r18. The clean source-ZIP rebuild matches all eight delivered pages in text and rendered pixels. Experimental archives and proof records below are byte-preserved; no experiments were rerun.
+Revision 21 publishes the authors' September 30 PDF and source ZIP without manuscript edits or recompilation. The ZIP includes an older same-revision PDF and one stale `main.tex` entry in its inherited manifest; the [upload notes](manuscript/r21/README.md) distinguish the canonical paper and the [external inventory](manuscript/r21/source-manifest.json) verifies all 77 supplied ZIP members. The paper's existing r19 evidence link remains valid. Experimental archives and proof records below are unchanged; no experiments were rerun.
 
 ## Start Here
 

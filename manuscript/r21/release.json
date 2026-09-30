@@ -1,0 +1,44 @@
+{
+  "revision": "r21",
+  "git_tag": "ispa2026-r21",
+  "paper": {
+    "file": "BIM_ReadSeal_ISPA2026_r21.pdf",
+    "bytes": 954817,
+    "sha256": "2bd634e559d3bc5a477431e41413829e73975548e0075f40dae383ffec5e3972",
+    "pages": 8
+  },
+  "source": {
+    "file": "BIM_ReadSeal_ISPA2026_r21_source.zip",
+    "bytes": 4724334,
+    "sha256": "5f47b5fa77a589938a83b56acdf33e31ad9d760bf31a8b699cb077bb61b04106",
+    "verified_manifest_files": 77,
+    "archive_prefix": "",
+    "manifest": "source-manifest.json",
+    "manifest_covers_all_archive_files": true
+  },
+  "minimum_paper_bytes": 0,
+  "original_filenames": {
+    "paper": "BIM_and_ReadSeal__Safe_Early_Reuse_of_Shared_GPU_Buffers_Across_Processes.pdf",
+    "source": "BIM_and_ReadSeal__Safe_Early_Reuse_of_Shared_GPU_Buffers_Across_Processes.zip"
+  },
+  "publication_date": "2026-09-30",
+  "author_supplied_files_preserved_byte_for_byte": true,
+  "source_files_edited": false,
+  "paper_recompiled": false,
+  "inference_executed": false,
+  "inherited_manifest_mismatches": [
+    "main.tex"
+  ],
+  "bundled_historical_pdf": {
+    "path": "source/BIM_ReadSeal_ISPA2026_r21.pdf",
+    "bytes": 4065708,
+    "sha256": "1075b3c4d6dd15cc030af0b7c53e8f42606112742a543dae4bbbf08a17850336"
+  },
+  "notes": [
+    "The separately supplied PDF is the canonical paper for this release.",
+    "The source ZIP contains an older same-revision PDF and a stale main.tex entry in its own MANIFEST.json.",
+    "All 77 ZIP members are preserved and bound by the external source-manifest.json.",
+    "The smaller supplied PDF is not padded or re-exported to enforce earlier deliveries' size preference.",
+    "The manuscript's evidence link remains ispa2026-r19; its immutable data and earlier releases are unchanged."
+  ]
+}

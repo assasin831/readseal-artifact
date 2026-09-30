@@ -18,20 +18,27 @@ def verify(root):
         path = root / row["file"]
         if path.stat().st_size != row["bytes"] or sha(path.read_bytes()) != row["sha256"]:
             raise ValueError(f"{kind} checksum/size mismatch")
-    if release["paper"]["bytes"] <= 1_048_576:
+    if release["paper"]["bytes"] < release.get("minimum_paper_bytes", 1_048_577):
         raise ValueError("Paper does not meet the requested size")
     source = root / "source"
-    manifest_path = source / "MANIFEST.json"
+    manifest_path = root / release["source"].get("manifest", "source/MANIFEST.json")
     rows = json.loads(manifest_path.read_text(encoding="utf-8"))["files"]
-    prefix = f"BIM_ReadSeal_ISPA2026_{release['revision']}_source/"
+    prefix = release["source"].get("archive_prefix", f"BIM_ReadSeal_ISPA2026_{release['revision']}_source/")
     with ZipFile(root / release["source"]["file"]) as archive:
         if archive.testzip() is not None:
             raise ValueError("ZIP CRC error")
-        if archive.read(prefix + "MANIFEST.json") != manifest_path.read_bytes():
+        if "manifest" not in release["source"] and archive.read(prefix + "MANIFEST.json") != manifest_path.read_bytes():
             raise ValueError("ZIP/source manifest mismatch")
+        if release["source"].get("manifest_covers_all_archive_files"):
+            names = [entry.filename for entry in archive.infolist() if not entry.is_dir()]
+            expected = [prefix + row["path"] for row in rows]
+            if len(set(names)) != len(names) or len(set(expected)) != len(expected):
+                raise ValueError("Duplicate archive or manifest entry")
+            if set(names) != set(expected):
+                raise ValueError("Manifest does not cover the exact archive contents")
         for row in rows:
             relative = Path(row["path"])
-            if relative.is_absolute() or ".." in relative.parts:
+            if relative.is_absolute() or ".." in relative.parts or "\\" in row["path"] or ":" in row["path"]:
                 raise ValueError("Unsafe manifest path")
             data = (source / relative).read_bytes()
             if len(data) != row["bytes"] or sha(data) != row["sha256"]:
@@ -50,6 +57,6 @@ def verify(root):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--revision", choices=("r15", "r16", "r17", "r19"), default="r19")
+    parser.add_argument("--revision", choices=("r15", "r16", "r17", "r19", "r21"), default="r21")
     args = parser.parse_args()
     verify(Path(__file__).resolve().parents[1] / "manuscript" / args.revision)

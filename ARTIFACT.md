@@ -2,10 +2,10 @@
 
 ## Verify the Saved Evidence
 
-Download this repository at tag `ispa2026-r19`, or clone it:
+Download this repository at tag `ispa2026-r21`, or clone it:
 
 ```sh
-git clone --branch ispa2026-r19 https://github.com/assasin831/readseal-artifact.git
+git clone --branch ispa2026-r21 https://github.com/assasin831/readseal-artifact.git
 cd readseal-artifact
 python tools/verify_results.py
 python tools/verify_manuscript.py
@@ -14,13 +14,13 @@ python -m unittest discover -s tools -p "test_*.py"
 
 Python 3.10 or later is sufficient; the verifier uses only the standard library. It is read-only, does not import the execution code, and starts no GPU jobs. It verifies archive and copied-file hashes, embedded manifests where supplied, both formal CSV row counts, the new campaign's publication denominator and recipient coverage, and all 403 summary/paired intervals in that campaign. It prints a JSON result and returns a nonzero exit code on failure.
 
-The separate manuscript verifier checks the r19 PDF and ZIP hashes, ZIP CRCs, and every source-manifest entry against both the browsable source tree and the ZIP. Use --revision r17, --revision r16, or --revision r15 for the preserved preceding packages. It checks packaging integrity, not experimental validity or visual quality.
+The separate manuscript verifier checks the r21 PDF and ZIP hashes, ZIP CRCs, and all 77 entries in its external source inventory against both the browsable source tree and the ZIP. The supplied ZIP's original manifest is preserved, including its stale `main.tex` record; see the [upload notes](manuscript/r21/README.md). Use --revision r19, --revision r17, --revision r16, or --revision r15 for the preserved preceding packages. It checks packaging integrity, not experimental validity or visual quality.
 
 `evidence-index.json` records the SHA-256 and length of each byte-preserved evidence file. It covers data and execution-source snapshots, not newly written explanatory Markdown or the portable verifier itself. The Git tag fixes the whole repository tree.
 
 ## Recompute Paper Tables
 
-The [r19 source](manuscript/r19/source/README.md) includes exact CSV inputs, native PowerPoint generators, vector figures, build scripts, and reconstruction checks. [release.json](manuscript/r19/release.json) records paper and ZIP hashes; the source package's MANIFEST.json covers every included file. The current [r19 check](manuscript/r19/source/qa/revision_validation_r19.json) and [clean rebuild check](manuscript/r19/source/qa/clean_build_verification_r19.json) are separate from historical QA records.
+The [r21 source](manuscript/r21/source/README.md) includes CSV inputs, native PowerPoint generators, vector figures, build scripts, and historical reconstruction checks. [release.json](manuscript/r21/release.json) records the supplied paper and ZIP hashes; the external [source-manifest.json](manuscript/r21/source-manifest.json) covers all 77 ZIP members. This upload did not recompile the paper. The preserved [r19 check](manuscript/r19/source/qa/revision_validation_r19.json) and [r19 clean rebuild check](manuscript/r19/source/qa/clean_build_verification_r19.json) concern that earlier revision, not this upload.
 
 The manuscript source package includes `scripts/extract_artifact.py` and `scripts/extract_followup.py`. The former reads `archives/ispa2026-rate-slots-evidence.zip`; the latter reads the 108-run and 168-run archives. These scripts derive plotting tables from saved records. They do not rerun inference.
 

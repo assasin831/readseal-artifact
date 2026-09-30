@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "pages": 8,
+  "last_page_right_column_bottom_pt": 679.5,
+  "text_column_bottom_pt": 719,
+  "r20_last_page_right_column_bottom_pt": 706,
+  "float_pages_r21": {
+    "Fig. 1.": 2,
+    "Fig. 2.": 2,
+    "Fig. 3.": 3,
+    "TABLE I": 3,
+    "Algorithm 1": 4,
+    "Fig. 4.": 5,
+    "Fig. 5.": 6,
+    "Fig. 6.": 6
+  },
+  "float_pages_r20": {
+    "Fig. 1.": 2,
+    "Fig. 2.": 2,
+    "Fig. 3.": 3,
+    "TABLE I": 3,
+    "Algorithm 1": 4,
+    "Fig. 4.": 5,
+    "Fig. 5.": 6,
+    "Fig. 6.": 6
+  },
+  "numeric_tokens_added": [
+    "78"
+  ],
+  "numeric_token_note": "78 results/s is the GPU-capacity line already drawn at 78.4 in Figs. 4a and 5a (four results per 51 ms); every other number already appears in r20.",
+  "equations_algorithm_table_unchanged": true,
+  "figure_files_and_includes_unchanged": true,
+  "refs_bib_unchanged": true,
+  "files_byte_identical_to_r20": 65,
+  "files_differing_unexpectedly": [],
+  "pdf_sha256": "1075b3c4d6dd15cc030af0b7c53e8f42606112742a543dae4bbbf08a17850336",
+  "experiments_run": false
+}

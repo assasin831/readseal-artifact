@@ -49,6 +49,6 @@ All files below are in [data/jitter-manual-108](data/jitter-manual-108).
 | Section V-E, checked manual update cases | Corrected gate report and saved-only audit |
 | Section V-F, isolated cost and model/view coverage | Core and model/view archives |
 
-Figure numbers above refer to [paper revision 17](manuscript/r17/BIM_ReadSeal_ISPA2026_r17.pdf). The source preserves older file stems: fig5_delivery is paper Fig. 4, fig6_slots is Fig. 5, and fig7_mixed is Fig. 6. See the [campaign inventory](manuscript/r17/source/CAMPAIGNS.md) for study counts, units, and the distinction between maintenance review fields and observed developer edits.
+Figure numbers above refer to [paper revision 21](manuscript/r21/BIM_ReadSeal_ISPA2026_r21.pdf). The source preserves older file stems: fig5_delivery is paper Fig. 4, fig6_slots is Fig. 5, and fig7_mixed is Fig. 6. See the [campaign inventory](manuscript/r21/source/CAMPAIGNS.md) for study counts, units, and the distinction between maintenance review fields and observed developer edits.
 
 Historical archive member names are provenance identifiers, not current venue branding. Use the ISPA download index rather than editing those members.
