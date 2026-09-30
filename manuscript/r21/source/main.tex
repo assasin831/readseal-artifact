@@ -22,6 +22,11 @@
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 
+% Preserve the reference PDF's line breaks across TeX distributions.
+\hyphenation{Sec-tion bor-row-ing copy-ing de-scribe com-pu-ta-tion mech-a-nism ten-sors}
+% Match the reference PDF's searchable text for the large union operator.
+\pdfglyphtounicode{uniontext}{22C3 FE01}
+
 % Artifact link, set in one place: the ISPA 2026 tag of the artifact repository.
 \newcommand{\artifacturl}{https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19}
 
@@ -34,10 +39,6 @@
 \newcommand{\Hz}{\,Hz}
 \newtheorem{proposition}{Proposition}
 
-% Optional acknowledgment of the assistance used for this revision.
-% Authors should review the acknowledgment against the submission requirements.
-\newif\ifaidisclosure
-\aidisclosurefalse
 \setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
 \setlength{\dbltextfloatsep}{12pt plus 2pt minus 2pt}
 \setlength{\floatsep}{10pt plus 2pt minus 2pt}
@@ -348,8 +349,8 @@ An isolated-process test times recipient acceptance to output dispatch (8 proces
 
 \textbf{Asynchronous buffer protocols.} Simpson's four-slot mechanism separates concurrent reads and writes across buffers, and Kopetz and Reisinger's NBW protocol detects overlapping writes and also provides a multibuffer variant~\cite{simpson,nbw}. Cyclical asynchronous buffers let readers acquire the latest complete value without blocking the writer~\cite{buttazzocab}. BIM instead preserves the particular frame already assigned to each recipient, including while its GPU reads are unsubmitted.
 
-\textbf{Last use and safe reclamation.} Compilers and runtimes reuse a buffer after its last use, as in TVM's static memory planning~\cite{tvm}, and Rust's non-lexical lifetimes end a borrow there~\cite{nll}; both see every use in one program, in program order. % Dropped automatically when the acknowledgment is enabled, so the paper stays within eight pages.
-\ifaidisclosure\else Task runtimes such as Legion and StarPU know future accesses because tasks declare their data when submitted~\cite{legion,starpu}. \fi
+\textbf{Last use and safe reclamation.} Compilers and runtimes reuse a buffer after its last use, as in TVM's static memory planning~\cite{tvm}, and Rust's non-lexical lifetimes end a borrow there~\cite{nll}; both see every use in one program, in program order.
+Task runtimes such as Legion and StarPU know future accesses because tasks declare their data when submitted~\cite{legion,starpu}.
 BIM's recipients are separate processes that declare nothing to the producer. Safe memory reclamation, such as read-copy-update (RCU) grace periods~\cite{rcu}, reuses memory once no reader can hold it, but protects only readers that have announced themselves. In RCU terms, BIM's commit opens every recipient's read-side section on its behalf, and ReadSeal closes it at the last read. ReadSeal's bindings, like PyTorch~2's guards~\cite{pytorch2}, reject execution whose assumptions changed.
 
 % =====================================================================

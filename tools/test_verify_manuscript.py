@@ -80,6 +80,19 @@ class ManuscriptVerificationTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "exact archive contents"):
                 self.run_verify(root)
 
+    def test_optional_rebuilt_pdf_hash_checked(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            release = self.fixture(root)
+            data = b"rebuilt PDF bytes"
+            (root / "rebuilt.pdf").write_bytes(data)
+            release["rebuilt_paper"] = {"file": "rebuilt.pdf", "bytes": len(data), "sha256": sha(data)}
+            (root / "release.json").write_text(json.dumps(release), encoding="utf-8")
+            self.run_verify(root)
+            (root / "rebuilt.pdf").write_bytes(b"changed")
+            with self.assertRaisesRegex(ValueError, "rebuilt_paper checksum/size mismatch"):
+                self.run_verify(root)
+
     def test_legacy_size_default_preserved(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

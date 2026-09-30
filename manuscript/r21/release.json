@@ -1,6 +1,6 @@
 {
   "revision": "r21",
-  "git_tag": "ispa2026-r21",
+  "git_tag": "ispa2026-r21-source1",
   "paper": {
     "file": "BIM_ReadSeal_ISPA2026_r21.pdf",
     "bytes": 954817,
@@ -9,36 +9,39 @@
   },
   "source": {
     "file": "BIM_ReadSeal_ISPA2026_r21_source.zip",
-    "bytes": 4724334,
-    "sha256": "5f47b5fa77a589938a83b56acdf33e31ad9d760bf31a8b699cb077bb61b04106",
-    "verified_manifest_files": 77,
-    "archive_prefix": "",
-    "manifest": "source-manifest.json",
-    "manifest_covers_all_archive_files": true
+    "bytes": 651672,
+    "sha256": "85f5f1359b9dfad77aac0e5d1c51cbbd236f7673cdfbba97ccdf0a54e546430d",
+    "verified_manifest_files": 17,
+    "archive_prefix": ""
+  },
+  "rebuilt_paper": {
+    "file": "BIM_ReadSeal_ISPA2026_r21_rebuilt.pdf",
+    "bytes": 1301820,
+    "sha256": "126c192f4959f2c27ce207251d34b55c9f42e0b95653a5946b6d9f1166a1b523",
+    "pages": 8
   },
   "minimum_paper_bytes": 0,
-  "original_filenames": {
-    "paper": "BIM_and_ReadSeal__Safe_Early_Reuse_of_Shared_GPU_Buffers_Across_Processes.pdf",
-    "source": "BIM_and_ReadSeal__Safe_Early_Reuse_of_Shared_GPU_Buffers_Across_Processes.zip"
-  },
+  "reference_filename": "BIM_and_ReadSeal__Safe_Early_Reuse_of_Shared_GPU_Buffers_Across_Processes.pdf",
   "publication_date": "2026-09-30",
-  "author_supplied_files_preserved_byte_for_byte": true,
-  "source_files_edited": false,
-  "paper_recompiled": false,
+  "canonical_paper_preserved_byte_for_byte": true,
+  "source_reconstructed": true,
+  "paper_recompiled_for_verification": true,
   "inference_executed": false,
-  "inherited_manifest_mismatches": [
-    "main.tex"
-  ],
-  "bundled_historical_pdf": {
-    "path": "source/BIM_ReadSeal_ISPA2026_r21.pdf",
-    "bytes": 4065708,
-    "sha256": "1075b3c4d6dd15cc030af0b7c53e8f42606112742a543dae4bbbf08a17850336"
+  "reconstruction": {
+    "report": "reconstruction-verification.json",
+    "identical_text_pages": 8,
+    "identical_rendered_pages_144dpi": 8,
+    "identical_rendered_pages_300dpi": 8,
+    "unchanged_vector_figures": 6,
+    "references": 26,
+    "previous_source_tag": "ispa2026-r21",
+    "previous_source_zip_sha256": "5f47b5fa77a589938a83b56acdf33e31ad9d760bf31a8b699cb077bb61b04106"
   },
   "notes": [
-    "The separately supplied PDF is the canonical paper for this release.",
-    "The source ZIP contains an older same-revision PDF and a stale main.tex entry in its own MANIFEST.json.",
-    "All 77 ZIP members are preserved and bound by the external source-manifest.json.",
-    "The smaller supplied PDF is not padded or re-exported to enforce earlier deliveries' size preference.",
-    "The manuscript's evidence link remains ispa2026-r19; its immutable data and earlier releases are unchanged."
+    "The author-approved PDF is unchanged; the rebuilt PDF is a separate compilation artifact.",
+    "This source replaces the previous main-branch source directory and ZIP, with a fresh internal manifest.",
+    "The self-contained ZIP has 17 manifest-covered files plus MANIFEST.json and builds with pdfLaTeX and BibTeX only.",
+    "The original r21 tag preserves the replaced package and its historical records.",
+    "The manuscript's evidence link remains ispa2026-r19; measurements and older tags are unchanged."
   ]
 }

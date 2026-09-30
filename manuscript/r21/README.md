@@ -1,20 +1,22 @@
-# Author-Supplied ISPA r21 Upload
+# ISPA r21: PDF-Matched LaTeX Source
 
-This release publishes the PDF and source ZIP supplied by the authors on September 30, 2026. Both files are preserved byte-for-byte; only their public download filenames follow the repository's revision naming convention. The manuscript was not edited, recompiled, or re-exported for this upload. No experiments were run.
+This update replaces the previous main-branch LaTeX source directory and ZIP with a self-contained reconstruction matched to the author-approved PDF. The canonical paper and all experimental records are unchanged. No experiments were run. The fixed tag is `ispa2026-r21-source1`; the earlier `ispa2026-r21` tag preserves the replaced upload.
 
-- [Current paper PDF](BIM_ReadSeal_ISPA2026_r21.pdf): the separately supplied eight-page PDF, 954,817 bytes.
-- [Original source ZIP](BIM_ReadSeal_ISPA2026_r21_source.zip): 4,724,334 bytes, with all 77 original members preserved.
-- [Browse the supplied source](source/main.tex) and [original build instructions](source/README.md).
-- [Release records and original filenames](release.json).
-- [External source checksum inventory](source-manifest.json).
+- [Canonical paper PDF](BIM_ReadSeal_ISPA2026_r21.pdf): the unchanged author-approved eight-page PDF, 954,817 bytes.
+- [Reconstructed source ZIP](BIM_ReadSeal_ISPA2026_r21_source.zip): 651,672 bytes, 18 files including its refreshed manifest.
+- [Browse the editable LaTeX](source/main.tex) and [build instructions](source/README.md).
+- [Rebuilt PDF](BIM_ReadSeal_ISPA2026_r21_rebuilt.pdf): a separate normal pdfLaTeX output, 1,301,820 bytes.
+- [Reconstruction comparison](reconstruction-verification.json), [source inventory](source/MANIFEST.json), and [release hashes](release.json).
 
-## Which PDF Is Current?
+## Verified Against the Current PDF
 
-Use the paper linked above, outside `source/`. The ZIP also contains an older, 4,065,708-byte file named `BIM_ReadSeal_ISPA2026_r21.pdf`. That bundled file is retained as supplied and is not this release's canonical PDF. The separately supplied PDF is not padded to match older file-size preferences.
+The delivered ZIP was extracted into a fresh directory and compiled with its included PowerShell build script. All eight pages match the canonical PDF in extracted text and rendered pixels at both 144 and 300 dpi. All 26 references, all six vector figures, and the external PDF links remain unchanged. Fonts are embedded, no Type 3 fonts are present, and the final log has no overfull boxes or undefined references/citations. All eight pages were also visually inspected.
 
-## Source Integrity
+The rebuild uses real editable text, mathematics, algorithm and table environments, and the original vector figure PDFs. It does not embed the paper as full-page images. Seven hyphenation exceptions fix cross-distribution line breaks, and an explicit Unicode mapping preserves the union symbol's extracted text. Inactive source switches and stale source metadata were removed, without changing visible content. Compression, object numbering and PDF metadata account for different byte hashes and file sizes; they do not change the matched pages.
 
-The supplied ZIP's `MANIFEST.json` has one stale checksum entry, `main.tex`; its other 75 entries match. The original manifest, source, README, and historical QA records are not silently rewritten. The external `source-manifest.json` records the actual bytes of all 77 ZIP members, including that original manifest. The public verifier uses this external inventory for r21 and checks it against both the ZIP and the browsable source tree.
+## Build and Integrity
+
+Compile `source/main.tex` using pdfLaTeX and BibTeX, or run `source/build.ps1` on Windows / `sh source/build.sh` on Linux or macOS. No Python or PDF post-processing is needed for compilation. The optional PDF comparison script requires PyMuPDF. The clean ZIP omits the old embedded manuscript PDF and historical editing/QA files; those remain accessible at the previous tag.
 
 From the repository root:
 
@@ -22,8 +24,8 @@ From the repository root:
 python tools/verify_manuscript.py --revision r21
 ```
 
-This is an upload-integrity check, not a new compilation, visual-quality claim, or experimental validation. Statements in the source package about earlier builds and local deliveries remain historical.
+The repository verifier checks the canonical and rebuilt PDF hashes, source ZIP, and all 17 source-manifest entries. The separate reconstruction reports record the completed compilation and visual/text comparisons; none of these are new experimental measurements.
 
 ## Experimental Evidence
 
-The paper still links to the fixed [ISPA r19 evidence tag](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19). That link and all prior tags remain unchanged. This r21 tag also retains the same [108-run jitter/manual data](../../data/jitter-manual-108), [168-run clone data](../../data/clone-168), and [evidence guide](../../DATA_GUIDE.md), without rerunning or changing the measurements.
+The paper still links to the fixed [ISPA r19 evidence tag](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19). That link and all prior tags remain unchanged. This source update also retains the same [108-run jitter/manual data](../../data/jitter-manual-108), [168-run clone data](../../data/clone-168), and [evidence guide](../../DATA_GUIDE.md), without rerunning or changing the measurements.

@@ -13,7 +13,8 @@ def sha(data):
 
 def verify(root):
     release = json.loads((root / "release.json").read_text(encoding="utf-8"))
-    for kind in ("paper", "source"):
+    artifacts = ("paper", "source") + (("rebuilt_paper",) if "rebuilt_paper" in release else ())
+    for kind in artifacts:
         row = release[kind]
         path = root / row["file"]
         if path.stat().st_size != row["bytes"] or sha(path.read_bytes()) != row["sha256"]:

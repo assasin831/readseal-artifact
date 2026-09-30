@@ -2,16 +2,17 @@
 
 Evidence for *BIM and ReadSeal: Safe Early Reuse of Shared GPU Buffers Across Processes*.
 
-The current paper and evidence entry is the fixed [ISPA r21 release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21). It includes the author-supplied manuscript, editable figures, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The [r19](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19), [r17](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17), [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and original [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
+The current paper and evidence entry is the fixed [ISPA r21 source-reconstruction release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21-source1). It includes the unchanged author-approved paper, PDF-matched LaTeX source, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The original [r21 upload](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21), [r19](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19), [r17](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17), [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
 
 ## Current Paper
 
 - [Revision 21 PDF](manuscript/r21/BIM_ReadSeal_ISPA2026_r21.pdf): the separately supplied eight-page paper, preserved byte-for-byte.
-- [Original source ZIP](manuscript/r21/BIM_ReadSeal_ISPA2026_r21_source.zip): LaTeX, six editable PPTX figures, vector PDFs, PNGs, CSVs, and historical verification records, exactly as supplied.
-- [Upload notes and source integrity](manuscript/r21/README.md), [browse source and build instructions](manuscript/r21/source/README.md).
-- [Revision notes](manuscript/r21/source/CHANGES.md), [campaign/terminology guide](manuscript/r21/source/CAMPAIGNS.md), [file hashes](manuscript/r21/release.json).
+- [Reconstructed source ZIP](manuscript/r21/BIM_ReadSeal_ISPA2026_r21_source.zip): self-contained editable LaTeX, bibliography, document class, six vector figures, build scripts and current verification records.
+- [Reconstruction notes](manuscript/r21/README.md), [browse source and build instructions](manuscript/r21/source/README.md), [file hashes](manuscript/r21/release.json).
+- [Rebuilt comparison PDF](manuscript/r21/BIM_ReadSeal_ISPA2026_r21_rebuilt.pdf) and [page-by-page verification](manuscript/r21/reconstruction-verification.json).
+- [Historical editable figures and campaign guide](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21/manuscript/r21/source) remain at the original r21 tag.
 
-Revision 21 publishes the authors' September 30 PDF and source ZIP without manuscript edits or recompilation. The ZIP includes an older same-revision PDF and one stale `main.tex` entry in its inherited manifest; the [upload notes](manuscript/r21/README.md) distinguish the canonical paper and the [external inventory](manuscript/r21/source-manifest.json) verifies all 77 supplied ZIP members. The paper's existing r19 evidence link remains valid. Experimental archives and proof records below are unchanged; no experiments were rerun.
+The reconstructed source replaces the previous source directory and ZIP on the main branch. A fresh ZIP extraction and compilation reproduces all eight pages of the approved PDF with identical extracted text and identical rendered pixels at 144 and 300 dpi. Visible content and experimental values were not edited. The package has a fresh [manifest](manuscript/r21/source/MANIFEST.json) and no stale bundled manuscript or historical editing scripts. The canonical PDF, existing r19 evidence link, archives, and proof records below are unchanged; no experiments were rerun.
 
 ## Start Here
 
