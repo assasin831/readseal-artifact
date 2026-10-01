@@ -12,10 +12,10 @@
   },
   "source": {
     "file": "REALBIM_ISPA_source.zip",
-    "bytes": 3274082,
-    "sha256": "3e0394059080ed4c041ca765c57dc4cc30057d154288d6602e156e390b5d55cb",
+    "bytes": 1171944,
+    "sha256": "e94ef357fccc774e831272d0e0b63c684eab6e0446bc267894ae0a076917850e",
     "archive_prefix": "REALBIM_ISPA_source/",
-    "verified_manifest_files": 54,
+    "verified_manifest_files": 28,
     "manifest_covers_all_archive_files": true
   },
   "author_supplied_pdf": {
@@ -28,7 +28,8 @@
     "bytes": 3292374,
     "sha256": "c1afcb4a24a121ecf893c7c27ca81dd7e70fc02a4dfee5bf526c832696983822"
   },
-  "verification": "source/qa/ISPA_publication_check.json",
+  "verification": "clean-rebuild-check.json",
   "experimental_data_changed": false,
-  "inference_executed": false
+  "inference_executed": false,
+  "link_update_verification": "checks/link-update.json"
 }

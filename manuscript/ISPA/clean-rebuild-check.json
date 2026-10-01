@@ -3,7 +3,7 @@
   "reference_filename": "REALBIM_ISPA.pdf",
   "reference_sha256": "585699df9b0530bcc82cee7ed9bebef4211558713898d55f000b1ea1326dd068",
   "candidate_filename": "main.pdf",
-  "candidate_sha256": "ef81ffd7692be61f08a0fe137844c4e0e77a37f535d31622714e2d8bc728b2d6",
+  "candidate_sha256": "8f3ebec111758a2d9126a1698f2a0388e72f686737f093b9d7587501e45594e3",
   "candidate_bytes": 1694110,
   "pages": [
     {
@@ -70,6 +70,6 @@
   "overfull_or_undefined_warnings": [],
   "underfull_warning_count": 4,
   "renderer": "PyMuPDF 1.28.2",
-  "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.14)  1 OCT 2026 01:41",
+  "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.14)  1 OCT 2026 02:49",
   "scope": "Text, page geometry, raster comparisons, links and build checks; no new experiments or statistical analysis."
 }

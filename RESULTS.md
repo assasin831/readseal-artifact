@@ -10,7 +10,7 @@ The primary metric counts a publication as timely only if every intended recipie
 
 Means over six runs, in percent:
 
-| Condition | BIM / ReadSeal | Checked Manual | Full retention | Clone-on-accept |
+| Condition | REALBIM | REALBIM (hand-placed) | Full retention | Clone-on-accept |
 |---|---:|---:|---:|---:|
 | Homogeneous, periodic | 65.54 | 65.44 | 50.00 | 63.33 |
 | Homogeneous, jitter | 63.54 | 63.50 | 48.02 | 61.65 |
@@ -20,7 +20,7 @@ Means over six runs, in percent:
 
 [Per-run values](data/jitter-manual-108/per_run.csv), [all metric summaries](data/jitter-manual-108/summary_t95.csv), and [paired contrasts](data/jitter-manual-108/paired_t95.csv) include unrounded values and intervals. The four main conditions account for 96 formal runs; the all-late control accounts for the other 12.
 
-Clone-on-accept minus BIM, in percentage points, with paired pointwise 95% t intervals:
+Clone-on-accept minus REALBIM, in percentage points, with paired pointwise 95% t intervals:
 
 | Condition | Difference | Interval |
 |---|---:|---|
@@ -31,7 +31,7 @@ Clone-on-accept minus BIM, in percentage points, with paired pointwise 95% t int
 
 The mixed profile changes more than the late reader: two recipients run only parts of the composition. No heterogeneous control without a late reader was measured, so this comparison does not isolate the effect of a single late reader.
 
-Copying raises the sampled device-memory peak by 256 MiB in matched formal runs. For heterogeneous jitter, its mean per-run complete-publication P99 latency is 78.25 ms versus BIM's 52.91 ms, a paired difference of 25.34 ms [23.55, 27.13]. It also reduces incomplete publications from 373.83 to 173.50 per 900 scheduled publications. These latencies are conditional on complete, correct publications, timely or not; missed publications have no completion latency and are not assigned zero.
+Copying raises the sampled device-memory peak by 256 MiB in matched formal runs. For heterogeneous jitter, its mean per-run complete-publication P99 latency is 78.25 ms versus REALBIM's 52.91 ms, a paired difference of 25.34 ms [23.55, 27.13]. It also reduces incomplete publications from 373.83 to 173.50 per 900 scheduled publications. These latencies are conditional on complete, correct publications, timely or not; missed publications have no completion latency and are not assigned zero.
 
 ### Manual Boundaries and Update Safety
 
@@ -43,7 +43,7 @@ The corrected native gate completed 48 profile/method/source cases, 24 update ca
 
 The September 23 campaign completed 8 smoke and 168 formal runs. Its primary throughput metric is timely correct **recipient result bundles/s**, not complete publications/s. Means over six repetitions:
 
-| Source rate / profile | BIM | Manual | Full | Clone-on-accept |
+| Source rate / profile | REALBIM | Hand-placed | Full | Clone-on-accept |
 |---|---:|---:|---:|---:|
 | 10/s, base | 40.00 | 40.00 | 40.00 | 40.00 |
 | 15/s, base | 60.00 | 59.98 | 60.00 | 60.00 |
@@ -53,7 +53,7 @@ The September 23 campaign completed 8 smoke and 168 formal runs. Its primary thr
 | 40/s, base | 79.11 | 79.08 | 53.33 | 78.16 |
 | 30/s, late | 60.00 | 60.00 | 60.00 | 76.39 |
 
-Copying is better at base 25/s by 2.75 bundles/s [2.47, 3.03] and at late 30/s by 16.39 [16.06, 16.72]. In the late condition, copying has worse P99 latency (101.12 versus 68.66 ms) and mean age (103.89 versus 90.88 ms). At base 30/s, BIM has worse mean age than Full (94.56 versus 91.23 ms). The [full CSVs](data/clone-168) preserve every condition and all reported metrics.
+Copying is better at base 25/s by 2.75 bundles/s [2.47, 3.03] and at late 30/s by 16.39 [16.06, 16.72]. In the late condition, copying has worse P99 latency (101.12 versus 68.66 ms) and mean age (103.89 versus 90.88 ms). At base 30/s, REALBIM has worse mean age than Full (94.56 versus 91.23 ms). The [full CSVs](data/clone-168) preserve every condition and all reported metrics.
 
 ## Interpretation Limits
 

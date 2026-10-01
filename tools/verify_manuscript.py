@@ -60,6 +60,6 @@ def verify(root):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--revision", choices=("ISPA", "r15", "r16", "r17", "r19", "r21"), default="ISPA")
+    parser.add_argument("--revision", choices=("ISPA",), default="ISPA")
     args = parser.parse_args()
     verify(Path(__file__).resolve().parents[1] / "manuscript" / args.revision)

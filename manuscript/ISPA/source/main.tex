@@ -29,14 +29,14 @@
 
 % Artifact link, set in one place: the ISPA publication branch.
 \newcommand{\artifacturl}{https://github.com/assasin831/readseal-artifact/tree/ISPA}
-% Framework name, set in one place (Fig. 1 and the plot legends spell it out).
+% Framework name, set in one place; figures spell it out separately.
 \newcommand{\sys}{REALBIM}
 % The two hand-placed baselines (Section V-A), named as in the plot legends: Figs. 6-7 show the standalone
 % runtime ("Hand-placed"), Fig. 8 shows REALBIM with a hand-placed boundary ("REALBIM (hand-placed)").
 \newcommand{\hps}{Hand-placed}
 \newcommand{\hpr}{\sys{} (hand-placed)}
 
-\newcommand{\circled}[1]{\ding{\numexpr201+#1\relax}}   % black circled digits used in Fig. 1
+\newcommand{\circled}[1]{\ding{\numexpr201+#1\relax}}   % black circled digits used in Fig. 3
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\hd}[1]{\textbf{\begin{tabular}[b]{@{}l@{}}#1\end{tabular}}}   % two-line table headers
 \newcommand{\op}[1]{\textsc{#1}}                          % protocol transitions (Accept, Submit, ...)
@@ -52,8 +52,6 @@
 % Typographic conventions: italics mark a term at its definition (and math); bold run-in heads structure
 % paragraphs; small caps name protocol transitions. Frame rates are in Hz; goodput is in results/s,
 % where a result is one recipient's result bundle for one frame.
-% Wording conventions (r33): "late" means a missed deadline only. Where a read falls in a graph is said
-% with "boundary" (a boundary near the start or the end of the graph); submission order is "first/second".
 
 \begin{document}
 

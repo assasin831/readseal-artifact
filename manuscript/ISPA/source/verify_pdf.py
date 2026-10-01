@@ -1,4 +1,4 @@
-"""Compare a normal LaTeX build with the author-approved eight-page PDF."""
+"""Compare a LaTeX build with the published eight-page PDF."""
 
 import argparse
 import hashlib

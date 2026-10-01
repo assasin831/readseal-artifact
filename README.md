@@ -1,55 +1,39 @@
-# REALBIM: ISPA Artifact
+# REALBIM
 
-Paper, source and evidence for *REALBIM: A Framework for Safe Early Reuse of Shared GPU Buffers Across Processes*.
+Artifact for **REALBIM: A Framework for Safe Early Reuse of Shared GPU Buffers Across Processes**, ISPA 2026 submission.
 
-The current paper and evidence entry is [ISPA](https://github.com/assasin831/readseal-artifact/tree/ISPA). This publication uses the author-supplied r33 manuscript, with its artifact link updated to this ISPA branch. It includes the eight-page paper, editable LaTeX source, both additional performance campaigns, their saved correctness records, and earlier experiments. ISPA is a maintained branch; commit history and per-file hashes identify each publication. Historical tags remain unchanged.
+REALBIM separates the lifetime of shared GPU storage from the identity of the frame stored in it. BIM protects recipients from publication onward; ReadSeal derives and checks the last source read inside each recipient.
 
-## Current Paper
+## Paper and Source
 
-- [ISPA paper PDF](manuscript/ISPA/REALBIM_ISPA.pdf): eight pages, based on r33, with the current artifact link.
-- [ISPA LaTeX source ZIP](manuscript/ISPA/REALBIM_ISPA_source.zip): editable LaTeX, bibliography, all eight figures, figure sources, licenses and build scripts.
-- [Publication notes](manuscript/ISPA/README.md), [browse source and build instructions](manuscript/ISPA/source/README.md), [file hashes](manuscript/ISPA/release.json).
-- [Page-by-page publication checks](manuscript/ISPA/source/qa/ISPA_publication_check.json).
+- [Paper PDF](manuscript/ISPA/REALBIM_ISPA.pdf)
+- [LaTeX source ZIP](manuscript/ISPA/REALBIM_ISPA_source.zip)
+- [Build instructions and figure sources](manuscript/ISPA/source/README.md)
+- [File hashes and build checks](manuscript/ISPA/README.md)
 
-The manuscript's only visible text change from the supplied r33 PDF is the artifact URL, now ending in `/tree/ISPA`. Three explicit word-hyphenation rules preserve the supplied line breaks with the local TeX distribution. All eight figure PDFs, bibliography entries and experimental values are unchanged. The source has a refreshed [manifest](manuscript/ISPA/source/MANIFEST.json). Historical editing notes and build checks are labeled as history. No experiments were rerun; data, archives and execution proofs are preserved byte-for-byte.
+The paper links to the [ISPA branch](https://github.com/assasin831/readseal-artifact/tree/ISPA). Use a commit hash to identify a particular version.
 
-The current paper calls the independent manual runtime **Hand-placed**, and the same-runtime manual-boundary variant **REALBIM (hand-placed)**. The frozen evidence retains its original names **Manual** and **Manual-checked**, respectively; earlier references to BIM as the evaluated system correspond to REALBIM in the current manuscript.
+## Experiments
 
-## Start Here
-
-| Experiment | Measured evidence | Read online | Download |
+| Experiment | Runs | Data | Archive |
 |---|---|---|---|
-| Matched clone-on-accept | 168 formal runs and 8 smoke runs; six repetitions per condition and method | [Per-run CSV](data/clone-168/per_run.csv), [summaries](data/clone-168/summary_t95.csv), [paired differences](data/clone-168/paired_t95.csv) | [168-run archive](archives/ispa2026-clone-168.zip) |
-| Jitter and component-heterogeneous recipients | 108 formal runs and 18 smoke runs; all 97,200 scheduled publications in the formal denominator | [Per-run CSV](data/jitter-manual-108/per_run.csv), [publication CSV](data/jitter-manual-108/publications.csv), [summaries](data/jitter-manual-108/summary_t95.csv) | [108-run archive](archives/ispa2026-jitter-manual-108.zip) |
-| Manual boundaries with identical binding checks | Matched performance cells in the same 108 runs; 48 native cases, 24 update cases, 6 cancellation cases, 155 rejection witnesses and 600 exact tensor comparisons | [Gate report](provenance/corrected-gate/native_gate_report.json), [saved-only audit](provenance/corrected-gate/native_gate_audit.json), [paired differences](data/jitter-manual-108/paired_t95.csv) | [Same 108-run archive](archives/ispa2026-jitter-manual-108.zip) |
+| Clone-on-accept comparison | 168 formal, 8 smoke | [Run-level results](data/clone-168/per_run.csv), [summaries](data/clone-168/summary_t95.csv), [paired differences](data/clone-168/paired_t95.csv) | [Download](archives/ispa2026-clone-168.zip) |
+| Jitter and mixed recipients | 108 formal, 18 smoke | [Run-level results](data/jitter-manual-108/per_run.csv), [97,200 scheduled frames](data/jitter-manual-108/publications.csv), [summaries](data/jitter-manual-108/summary_t95.csv) | [Download](archives/ispa2026-jitter-manual-108.zip) |
+| Hand-placed boundaries with matched checks | Included in the 108 formal runs | [Paired differences](data/jitter-manual-108/paired_t95.csv), [update and safety tests](provenance/corrected-gate/native_gate_report.json), [audit](provenance/corrected-gate/native_gate_audit.json) | Same archive |
 
-The third row is not another 108-run campaign. Smoke runs and CPU tests are not formal performance results.
+The rate, slot, deadline and model-change studies are in these archives:
 
-- [Results and limitations](RESULTS.md)
-- [File and metric guide](DATA_GUIDE.md)
+- [Rate, late-read and slot studies](archives/ispa2026-rate-slots-evidence.zip)
+- [Correctness, execution cost and slot studies](archives/ispa2026-core-evidence.zip)
+- [Model and view tests](archives/ispa2026-model-view-evidence.zip)
+- [Load and deadline sensitivity](archives/ispa2026-load-sensitivity-evidence.zip)
+
+## Documentation
+
+- [Results and interpretation](RESULTS.md)
+- [Data fields, method labels and figure-to-data map](DATA_GUIDE.md)
 - [Verification and reproduction](ARTIFACT.md)
-- [Gate correction and evidence provenance](PROVENANCE.md)
-- [Archive and file SHA-256 inventory](evidence-index.json)
+- [Experimental provenance and gate correction](PROVENANCE.md)
+- [Evidence checksums](evidence-index.json)
 
-## Main Findings
-
-With homogeneous recipients at 30 source publications/s, REALBIM completes 65.5% of publications on time under periodic arrivals and 63.5% under jitter, compared with Full retention's 50.0% and 48.0%. With component-heterogeneous recipients, including a late reader, clone-on-accept instead reaches 82.6% and 80.7%, compared with REALBIM's 50.3% and 58.5%. Copying increases the sampled device-memory peak by 256 MiB. Checked manual boundaries produce similar observed performance to automatically derived boundaries; the comparison does not establish statistical equivalence.
-
-The separate 168-run campaign also contains outcomes favorable to copying: higher timely recipient goodput at 25 source publications/s and in the all-late condition, with worse late-condition latency and freshness. Its recipient-level metric must not be substituted for complete-publication timely fraction.
-
-## Earlier Evidence
-
-The paper also uses earlier campaigns, preserved without modification:
-
-| Archive | Coverage |
-|---|---|
-| [Rate, late-read and slot evidence](archives/ispa2026-rate-slots-evidence.zip) | Earlier 108-run rate sweep, 36-run late-read test, model transitions, and slot/deadline records |
-| [Core evidence](archives/ispa2026-core-evidence.zip) | Mechanism and output checks, isolated cost, 96-run slots window and 54-run confirmation |
-| [Model and view evidence](archives/ispa2026-model-view-evidence.zip) | Saved model outputs, grouped requests and follow-up records |
-| [Load sensitivity](archives/ispa2026-load-sensitivity-evidence.zip) | 72-run load scan and deadline sensitivity |
-
-The earlier 108-run rate sweep is distinct from the new 108-run jitter/manual campaign. Campaigns are never pooled or paired across waves.
-
-## Scope
-
-GPU measurements use an A100, not an embedded automotive device. The heterogeneous profiles are components and variants of the measured model composition, not four independently trained autonomous-driving models. There is no Jetson/DRIVE validation, end-to-end vehicle-stack measurement, or device simulation. Historical paths inside immutable evidence archives remain intact for hash verification; the current submission entry and download names use ISPA.
+Measurements use one A100 and replayed features. The mixed recipients are component profiles, not four independently trained driving models. No embedded-board or end-to-end vehicle-stack evaluation is included. Smoke runs and CPU software tests are separate from formal performance measurements.

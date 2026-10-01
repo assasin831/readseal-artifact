@@ -1,39 +1,40 @@
 # Verification and Reproduction
 
-## Verify the Saved Evidence
-
-Download the current `ISPA` branch, or clone it:
+## Verify the Download
 
 ```sh
 git clone --branch ISPA https://github.com/assasin831/readseal-artifact.git
 cd readseal-artifact
+git rev-parse HEAD
 python tools/verify_results.py
 python tools/verify_manuscript.py
 python -m unittest discover -s tools -p "test_*.py"
 ```
 
-Python 3.10 or later is sufficient; the verifier uses only the standard library. It is read-only, does not import the execution code, and starts no GPU jobs. It verifies archive and copied-file hashes, embedded manifests where supplied, both formal CSV row counts, the new campaign's publication denominator and recipient coverage, and all 403 summary/paired intervals in that campaign. It prints a JSON result and returns a nonzero exit code on failure.
+The verifiers require Python 3.10 or later and the standard library. They read saved files without importing the execution code or starting GPU work. Both return a nonzero exit code on failure.
 
-The separate manuscript verifier defaults to ISPA. It checks the current PDF and source ZIP hashes, ZIP CRCs, the exact archive member list, and every source-manifest entry against both the browsable source tree and ZIP. See the [publication notes](manuscript/ISPA/README.md). Use --revision r21, --revision r19, --revision r17, --revision r16, or --revision r15 for preserved preceding packages. It checks packaging integrity, not experimental validity; the separate publication report covers page text, links, fonts and build checks.
+`verify_results.py` checks six archive hashes, copied-file hashes, embedded manifests, formal run counts, recipient coverage, the complete-publication denominator and 403 summary/paired intervals. `verify_manuscript.py` checks the paper and source ZIP hashes, ZIP CRCs, the exact archive contents and the source manifest.
 
-`evidence-index.json` records the SHA-256 and length of each byte-preserved evidence file. It covers data and execution-source snapshots, not newly written explanatory Markdown or the portable verifier itself. Record `git rev-parse HEAD` to pin a particular ISPA publication; the branch may advance. Existing historical tags remain fixed.
+[evidence-index.json](evidence-index.json) lists experimental files and their SHA-256 hashes. [release.json](manuscript/ISPA/release.json) records the manuscript files. ISPA is a maintained branch; the Git commit identifies the complete snapshot.
 
-## Recompute Paper Tables
+## Build the Paper
 
-The [current ISPA source](manuscript/ISPA/source/README.md) is a self-contained paper build based on r33, retaining all eight author-supplied figure PDFs. [release.json](manuscript/ISPA/release.json) records paper and ZIP hashes; its internal [MANIFEST.json](manuscript/ISPA/source/MANIFEST.json) covers every bundled file besides itself. The [publication check](manuscript/ISPA/source/qa/ISPA_publication_check.json) verifies eight pages and unchanged extracted page text except for the artifact URL. Pixel identity across TeX distributions is not claimed. The [original r21 package](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21/manuscript/r21/source) preserves the earlier CSV inputs, native PowerPoint generators, editable figures and saved-data extraction scripts. Historical verification records remain labeled for their own revisions.
+See the [LaTeX build instructions](manuscript/ISPA/source/README.md). The source includes the bibliography, document class and eight figure PDFs. Figure data and paper labels are mapped in [DATA_GUIDE.md](DATA_GUIDE.md).
 
-The original r21 source package linked above includes `scripts/extract_artifact.py` and `scripts/extract_followup.py`. The former reads `archives/ispa2026-rate-slots-evidence.zip`; the latter reads the 108-run and 168-run archives. These scripts derive plotting tables from saved records. They do not rerun inference, and they are not needed to compile the reconstructed LaTeX source.
+The [clean-build check](manuscript/ISPA/clean-rebuild-check.json) compares a fresh source-ZIP build with the published PDF. The eight pages match in extracted text, geometry, links and rendered pixels at 144 and 300 dpi in the recorded environment. The [source manifest](manuscript/ISPA/source/MANIFEST.json) covers every bundled file except itself.
 
-The new campaign's [original saved-only exporter](code/analysis/export_results.py) and its [CPU tests](code/analysis/test_export.py) are included byte-for-byte. Its original SHA-256 is `1af35d3f4f7ec154ca3ac62d34e333c0a02cc1cbe582ce2cc71aa8c6ffd4a9e8`. It expects the original campaign directory, including per-run records not all present in the compact archive. Use the portable verifier above to check the public compact export.
+## Analyze the Saved Measurements
 
-## Execution Sources and Coverage
+The [108-run exporter](code/analysis/export_results.py) and its [CPU tests](code/analysis/test_export.py) are preserved with the measurements. The exporter reads the original campaign layout, including some per-run records not distributed in the compact archive. The portable verifier above checks the public CSVs and their intervals without those missing records. Earlier study archives contain their corresponding analysis scripts.
 
-[code/executor](code/executor) contains the frozen source for the corrected native gate and the 108-run campaign. The snapshot retains its original file hashes, relative dependencies, and execution paths. It is supplied for inspection, not as a portable one-command inference benchmark. Older runtime dependencies and scripts are also present in the earlier evidence archives. Saved records bind model, engine, input and output files by hash; some large weights, native engines, tensor dumps, and worker traces are not included in this compact release. Hash records are not substitutes for those unavailable bytes.
+The 108-run jitter/manual and 168-run clone campaigns each use six whole-run repetitions and pointwise Student-t 95% intervals with five degrees of freedom. Earlier studies retain their recorded protocols. Campaigns are analyzed separately. Missing latencies are unavailable, not zero. [RESULTS.md](RESULTS.md) describes the metrics and measurement limits.
 
-The [prepared record](data/jitter-manual-108/prepared.json) binds 172 source, input and proof files. The [input evidence](data/jitter-manual-108/input_evidence.json), [export validation](data/jitter-manual-108/validation.json), [controller steps](provenance/corrected-gate/execution_steps.json), and [completed audit binding check](provenance/corrected-gate/completed_audit_binding_check.json) describe the saved execution. A third party can check the exported measurements and public source hashes without the GPU. Re-executing every native tensor comparison requires the separately recorded original inputs and environment.
+## Execution Sources
 
-Both new campaigns use six whole-run repetitions and pointwise Student-t 95% intervals with five degrees of freedom. Earlier campaigns use their own recorded analysis protocols. Do not replace run-level replication with frame counts or combine campaigns.
+[code/executor](code/executor) contains the frozen executor for the corrected native gate and 108-run campaign. It retains its original relative dependencies and paths; it is not a portable one-command benchmark. Some large weights, native engines, tensor dumps and worker traces are not included in this compact release.
 
-## Archive Integrity
+The [prepared record](data/jitter-manual-108/prepared.json) binds 172 source, input and proof files. [Input evidence](data/jitter-manual-108/input_evidence.json), [export validation](data/jitter-manual-108/validation.json), [controller steps](provenance/corrected-gate/execution_steps.json) and the [audit binding check](provenance/corrected-gate/completed_audit_binding_check.json) document the execution. Public hashes establish file identity but do not replace unavailable inputs needed to rerun native tensor comparisons.
 
-The new archive names are publication aliases. Their bytes, including original internal paths and manifests, are unchanged. No original campaign, auditor, or experimental packager was rerun for this release. Existing historical Git commits and tags remain available. See [PROVENANCE.md](PROVENANCE.md) for the preserved failed gate and the separately executed correction.
+## Provenance
+
+Archive bytes and internal paths are unchanged. [PROVENANCE.md](PROVENANCE.md) records the initial failed gate, the corrected test fixture and the completed campaign. Partial results from the failed gate are not counted as successful validation. CPU tests are software checks, not GPU performance measurements.
