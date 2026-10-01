@@ -57,6 +57,23 @@ class ManuscriptVerificationTests(unittest.TestCase):
             self.fixture(root)
             self.run_verify(root)
 
+    def test_internal_manifest_exact_archive_coverage(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            release = self.fixture(root, external=False)
+            release["source"]["manifest_covers_all_archive_files"] = True
+            (root / "release.json").write_text(json.dumps(release), encoding="utf-8")
+            self.run_verify(root)
+
+    def test_internal_manifest_unlisted_archive_file_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            release = self.fixture(root, external=False, extra_member=True)
+            release["source"]["manifest_covers_all_archive_files"] = True
+            (root / "release.json").write_text(json.dumps(release), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "exact archive contents"):
+                self.run_verify(root)
+
     def test_changed_source_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

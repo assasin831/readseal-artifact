@@ -2,10 +2,10 @@
 
 ## Verify the Saved Evidence
 
-Download this repository at tag `ispa2026-r21-source1`, or clone it:
+Download the current `ISPA` branch, or clone it:
 
 ```sh
-git clone --branch ispa2026-r21-source1 https://github.com/assasin831/readseal-artifact.git
+git clone --branch ISPA https://github.com/assasin831/readseal-artifact.git
 cd readseal-artifact
 python tools/verify_results.py
 python tools/verify_manuscript.py
@@ -14,13 +14,13 @@ python -m unittest discover -s tools -p "test_*.py"
 
 Python 3.10 or later is sufficient; the verifier uses only the standard library. It is read-only, does not import the execution code, and starts no GPU jobs. It verifies archive and copied-file hashes, embedded manifests where supplied, both formal CSV row counts, the new campaign's publication denominator and recipient coverage, and all 403 summary/paired intervals in that campaign. It prints a JSON result and returns a nonzero exit code on failure.
 
-The separate manuscript verifier checks the r21 canonical and rebuilt PDF hashes, ZIP CRCs, and all 17 entries in the reconstructed source's refreshed manifest against both the browsable source tree and the ZIP. See the [reconstruction notes](manuscript/r21/README.md). Use --revision r19, --revision r17, --revision r16, or --revision r15 for the preserved preceding packages. It checks packaging integrity, not experimental validity; the separate PDF comparison reports cover layout and text.
+The separate manuscript verifier defaults to ISPA. It checks the current PDF and source ZIP hashes, ZIP CRCs, the exact archive member list, and every source-manifest entry against both the browsable source tree and ZIP. See the [publication notes](manuscript/ISPA/README.md). Use --revision r21, --revision r19, --revision r17, --revision r16, or --revision r15 for preserved preceding packages. It checks packaging integrity, not experimental validity; the separate publication report covers page text, links, fonts and build checks.
 
-`evidence-index.json` records the SHA-256 and length of each byte-preserved evidence file. It covers data and execution-source snapshots, not newly written explanatory Markdown or the portable verifier itself. The Git tag fixes the whole repository tree.
+`evidence-index.json` records the SHA-256 and length of each byte-preserved evidence file. It covers data and execution-source snapshots, not newly written explanatory Markdown or the portable verifier itself. Record `git rev-parse HEAD` to pin a particular ISPA publication; the branch may advance. Existing historical tags remain fixed.
 
 ## Recompute Paper Tables
 
-The [current r21 source](manuscript/r21/source/README.md) is a self-contained paper build with the unchanged vector figures. [release.json](manuscript/r21/release.json) records paper and ZIP hashes; its internal [MANIFEST.json](manuscript/r21/source/MANIFEST.json) covers the 17 source files besides itself. The [fresh ZIP build check](manuscript/r21/reconstruction-verification.json) records identical text and pixels on all eight pages relative to the author-approved PDF. The [original r21 package](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21/manuscript/r21/source) preserves the CSV inputs, native PowerPoint generators, editable figures and saved-data extraction scripts. Historical verification records remain labeled for their own revisions.
+The [current ISPA source](manuscript/ISPA/source/README.md) is a self-contained paper build based on r33, retaining all eight author-supplied figure PDFs. [release.json](manuscript/ISPA/release.json) records paper and ZIP hashes; its internal [MANIFEST.json](manuscript/ISPA/source/MANIFEST.json) covers every bundled file besides itself. The [publication check](manuscript/ISPA/source/qa/ISPA_publication_check.json) verifies eight pages and unchanged extracted page text except for the artifact URL. Pixel identity across TeX distributions is not claimed. The [original r21 package](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21/manuscript/r21/source) preserves the earlier CSV inputs, native PowerPoint generators, editable figures and saved-data extraction scripts. Historical verification records remain labeled for their own revisions.
 
 The original r21 source package linked above includes `scripts/extract_artifact.py` and `scripts/extract_followup.py`. The former reads `archives/ispa2026-rate-slots-evidence.zip`; the latter reads the 108-run and 168-run archives. These scripts derive plotting tables from saved records. They do not rerun inference, and they are not needed to compile the reconstructed LaTeX source.
 

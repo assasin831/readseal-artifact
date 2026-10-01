@@ -1,0 +1,17 @@
+The left panel of Fig. 1 (figures/src/bev_frame.png) and the texture on the front face of the BEV map in
+Fig. 1 (figures/src/bev_feat.png), both embedded in figures/fig0_scene.pdf, are renderings of one LiDAR sweep
+from the nuScenes dataset:
+
+  samples/LIDAR_TOP/n015-2018-07-24-11-22-45+0800__LIDAR_TOP__1532402927647951.pcd.bin
+  (nuScenes-mini, log n015-2018-07-24-11-22-45+0800, the log of scene-0061)
+
+nuScenes is provided by Motional under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International license (CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/); see
+https://www.nuscenes.org/terms-of-use. The paper credits the dataset in the caption of Fig. 1 and cites
+H. Caesar et al., "nuScenes: A multimodal dataset for autonomous driving," CVPR 2020.
+
+Changes made to the data: points within 2.5 m of the sensor (returns from the ego vehicle) were dropped,
+the view was cropped to 72 m x 72 m around the vehicle, and points were colored by height above a local
+ground estimate. For bev_feat.png, above-ground points were counted on the map's 180 x 180 grid (108 m
+across), smoothed, and colored; it illustrates a feature channel and is not a model output. render_bev.py
+reproduces both images from the sweep; the sweep itself is not included.

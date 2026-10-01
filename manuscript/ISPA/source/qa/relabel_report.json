@@ -1,0 +1,55 @@
+{
+ "fig5_delivery": {
+  "changes": [
+   {
+    "before": "BIM + ReadSeal",
+    "after": "REALBIM",
+    "size": 6.8
+   },
+   {
+    "before": "BIM hold, 5th\u201395th pct.",
+    "after": "REALBIM hold, 5th\u201395th pct.",
+    "size": 6.8
+   },
+   {
+    "before": "BIM 95th pct.",
+    "after": "REALBIM 95th pct.",
+    "size": 6.09
+   }
+  ],
+  "pixels_changed_outside_label_boxes_300dpi": 0,
+  "old_name_left": false
+ },
+ "fig6_slots": {
+  "changes": [
+   {
+    "before": "BIM + ReadSeal",
+    "after": "REALBIM",
+    "size": 6.8
+   }
+  ],
+  "pixels_changed_outside_label_boxes_300dpi": 0,
+  "old_name_left": false
+ },
+ "fig7_mixed": {
+  "changes": [
+   {
+    "before": "BIM + ReadSeal",
+    "after": "REALBIM",
+    "size": 6.29
+   }
+  ],
+  "pixels_changed_outside_label_boxes_300dpi": 0,
+  "old_name_left": false
+ },
+ "fig2_trace": {
+  "changes": [
+   {
+    "before": "BIM + / ReadSeal (two lines)",
+    "after": "REALBIM"
+   }
+  ],
+  "pixels_changed_outside_label_boxes_300dpi": 0,
+  "old_name_left": false
+ }
+}

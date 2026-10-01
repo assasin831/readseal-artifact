@@ -1,18 +1,19 @@
-# BIM and ReadSeal: ISPA 2026 Artifact
+# REALBIM: ISPA Artifact
 
-Evidence for *BIM and ReadSeal: Safe Early Reuse of Shared GPU Buffers Across Processes*.
+Paper, source and evidence for *REALBIM: A Framework for Safe Early Reuse of Shared GPU Buffers Across Processes*.
 
-The current paper and evidence entry is the fixed [ISPA r21 source-reconstruction release](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21-source1). It includes the unchanged author-approved paper, PDF-matched LaTeX source, both additional performance campaigns, their saved correctness records, and earlier experiments. It is an artifact for submission, not a claim of acceptance. The original [r21 upload](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21), [r19](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19), [r17](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r17), [r16](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r16), [r15](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r15), and [ISPA r1](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r1) releases remain unchanged.
+The current paper and evidence entry is [ISPA](https://github.com/assasin831/readseal-artifact/tree/ISPA). This publication uses the author-supplied r33 manuscript, with its artifact link updated to this ISPA branch. It includes the eight-page paper, editable LaTeX source, both additional performance campaigns, their saved correctness records, and earlier experiments. ISPA is a maintained branch; commit history and per-file hashes identify each publication. Historical tags remain unchanged.
 
 ## Current Paper
 
-- [Revision 21 PDF](manuscript/r21/BIM_ReadSeal_ISPA2026_r21.pdf): the separately supplied eight-page paper, preserved byte-for-byte.
-- [Reconstructed source ZIP](manuscript/r21/BIM_ReadSeal_ISPA2026_r21_source.zip): self-contained editable LaTeX, bibliography, document class, six vector figures, build scripts and current verification records.
-- [Reconstruction notes](manuscript/r21/README.md), [browse source and build instructions](manuscript/r21/source/README.md), [file hashes](manuscript/r21/release.json).
-- [Rebuilt comparison PDF](manuscript/r21/BIM_ReadSeal_ISPA2026_r21_rebuilt.pdf) and [page-by-page verification](manuscript/r21/reconstruction-verification.json).
-- [Historical editable figures and campaign guide](https://github.com/assasin831/readseal-artifact/tree/ispa2026-r21/manuscript/r21/source) remain at the original r21 tag.
+- [ISPA paper PDF](manuscript/ISPA/REALBIM_ISPA.pdf): eight pages, based on r33, with the current artifact link.
+- [ISPA LaTeX source ZIP](manuscript/ISPA/REALBIM_ISPA_source.zip): editable LaTeX, bibliography, all eight figures, figure sources, licenses and build scripts.
+- [Publication notes](manuscript/ISPA/README.md), [browse source and build instructions](manuscript/ISPA/source/README.md), [file hashes](manuscript/ISPA/release.json).
+- [Page-by-page publication checks](manuscript/ISPA/source/qa/ISPA_publication_check.json).
 
-The reconstructed source replaces the previous source directory and ZIP on the main branch. A fresh ZIP extraction and compilation reproduces all eight pages of the approved PDF with identical extracted text and identical rendered pixels at 144 and 300 dpi. Visible content and experimental values were not edited. The package has a fresh [manifest](manuscript/r21/source/MANIFEST.json) and no stale bundled manuscript or historical editing scripts. The canonical PDF, existing r19 evidence link, archives, and proof records below are unchanged; no experiments were rerun.
+The manuscript's only visible text change from the supplied r33 PDF is the artifact URL, now ending in `/tree/ISPA`. Three explicit word-hyphenation rules preserve the supplied line breaks with the local TeX distribution. All eight figure PDFs, bibliography entries and experimental values are unchanged. The source has a refreshed [manifest](manuscript/ISPA/source/MANIFEST.json). Historical editing notes and build checks are labeled as history. No experiments were rerun; data, archives and execution proofs are preserved byte-for-byte.
+
+The current paper calls the independent manual runtime **Hand-placed**, and the same-runtime manual-boundary variant **REALBIM (hand-placed)**. The frozen evidence retains its original names **Manual** and **Manual-checked**, respectively; earlier references to BIM as the evaluated system correspond to REALBIM in the current manuscript.
 
 ## Start Here
 
@@ -32,7 +33,7 @@ The third row is not another 108-run campaign. Smoke runs and CPU tests are not 
 
 ## Main Findings
 
-With homogeneous recipients at 30 source publications/s, BIM completes 65.5% of publications on time under periodic arrivals and 63.5% under jitter, compared with Full retention's 50.0% and 48.0%. With component-heterogeneous recipients, including a late reader, clone-on-accept instead reaches 82.6% and 80.7%, compared with BIM's 50.3% and 58.5%. Copying increases the sampled device-memory peak by 256 MiB. Checked manual boundaries produce similar observed performance to automatically derived boundaries; the comparison does not establish statistical equivalence.
+With homogeneous recipients at 30 source publications/s, REALBIM completes 65.5% of publications on time under periodic arrivals and 63.5% under jitter, compared with Full retention's 50.0% and 48.0%. With component-heterogeneous recipients, including a late reader, clone-on-accept instead reaches 82.6% and 80.7%, compared with REALBIM's 50.3% and 58.5%. Copying increases the sampled device-memory peak by 256 MiB. Checked manual boundaries produce similar observed performance to automatically derived boundaries; the comparison does not establish statistical equivalence.
 
 The separate 168-run campaign also contains outcomes favorable to copying: higher timely recipient goodput at 25 source publications/s and in the all-late condition, with worse late-condition latency and freshness. Its recipient-level metric must not be substituted for complete-publication timely fraction.
 

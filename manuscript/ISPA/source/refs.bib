@@ -1,0 +1,195 @@
+% References for "REALBIM: A Framework for Safe Early Reuse of Shared GPU Buffers Across Processes" (ISPA 2026, r33).
+% r22 replaces most web pages and pre-2016 papers with recent peer-reviewed work where one exists.
+% Primary documentation is kept only where a claim depends on a specific API contract.
+% r33 drops five entries no longer cited (UniAD, Teper et al., Pearce, Bakita and Anderson 2023, Li et al.) to make room.
+
+% ---- Autonomous driving, ROS 2, BEV perception ----
+@inproceedings{autowareonboard,
+  author    = {S. Kato and others},
+  title     = {Autoware on board: Enabling autonomous vehicles with embedded systems},
+  booktitle = {Proc. ACM/IEEE ICCPS},
+  year      = {2018},
+  pages     = {287--296}
+}
+@article{ros2,
+  author  = {S. Macenski and others},
+  title   = {Robot {Operating} {System} 2: Design, architecture, and uses in the wild},
+  journal = {Sci. Robot.},
+  volume  = {7},
+  number  = {66},
+  pages   = {eabm6074},
+  year    = {2022}
+}
+@article{ros2survey,
+  author  = {D. Casini and others},
+  title   = {A survey of real-time support, analysis, and advancements in {ROS} 2},
+  journal = {Leibniz Trans. Embedded Syst.},
+  volume  = {11},
+  number  = {1},
+  pages   = {1:1--1:37},
+  year    = {2026}
+}
+@inproceedings{bevfusion,
+  author    = {Z. Liu and others},
+  title     = {{BEVFusion}: Multi-task multi-sensor fusion with unified bird's-eye view representation},
+  booktitle = {Proc. IEEE ICRA},
+  year      = {2023},
+  pages     = {2774--2781}
+}
+@inproceedings{haxconn,
+  author    = {I. Dagli and M. E. Belviranli},
+  title     = {Shared memory-contention-aware concurrent {DNN} execution for diversely heterogeneous system-on-chips},
+  booktitle = {Proc. ACM PPoPP},
+  year      = {2024},
+  pages     = {243--256}
+}
+
+% ---- Zero-copy IPC and cross-process lifetime ----
+@inproceedings{agnocast,
+  author    = {T. Ishikawa-Aso and S. Kato},
+  title     = {{ROS} 2 {Agnocast}: Supporting unsized message types for true zero-copy publish/subscribe {IPC}},
+  booktitle = {Proc. IEEE ISORC},
+  year      = {2025},
+  pages     = {1--10}
+}
+@article{luotcad,
+  author  = {X. Luo and others},
+  title   = {Flexible zero-copy {IPC} for processing chains in {ROS} 2},
+  journal = {IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.},
+  year    = {2025},
+  note    = {early access}
+}
+@inproceedings{hazcat,
+  author    = {O. Bell and C. Gill and X. Zhang},
+  title     = {Hardware acceleration with zero-copy memory management for heterogeneous computing},
+  booktitle = {Proc. IEEE RTCSA},
+  year      = {2023},
+  pages     = {28--37}
+}
+@inproceedings{ipcsharedptr,
+  author    = {T. Ishikawa-Aso and others},
+  title     = {\texttt{ipc\_shared\_ptr}: A publish/subscribe-aware smart pointer for cross-process object lifetime management},
+  booktitle = {Proc. IEEE ISORC},
+  year      = {2026},
+  note      = {arXiv:2605.04226}
+}
+@misc{nvscistream,
+  author       = {{NVIDIA}},
+  title        = {{NvSciStream} {API} reference ({DRIVE} {OS} 6.0)},
+  howpublished = {\url{https://developer.nvidia.com/docs/drive/drive-os/6.0.8/public/drive-os-linux-sdk/api_reference/group__nvsci__stream__apis.html}}
+}
+@misc{cudabackend,
+  author       = {{Open Robotics}},
+  title        = {{ROS} 2 \texttt{cuda\_buffer\_backend}},
+  howpublished = {\url{https://github.com/ros2/rosidl_buffer_backends}},
+  year         = {2026}
+}
+
+% ---- Timing in autonomous-driving pipelines ----
+
+% ---- DL frameworks, compilers, GPU runtimes ----
+@inproceedings{pytorch,
+  author    = {A. Paszke and others},
+  title     = {{PyTorch}: An imperative style, high-performance deep learning library},
+  booktitle = {Proc. NeurIPS},
+  year      = {2019},
+  pages     = {8024--8035}
+}
+@misc{recordstream,
+  author       = {{PyTorch Contributors}},
+  title        = {\texttt{torch.Tensor.record\_stream} ({PyTorch} 2.1 documentation)},
+  howpublished = {\url{https://pytorch.org/docs/2.1/generated/torch.Tensor.record_stream.html}},
+  year         = {2023}
+}
+@misc{tensorrt,
+  author       = {{NVIDIA}},
+  title        = {{TensorRT} 10.3 runtime {API}: Input-consumed events},
+  howpublished = {\url{https://github.com/NVIDIA/TensorRT/blob/release/10.3/include/NvInferRuntime.h}},
+  year         = {2024}
+}
+@inproceedings{pytorch2,
+  author    = {J. Ansel and others},
+  title     = {{PyTorch} 2: Faster machine learning through dynamic {Python} bytecode transformation and graph compilation},
+  booktitle = {Proc. ACM ASPLOS},
+  year      = {2024},
+  pages     = {929--947}
+}
+@inproceedings{telamalloc,
+  author    = {M. Maas and U. Beaugnon and A. Chauhan and B. Ilbeyi},
+  title     = {{TelaMalloc}: Efficient on-chip memory allocation for production machine learning accelerators},
+  booktitle = {Proc. ACM ASPLOS},
+  year      = {2023},
+  pages     = {123--137}
+}
+@inproceedings{reef,
+  author    = {M. Han and H. Zhang and R. Chen and H. Chen},
+  title     = {Microsecond-scale preemption for concurrent {GPU}-accelerated {DNN} inferences},
+  booktitle = {Proc. USENIX OSDI},
+  year      = {2022},
+  pages     = {539--558}
+}
+@inproceedings{orion,
+  author    = {F. Strati and X. Ma and A. Klimovic},
+  title     = {Orion: Interference-aware, fine-grained {GPU} sharing for {ML} applications},
+  booktitle = {Proc. ACM EuroSys},
+  year      = {2024},
+  pages     = {1075--1092}
+}
+
+% ---- Ownership, task runtimes, reclamation, asynchronous buffers ----
+@article{descend,
+  author  = {B. K{\"o}pcke and S. Gorlatch and M. Steuwer},
+  title   = {Descend: A safe {GPU} systems programming language},
+  journal = {Proc. ACM Program. Lang.},
+  volume  = {8},
+  number  = {PLDI},
+  pages   = {841--864},
+  year    = {2024}
+}
+
+% ---- Evaluated models and data ----
+@inproceedings{transfusion,
+  author    = {X. Bai and others},
+  title     = {{TransFusion}: Robust {LiDAR}-camera fusion for {3D} object detection with transformers},
+  booktitle = {Proc. IEEE/CVF CVPR},
+  year      = {2022},
+  pages     = {1090--1099}
+}
+@inproceedings{nuscenes,
+  author    = {H. Caesar and others},
+  title     = {{nuScenes}: A multimodal dataset for autonomous driving},
+  booktitle = {Proc. IEEE/CVF CVPR},
+  year      = {2020},
+  pages     = {11\,621--11\,631}
+}
+@inproceedings{resnet,
+  author    = {K. He and X. Zhang and S. Ren and J. Sun},
+  title     = {Deep residual learning for image recognition},
+  booktitle = {Proc. IEEE CVPR},
+  year      = {2016},
+  pages     = {770--778}
+}
+
+% ---- added in r24 (recent peer-reviewed work) ----
+@inproceedings{bakita24,
+  author    = {J. Bakita and J. H. Anderson},
+  title     = {Demystifying {NVIDIA} {GPU} internals to enable reliable {GPU} management},
+  booktitle = {Proc. IEEE RTAS},
+  year      = {2024},
+  pages     = {294--305}
+}
+@article{rcu,
+  author  = {P. E. McKenney and J. Fernandes and S. Boyd-Wickizer and J. Walpole},
+  title   = {{RCU} usage in the {Linux} kernel: Eighteen years later},
+  journal = {ACM SIGOPS Oper. Syst. Rev.},
+  volume  = {54},
+  number  = {1},
+  pages   = {47--63},
+  year    = {2020}
+}
+@misc{orin,
+  author       = {{NVIDIA}},
+  title        = {Jetson {AGX} {Orin} Series Data Sheet},
+  howpublished = {DS-10662-001},
+  year         = {2023}
+}

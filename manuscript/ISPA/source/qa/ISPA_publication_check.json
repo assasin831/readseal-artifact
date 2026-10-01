@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "author_supplied_pdf": {
+    "file": "main.pdf",
+    "bytes": 1675877,
+    "sha256": "e2fe2c68250fd1c9a0adaf7284f21db13922ad84a8a606d1dc2c0a34139d749d"
+  },
+  "published_pdf": {
+    "file": "main.pdf",
+    "bytes": 1694110,
+    "sha256": "585699df9b0530bcc82cee7ed9bebef4211558713898d55f000b1ea1326dd068"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 2,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 3,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 4,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 5,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 6,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 7,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    },
+    {
+      "page": 8,
+      "page_box_unchanged": true,
+      "text_identical_except_artifact_url": true,
+      "links_identical_except_artifact_url": true
+    }
+  ],
+  "references": 25,
+  "figure_pdfs_preserved_byte_for_byte": [
+    "fig0_scene.pdf",
+    "fig1_framework.pdf",
+    "fig2_trace.pdf",
+    "fig3_boundaries.pdf",
+    "fig5_delivery.pdf",
+    "fig6_slots.pdf",
+    "fig7_mixed.pdf",
+    "fig_lifetimes.pdf"
+  ],
+  "old_artifact_url": "https://github.com/assasin831/readseal-artifact/tree/ispa2026-r19",
+  "new_artifact_url": "https://github.com/assasin831/readseal-artifact/tree/ISPA",
+  "source_changes": [
+    "Artifact URL and its comment",
+    "Three explicit hyphenation rules to preserve the supplied layout across TeX distributions"
+  ],
+  "packaging_changes": [
+    "Current README, manifest and build check",
+    "PDF verifier reference count corrected from stale 30 to 25"
+  ],
+  "all_fonts_embedded": true,
+  "type3_fonts": false,
+  "overfull_or_undefined_warnings": [],
+  "underfull_warning_count": 4,
+  "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.14)  1 OCT 2026 01:36",
+  "pixel_identity_to_author_supplied_pdf_claimed": false,
+  "scope": "Source, page text, geometry, links, fonts and packaging checks. Rendering may differ across TeX distributions. No experimental data changed or inference executed."
+}

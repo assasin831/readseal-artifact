@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "reference_filename": "REALBIM_ISPA.pdf",
+  "reference_sha256": "585699df9b0530bcc82cee7ed9bebef4211558713898d55f000b1ea1326dd068",
+  "candidate_filename": "main.pdf",
+  "candidate_sha256": "ef81ffd7692be61f08a0fe137844c4e0e77a37f535d31622714e2d8bc728b2d6",
+  "candidate_bytes": 1694110,
+  "pages": [
+    {
+      "page": 1,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 2,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 3,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 4,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 5,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 6,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 7,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    },
+    {
+      "page": 8,
+      "page_box_identical": true,
+      "extracted_text_identical": true,
+      "pixels_identical_144dpi": true,
+      "pixels_identical_300dpi": true
+    }
+  ],
+  "references": 25,
+  "external_links_identical": true,
+  "all_fonts_embedded": true,
+  "type3_fonts": false,
+  "overfull_or_undefined_warnings": [],
+  "underfull_warning_count": 4,
+  "renderer": "PyMuPDF 1.28.2",
+  "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.14)  1 OCT 2026 01:41",
+  "scope": "Text, page geometry, raster comparisons, links and build checks; no new experiments or statistical analysis."
+}

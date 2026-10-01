@@ -1,0 +1,33 @@
+{
+ "pages": 8,
+ "references": 38,
+ "all_fonts_embedded": true,
+ "type3_fonts": false,
+ "overfull_or_undefined": [],
+ "underfull_warnings": 6,
+ "clean_build_from_package": true,
+ "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloade",
+ "page8_column_ends_pt": [
+  718,
+  697
+ ],
+ "text_bottom_pt": 719,
+ "fig1_height_pt": 157.4,
+ "fig1_min_label_pt": 5.8,
+ "references_web_or_api_docs": 4,
+ "references_2020_or_later": 34,
+ "readability_r24_to_r25": {
+  "sentences_over_35_words": [
+   19,
+   19
+  ],
+  "sentences_over_45_words": [
+   1,
+   1
+  ],
+  "mean_sentence_words": [
+   20.9,
+   20.9
+  ]
+ }
+}

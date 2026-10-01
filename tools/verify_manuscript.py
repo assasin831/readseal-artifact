@@ -33,6 +33,8 @@ def verify(root):
         if release["source"].get("manifest_covers_all_archive_files"):
             names = [entry.filename for entry in archive.infolist() if not entry.is_dir()]
             expected = [prefix + row["path"] for row in rows]
+            if "manifest" not in release["source"]:
+                expected.append(prefix + "MANIFEST.json")
             if len(set(names)) != len(names) or len(set(expected)) != len(expected):
                 raise ValueError("Duplicate archive or manifest entry")
             if set(names) != set(expected):
@@ -58,6 +60,6 @@ def verify(root):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--revision", choices=("r15", "r16", "r17", "r19", "r21"), default="r21")
+    parser.add_argument("--revision", choices=("ISPA", "r15", "r16", "r17", "r19", "r21"), default="ISPA")
     args = parser.parse_args()
     verify(Path(__file__).resolve().parents[1] / "manuscript" / args.revision)

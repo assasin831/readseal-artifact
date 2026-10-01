@@ -1,0 +1,34 @@
+{
+ "pages": 8,
+ "references": 30,
+ "all_fonts_embedded": true,
+ "type3_fonts": false,
+ "overfull_or_undefined": [],
+ "underfull_warnings": 9,
+ "clean_build_from_package": true,
+ "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloade",
+ "page8_column_ends_pt": [
+  718,
+  715
+ ],
+ "text_bottom_pt": 719,
+ "readability": {
+  "sentences_over_35_words": 22,
+  "sentences_over_45_words": 3,
+  "sentences_over_45_note": "all three are counter artifacts that join a sentence with a figure, equation, or proposition",
+  "mean_sentence_words": 21.6,
+  "abstract_words": 255
+ },
+ "figures": {
+  "fig_lifetimes_bp": [
+   251.06,
+   67.25
+  ],
+  "fig1_framework_bp": [
+   512.08,
+   120.55
+  ],
+  "algorithm_1": "commented out (not printed)"
+ },
+ "numbers_vs_r29": "no measured number added or removed"
+}

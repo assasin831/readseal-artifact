@@ -1,0 +1,36 @@
+{
+ "pages": 8,
+ "references": 38,
+ "all_fonts_embedded": true,
+ "type3_fonts": false,
+ "overfull_or_undefined": [],
+ "underfull_warnings": 6,
+ "clean_build_from_package": true,
+ "compiler": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloade",
+ "page8_column_ends_pt": [
+  718,
+  697
+ ],
+ "text_bottom_pt": 719,
+ "fig1_size_pt": [
+  512.1,
+  157.4
+ ],
+ "fig1_font_sizes_pt": [
+  5.6,
+  5.8,
+  6.0,
+  6.1,
+  6.2,
+  6.3,
+  6.4,
+  6.5,
+  6.6,
+  6.8,
+  6.9,
+  7.0,
+  7.6,
+  10.0
+ ],
+ "fig1_text_lines": 52
+}

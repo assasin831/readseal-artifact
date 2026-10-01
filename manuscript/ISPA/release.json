@@ -1,0 +1,34 @@
+{
+  "revision": "ISPA",
+  "author_revision": "r33",
+  "git_branch": "ISPA",
+  "publication_date": "2026-10-01",
+  "artifact_url": "https://github.com/assasin831/readseal-artifact/tree/ISPA",
+  "paper": {
+    "file": "REALBIM_ISPA.pdf",
+    "bytes": 1694110,
+    "sha256": "585699df9b0530bcc82cee7ed9bebef4211558713898d55f000b1ea1326dd068",
+    "pages": 8
+  },
+  "source": {
+    "file": "REALBIM_ISPA_source.zip",
+    "bytes": 3274082,
+    "sha256": "3e0394059080ed4c041ca765c57dc4cc30057d154288d6602e156e390b5d55cb",
+    "archive_prefix": "REALBIM_ISPA_source/",
+    "verified_manifest_files": 54,
+    "manifest_covers_all_archive_files": true
+  },
+  "author_supplied_pdf": {
+    "file": "main.pdf",
+    "bytes": 1675877,
+    "sha256": "e2fe2c68250fd1c9a0adaf7284f21db13922ad84a8a606d1dc2c0a34139d749d"
+  },
+  "author_supplied_zip": {
+    "file": "REALBIM_ISPA2026_r33_source.zip",
+    "bytes": 3292374,
+    "sha256": "c1afcb4a24a121ecf893c7c27ca81dd7e70fc02a4dfee5bf526c832696983822"
+  },
+  "verification": "source/qa/ISPA_publication_check.json",
+  "experimental_data_changed": false,
+  "inference_executed": false
+}
